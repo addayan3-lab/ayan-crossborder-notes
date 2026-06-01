@@ -1,0 +1,313 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="站内搜索｜阿岩跨境笔记" description="搜索阿岩跨境笔记中的亚马逊 AI 运营、PPC、Listing、选品和工具模板内容。">
+  <main class="search-page">
+    <section class="search-hero">
+      <div class="search-kicker">Search</div>
+      <h1>站内搜索</h1>
+      <p>搜索亚马逊 AI 运营、广告 PPC、Listing 优化、选品指南和工具模板。</p>
+    </section>
+
+    <section class="search-card">
+      <div class="search-box">
+        <input id="ayan-search-input" type="search" placeholder="搜索 AI 运营、PPC、Listing、选品、Review……" autocomplete="off" />
+        <button id="ayan-search-button" type="button">搜索</button>
+      </div>
+
+      <div class="search-tips">
+        <span>热门：</span>
+        <button type="button" data-keyword="AI 运营">AI 运营</button>
+        <button type="button" data-keyword="PPC">PPC</button>
+        <button type="button" data-keyword="Listing">Listing</button>
+        <button type="button" data-keyword="Review">Review</button>
+        <button type="button" data-keyword="选品">选品</button>
+      </div>
+
+      <div id="ayan-search-status" class="search-status">输入关键词后开始搜索。</div>
+      <div id="ayan-search-results" class="search-results"></div>
+    </section>
+  </main>
+
+  <script type="module">
+    import * as pagefind from "/pagefind/pagefind.js";
+
+    const input = document.querySelector("#ayan-search-input");
+    const button = document.querySelector("#ayan-search-button");
+    const status = document.querySelector("#ayan-search-status");
+    const results = document.querySelector("#ayan-search-results");
+    const tips = document.querySelectorAll("[data-keyword]");
+
+    function escapeHtml(text) {
+      return String(text || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    async function runSearch(keyword) {
+      const q = String(keyword || "").trim();
+
+      if (!q) {
+        status.textContent = "输入关键词后开始搜索。";
+        results.innerHTML = "";
+        return;
+      }
+
+      status.textContent = "正在搜索：" + q;
+      results.innerHTML = "";
+
+      try {
+        const search = await pagefind.search(q);
+
+        if (!search || !search.results || search.results.length === 0) {
+          status.textContent = "没有找到相关内容。";
+          return;
+        }
+
+        status.textContent = "找到 " + search.results.length + " 条结果。";
+
+        const data = await Promise.all(
+          search.results.slice(0, 12).map((result) => result.data())
+        );
+
+        results.innerHTML = data.map((item) => {
+          const title = escapeHtml(item.meta?.title || item.url || "未命名页面");
+          const excerpt = item.excerpt || "";
+          const url = item.url || "#";
+
+          return `
+            <a class="result-card" href="${url}">
+              <div class="result-title">${title}</div>
+              <div class="result-excerpt">${excerpt}</div>
+              <div class="result-url">${url}</div>
+            </a>
+          `;
+        }).join("");
+      } catch (err) {
+        console.error(err);
+        status.textContent = "搜索组件加载失败。请先 npm run build，再用 npm run preview 查看。";
+      }
+    }
+
+    button.addEventListener("click", () => runSearch(input.value));
+
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        runSearch(input.value);
+      }
+    });
+
+    input.addEventListener("input", () => {
+      const q = input.value.trim();
+      if (q.length >= 2) {
+        window.clearTimeout(window.__ayanSearchTimer);
+        window.__ayanSearchTimer = window.setTimeout(() => runSearch(q), 300);
+      }
+    });
+
+    tips.forEach((tip) => {
+      tip.addEventListener("click", () => {
+        const keyword = tip.getAttribute("data-keyword");
+        input.value = keyword;
+        input.focus();
+        runSearch(keyword);
+      });
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  .search-page {
+    min-height: 100vh;
+    padding: 56px 24px 80px;
+    background:
+      radial-gradient(circle at 24% 14%, rgba(19, 104, 255, 0.08), transparent 26%),
+      linear-gradient(180deg, #f6f9fd 0%, #eef3fa 100%);
+  }
+
+  .search-hero {
+    max-width: 960px;
+    margin: 0 auto 24px;
+  }
+
+  .search-kicker {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #dceaff;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+
+  .search-hero h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 44px;
+    line-height: 1.16;
+    letter-spacing: -1px;
+  }
+
+  .search-hero p {
+    max-width: 720px;
+    margin: 14px 0 0;
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .search-card {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 26px;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(226, 232, 240, 0.96);
+    box-shadow:
+      0 24px 80px rgba(15, 23, 42, 0.08),
+      inset 0 1px 0 rgba(255,255,255,0.95);
+    position: relative;
+    z-index: 20;
+  }
+
+  .search-box {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    gap: 12px;
+  }
+
+  #ayan-search-input {
+    width: 100%;
+    height: 52px;
+    border-radius: 15px;
+    border: 1px solid #dce6f5;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 16px;
+    padding: 0 16px;
+    outline: none;
+    box-sizing: border-box;
+    pointer-events: auto;
+    user-select: text;
+  }
+
+  #ayan-search-input:focus {
+    border-color: #1368ff;
+    box-shadow: 0 0 0 4px rgba(19, 104, 255, 0.12);
+  }
+
+  #ayan-search-button {
+    height: 52px;
+    border: 0;
+    border-radius: 15px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.2);
+  }
+
+  .search-tips {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    align-items: center;
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .search-tips button {
+    border: 1px solid #dceaff;
+    background: #eef5ff;
+    color: #1368ff;
+    border-radius: 999px;
+    padding: 7px 11px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .search-status {
+    margin-top: 22px;
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .search-results {
+    margin-top: 16px;
+    display: grid;
+    gap: 14px;
+  }
+
+  .result-card {
+    display: block;
+    padding: 18px;
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at 92% 0%, rgba(19, 104, 255, 0.06), transparent 26%),
+      #ffffff;
+    border: 1px solid #e6eaf2;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  }
+
+  .result-card:hover {
+    border-color: rgba(19, 104, 255, 0.34);
+    box-shadow: 0 18px 48px rgba(19, 104, 255, 0.09);
+  }
+
+  .result-title {
+    color: #0f172a;
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.45;
+  }
+
+  .result-excerpt {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .result-excerpt mark {
+    background: #fff2a8;
+    color: #0f172a;
+    padding: 0 2px;
+    border-radius: 4px;
+  }
+
+  .result-url {
+    margin-top: 10px;
+    color: #1368ff;
+    font-size: 13px;
+    word-break: break-all;
+  }
+
+  @media (max-width: 720px) {
+    .search-page {
+      padding: 34px 14px 56px;
+    }
+
+    .search-hero h1 {
+      font-size: 34px;
+    }
+
+    .search-card {
+      padding: 18px;
+      border-radius: 22px;
+    }
+
+    .search-box {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -5,14 +5,19 @@
     "type":  "module",
     "scripts":  {
                     "dev":  "astro dev",
-                    "build":  "astro build",
+                    "build":  "astro build \u0026\u0026 pagefind --site dist",
                     "preview":  "astro preview",
                     "images:attach":  "node scripts/auto-attach-images.mjs",
                     "infographics:generate":  "node scripts/generate-article-infographics.mjs",
-                    "infographics:first":  "node scripts/generate-article-infographics.mjs 2026-amazon-ai-operations"
+                    "infographics:first":  "node scripts/generate-article-infographics.mjs 2026-amazon-ai-operations",
+                    "build:astro":  "astro build",
+                    "search:index":  "pagefind --site dist"
                 },
     "dependencies":  {
                          "@astrojs/sitemap":  "latest",
                          "astro":  "latest"
-                     }
+                     },
+    "devDependencies":  {
+                            "pagefind":  "^1.5.2"
+                        }
 }
