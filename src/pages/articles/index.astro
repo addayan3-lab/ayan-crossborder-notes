@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title="全部文章" description="阿岩跨境笔记全部文章">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>全部文章</h1>
+      <p>这里会持续更新 AI 运营亚马逊、广告 PPC、Listing 优化、选品和工具模板相关内容。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid grid-3">
+      {posts.map((post) => (
+        <a class="card" href={`/articles/${post.id}/`}>
+          <span class="tag">{post.data.category}</span>
+          <h3>{post.data.title}</h3>
+          <p>{post.data.description}</p>
+          <div class="meta">{post.data.pubDate.toLocaleDateString("zh-CN")}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

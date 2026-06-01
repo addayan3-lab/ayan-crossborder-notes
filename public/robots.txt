@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hao1234.top/sitemap-index.xml

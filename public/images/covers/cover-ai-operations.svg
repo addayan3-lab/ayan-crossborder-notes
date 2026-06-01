@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="520" viewBox="0 0 420 520">
+  <defs>
+    <radialGradient id="g" cx="55%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#1D9BF0"/>
+      <stop offset="0.46" stop-color="#0B3A82"/>
+      <stop offset="1" stop-color="#06152F"/>
+    </radialGradient>
+  </defs>
+  <rect width="420" height="520" rx="28" fill="url(#g)"/>
+  <circle cx="212" cy="220" r="74" fill="none" stroke="#60A5FA" stroke-width="6" opacity=".85"/>
+  <text x="210" y="240" text-anchor="middle" font-size="58" fill="#EAF6FF" font-family="Arial" font-weight="800">AI</text>
+  <path d="M78 365 C150 315 205 398 282 330 C322 294 350 306 378 284" stroke="#38BDF8" stroke-width="5" fill="none" opacity=".9"/>
+  <text x="34" y="54" font-size="28" fill="#FFFFFF" font-family="Microsoft YaHei" font-weight="800">AI 运营</text>
+  <text x="34" y="92" font-size="20" fill="#BBD7FF" font-family="Microsoft YaHei">效率 · SOP · 增长</text>
+</svg>
