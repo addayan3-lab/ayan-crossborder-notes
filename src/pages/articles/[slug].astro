@@ -13,40 +13,381 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+function formatDate(date) {
+  return new Date(date).toLocaleDateString("zh-CN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  });
+}
+
+function slugify(text) {
+  return String(text)
+    .trim()
+    .replace(/[，。！？、：；（）《》“”‘’]/g, "")
+    .replace(/\s+/g, "-")
+    .toLowerCase();
+}
+
+const rawBody = post.body || "";
+const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
+  const text = match[1].trim();
+  return {
+    text,
+    id: slugify(text)
+  };
+});
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <article class="article">
-    <span class="tag">{post.data.category}</span>
-    <h1>{post.data.title}</h1>
-    <p class="meta">{post.data.pubDate.toLocaleDateString("zh-CN")} · {post.data.tags.join(" / ")}</p>
+  <main class="article-page">
+    <div class="article-shell">
+      <aside class="article-toc">
+        <a class="back-link" href="/articles/">← 返回全部文章</a>
 
-    <div class="article-body">
-      <Content />
+        {headings.length > 0 && (
+          <nav class="toc-card" aria-label="文章目录">
+            <div class="toc-title">文章目录</div>
+            <ol>
+              {headings.map((heading) => (
+                <li>
+                  <a href={`#${heading.id}`}>{heading.text}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
+
+        <section class="toc-cta">
+          <div class="toc-cta-title">免费资料包</div>
+          <p>领取 AI 运营检查表、Listing Prompt、广告复盘表。</p>
+          <a href="/tools/">立即领取</a>
+        </section>
+      </aside>
+
+      <article class="article-card-detail">
+        <header class="article-header">
+          <div class="article-category">{post.data.category}</div>
+          <h1>{post.data.title}</h1>
+          <p class="article-desc">{post.data.description}</p>
+          <div class="article-meta">
+            <span>{formatDate(post.data.pubDate)}</span>
+            <span>阿岩跨境笔记</span>
+          </div>
+        </header>
+
+        <section class="article-content" id="article-content">
+          <Content />
+        </section>
+
+        <section class="article-bottom-cta">
+          <div>
+            <h2>想把 AI 真正用进亚马逊运营？</h2>
+            <p>先从一张检查表、一套 Prompt 和一份广告复盘模板开始，把方法落到每天的运营动作里。</p>
+          </div>
+          <a href="/tools/">领取 AI 运营资料包</a>
+        </section>
+
+        <section class="article-disclaimer">
+          <strong>说明：</strong>
+          本文为亚马逊运营教学与方法整理，不构成平台政策、法律、税务或投资建议。具体操作请结合你的类目、账号状态、产品数据和亚马逊最新规则人工判断。
+        </section>
+      </article>
     </div>
-  </article>
-</BaseLayout>
-<style>
+  </main>
 
-  /* AYAN_AUTO_IMAGE_STYLE_START */
-  :global(.auto-article-image) {
-    width: 100%;
-    max-width: 100%;
-    margin: 28px auto 32px;
+  <script>
+    function slugify(text) {
+      return String(text)
+        .trim()
+        .replace(/[，。！？、：；（）《》“”‘’]/g, "")
+        .replace(/\s+/g, "-")
+        .toLowerCase();
+    }
+
+    const content = document.querySelector("#article-content");
+    if (content) {
+      const h2s = content.querySelectorAll("h2");
+      h2s.forEach((h2) => {
+        if (!h2.id) {
+          h2.id = slugify(h2.textContent || "");
+        }
+      });
+    }
+  </script>
+</BaseLayout>
+
+<style is:global>
+  .article-page {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 18% 10%, rgba(19, 104, 255, 0.06), transparent 25%),
+      linear-gradient(180deg, #f6f9fd 0%, #eef3fa 100%);
+    padding: 44px 24px 72px;
+  }
+
+  .article-shell {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+  }
+
+  .article-toc {
+    position: sticky;
+    top: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .toc-card,
+  .toc-cta {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow:
+      0 18px 50px rgba(15, 23, 42, 0.06),
+      inset 0 1px 0 rgba(255,255,255,0.9);
+    padding: 18px;
+  }
+
+  .toc-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 12px;
+  }
+
+  .toc-card ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .toc-card a {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+    padding-left: 10px;
+    border-left: 2px solid #e2e8f0;
+  }
+
+  .toc-card a:hover {
+    color: #1368ff;
+    border-left-color: #1368ff;
+  }
+
+  .toc-cta-title {
+    font-size: 17px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 8px;
+  }
+
+  .toc-cta p {
+    margin: 0 0 14px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .toc-cta a {
+    display: grid;
+    place-items: center;
+    height: 38px;
+    border-radius: 11px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .article-card-detail {
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(226, 232, 240, 0.96);
+    border-radius: 28px;
+    box-shadow:
+      0 24px 80px rgba(15, 23, 42, 0.08),
+      inset 0 1px 0 rgba(255,255,255,0.95);
+    overflow: hidden;
+  }
+
+  .article-header {
+    padding: 42px 52px 30px;
+    background:
+      radial-gradient(circle at 85% 0%, rgba(19, 104, 255, 0.09), transparent 28%),
+      linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border-bottom: 1px solid #eef2f7;
+  }
+
+  .article-category {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #dceaff;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+
+  .article-header h1 {
+    max-width: 820px;
+    margin: 0;
+    color: #0f172a;
+    font-size: 42px;
+    line-height: 1.18;
+    letter-spacing: -1.1px;
+  }
+
+  .article-desc {
+    max-width: 760px;
+    margin: 18px 0 0;
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .article-meta {
+    margin-top: 18px;
+    display: flex;
+    gap: 16px;
+    color: #94a3b8;
+    font-size: 14px;
+  }
+
+  .article-content {
+    padding: 38px 52px 48px;
+    max-width: 880px;
+    box-sizing: border-box;
+  }
+
+  .article-content h1 {
+    display: none;
+  }
+
+  .article-content h2 {
+    scroll-margin-top: 96px;
+    margin: 46px 0 18px;
+    color: #0f172a;
+    font-size: 30px;
+    line-height: 1.35;
+    letter-spacing: -0.4px;
+    position: relative;
+    padding-left: 14px;
+  }
+
+  .article-content h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 28px;
+    border-radius: 999px;
+    background: #1368ff;
+    box-shadow: 0 0 18px rgba(19, 104, 255, 0.34);
+  }
+
+  .article-content h3 {
+    margin: 30px 0 14px;
+    color: #102033;
+    font-size: 23px;
+    line-height: 1.45;
+  }
+
+  .article-content p {
+    color: #334155;
+    font-size: 17px;
+    line-height: 2.05;
+    margin: 14px 0;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin: 16px 0 22px;
+    padding-left: 24px;
+    color: #334155;
+  }
+
+  .article-content li {
+    font-size: 17px;
+    line-height: 1.95;
+    margin: 4px 0;
+  }
+
+  .article-content strong {
+    color: #0f172a;
+    font-weight: 900;
+  }
+
+  .article-content code {
+    background: #eef5ff;
+    color: #0f4fc7;
+    padding: 2px 6px;
+    border-radius: 7px;
+    font-size: 0.92em;
+  }
+
+  .article-content pre {
+    overflow: auto;
+    border-radius: 18px;
+    padding: 20px;
+    background: #06152f;
+    color: #dbeafe;
+    margin: 24px 0;
+  }
+
+  .article-content pre code {
+    background: transparent;
+    color: inherit;
     padding: 0;
   }
 
-  :global(.auto-article-image img) {
+  .article-content hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 42px 0;
+  }
+
+  .auto-article-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 34px auto 38px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .auto-article-image img {
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
-    border-radius: 18px;
-    box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
-    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 22px;
+    box-shadow: 0 20px 56px rgba(15, 23, 42, 0.13);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-sizing: border-box;
   }
 
-  :global(.auto-article-image figcaption) {
+  .auto-article-image figcaption {
     margin-top: 10px;
     text-align: center;
     color: #8b95a5;
@@ -54,14 +395,119 @@ const { Content } = await render(post);
     line-height: 1.6;
   }
 
-  @media (max-width: 720px) {
-    :global(.auto-article-image) {
-      margin: 22px auto 26px;
+  .article-bottom-cta {
+    margin: 4px 52px 0;
+    padding: 28px;
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at 88% 0%, rgba(19, 104, 255, 0.16), transparent 30%),
+      linear-gradient(135deg, #06152f, #0b3473);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .article-bottom-cta h2 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .article-bottom-cta p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.8;
+  }
+
+  .article-bottom-cta a {
+    height: 46px;
+    border-radius: 13px;
+    background: #ffffff;
+    color: #1368ff;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+  }
+
+  .article-disclaimer {
+    margin: 22px 52px 44px;
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid #e2e8f0;
+  }
+
+  @media (max-width: 1080px) {
+    .article-shell {
+      grid-template-columns: 1fr;
     }
 
-    :global(.auto-article-image img) {
-      border-radius: 14px;
+    .article-toc {
+      position: static;
+      order: 2;
+    }
+
+    .article-card-detail {
+      order: 1;
+    }
+
+    .toc-card {
+      display: none;
     }
   }
-  /* AYAN_AUTO_IMAGE_STYLE_END */
+
+  @media (max-width: 720px) {
+    .article-page {
+      padding: 24px 14px 56px;
+    }
+
+    .article-header {
+      padding: 30px 24px 24px;
+    }
+
+    .article-header h1 {
+      font-size: 31px;
+    }
+
+    .article-desc {
+      font-size: 16px;
+    }
+
+    .article-content {
+      padding: 28px 24px 34px;
+      max-width: 100%;
+    }
+
+    .article-content h2 {
+      font-size: 25px;
+    }
+
+    .article-content p,
+    .article-content li {
+      font-size: 16px;
+      line-height: 1.95;
+    }
+
+    .article-bottom-cta {
+      margin: 0 24px;
+      grid-template-columns: 1fr;
+    }
+
+    .article-disclaimer {
+      margin: 18px 24px 34px;
+    }
+
+    .auto-article-image {
+      margin: 26px auto 30px;
+    }
+
+    .auto-article-image img {
+      border-radius: 16px;
+    }
+  }
 </style>
