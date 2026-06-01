@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" rx="36" fill="#06152F"/>
+  <circle cx="935" cy="165" r="220" fill="#1368FF" opacity="0.22"/>
+  <text x="72" y="86" font-size="42" fill="#FFFFFF" font-family="Microsoft YaHei, Arial" font-weight="900">卖家 AI 落地 SOP</text>
+  <text x="72" y="128" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei, Arial">从每天、每周到每月的运营动作</text>
+  <g transform="translate(100 210)" font-family="Microsoft YaHei, Arial">
+    <rect width="1000" height="80" rx="20" fill="rgba(255,255,255,0.09)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="38" y="50" font-size="26" fill="#FFFFFF" font-weight="800">每天：AI 整理运营待办</text>
+    <rect y="100" width="1000" height="80" rx="20" fill="rgba(255,255,255,0.09)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="38" y="150" font-size="26" fill="#FFFFFF" font-weight="800">每周：广告报告复盘 + Review 分析</text>
+    <rect y="200" width="1000" height="80" rx="20" fill="rgba(255,255,255,0.09)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="38" y="250" font-size="26" fill="#FFFFFF" font-weight="800">上新前：Listing 检查与关键词覆盖</text>
+    <rect y="300" width="1000" height="80" rx="20" fill="rgba(255,255,255,0.09)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="38" y="350" font-size="26" fill="#FFFFFF" font-weight="800">每月：产品线复盘与资源分配</text>
+  </g>
+</svg>

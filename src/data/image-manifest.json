@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai-amazon-hero-01",
+    "path": "/images/article-assets/ai-amazon/ai-amazon-hero-01.svg",
+    "type": "hero",
+    "topics": ["ai-amazon", "ai-operations"],
+    "keywords": ["AI运营", "亚马逊", "效率", "SOP"],
+    "alt": "亚马逊卖家使用 AI 提升运营效率的示意图"
+  },
+  {
+    "id": "ai-workflow-01",
+    "path": "/images/article-assets/ai-amazon/ai-workflow-01.svg",
+    "type": "framework",
+    "topics": ["ai-amazon", "workflow"],
+    "keywords": ["选品", "Listing", "广告", "Review", "复盘"],
+    "alt": "AI 在亚马逊运营中的五个应用场景图"
+  },
+  {
+    "id": "ai-sop-01",
+    "path": "/images/article-assets/ai-amazon/ai-sop-01.svg",
+    "type": "summary",
+    "topics": ["ai-amazon", "sop"],
+    "keywords": ["SOP", "执行建议", "每天", "每周", "每月"],
+    "alt": "亚马逊卖家 AI 运营落地 SOP 流程图"
+  },
+  {
+    "id": "ppc-dashboard-01",
+    "path": "/images/article-assets/ppc/ppc-dashboard-01.svg",
+    "type": "section",
+    "topics": ["ppc", "advertising"],
+    "keywords": ["广告", "PPC", "ACOS", "TACOS", "报表"],
+    "alt": "亚马逊广告 PPC 数据复盘示意图"
+  },
+  {
+    "id": "listing-structure-01",
+    "path": "/images/article-assets/listing/listing-structure-01.svg",
+    "type": "section",
+    "topics": ["listing"],
+    "keywords": ["Listing", "标题", "五点", "转化", "文案"],
+    "alt": "AI 时代亚马逊 Listing 优化结构图"
+  },
+  {
+    "id": "review-analysis-01",
+    "path": "/images/article-assets/review/review-analysis-01.svg",
+    "type": "section",
+    "topics": ["review"],
+    "keywords": ["Review", "评论", "差评", "痛点", "用户语言"],
+    "alt": "亚马逊 Review 分析用户痛点示意图"
+  },
+  {
+    "id": "summary-01",
+    "path": "/images/article-assets/common/summary-01.svg",
+    "type": "summary",
+    "topics": ["common"],
+    "keywords": ["总结", "方法", "流程", "SOP"],
+    "alt": "亚马逊 AI 运营核心总结图"
+  }
+]

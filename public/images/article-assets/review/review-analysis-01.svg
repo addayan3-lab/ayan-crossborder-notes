@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" rx="36" fill="#06152F"/>
+  <text x="72" y="84" font-size="42" fill="#FFFFFF" font-family="Microsoft YaHei, Arial" font-weight="900">Review 分析：找到用户真实语言</text>
+  <text x="72" y="126" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei, Arial">满意点、差评痛点、购买原因、使用场景</text>
+  <g transform="translate(98 190)">
+    <rect width="300" height="310" rx="28" fill="rgba(255,255,255,0.10)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="36" y="80" font-size="30" fill="#FFFFFF" font-family="Microsoft YaHei" font-weight="900">好评</text>
+    <text x="36" y="130" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei">购买理由</text>
+    <text x="36" y="175" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei">满意场景</text>
+  </g>
+  <g transform="translate(450 190)">
+    <rect width="300" height="310" rx="28" fill="rgba(255,255,255,0.10)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="36" y="80" font-size="30" fill="#FFFFFF" font-family="Microsoft YaHei" font-weight="900">差评</text>
+    <text x="36" y="130" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei">产品风险</text>
+    <text x="36" y="175" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei">改良机会</text>
+  </g>
+  <g transform="translate(802 190)">
+    <rect width="300" height="310" rx="28" fill="rgba(255,255,255,0.10)" stroke="rgba(147,197,253,0.32)"/>
+    <text x="36" y="80" font-size="30" fill="#FFFFFF" font-family="Microsoft YaHei" font-weight="900">表达</text>
+    <text x="36" y="130" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei">Listing 文案</text>
+    <text x="36" y="175" font-size="22" fill="#BFDBFE" font-family="Microsoft YaHei">广告关键词</text>
+  </g>
+</svg>

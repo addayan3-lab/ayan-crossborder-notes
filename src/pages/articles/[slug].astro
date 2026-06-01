@@ -26,3 +26,42 @@ const { Content } = await render(post);
     </div>
   </article>
 </BaseLayout>
+<style>
+
+  /* AYAN_AUTO_IMAGE_STYLE_START */
+  :global(.auto-article-image) {
+    width: 100%;
+    max-width: 100%;
+    margin: 28px auto 32px;
+    padding: 0;
+  }
+
+  :global(.auto-article-image img) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+  }
+
+  :global(.auto-article-image figcaption) {
+    margin-top: 10px;
+    text-align: center;
+    color: #8b95a5;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 720px) {
+    :global(.auto-article-image) {
+      margin: 22px auto 26px;
+    }
+
+    :global(.auto-article-image img) {
+      border-radius: 14px;
+    }
+  }
+  /* AYAN_AUTO_IMAGE_STYLE_END */
+</style>
