@@ -1,0 +1,255 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const tallyUrl = "https://tally.so/r/EkMNAr";
+const backupWechat = "addayan";
+---
+
+<BaseLayout title="领取 AI 运营资料包｜阿岩跨境笔记" description="领取亚马逊 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。">
+  <main class="lead-page">
+    <section class="lead-card">
+      <div class="lead-kicker">AI Amazon Resource Pack</div>
+      <h1>领取 AI 运营资料包</h1>
+      <p class="lead-desc">
+        包含 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。
+      </p>
+
+      <div class="lead-actions">
+        <a class="lead-primary" href={tallyUrl} target="_blank" rel="noopener noreferrer">
+          打开领取表单
+        </a>
+        <a class="lead-secondary" href="/">
+          返回网站首页
+        </a>
+      </div>
+
+      <div class="fallback-box">
+        <h2>如果表单打不开怎么办？</h2>
+        <p>
+          国内网络访问海外表单可能会不稳定。如果 Tally 表单打不开，可以直接添加微信领取资料。
+        </p>
+
+        <div class="wechat-row">
+          <span>备用微信号</span>
+          <strong id="wechat-value">{backupWechat}</strong>
+          <button id="copy-wechat" type="button">复制微信号</button>
+        </div>
+
+        <p class="hint">
+          添加时备注：<strong>AI运营资料包</strong>，我会按顺序发送资料。
+        </p>
+      </div>
+
+      <div class="resource-list">
+        <div>✓ AI 运营检查表</div>
+        <div>✓ Listing 优化 Prompt</div>
+        <div>✓ 广告 PPC 复盘表</div>
+        <div>✓ Review 分析模板</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const button = document.querySelector("#copy-wechat");
+    const value = document.querySelector("#wechat-value");
+
+    if (button && value) {
+      button.addEventListener("click", async () => {
+        const text = value.textContent || "";
+        try {
+          await navigator.clipboard.writeText(text);
+          button.textContent = "已复制";
+          setTimeout(() => {
+            button.textContent = "复制微信号";
+          }, 1600);
+        } catch (error) {
+          button.textContent = "请手动复制";
+        }
+      });
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .lead-page {
+    min-height: 100vh;
+    padding: 64px 24px 84px;
+    background:
+      radial-gradient(circle at 24% 12%, rgba(19, 104, 255, 0.10), transparent 26%),
+      linear-gradient(180deg, #f6f9fd 0%, #eef3fa 100%);
+  }
+
+  .lead-card {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 44px;
+    border-radius: 30px;
+    background:
+      radial-gradient(circle at 90% 0%, rgba(19, 104, 255, 0.08), transparent 28%),
+      rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(226, 232, 240, 0.96);
+    box-shadow:
+      0 24px 80px rgba(15, 23, 42, 0.08),
+      inset 0 1px 0 rgba(255,255,255,0.95);
+  }
+
+  .lead-kicker {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #dceaff;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+
+  .lead-card h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 44px;
+    line-height: 1.16;
+    letter-spacing: -1px;
+  }
+
+  .lead-desc {
+    max-width: 680px;
+    margin: 16px 0 0;
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .lead-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .lead-primary,
+  .lead-secondary {
+    height: 48px;
+    padding: 0 22px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+  }
+
+  .lead-primary {
+    background: #1368ff;
+    color: #fff;
+    box-shadow: 0 14px 34px rgba(19, 104, 255, 0.22);
+  }
+
+  .lead-secondary {
+    background: #f3f7ff;
+    color: #1368ff;
+    border: 1px solid #d8e7ff;
+  }
+
+  .fallback-box {
+    margin-top: 30px;
+    padding: 24px;
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at 90% 0%, rgba(19, 104, 255, 0.10), transparent 30%),
+      #f8fbff;
+    border: 1px solid #dceaff;
+  }
+
+  .fallback-box h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  .fallback-box p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .wechat-row {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 96px 1fr 128px;
+    gap: 12px;
+    align-items: center;
+    padding: 14px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+  }
+
+  .wechat-row span {
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .wechat-row strong {
+    color: #0f172a;
+    font-size: 18px;
+    word-break: break-all;
+  }
+
+  .wechat-row button {
+    height: 40px;
+    border: 0;
+    border-radius: 11px;
+    background: #0f172a;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  .hint {
+    margin-top: 14px !important;
+  }
+
+  .resource-list {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .resource-list div {
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #e6eaf2;
+    color: #334155;
+    font-weight: 800;
+  }
+
+  @media (max-width: 720px) {
+    .lead-page {
+      padding: 34px 14px 56px;
+    }
+
+    .lead-card {
+      padding: 26px;
+      border-radius: 24px;
+    }
+
+    .lead-card h1 {
+      font-size: 34px;
+    }
+
+    .wechat-row {
+      grid-template-columns: 1fr;
+    }
+
+    .resource-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
