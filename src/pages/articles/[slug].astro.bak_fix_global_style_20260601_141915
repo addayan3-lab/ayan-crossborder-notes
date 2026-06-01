@@ -62,7 +62,7 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
         <section class="toc-cta">
           <div class="toc-cta-title">免费资料包</div>
           <p>领取 AI 运营检查表、Listing Prompt、广告复盘表。</p>
-          <a href="https://tally.so/r/EkMNAr" target="_blank" rel="noopener noreferrer">立即领取</a>
+          <a href="/tools/">立即领取</a>
         </section>
       </aside>
 
@@ -86,7 +86,7 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
             <h2>想把 AI 真正用进亚马逊运营？</h2>
             <p>先从一张检查表、一套 Prompt 和一份广告复盘模板开始，把方法落到每天的运营动作里。</p>
           </div>
-          <a href="https://tally.so/r/EkMNAr" target="_blank" rel="noopener noreferrer">领取 AI 运营资料包</a>
+          <a href="/tools/">领取 AI 运营资料包</a>
         </section>
 
         <section class="article-disclaimer">
@@ -118,7 +118,7 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
   </script>
 </BaseLayout>
 
-<style is:global>
+<style>
   .article-page {
     min-height: 100vh;
     background:
@@ -154,7 +154,7 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
 
   .toc-card,
   .toc-cta {
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.86);
     border: 1px solid rgba(226, 232, 240, 0.95);
     border-radius: 20px;
     box-shadow:
@@ -215,10 +215,11 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     background: #1368ff;
     color: #fff;
     font-weight: 900;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.2);
   }
 
   .article-card-detail {
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(226, 232, 240, 0.96);
     border-radius: 28px;
     box-shadow:
@@ -277,14 +278,13 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
   .article-content {
     padding: 38px 52px 48px;
     max-width: 880px;
-    box-sizing: border-box;
   }
 
-  .article-content h1 {
+  .article-content :global(h1) {
     display: none;
   }
 
-  .article-content h2 {
+  .article-content :global(h2) {
     scroll-margin-top: 96px;
     margin: 46px 0 18px;
     color: #0f172a;
@@ -295,7 +295,7 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     padding-left: 14px;
   }
 
-  .article-content h2::before {
+  .article-content :global(h2::before) {
     content: "";
     position: absolute;
     left: 0;
@@ -307,39 +307,48 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     box-shadow: 0 0 18px rgba(19, 104, 255, 0.34);
   }
 
-  .article-content h3 {
+  .article-content :global(h3) {
     margin: 30px 0 14px;
     color: #102033;
     font-size: 23px;
     line-height: 1.45;
   }
 
-  .article-content p {
+  .article-content :global(p) {
     color: #334155;
     font-size: 17px;
     line-height: 2.05;
     margin: 14px 0;
   }
 
-  .article-content ul,
-  .article-content ol {
+  .article-content :global(ul),
+  .article-content :global(ol) {
     margin: 16px 0 22px;
     padding-left: 24px;
     color: #334155;
   }
 
-  .article-content li {
+  .article-content :global(li) {
     font-size: 17px;
     line-height: 1.95;
     margin: 4px 0;
   }
 
-  .article-content strong {
+  .article-content :global(strong) {
     color: #0f172a;
     font-weight: 900;
   }
 
-  .article-content code {
+  .article-content :global(blockquote) {
+    margin: 28px 0;
+    padding: 18px 22px;
+    border-left: 5px solid #1368ff;
+    border-radius: 14px;
+    background: #f3f7ff;
+    color: #334155;
+  }
+
+  .article-content :global(code) {
     background: #eef5ff;
     color: #0f4fc7;
     padding: 2px 6px;
@@ -347,7 +356,7 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     font-size: 0.92em;
   }
 
-  .article-content pre {
+  .article-content :global(pre) {
     overflow: auto;
     border-radius: 18px;
     padding: 20px;
@@ -356,27 +365,26 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     margin: 24px 0;
   }
 
-  .article-content pre code {
+  .article-content :global(pre code) {
     background: transparent;
     color: inherit;
     padding: 0;
   }
 
-  .article-content hr {
+  .article-content :global(hr) {
     border: 0;
     border-top: 1px solid #e2e8f0;
     margin: 42px 0;
   }
 
-  .auto-article-image {
+  :global(.auto-article-image) {
     width: 100%;
     max-width: 100%;
     margin: 34px auto 38px;
     padding: 0;
-    box-sizing: border-box;
   }
 
-  .auto-article-image img {
+  :global(.auto-article-image img) {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -384,10 +392,9 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     border-radius: 22px;
     box-shadow: 0 20px 56px rgba(15, 23, 42, 0.13);
     border: 1px solid rgba(226, 232, 240, 0.95);
-    box-sizing: border-box;
   }
 
-  .auto-article-image figcaption {
+  :global(.auto-article-image figcaption) {
     margin-top: 10px;
     text-align: center;
     color: #8b95a5;
@@ -480,15 +487,14 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
 
     .article-content {
       padding: 28px 24px 34px;
-      max-width: 100%;
     }
 
-    .article-content h2 {
+    .article-content :global(h2) {
       font-size: 25px;
     }
 
-    .article-content p,
-    .article-content li {
+    .article-content :global(p),
+    .article-content :global(li) {
       font-size: 16px;
       line-height: 1.95;
     }
@@ -502,11 +508,11 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
       margin: 18px 24px 34px;
     }
 
-    .auto-article-image {
+    :global(.auto-article-image) {
       margin: 26px auto 30px;
     }
 
-    .auto-article-image img {
+    :global(.auto-article-image img) {
       border-radius: 16px;
     }
   }
