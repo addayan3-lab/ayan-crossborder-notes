@@ -30,19 +30,6 @@ const pathname = Astro.url.pathname;
   <!-- AYAN_GOOGLE_VERIFY_START -->
 <meta name="google-site-verification" content="Vh-o1jsSvPXTdSNF04m86B7gmzRWP5JGkWQfFf95s6k" />
 <!-- AYAN_GOOGLE_VERIFY_END -->
-<!-- AYAN_SEO_META_START -->
-<link rel="canonical" href={new URL(Astro.url.pathname, "https://amz.hao1234.top").toString()} />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="阿岩跨境笔记" />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:url" content={new URL(Astro.url.pathname, "https://amz.hao1234.top").toString()} />
-<meta property="og:image" content="https://amz.hao1234.top/images/og-default.svg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
-<meta name="twitter:image" content="https://amz.hao1234.top/images/og-default.svg" />
-<!-- AYAN_SEO_META_END -->
 </head>
   <body>
     <header class="site-header">

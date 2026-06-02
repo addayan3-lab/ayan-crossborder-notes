@@ -6,7 +6,7 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title="全部文章" description="阿岩跨境笔记全部文章">
+<BaseLayout title="全部文章｜亚马逊 AI 运营、PPC、Listing 与选品笔记" description="浏览阿岩跨境笔记全部文章，涵盖亚马逊 AI 运营、关键词研究、Listing 优化、广告 PPC、Review 分析和选品指南。">
   <section class="page-hero">
     <div class="page-hero-inner">
       <h1>全部文章</h1>
