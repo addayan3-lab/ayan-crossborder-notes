@@ -5,11 +5,10 @@ import { stdin as input, stdout as output } from "node:process";
 
 const root = process.cwd();
 const postsDir = path.join(root, "src", "content", "posts");
-
 fs.mkdirSync(postsDir, { recursive: true });
 
-function slugify(input) {
-  return String(input || "")
+function slugify(value) {
+  return String(value || "")
     .trim()
     .toLowerCase()
     .replace(/[^\w\u4e00-\u9fa5]+/g, "-")
@@ -18,14 +17,7 @@ function slugify(input) {
 
 function today() {
   const d = new Date();
-  const yyyy = d.getFullYear();
-  const mm = String(d.getMonth() + 1).padStart(2, "0");
-  const dd = String(d.getDate()).padStart(2, "0");
-  return `${yyyy}-${mm}-${dd}`;
-}
-
-function writeUtf8(file, content) {
-  fs.writeFileSync(file, content, "utf8");
+  return d.toISOString().slice(0, 10);
 }
 
 const rl = readline.createInterface({ input, output });
@@ -38,6 +30,7 @@ const descriptionInput = await rl.question("SEO 描述（建议 40-120 字，可
 rl.close();
 
 const slug = slugify(slugInput || title);
+
 if (!slug) {
   console.error("slug 为空，已取消。");
   process.exit(1);
@@ -94,7 +87,7 @@ draft: false
 用一段话总结这篇文章的核心观点，并引导用户领取资料包。
 `;
 
-writeUtf8(file, content);
+fs.writeFileSync(file, content, "utf8");
 
 console.log("");
 console.log("新文章已创建：");

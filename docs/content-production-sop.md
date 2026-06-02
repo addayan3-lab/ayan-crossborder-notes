@@ -2,35 +2,36 @@
 
 ## 一、创建新文章
 
-在项目根目录执行：
+执行：
 
-```powershell
 npm run content:new
 
 按提示填写：
 
-文章标题
-slug
-分类
-SEO 描述
+- 文章标题
+- slug
+- 分类
+- SEO 描述
 
 文章会自动生成到：
 
 src/content/posts/
-二、编辑文章
 
-打开生成的 .md 文件，按模板补齐正文。
+## 二、编辑文章
+
+打开生成的 md 文件，按模板补齐正文。
 
 建议结构：
 
-这篇文章解决什么问题
-核心判断标准
-AI 可以怎么帮忙
-卖家必须自己判断什么
-具体执行 SOP
-常见误区
-最后总结
-三、发布前检查
+1. 这篇文章解决什么问题
+2. 核心判断标准
+3. AI 可以怎么帮忙
+4. 卖家必须自己判断什么
+5. 具体执行 SOP
+6. 常见误区
+7. 最后总结
+
+## 三、发布前检查
 
 执行：
 
@@ -38,13 +39,14 @@ npm run content:publish
 
 它会自动完成：
 
-自动生成文章信息图
-Astro build
-Pagefind 搜索索引
-SEO 体检
-IndexNow 提交
-git status
-四、提交上线
+1. 自动生成文章信息图
+2. Astro build
+3. Pagefind 搜索索引
+4. SEO 体检
+5. IndexNow 提交
+6. git status
+
+## 四、提交上线
 
 确认页面正常后执行：
 
@@ -54,7 +56,7 @@ git push
 
 Cloudflare Pages 会自动部署。
 
-五、上线后检查
+## 五、上线后检查
 
 检查：
 
