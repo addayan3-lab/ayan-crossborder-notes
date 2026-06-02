@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+
+const topics = [
+  { href: "/ai-amazon/", title: "AI 运营亚马逊", desc: "跟进 Amazon AI、Rufus、Alexa for Shopping、AI 搜索与卖家运营变化。" },
+  { href: "/ppc/", title: "广告 PPC", desc: "新品广告、关键词、否词、ACOS、TACOS 与广告报表复盘。" },
+  { href: "/listing/", title: "Listing 优化", desc: "标题、五点、图片、A+、关键词埋词与转化率优化。" },
+  { href: "/selection/", title: "选品指南", desc: "市场容量、利润测算、竞争分析、Review 洞察与合规排查。" },
+  { href: "/tools/", title: "工具模板", desc: "AI Prompt、广告复盘表、Listing 检查表和选品分析表。" },
+  { href: "/open-class/", title: "公开课", desc: "围绕 AI 亚马逊运营、广告和选品的免费公开课入口。" }
+];
+---
+
+<BaseLayout title="阿岩跨境笔记" description="写给亚马逊卖家的 AI 运营实战知识站">
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">AI 时代的亚马逊运营实战笔记</div>
+        <h1>写给亚马逊卖家的 AI 运营实战知识站</h1>
+        <p>从选品、Listing、广告 PPC 到 AI 工具应用，用更清晰的 SOP 帮助卖家提升运营判断和执行效率。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/ai-amazon/">开始学习</a>
+          <a class="btn btn-ghost" href="/tools/">领取资料</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="AI operations visual">
+        <div class="ai-chip">AI</div>
+        <div class="float-card one"><strong>选品</strong>市场容量与合规初筛</div>
+        <div class="float-card two"><strong>Listing</strong>关键词与场景表达</div>
+        <div class="float-card three"><strong>PPC</strong>广告复盘与否词</div>
+        <div class="float-card four"><strong>搜索</strong>理解消费者 AI 搜索</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <div>
+        <div class="section-head">
+          <div>
+            <h2>最新文章</h2>
+            <p class="section-desc">先围绕 AI 运营亚马逊建立第一批内容。</p>
+          </div>
+          <a href="/articles/">查看全部 →</a>
+        </div>
+
+        <div class="grid grid-2">
+          {posts.map((post) => (
+            <a class="card" href={`/articles/${post.id}/`}>
+              <span class="tag">{post.data.category}</span>
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+              <div class="meta">{post.data.pubDate.toLocaleDateString("zh-CN")}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <aside>
+        <div class="side-card">
+          <h3>免费领取资料包</h3>
+          <p>包含 AI 运营检查表、Listing 优化 Prompt、广告复盘表和 Review 分析模板。</p>
+          <input class="input" placeholder="输入你的微信号，占位演示" />
+          <a class="btn btn-primary" href="/tools/">立即领取</a>
+        </div>
+
+        <div class="side-card">
+          <h3>公开课预告</h3>
+          <p>主题：AI 时代亚马逊卖家的机会与挑战</p>
+          <p class="meta">时间：待定 · 主讲：阿岩</p>
+          <a class="btn btn-primary" href="/open-class/">免费预约</a>
+        </div>
+
+        <div class="side-card">
+          <h3>阿岩助手</h3>
+          <p>第二阶段接入站内 AI 问答：优先基于本站文章回答亚马逊运营问题。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2>核心栏目</h2>
+        <p class="section-desc">先聚焦亚马逊卖家最常用、最容易转化的运营主题。</p>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      {topics.map((topic) => (
+        <a class="card" href={topic.href}>
+          <h3>{topic.title}</h3>
+          <p>{topic.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="stats">
+      <div class="stat"><strong>10+</strong><span>首批文章</span></div>
+      <div class="stat"><strong>5</strong><span>核心栏目</span></div>
+      <div class="stat"><strong>0元</strong><span>第一版托管成本</span></div>
+      <div class="stat"><strong>持续更新</strong><span>跟进平台动态</span></div>
+    </div>
+  </section>
+</BaseLayout>
