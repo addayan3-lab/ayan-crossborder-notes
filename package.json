@@ -13,7 +13,9 @@
                     "build:astro":  "astro build",
                     "search:index":  "pagefind --site dist",
                     "indexnow:submit":  "node scripts/submit-indexnow.mjs",
-                    "seo:audit":  "node scripts/seo-audit.mjs"
+                    "seo:audit":  "node scripts/seo-audit.mjs",
+                    "content:new":  "node scripts/new-post.mjs",
+                    "content:publish":  "node scripts/publish-content.mjs"
                 },
     "dependencies":  {
                          "@astrojs/sitemap":  "latest",
