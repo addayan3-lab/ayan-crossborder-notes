@@ -1,17 +1,90 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import RecommendedOrder from "../../components/RecommendedOrder.astro";
+
+const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "选品指南", "item": "https://amz.hao1234.top/selection/" }
+  ]
+};
 ---
 <BaseLayout title="选品指南｜亚马逊产品调研、竞品分析与风险判断" description="整理亚马逊选品方法，覆盖市场容量、竞品分析、Review 痛点、利润测算、合规风险和产品机会判断。">
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
   <section class="page-hero">
     <div class="page-hero-inner">
       <h1>选品指南</h1>
       <p>用市场容量、利润、竞争、Review、广告成本和合规风险判断产品是否值得做。</p>
     </div>
   </section>
+
   <section class="section">
+    <div class="topic-intro">
+      <h2>选品是漏斗最顶端，决定后续全部动作</h2>
+      <p>选品选错了，Listing 写得再好、广告再猛，三个月后也做不起来。选品选对了，哪怕运营粗糙一点，自然流量和复购率也会帮你兜底。</p>
+      <p>选品的判断维度至少有六项：市场容量、增长趋势、竞争密度、利润空间、Review 痛点、合规与侵权风险。前两项决定"能不能做大"，后四项决定"能不能活下来"。</p>
+      <p>AI 在选品阶段最大的价值是把竞品和 Review 一次性看穿，把过去一周的活压缩到一个下午。</p>
+    </div>
+
+    <RecommendedOrder topic="selection" allPosts={allPosts} title="推荐学习顺序" />
+
     <div class="grid grid-3">
+      <a class="card" href="/articles/ai-market-size-estimate/"><h3>AI 做亚马逊市场容量判断</h3><p>从关键词倒推一个品类的天花板，判断要不要进。</p></a>
+      <a class="card" href="/articles/ai-competitor-matrix/"><h3>用 AI 做竞品矩阵拆解</h3><p>从价格、卖点、人群、痛点四张矩阵找差异化空间。</p></a>
+      <a class="card" href="/articles/review-analysis-matrix/"><h3>Review 分析矩阵：差评、好评、竞品反馈</h3><p>把三类数据放进同一张矩阵看完整画面。</p></a>
+      <a class="card" href="/articles/selection-pain-reverse/"><h3>痛点反推选品：从差评和问答找机会</h3><p>把 Review 和 Q&A 当市场调研，找出真需求。</p></a>
       <a class="card" href="/articles/ai-review-analysis/"><h3>如何用 AI 分析 Review 找到产品卖点</h3><p>从用户真实反馈里提炼痛点和改进方向。</p></a>
       <a class="card" href="/articles/ai-keyword-table/"><h3>如何用 AI 做亚马逊关键词表</h3><p>核心词、长尾词、场景词和竞品词分类。</p></a>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .topic-intro {
+    max-width: 880px;
+    margin: 0 0 28px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow:
+      0 14px 40px rgba(15, 23, 42, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .topic-intro h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .topic-intro h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .topic-intro p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .topic-intro p:last-child {
+    margin-bottom: 0;
+  }
+</style>

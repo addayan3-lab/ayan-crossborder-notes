@@ -1,0 +1,63 @@
+---
+const { post, allPosts } = Astro.props;
+
+const topicLabelMap = {
+  keyword: "关键词",
+  listing: "Listing",
+  ppc: "PPC",
+  review: "Review",
+  "ai-search": "AI 搜索",
+  tools: "工具",
+  selection: "选品"
+};
+
+function topicLabel(t) {
+  return topicLabelMap[t] || t || "";
+}
+
+const currentId = post?.id || "";
+const currentTopic = post?.data?.topic || "";
+const currentDate = post?.data?.pubDate ? new Date(post.data.pubDate).valueOf() : 0;
+
+const candidates = (Array.isArray(allPosts) ? allPosts : [])
+  .filter((p) => {
+    if (!p || p.id === currentId) return false;
+    if (p?.data?.draft) return false;
+    if (!p?.data?.topic || p.data.topic !== currentTopic) return false;
+    return true;
+  });
+
+let nextPost = null;
+
+const newer = candidates
+  .filter((p) => new Date(p.data.pubDate).valueOf() > currentDate)
+  .sort((a, b) => new Date(a.data.pubDate).valueOf() - new Date(b.data.pubDate).valueOf());
+if (newer.length > 0) nextPost = newer[0];
+
+if (!nextPost) {
+  const older = candidates
+    .filter((p) => new Date(p.data.pubDate).valueOf() < currentDate)
+    .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+  if (older.length > 0) nextPost = older[0];
+}
+
+if (!nextPost) {
+  const others = candidates
+    .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+  if (others.length > 0) nextPost = others[0];
+}
+---
+
+{nextPost && (
+  <section class="next-up" aria-label="下一篇该读什么">
+    <div class="next-up-label">下一篇该读什么</div>
+    <a class="next-up-card" href={`/articles/${nextPost.id}/`}>
+      <div class="next-up-side">
+        <span class="next-up-topic">{topicLabel(nextPost.data.topic)}</span>
+        <div class="next-up-title">{nextPost.data.title}</div>
+        <p class="next-up-desc">{nextPost.data.description}</p>
+      </div>
+      <span class="next-up-arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+)}

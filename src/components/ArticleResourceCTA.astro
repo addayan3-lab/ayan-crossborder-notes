@@ -1,0 +1,110 @@
+---
+const { post } = Astro.props;
+const leadMagnet = post?.data?.leadMagnet;
+const wechatHook = post?.data?.wechatHook;
+
+if (!leadMagnet || !wechatHook) {
+  return;
+}
+---
+
+<section class="article-resource-cta" aria-label="领取配套资料包">
+  <h2>领取配套资料包</h2>
+  <p class="article-resource-name">{leadMagnet}</p>
+  <p class="article-resource-hook">{wechatHook}</p>
+  <a href="/resources/" class="article-resource-link">查看全部资料包 →</a>
+  <p class="article-resource-reminder">资料包适合配合文章和公开课使用，具体运营判断仍要结合产品、类目和数据。</p>
+</section>
+
+<style>
+  .article-resource-cta {
+    margin: 22px 52px 44px;
+    padding: 26px 28px;
+    border-radius: 20px;
+    background:
+      radial-gradient(circle at 100% 0%, rgba(217, 119, 6, 0.10), transparent 28%),
+      linear-gradient(180deg, #fffcf0 0%, #fef9e7 100%);
+    border: 1px solid rgba(217, 119, 6, 0.22);
+    box-shadow: 0 16px 44px rgba(217, 119, 6, 0.08);
+  }
+
+  .article-resource-cta h2 {
+    margin: 0 0 14px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #5c3d0c;
+    letter-spacing: -0.2px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .article-resource-cta h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 18px;
+    border-radius: 999px;
+    background: #d97706;
+  }
+
+  .article-resource-name {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.55;
+  }
+
+  .article-resource-hook {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: #5c3d0c;
+    line-height: 1.75;
+  }
+
+  .article-resource-link {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 10px;
+    background: #d97706;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 13px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .article-resource-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.26);
+  }
+
+  .article-resource-reminder {
+    margin: 16px 0 0;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(217, 119, 6, 0.28);
+    color: #8b6914;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 720px) {
+    .article-resource-cta {
+      margin: 18px 24px 34px;
+      padding: 22px 20px;
+    }
+
+    .article-resource-cta h2 {
+      font-size: 17px;
+    }
+
+    .article-resource-link {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

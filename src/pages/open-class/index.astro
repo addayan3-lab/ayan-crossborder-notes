@@ -8,10 +8,116 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       <p>第一场公开课建议主题：AI 时代亚马逊卖家如何重做 Listing 和广告。</p>
     </div>
   </section>
+
   <section class="section">
-    <div class="card">
-      <h3>公开课入口预留</h3>
-      <p>后续这里可以放微信二维码、腾讯文档报名表、课程大纲和资料领取入口。第一版暂不接支付、不做会员。</p>
+    <div class="topic-intro">
+      <h2>公开课不是培训，是把方法论现场跑一遍</h2>
+      <p>阿岩的公开课不讲虚的：不开场就讲工具、不承诺月入几万、不收 9980 的私董会。一场课两个小时，目标是把一个具体问题讲透：AI 怎么用、坑在哪、什么场景下不要用。</p>
+      <p>每场公开课都有完整讲义、录播、Q&amp;A 整理，所有报名学员可同步领取最新一版 AI 运营资料包。</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card course-detail">
+        <h3>近期课程</h3>
+        <p class="course-meta">主题：<strong>AI 时代亚马逊卖家的机会与挑战</strong></p>
+        <p class="course-meta">时间：6/12（周四）20:00 直播</p>
+        <p class="course-meta">形式：腾讯会议直播 + 录播回看</p>
+        <p class="course-meta">费用：免费预约</p>
+        <a class="course-cta" href="/lead/">免费预约</a>
+      </div>
+
+      <div class="card course-detail">
+        <h3>你将学到</h3>
+        <ul class="course-points">
+          <li>AI 工具在亚马逊运营中的真实定位</li>
+          <li>用 AI 重做 Listing 标题、五点和 A+ 的流程</li>
+          <li>AI 复盘广告报表的最小动作</li>
+          <li>从 Review 里提炼卖点的 Prompt 模板</li>
+        </ul>
+        <a class="course-cta-secondary" href="/ai-amazon/">先看 AI 运营专题 →</a>
+      </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .topic-intro {
+    max-width: 880px;
+    margin: 0 0 28px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow:
+      0 14px 40px rgba(15, 23, 42, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .topic-intro h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .topic-intro h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .topic-intro p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .topic-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  .course-detail .course-meta {
+    margin: 0 0 10px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .course-points {
+    margin: 0 0 16px;
+    padding-left: 22px;
+    color: #334155;
+    line-height: 1.85;
+  }
+
+  .course-points li {
+    margin: 6px 0;
+  }
+
+  .course-cta {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 18px;
+    border-radius: 11px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .course-cta-secondary {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+</style>

@@ -4,6 +4,16 @@ description: "从关键词、用户痛点、使用场景、人群定位和转化
 pubDate: "2026-05-31"
 category: "Listing 优化"
 tags: ["Listing", "AI写作", "转化率"]
+topic: listing
+stage: 进阶
+intent: 学习
+relatedTopics:
+  - keyword
+  - review
+  - ai-search
+publicLessonUse: 适合作为 Listing 优化公开课的 AI 辅助改写案例，讲清 AI 能帮什么、不能替代什么。
+leadMagnet: AI Listing 改写对比模板
+wechatHook: 回复关键词"L重写"，领取 AI Listing 改写对比模板。
 draft: false
 ---
 

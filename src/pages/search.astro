@@ -25,8 +25,65 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <button type="button" data-keyword="选品">选品</button>
       </div>
 
+      <div class="search-filters" id="ayan-search-filters">
+        <div class="search-filter-group">
+          <span class="search-filter-label">专题：</span>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="keyword">关键词</button>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="listing">Listing</button>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="ppc">PPC</button>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="review">Review</button>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="ai-search">AI 搜索</button>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="tools">工具</button>
+          <button type="button" class="filter-pill" data-filter="topic" data-value="selection">选品</button>
+          <button type="button" class="filter-pill filter-pill-clear" data-filter="topic" data-value="">不限</button>
+        </div>
+        <div class="search-filter-group">
+          <span class="search-filter-label">阶段：</span>
+          <button type="button" class="filter-pill" data-filter="stage" data-value="新手">新手</button>
+          <button type="button" class="filter-pill" data-filter="stage" data-value="进阶">进阶</button>
+          <button type="button" class="filter-pill" data-filter="stage" data-value="实操">实操</button>
+          <button type="button" class="filter-pill filter-pill-clear" data-filter="stage" data-value="">不限</button>
+        </div>
+      </div>
+
       <div id="ayan-search-status" class="search-status">输入关键词后开始搜索。</div>
       <div id="ayan-search-results" class="search-results"></div>
+
+      <div id="ayan-search-no-results" class="search-no-results" hidden>
+        <div class="no-results-title">没有找到相关内容。试试这些专题学习路径：</div>
+        <div class="no-results-grid">
+          <a class="recommend-card" href="/articles/keyword-learning-path/">
+            <div class="recommend-tag">学习路径</div>
+            <div class="recommend-title">亚马逊关键词学习路径：从找词、清洗到布局</div>
+            <div class="recommend-desc">把关键词拆成 4 步，按顺序跟读能跑通完整闭环。</div>
+          </a>
+          <a class="recommend-card" href="/articles/listing-learning-path/">
+            <div class="recommend-tag">学习路径</div>
+            <div class="recommend-title">亚马逊 Listing 优化学习路径：从卖点提炼到转化表达</div>
+            <div class="recommend-desc">从卖点提炼到上线复盘，新手也能跑通。</div>
+          </a>
+          <a class="recommend-card" href="/articles/ppc-learning-path/">
+            <div class="recommend-tag">学习路径</div>
+            <div class="recommend-title">亚马逊 PPC 广告学习路径：从结构搭建到数据判断</div>
+            <div class="recommend-desc">结构搭建、报表复盘、否词和预算、诊断迭代四步走。</div>
+          </a>
+          <a class="recommend-card" href="/articles/review-learning-path/">
+            <div class="recommend-tag">学习路径</div>
+            <div class="recommend-title">亚马逊 Review 分析学习路径：从评价挖掘到产品优化</div>
+            <div class="recommend-desc">差评、好评、竞品反馈三类数据怎么用。</div>
+          </a>
+          <a class="recommend-card" href="/articles/ai-search-learning-path/">
+            <div class="recommend-tag">学习路径</div>
+            <div class="recommend-title">亚马逊 AI 搜索学习路径：从工具理解到运营应用</div>
+            <div class="recommend-desc">Rufus / Alexa for Shopping 对卖家的影响与动作调整。</div>
+          </a>
+          <a class="recommend-card" href="/articles/tools-learning-path/">
+            <div class="recommend-tag">学习路径</div>
+            <div class="recommend-title">亚马逊工具资料学习路径：从表格、清单到实操 SOP</div>
+            <div class="recommend-desc">把工具和资料拆成 4 类，搭建自己的运营工具链。</div>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -37,7 +94,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     const button = document.querySelector("#ayan-search-button");
     const status = document.querySelector("#ayan-search-status");
     const results = document.querySelector("#ayan-search-results");
+    const noResultsEl = document.querySelector("#ayan-search-no-results");
     const tips = document.querySelectorAll("[data-keyword]");
+    const filterPills = document.querySelectorAll(".filter-pill");
+
+    const activeFilters = { topic: "", stage: "" };
+
+    const topicLabelMap = {
+      keyword: "关键词",
+      listing: "Listing",
+      ppc: "PPC",
+      review: "Review",
+      "ai-search": "AI 搜索",
+      tools: "工具",
+      selection: "选品"
+    };
 
     function escapeHtml(text) {
       return String(text || "")
@@ -48,26 +119,63 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         .replaceAll("'", "&#039;");
     }
 
+    function labelFor(filterName, rawValue) {
+      if (!rawValue) return "";
+      if (filterName === "topic") return topicLabelMap[rawValue] || rawValue;
+      return rawValue;
+    }
+
+    function updatePillActiveState() {
+      filterPills.forEach((pill) => {
+        const f = pill.getAttribute("data-filter");
+        const v = pill.getAttribute("data-value");
+        const isActive = activeFilters[f] === v && v !== "";
+        const isClear = v === "";
+        const isCurrentClear = activeFilters[f] === "";
+        pill.classList.toggle("active", isActive);
+        pill.classList.toggle("active-clear", isClear && isCurrentClear);
+      });
+    }
+
+    function buildPagefindFilters() {
+      const out = {};
+      for (const [k, v] of Object.entries(activeFilters)) {
+        if (v) out[k] = v;
+      }
+      return out;
+    }
+
     async function runSearch(keyword) {
       const q = String(keyword || "").trim();
 
       if (!q) {
         status.textContent = "输入关键词后开始搜索。";
         results.innerHTML = "";
+        noResultsEl.hidden = true;
         return;
       }
 
-      status.textContent = "正在搜索：" + q;
+      const filterObj = buildPagefindFilters();
+      const filterCount = Object.keys(filterObj).length;
+      status.textContent = filterCount > 0
+        ? "正在搜索：" + q + "（已应用 " + filterCount + " 个筛选）"
+        : "正在搜索：" + q;
       results.innerHTML = "";
+      noResultsEl.hidden = true;
 
       try {
-        const search = await pagefind.search(q);
+        const searchOptions = filterCount > 0 ? { filters: filterObj } : {};
+        const search = await pagefind.search(q, searchOptions);
 
         if (!search || !search.results || search.results.length === 0) {
-          status.textContent = "没有找到相关内容。";
+          status.textContent = filterCount > 0
+            ? "没有找到同时匹配关键词和筛选的内容。试试调整筛选，或浏览下方专题学习路径。"
+            : "没有找到相关内容。试试调整关键词，或浏览下方专题学习路径。";
+          noResultsEl.hidden = false;
           return;
         }
 
+        noResultsEl.hidden = true;
         status.textContent = "找到 " + search.results.length + " 条结果。";
 
         const data = await Promise.all(
@@ -79,10 +187,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           const excerpt = item.excerpt || "";
           const url = item.url || "#";
 
+          const topicRaw = item.meta?.topic || "";
+          const stageRaw = item.meta?.stage || "";
+          const intentRaw = item.meta?.intent || "";
+
+          const topicLabel = labelFor("topic", topicRaw);
+          const stageLabel = labelFor("stage", stageRaw);
+          const intentLabel = labelFor("intent", intentRaw);
+
+          const chips = [];
+          if (topicLabel) chips.push(`<span class="result-chip result-chip-topic">专题·${topicLabel}</span>`);
+          if (stageLabel) chips.push(`<span class="result-chip result-chip-stage">阶段·${stageLabel}</span>`);
+          if (intentLabel) chips.push(`<span class="result-chip result-chip-intent">意图·${intentLabel}</span>`);
+
           return `
             <a class="result-card" href="${url}">
               <div class="result-title">${title}</div>
               <div class="result-excerpt">${excerpt}</div>
+              ${chips.length > 0 ? `<div class="result-chips">${chips.join("")}</div>` : ""}
               <div class="result-url">${url}</div>
             </a>
           `;
@@ -90,6 +212,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       } catch (err) {
         console.error(err);
         status.textContent = "搜索组件加载失败。请先 npm run build，再用 npm run preview 查看。";
+        noResultsEl.hidden = true;
       }
     }
 
@@ -115,6 +238,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         input.value = keyword;
         input.focus();
         runSearch(keyword);
+      });
+    });
+
+    filterPills.forEach((pill) => {
+      pill.addEventListener("click", () => {
+        const f = pill.getAttribute("data-filter");
+        const v = pill.getAttribute("data-value");
+        if (v === "") {
+          activeFilters[f] = "";
+        } else if (activeFilters[f] === v) {
+          activeFilters[f] = "";
+        } else {
+          activeFilters[f] = v;
+        }
+        updatePillActiveState();
+        if (input.value.trim().length >= 2) {
+          runSearch(input.value);
+        }
       });
     });
   </script>
@@ -173,7 +314,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     border: 1px solid rgba(226, 232, 240, 0.96);
     box-shadow:
       0 24px 80px rgba(15, 23, 42, 0.08),
-      inset 0 1px 0 rgba(255,255,255,0.95);
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
     position: relative;
     z-index: 20;
   }
@@ -236,6 +377,68 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     cursor: pointer;
   }
 
+  .search-filters {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #f7faff;
+    border: 1px solid #e2ecfb;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search-filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .search-filter-label {
+    color: #475569;
+    font-size: 13px;
+    font-weight: 800;
+    margin-right: 4px;
+    min-width: 48px;
+  }
+
+  .filter-pill {
+    border: 1px solid #dceaff;
+    background: #ffffff;
+    color: #1368ff;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .filter-pill:hover {
+    border-color: #93c5fd;
+    background: #eef5ff;
+  }
+
+  .filter-pill.active {
+    background: #1368ff;
+    color: #ffffff;
+    border-color: #1368ff;
+  }
+
+  .filter-pill.filter-pill-clear {
+    background: #f1f5f9;
+    color: #64748b;
+    border-color: #e2e8f0;
+    font-weight: 700;
+  }
+
+  .filter-pill.filter-pill-clear.active-clear {
+    background: #475569;
+    color: #ffffff;
+    border-color: #475569;
+  }
+
   .search-status {
     margin-top: 22px;
     color: #64748b;
@@ -285,11 +488,106 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     border-radius: 4px;
   }
 
+  .result-chips {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .result-chip {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .result-chip-topic {
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+  }
+
+  .result-chip-stage {
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #c7eed5;
+  }
+
+  .result-chip-intent {
+    background: #fff7ed;
+    color: #d97706;
+    border: 1px solid #fde2bf;
+  }
+
   .result-url {
     margin-top: 10px;
     color: #1368ff;
     font-size: 13px;
     word-break: break-all;
+  }
+
+  .search-no-results {
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px dashed #cbd5e1;
+  }
+
+  .no-results-title {
+    color: #475569;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+
+  .no-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .recommend-card {
+    display: block;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .recommend-card:hover {
+    transform: translateY(-1px);
+    border-color: #93c5fd;
+    box-shadow: 0 14px 30px rgba(19, 104, 255, 0.14);
+  }
+
+  .recommend-tag {
+    display: inline-block;
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 6px;
+  }
+
+  .recommend-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .recommend-desc {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.5;
   }
 
   @media (max-width: 720px) {
@@ -307,6 +605,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     }
 
     .search-box {
+      grid-template-columns: 1fr;
+    }
+
+    .no-results-grid {
       grid-template-columns: 1fr;
     }
   }

@@ -1,18 +1,158 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import RecommendedOrder from "../../components/RecommendedOrder.astro";
+
+const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "AI 运营亚马逊", "item": "https://amz.hao1234.top/ai-amazon/" }
+  ]
+};
 ---
 <BaseLayout title="AI 运营亚马逊｜卖家提效方法与实战 SOP" description="系统整理亚马逊卖家如何使用 AI 做选品分析、Listing 优化、广告 PPC 复盘、Review 分析和日常运营 SOP。">
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
   <section class="page-hero">
     <div class="page-hero-inner">
       <h1>AI 运营亚马逊</h1>
       <p>跟进 Amazon AI、消费者 AI 搜索、Listing 优化、广告素材和卖家运营 SOP 的变化。</p>
     </div>
   </section>
+
   <section class="section">
+    <div class="topic-intro">
+      <h2>为什么 AI 是亚马逊运营的新底层能力</h2>
+      <p>AI 不会替你判断，但它能把你每天重复的事一次做完，再把判断留给你。Amazon 自己也在把 Rufus、Alexa for Shopping、AI Listing 创作工具这些能力铺到平台里，先学会用 AI 的卖家，会在效率上和没学的卖家拉开一代差距。</p>
+      <p>本专题的思路是：把 AI 当作运营助理，不是替代运营。AI 适合整理、归类、清洗、生成初稿；判断、选词、定价、复盘、决策还是由你来。</p>
+    </div>
+
+    <a class="guide-card" href="/articles/ai-search-learning-path/">
+      <div class="guide-card-hint">推荐先读 · 学习路径</div>
+      <h3>亚马逊 AI 搜索学习路径：从工具理解到运营应用</h3>
+      <p>把 AI 搜索拆成 4 步：工具理解、消费者行为变化、运营动作调整、内容资产沉淀。按顺序跟读，能形成对 AI 搜索时代的整体认知。</p>
+      <span class="guide-card-cta">看完整学习路径 →</span>
+    </a>
+
+    <RecommendedOrder topic="ai-search" allPosts={allPosts} title="推荐学习顺序" />
+
     <div class="grid grid-3">
-      <a class="card" href="/articles/2026-amazon-ai-operations/"><h3>2026 年亚马逊卖家如何利用 AI 提升运营效率</h3><p>专题入口文章，占位内容。</p></a>
+      <a class="card" href="/articles/2026-amazon-ai-operations/"><h3>2026 年亚马逊卖家如何利用 AI 提升运营效率</h3><p>专题入口文章，从选品、Listing、广告、Review、SOP 五个角度系统拆解。</p></a>
       <a class="card" href="/articles/amazon-rufus-alexa-shopping/"><h3>Amazon Rufus / Alexa for Shopping 对卖家意味着什么</h3><p>理解消费者端 AI 购物助手的影响。</p></a>
       <a class="card" href="/articles/consumer-ai-search-amazon/"><h3>消费者如何用 Amazon AI 搜索产品</h3><p>从关键词搜索转向场景和需求搜索。</p></a>
+      <a class="card" href="/articles/amazon-ai-tools-review/"><h3>亚马逊 AI 工具评测：哪些适合运营，哪些只是伪需求</h3><p>讲清判断 AI 工具值不值得用的 4 个标准,以及 6 类适合 + 5 类必须人工的任务。</p></a>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .topic-intro {
+    max-width: 880px;
+    margin: 0 0 28px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow:
+      0 14px 40px rgba(15, 23, 42, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .topic-intro h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .topic-intro h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .topic-intro p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .topic-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  .guide-card {
+    display: block;
+    margin: 0 0 24px;
+    padding: 24px 28px;
+    border-radius: 20px;
+    background:
+      linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    box-shadow:
+      0 14px 40px rgba(19, 104, 255, 0.10),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .guide-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #1368ff, #7dd3fc);
+  }
+
+  .guide-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow:
+      0 22px 56px rgba(19, 104, 255, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .guide-card-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .guide-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .guide-card p {
+    margin: 0 0 14px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .guide-card-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+</style>

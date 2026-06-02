@@ -3,10 +3,20 @@ title: "如何用 AI 做亚马逊关键词表"
 description: "用 AI 辅助亚马逊卖家整理核心词、长尾词、场景词、竞品词和广告测试词，形成可用于 Listing 与 PPC 的关键词表。"
 pubDate: "2026-06-02"
 category: "关键词"
+tags: ["关键词", "AI 提效", "工具"]
+image: "/images/articles/ai-keyword-table/keyword-table-overview.png"
+topic: keyword
+stage: 实操
+intent: 工具
+relatedTopics:
+  - listing
+  - ppc
+  - tools
+publicLessonUse: 适合作为关键词公开课的实操演示，带学员把散乱关键词整理成可用词表。
+leadMagnet: 8 字段关键词整理表
+wechatHook: 回复关键词"词表"，领取 8 字段关键词整理表。
 draft: false
 ---
-
-![如何用 AI 做亚马逊关键词表](/images/articles/ai-keyword-table/keyword-table-overview.png)
 
 <div class="article-callout article-callout-blue">
   <strong>💡 这篇能帮你解决什么问题：</strong>

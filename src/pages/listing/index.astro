@@ -1,17 +1,157 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import RecommendedOrder from "../../components/RecommendedOrder.astro";
+
+const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "Listing 优化", "item": "https://amz.hao1234.top/listing/" }
+  ]
+};
 ---
 <BaseLayout title="Listing 优化｜亚马逊标题、五点、关键词与转化率" description="整理亚马逊 Listing 优化方法，包括标题结构、五点卖点、关键词覆盖、图片表达、A+ 内容和转化率提升思路。">
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
   <section class="page-hero">
     <div class="page-hero-inner">
       <h1>Listing 优化</h1>
       <p>标题、五点、图片、关键词、场景表达和 AI 搜索时代的转化率优化。</p>
     </div>
   </section>
+
   <section class="section">
+    <div class="topic-intro">
+      <h2>Listing 是亚马逊的"商品详情页"</h2>
+      <p>一个 Listing 同时承担三件事：让 Amazon 算法知道把它推给谁（关键词覆盖）、让买家一眼看懂要不要买（场景表达）、让广告点击进来能接住流量（页面说服力）。</p>
+      <p>优化的核心不是堆词，而是把这三件事对齐。AI 可以帮你生成 20 个标题候选，但哪个能用、哪个会丢转化，必须你自己判断。</p>
+    </div>
+
+    <a class="guide-card" href="/articles/listing-learning-path/">
+      <div class="guide-card-hint">推荐先读 · 学习路径</div>
+      <h3>亚马逊 Listing 优化学习路径：从卖点提炼到转化表达</h3>
+      <p>把 Listing 优化拆成 4 步：卖点提炼、文案生成、检查清单、上线复盘。按顺序跟读，能在自己的 Listing 上跑通完整闭环。</p>
+      <span class="guide-card-cta">看完整学习路径 →</span>
+    </a>
+
+    <RecommendedOrder topic="listing" allPosts={allPosts} title="推荐学习顺序" />
+
     <div class="grid grid-3">
       <a class="card" href="/articles/ai-listing-optimization/"><h3>AI 时代亚马逊 Listing 应该怎么写</h3><p>从关键词堆砌转向场景、痛点和人群表达。</p></a>
       <a class="card" href="/articles/listing-checklist/"><h3>亚马逊 Listing 优化检查清单</h3><p>适合后续做成免费资料包。</p></a>
+      <a class="card" href="/articles/listing-five-bullets/"><h3>Listing 五点写法：功能点、场景点、信任点</h3><p>把五点从参数表变成卖点表达。</p></a>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .topic-intro {
+    max-width: 880px;
+    margin: 0 0 28px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow:
+      0 14px 40px rgba(15, 23, 42, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .topic-intro h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .topic-intro h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .topic-intro p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .topic-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  .guide-card {
+    display: block;
+    margin: 0 0 24px;
+    padding: 24px 28px;
+    border-radius: 20px;
+    background:
+      linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    box-shadow:
+      0 14px 40px rgba(19, 104, 255, 0.10),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .guide-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #1368ff, #7dd3fc);
+  }
+
+  .guide-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow:
+      0 22px 56px rgba(19, 104, 255, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .guide-card-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .guide-card h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .guide-card p {
+    margin: 0 0 14px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .guide-card-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+</style>

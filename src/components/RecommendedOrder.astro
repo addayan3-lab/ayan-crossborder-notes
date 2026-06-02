@@ -1,0 +1,260 @@
+---
+const { topic, allPosts, title = "推荐学习顺序" } = Astro.props;
+
+const topicLabelMap = {
+  keyword: "关键词",
+  listing: "Listing",
+  ppc: "PPC",
+  review: "Review",
+  "ai-search": "AI 搜索",
+  tools: "工具",
+  selection: "选品"
+};
+
+function topicLabel(t) {
+  return topicLabelMap[t] || t || "";
+}
+
+const slug = topic || "";
+
+const all = (Array.isArray(allPosts) ? allPosts : []).filter((p) => {
+  if (!p) return false;
+  if (p?.data?.draft) return false;
+  return p?.data?.topic && p.data.topic === slug;
+});
+
+const pathPost = all.find((p) => /-learning-path$/.test(p.id)) || null;
+const others = all
+  .filter((p) => !pathPost || p.id !== pathPost.id)
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+
+const ordered = pathPost ? [pathPost, ...others] : others;
+
+const categoryFallbackMap = {
+  "ai-search": ["AI 搜索", "AI 运营亚马逊"],
+  selection: ["选品指南", "选品"],
+  tools: ["工具模板", "工具资料"]
+};
+
+let finalOrdered = ordered;
+if (finalOrdered.length <= 1) {
+  const fallbackCategories = categoryFallbackMap[slug] || [];
+  if (fallbackCategories.length > 0) {
+    const fallbackPosts = (Array.isArray(allPosts) ? allPosts : [])
+      .filter((p) => {
+        if (!p) return false;
+        if (p?.data?.draft) return false;
+        if (finalOrdered.some((o) => o.id === p.id)) return false;
+        const cat = p?.data?.category || "";
+        return fallbackCategories.some((c) => cat === c);
+      })
+      .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
+      .slice(0, 3);
+    if (fallbackPosts.length > 0) {
+      const filtered = finalOrdered.filter((p) => p?.id);
+      finalOrdered = [...filtered, ...fallbackPosts];
+    }
+  }
+}
+---
+
+{finalOrdered.length > 0 && (
+  <section class="learning-order" aria-label={title}>
+    <div class="learning-order-head">
+      <div class="learning-order-title">{title}</div>
+      <div class="learning-order-hint">按推荐顺序读，共 {finalOrdered.length} 步</div>
+    </div>
+    <ol class="learning-order-list">
+      {finalOrdered.map((p, idx) => {
+        const isPath = pathPost && p.id === pathPost.id;
+        return (
+          <li class={`learning-order-item ${isPath ? "is-path" : ""}`}>
+            <a class="learning-order-link" href={`/articles/${p.id}/`}>
+              <span class="learning-order-step" aria-hidden="true">{idx + 1}</span>
+              <div class="learning-order-body">
+                <div class="learning-order-name">
+                  {p.data.title}
+                  {isPath && <span class="learning-order-tag">学习路径</span>}
+                </div>
+                <p class="learning-order-desc">{p.data.description}</p>
+              </div>
+              <span class="learning-order-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        );
+      })}
+    </ol>
+  </section>
+)}
+
+<style>
+  .learning-order {
+    max-width: 880px;
+    margin: 0 0 24px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow:
+      0 14px 40px rgba(15, 23, 42, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .learning-order-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .learning-order-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0f172a;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .learning-order-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .learning-order-hint {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .learning-order-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    counter-reset: lorder;
+  }
+
+  .learning-order-item {
+    margin: 0;
+  }
+
+  .learning-order-link {
+    display: grid;
+    grid-template-columns: 36px 1fr 24px;
+    gap: 14px;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #f7faff;
+    border: 1px solid #e2ecfb;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .learning-order-link:hover {
+    transform: translateY(-1px);
+    background: #eef5ff;
+    border-color: rgba(19, 104, 255, 0.32);
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.10);
+  }
+
+  .learning-order-item.is-path .learning-order-link {
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border-color: #cfe0ff;
+  }
+
+  .learning-order-step {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: #ffffff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .learning-order-item.is-path .learning-order-step {
+    background: #1368ff;
+    color: #ffffff;
+    border-color: #1368ff;
+  }
+
+  .learning-order-body {
+    min-width: 0;
+  }
+
+  .learning-order-name {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .learning-order-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+  }
+
+  .learning-order-desc {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .learning-order-arrow {
+    color: #1368ff;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  @media (max-width: 720px) {
+    .learning-order {
+      padding: 18px 18px;
+    }
+
+    .learning-order-link {
+      grid-template-columns: 32px 1fr 20px;
+      padding: 12px 14px;
+      gap: 10px;
+    }
+
+    .learning-order-step {
+      width: 28px;
+      height: 28px;
+      font-size: 13px;
+    }
+  }
+</style>

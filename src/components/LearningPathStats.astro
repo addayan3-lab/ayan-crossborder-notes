@@ -1,0 +1,39 @@
+---
+const { post, allPosts } = Astro.props;
+
+const currentId = post?.id || "";
+const currentTopic = post?.data?.topic || "";
+
+const topicLabelMap = {
+  keyword: "关键词",
+  listing: "Listing",
+  ppc: "PPC",
+  review: "Review",
+  "ai-search": "AI 搜索",
+  tools: "工具",
+  selection: "选品"
+};
+
+function topicLabel(t) {
+  return topicLabelMap[t] || t || "";
+}
+
+const sameTopicCount = (Array.isArray(allPosts) ? allPosts : []).filter((p) => {
+  if (!p) return false;
+  if (p?.data?.draft) return false;
+  return p?.data?.topic && p.data.topic === currentTopic;
+}).length;
+
+const isLearningPath = /-learning-path$/.test(currentId);
+---
+
+{isLearningPath && currentTopic && (
+  <div class="learning-path-stats" aria-label="本专题文章统计">
+    <span class="learning-path-stats-tag">专题统计</span>
+    <span class="learning-path-stats-text">
+      本专题「{topicLabel(currentTopic)}」共
+      <strong>{sameTopicCount}</strong>
+      篇文章（含本路径）。
+    </span>
+  </div>
+)}

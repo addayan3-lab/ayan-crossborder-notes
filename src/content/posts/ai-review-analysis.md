@@ -4,6 +4,16 @@ description: "用 AI 对亚马逊竞品 Review 进行分类，提炼用户痛点
 pubDate: "2026-05-31"
 category: "选品指南"
 tags: ["Review分析", "选品", "AI工具"]
+topic: review
+stage: 实操
+intent: 工具
+relatedTopics:
+  - selection
+  - listing
+  - tools
+publicLessonUse: 适合作为 Review 公开课的评价拆解演示，带学员从好评和差评反推产品与页面问题。
+leadMagnet: Review 痛点分析表
+wechatHook: 回复关键词"痛点"，领取 Review 痛点分析表。
 draft: false
 ---
 

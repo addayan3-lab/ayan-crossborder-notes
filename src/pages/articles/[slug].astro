@@ -1,17 +1,22 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection, render } from "astro:content";
+import RelatedArticles from "../../components/RelatedArticles.astro";
+import NextUp from "../../components/NextUp.astro";
+import BackToLearningPath from "../../components/BackToLearningPath.astro";
+import LearningPathStats from "../../components/LearningPathStats.astro";
+import ArticleResourceCTA from "../../components/ArticleResourceCTA.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  const allPosts = await getCollection("posts", ({ data }) => !data.draft);
 
-  return posts.map((post) => ({
+  return allPosts.map((post) => ({
     params: { slug: post.id },
-    props: { post }
+    props: { post, allPosts }
   }));
 }
 
-const { post } = Astro.props;
+const { post, allPosts } = Astro.props;
 const { Content } = await render(post);
 
 function formatDate(date) {
@@ -46,7 +51,9 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
 // AYAN_ARTICLE_JSONLD_FRONTMATTER_START
 const ayanArticleSiteUrl = "https://amz.hao1234.top";
 const ayanArticleUrl = new URL(Astro.url.pathname, ayanArticleSiteUrl).toString();
-const ayanArticleImage = ayanArticleSiteUrl + "/images/og-default.svg";
+const ayanArticleImage = post.data.image
+  ? ayanArticleSiteUrl + post.data.image
+  : ayanArticleSiteUrl + "/images/og-default.svg";
 
 const ayanArticleStructuredData = {
   "@context": "https://schema.org",
@@ -75,12 +82,58 @@ const ayanArticleStructuredData = {
   ]
 };
 // AYAN_ARTICLE_JSONLD_FRONTMATTER_END
+
+// AYAN_BREADCRUMB_JSONLD_START
+const ayanTopicLandingMap = {
+  listing: { href: "/listing/", name: "Listing 优化" },
+  ppc: { href: "/ppc/", name: "广告 PPC" },
+  "ai-search": { href: "/ai-amazon/", name: "AI 运营亚马逊" },
+  selection: { href: "/selection/", name: "选品指南" },
+  tools: { href: "/tools/", name: "工具模板" }
+};
+
+const ayanBreadcrumbItems = [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "首页",
+    "item": ayanArticleSiteUrl + "/"
+  }
+];
+
+const ayanTopic = post.data.topic;
+if (ayanTopic && ayanTopicLandingMap[ayanTopic]) {
+  const landing = ayanTopicLandingMap[ayanTopic];
+  ayanBreadcrumbItems.push({
+    "@type": "ListItem",
+    "position": ayanBreadcrumbItems.length + 1,
+    "name": landing.name,
+    "item": ayanArticleSiteUrl + landing.href
+  });
+}
+
+ayanBreadcrumbItems.push({
+  "@type": "ListItem",
+  "position": ayanBreadcrumbItems.length + 1,
+  "name": post.data.title,
+  "item": ayanArticleUrl
+});
+
+const ayanBreadcrumbStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": ayanBreadcrumbItems
+};
+// AYAN_BREADCRUMB_JSONLD_END
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description}>
+<BaseLayout title={post.data.title} description={post.data.description} image={ayanArticleImage}>
   <!-- AYAN_ARTICLE_JSONLD_START -->
   <script type="application/ld+json" set:html={JSON.stringify(ayanArticleStructuredData)}></script>
   <!-- AYAN_ARTICLE_JSONLD_END -->
+  <!-- AYAN_BREADCRUMB_JSONLD_START -->
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbStructuredData)}></script>
+  <!-- AYAN_BREADCRUMB_JSONLD_END -->
   <main class="article-page">
     <div class="article-shell">
       <aside class="article-toc">
@@ -115,7 +168,16 @@ const ayanArticleStructuredData = {
             <span>{formatDate(post.data.pubDate)}</span>
             <span>阿岩跨境笔记</span>
           </div>
+          <LearningPathStats post={post} allPosts={allPosts} />
         </header>
+
+        {(post.data.topic || post.data.stage || post.data.intent) && (
+          <div class="article-pagefind-meta" aria-hidden="true">
+            {post.data.topic && <span data-pagefind-filter="topic" data-pagefind-meta="topic">{post.data.topic}</span>}
+            {post.data.stage && <span data-pagefind-filter="stage" data-pagefind-meta="stage">{post.data.stage}</span>}
+            {post.data.intent && <span data-pagefind-filter="intent" data-pagefind-meta="intent">{post.data.intent}</span>}
+          </div>
+        )}
 
         <section class="article-content" id="article-content">
           <Content />
@@ -133,6 +195,11 @@ const ayanArticleStructuredData = {
           <strong>说明：</strong>
           本文为亚马逊运营教学与方法整理，不构成平台政策、法律、税务或投资建议。具体操作请结合你的类目、账号状态、产品数据和亚马逊最新规则人工判断。
         </section>
+
+        <RelatedArticles post={post} allPosts={allPosts} max={4} />
+        <NextUp post={post} allPosts={allPosts} />
+        <BackToLearningPath post={post} />
+        <ArticleResourceCTA post={post} />
       </article>
     </div>
   </main>
@@ -568,6 +635,314 @@ const ayanArticleStructuredData = {
     border: 1px solid #e2e8f0;
   }
 
+  .article-pagefind-meta {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .article-pagefind-meta span {
+    display: block;
+  }
+
+  .learning-path-stats {
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(19, 104, 255, 0.08);
+    border: 1px solid rgba(19, 104, 255, 0.18);
+    color: #1e3a5f;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .learning-path-stats-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .learning-path-stats-text {
+    color: #1e3a5f;
+  }
+
+  .learning-path-stats-text strong {
+    color: #1368ff;
+    font-weight: 900;
+    margin: 0 2px;
+  }
+
+  .related-articles {
+    margin: 30px 52px 0;
+    padding: 26px 28px;
+    border-radius: 22px;
+    background:
+      radial-gradient(circle at 92% 0%, rgba(19, 104, 255, 0.06), transparent 28%),
+      linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-shadow:
+      0 16px 44px rgba(15, 23, 42, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .related-articles-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .related-articles-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .related-articles-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 18px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .related-articles-hint {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 700;
+  }
+
+  .related-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .related-article-card {
+    display: block;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #f7faff;
+    border: 1px solid #e2ecfb;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .related-article-card:hover {
+    transform: translateY(-1px);
+    border-color: rgba(19, 104, 255, 0.32);
+    background: #eef5ff;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.10);
+  }
+
+  .related-article-topic {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+  }
+
+  .related-article-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.45;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .related-article-desc {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .next-up {
+    margin: 18px 52px 0;
+    padding: 0;
+  }
+
+  .next-up-label {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .next-up-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    border-radius: 18px;
+    background:
+      linear-gradient(135deg, #06152f 0%, #0b3473 100%);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 18px 48px rgba(6, 21, 47, 0.22);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .next-up-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 22px 60px rgba(6, 21, 47, 0.30);
+  }
+
+  .next-up-side {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .next-up-topic {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    color: #dbeafe;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+  }
+
+  .next-up-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.45;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .next-up-desc {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 13px;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .next-up-arrow {
+    font-size: 22px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  .back-to-path {
+    margin: 18px 52px 0;
+    padding: 0;
+  }
+
+  .back-to-path-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    border-radius: 18px;
+    background:
+      linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .back-to-path-card:hover {
+    transform: translateY(-1px);
+    border-color: #93c5fd;
+    box-shadow: 0 18px 44px rgba(19, 104, 255, 0.18);
+  }
+
+  .back-to-path-side {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .back-to-path-hint {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 9px;
+    border-radius: 999px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+  }
+
+  .back-to-path-title {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.45;
+    color: #0f172a;
+    margin-bottom: 6px;
+  }
+
+  .back-to-path-desc {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .back-to-path-arrow {
+    font-size: 22px;
+    color: #1368ff;
+    flex-shrink: 0;
+  }
+
   @media (max-width: 1080px) {
     .article-shell {
       grid-template-columns: 1fr;
@@ -626,6 +1001,17 @@ const ayanArticleStructuredData = {
 
     .article-disclaimer {
       margin: 18px 24px 34px;
+    }
+
+    .related-articles,
+    .next-up,
+    .back-to-path {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    .related-articles-grid {
+      grid-template-columns: 1fr;
     }
 
     .auto-article-image {

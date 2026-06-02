@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#1a3a5c"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="stepBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f8fafc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+
+  <!-- Header section -->
+  <rect width="1080" height="360" fill="url(#headerBg)"/>
+
+  <!-- Decorative circle -->
+  <circle cx="100" cy="100" r="200" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="980" cy="280" r="150" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.06"/>
+
+  <!-- Tag -->
+  <rect x="60" y="50" width="90" height="28" rx="14" fill="#3b82f6" opacity="0.15"/>
+  <text x="105" y="68" fill="#60a5fa" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">READING</text>
+
+  <!-- Header title -->
+  <text x="60" y="135" fill="#ffffff" font-size="42" font-family="system-ui, sans-serif" font-weight="700" letter-spacing="2">新品广告</text>
+  <text x="60" y="190" fill="#ffffff" font-size="42" font-family="system-ui, sans-serif" font-weight="700" letter-spacing="2">第一周 5 个动作</text>
+
+  <!-- Subtitle line -->
+  <line x1="60" y1="220" x2="260" y2="220" stroke="url(#accentBar)" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="60" y="255" fill="#94b8d9" font-size="16" font-family="system-ui, sans-serif" letter-spacing="2">亚马逊新品广告第一周测试框架</text>
+
+  <!-- Stats row -->
+  <g transform="translate(60, 300)">
+    <rect x="0" y="0" width="140" height="40" rx="8" fill="#1e3a5f" opacity="0.5"/>
+    <text x="70" y="25" fill="#93bbfc" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">7天测试周期</text>
+  </g>
+
+  <!-- Steps section -->
+  <g transform="translate(60, 420)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="960" height="140" rx="12" fill="url(#stepBg)" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="0" y="0" width="6" height="140" rx="3" fill="#3b82f6"/>
+    <text x="36" y="42" fill="#3b82f6" font-size="24" font-family="system-ui, sans-serif" font-weight="700">01</text>
+    <text x="80" y="45" fill="#1e293b" font-size="18" font-family="system-ui, sans-serif" font-weight="600">先定测试目标</text>
+    <text x="36" y="85" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">第一周不追 ACOS，目标是收集点击和出单数据。</text>
+    <text x="36" y="112" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">重点关注：哪些词有点击、哪些词能出单。</text>
+
+    <!-- Step 2 -->
+    <rect x="0" y="160" width="960" height="140" rx="12" fill="url(#stepBg)" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="0" y="160" width="6" height="140" rx="3" fill="#3b82f6"/>
+    <text x="36" y="202" fill="#3b82f6" font-size="24" font-family="system-ui, sans-serif" font-weight="700">02</text>
+    <text x="80" y="205" fill="#1e293b" font-size="18" font-family="system-ui, sans-serif" font-weight="600">小预算分组</text>
+    <text x="36" y="245" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">40% 自动广告 + 40% 手动精准 + 20% 手动广泛。</text>
+    <text x="36" y="272" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">不要全部投大词，分散测试，对比三组数据。</text>
+
+    <!-- Step 3 -->
+    <rect x="0" y="320" width="960" height="140" rx="12" fill="url(#stepBg)" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="0" y="320" width="6" height="140" rx="3" fill="#f59e0b"/>
+    <text x="36" y="362" fill="#f59e0b" font-size="24" font-family="system-ui, sans-serif" font-weight="700">03</text>
+    <text x="80" y="365" fill="#1e293b" font-size="18" font-family="system-ui, sans-serif" font-weight="600">先测高相关词</text>
+    <text x="36" y="405" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">选词标准：相关性优先，精准意图优先。</text>
+    <text x="36" y="432" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">10-15 个高相关词起步，核心词 + 长尾场景词。</text>
+
+    <!-- Step 4 -->
+    <rect x="0" y="480" width="960" height="140" rx="12" fill="url(#stepBg)" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="0" y="480" width="6" height="140" rx="3" fill="#3b82f6"/>
+    <text x="36" y="522" fill="#3b82f6" font-size="24" font-family="system-ui, sans-serif" font-weight="700">04</text>
+    <text x="80" y="525" fill="#1e293b" font-size="18" font-family="system-ui, sans-serif" font-weight="600">看搜索词报告</text>
+    <text x="36" y="565" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">按四类分组：有出单 / 有点击没出单 / 有曝光没点击 / 不相关。</text>
+    <text x="36" y="592" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">黄金词加预算，不相关词准备否词。</text>
+
+    <!-- Step 5 -->
+    <rect x="0" y="640" width="960" height="140" rx="12" fill="url(#stepBg)" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="0" y="640" width="6" height="140" rx="3" fill="#3b82f6"/>
+    <text x="36" y="682" fill="#3b82f6" font-size="24" font-family="system-ui, sans-serif" font-weight="700">05</text>
+    <text x="80" y="685" fill="#1e293b" font-size="18" font-family="system-ui, sans-serif" font-weight="600">谨慎否词</text>
+    <text x="36" y="725" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">前三天不动否词，数据量太少时不做判断。</text>
+    <text x="36" y="752" fill="#64748b" font-size="14" font-family="system-ui, sans-serif">宁可少否，不要乱否。否错了就少了一条流量入口。</text>
+  </g>
+
+  <!-- Bottom quote -->
+  <rect x="60" y="1200" width="960" height="80" rx="12" fill="#1a3a5c"/>
+  <text x="540" y="1245" fill="#ffffff" font-size="17" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">第一周别急着追利润，先看方向对不对。</text>
+
+  <!-- Footer -->
+  <text x="540" y="1360" fill="#94a3b8" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="2">阿岩 · 亚马逊运营笔记</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="1430" width="1080" height="10" fill="url(#accentBar)" opacity="0.5"/>
+</svg>

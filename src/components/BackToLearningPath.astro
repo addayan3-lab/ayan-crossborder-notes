@@ -1,0 +1,55 @@
+---
+const { post } = Astro.props;
+
+const learningPathMap = {
+  keyword: {
+    href: "/articles/keyword-learning-path/",
+    title: "亚马逊关键词学习路径",
+    desc: "把关键词拆成 4 步，按顺序跟读能跑通完整闭环。"
+  },
+  listing: {
+    href: "/articles/listing-learning-path/",
+    title: "亚马逊 Listing 优化学习路径",
+    desc: "从卖点提炼到上线复盘，新手也能跑通。"
+  },
+  ppc: {
+    href: "/articles/ppc-learning-path/",
+    title: "亚马逊 PPC 广告学习路径",
+    desc: "结构搭建、报表复盘、否词和预算、诊断迭代四步走。"
+  },
+  review: {
+    href: "/articles/review-learning-path/",
+    title: "亚马逊 Review 分析学习路径",
+    desc: "差评、好评、竞品反馈三类数据怎么用。"
+  },
+  "ai-search": {
+    href: "/articles/ai-search-learning-path/",
+    title: "亚马逊 AI 搜索学习路径",
+    desc: "Rufus / Alexa for Shopping 对卖家的影响与动作调整。"
+  },
+  tools: {
+    href: "/articles/tools-learning-path/",
+    title: "亚马逊工具资料学习路径",
+    desc: "把工具和资料拆成 4 类，搭建自己的运营工具链。"
+  }
+};
+
+const currentId = post?.id || "";
+const currentTopic = post?.data?.topic || "";
+const target = learningPathMap[currentTopic];
+
+const isLearningPathPage = /-learning-path$/.test(currentId);
+---
+
+{target && !isLearningPathPage && (
+  <section class="back-to-path" aria-label="回到专题学习路径">
+    <a class="back-to-path-card" href={target.href}>
+      <div class="back-to-path-side">
+        <span class="back-to-path-hint">专题学习路径</span>
+        <div class="back-to-path-title">{target.title}</div>
+        <p class="back-to-path-desc">{target.desc}</p>
+      </div>
+      <span class="back-to-path-arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+)}

@@ -1,0 +1,885 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const resourceCategories = [
+  {
+    id: "rules",
+    name: "新手规则",
+    icon: "🛡️",
+    desc: "已开店或准备开店的完全新手,公开课开场第一节必读。先建立规则边界,再学运营动作。",
+    learningPath: { title: "亚马逊工具资料学习路径:从表格、清单到实操 SOP", href: "/articles/tools-learning-path/" },
+    resources: [
+      {
+        name: "亚马逊新手规则避坑清单",
+        slug: "amazon-platform-rules-beginner",
+        wechatKeyword: "规则",
+        audience: "已开店 / 准备开店的新手",
+        publicClassScene: "公开课开场第一节,讲清平台规则边界",
+        content: "10 个坑详解 + 7 项发版前 checklist + 违规话术对照表 + 官方索评渠道指南"
+      }
+    ]
+  },
+  {
+    id: "selection",
+    name: "选品",
+    icon: "🛍️",
+    desc: "准备上新或评估新品类的卖家。判断市场容量、拆解竞品矩阵、从差评反推选品标准。",
+    learningPath: null,
+    resources: [
+      {
+        name: "市场容量三数字判断表",
+        slug: "ai-market-size-estimate",
+        wechatKeyword: "容量",
+        audience: "准备上新品类的卖家",
+        publicClassScene: "选品公开课第一节,从搜索量聚合、Top 100 销量、价格带分布判断",
+        content: "搜索量聚合表 + Top 100 销量推算表 + 价格带分布模板"
+      },
+      {
+        name: "竞品矩阵拆解表",
+        slug: "ai-competitor-matrix",
+        wechatKeyword: "矩阵",
+        audience: "已确定品类、要拆解 Top 20 竞品的卖家",
+        publicClassScene: "选品公开课第二节,4 维度(价格/卖点/人群/痛点)拆解竞品",
+        content: "4 维度竞品对比模板,找出差异化空间"
+      },
+      {
+        name: "痛点反推选品 SOP 模板",
+        slug: "selection-pain-reverse",
+        wechatKeyword: "反推",
+        audience: "想用差评和退货理由反推选品的卖家",
+        publicClassScene: "选品公开课核心讲稿,从差评和 Q&A 挖出真实选品机会",
+        content: "Review 痛点 → 选品标准 反推流程表"
+      }
+    ]
+  },
+  {
+    id: "keyword",
+    name: "关键词",
+    icon: "🧭",
+    desc: "已选好品、准备写 Listing 的卖家。从找词、清洗、判断、投放到复盘 5 步搭起关键词体系。",
+    learningPath: { title: "亚马逊关键词学习路径:从找词、清洗到布局", href: "/articles/keyword-learning-path/" },
+    resources: [
+      {
+        name: "关键词学习路径导图(PDF)",
+        slug: "keyword-learning-path",
+        wechatKeyword: "K路径",
+        audience: "关键词体系入门新手",
+        publicClassScene: "关键词公开课开场,5 步导览讲稿",
+        content: "找词 / 清洗 / 判断 / 投放 / 复盘 5 步导图"
+      },
+      {
+        name: "8 字段关键词整理表",
+        slug: "ai-keyword-table",
+        wechatKeyword: "词表",
+        audience: "需要把散乱关键词整理成可用词表的卖家",
+        publicClassScene: "关键词公开课工具篇,带学员用 AI 整理 200 个散乱词",
+        content: "8 字段(词/搜索量/竞争度/相关性/意图/分类/优先级/备注)模板"
+      },
+      {
+        name: "关键词清洗 SOP 模板",
+        slug: "keyword-cleaning-method",
+        wechatKeyword: "清洗",
+        audience: "需要把 200 词清洗到 50 词可用核心词的卖家",
+        publicClassScene: "关键词公开课清洗演示,带学员跑通去重/归一/聚类/优先级",
+        content: "200 词 → 50 词 清洗流程 SOP"
+      },
+      {
+        name: "4 类关键词来源拆解表",
+        slug: "keyword-source-4-types",
+        wechatKeyword: "4源",
+        audience: "想挖全关键词、不只靠 Helium 10 的卖家",
+        publicClassScene: "关键词公开课找词方法,4 类来源清单",
+        content: "平台原生 / 第三方工具 / 竞品 Review / 平台外 4 类来源拆解"
+      },
+      {
+        name: "搜索量陷阱检查清单",
+        slug: "keyword-search-volume-trap",
+        wechatKeyword: "陷阱",
+        audience: "只看搜索量选词、容易烧预算的卖家",
+        publicClassScene: "关键词公开课避坑环节,5 大搜索量误用场景",
+        content: "5 大搜索量误用场景 + 自检清单"
+      }
+    ]
+  },
+  {
+    id: "listing",
+    name: "Listing",
+    icon: "📄",
+    desc: "已有产品、要写或改 Listing 的卖家。从关键词、卖点、表达、场景到自查搭起 Listing 体系。",
+    learningPath: { title: "亚马逊 Listing 优化学习路径:从卖点提炼到转化表达", href: "/articles/listing-learning-path/" },
+    resources: [
+      {
+        name: "Listing 优化学习路径导图(PDF)",
+        slug: "listing-learning-path",
+        wechatKeyword: "L路径",
+        audience: "Listing 优化入门新手",
+        publicClassScene: "Listing 公开课开场,4 步导览讲稿",
+        content: "关键词 / 卖点 / 表达 / 场景 / 自查 4 步导图"
+      },
+      {
+        name: "AI Listing 改写对比模板",
+        slug: "ai-listing-optimization",
+        wechatKeyword: "L重写",
+        audience: "想用 AI 辅助改写 Listing 的卖家",
+        publicClassScene: "Listing 公开课 AI 辅助改写案例,讲清 AI 能帮什么、不能替代什么",
+        content: "改写前 vs 改写后 对比表 + AI Prompt 模板"
+      },
+      {
+        name: "五点重写对比模板(三品类)",
+        slug: "listing-five-bullets",
+        wechatKeyword: "五点",
+        audience: "想把五点从平铺改成场景化表达的卖家",
+        publicClassScene: "Listing 公开课五点改写演示,功能点 / 场景点 / 信任点",
+        content: "3 个品类 × 5 条 改写对照模板"
+      },
+      {
+        name: "Listing 自检清单",
+        slug: "listing-checklist",
+        wechatKeyword: "自检",
+        audience: "Listing 发版前要逐项自查的卖家",
+        publicClassScene: "Listing 公开课页面体检环节",
+        content: "28 项发版前检查清单(标题/五点/图片/关键词/转化表达)"
+      }
+    ]
+  },
+  {
+    id: "ppc",
+    name: "PPC",
+    icon: "🎯",
+    desc: "已上架 Listing、要开始投广告的卖家。从结构搭建、报表复盘、否词到诊断迭代搭起 PPC 体系。",
+    learningPath: { title: "亚马逊 PPC 广告学习路径:从结构搭建到数据判断", href: "/articles/ppc-learning-path/" },
+    resources: [
+      {
+        name: "PPC 学习路径导图(PDF)",
+        slug: "ppc-learning-path",
+        wechatKeyword: "P路径",
+        audience: "PPC 入门新手",
+        publicClassScene: "PPC 公开课开场,5 步导览讲稿",
+        content: "结构 / 报表 / 否词 / 预算 / 诊断 5 步导图"
+      },
+      {
+        name: "SP 四类广告预算分配模板",
+        slug: "sp-ad-structure",
+        wechatKeyword: "SP",
+        audience: "想理清 SP 四类广告分工的卖家",
+        publicClassScene: "PPC 公开课 SP 广告结构演示,自动/广泛/精准/商品分工",
+        content: "自动 / 广泛 / 精准 / 商品 4 类广告预算分配表"
+      },
+      {
+        name: "新品首周 PPC 节奏表",
+        slug: "new-product-ppc-week-one",
+        wechatKeyword: "首周",
+        audience: "新品上架第一周、想跑通低风险测试的卖家",
+        publicClassScene: "PPC 入门公开课新品首周广告节奏案例",
+        content: "7 天预算分配 + 否词节奏 + 复盘节点"
+      },
+      {
+        name: "PPC 报表诊断模板",
+        slug: "ai-ppc-report-review",
+        wechatKeyword: "报表",
+        audience: "拿到月度广告报表不知从哪看起的卖家",
+        publicClassScene: "PPC 公开课报表诊断演示,从搜索词/花费/转化判断问题",
+        content: "12 字段(曝光/点击/CTR/CVR/ACOS/订单/搜索词/...)诊断表"
+      }
+    ]
+  },
+  {
+    id: "review",
+    name: "Review",
+    icon: "💬",
+    desc: "已有订单、开始积累 Review 的卖家。从好评提炼、差评归因、中评反推、Q&A 答疑到体系搭建。",
+    learningPath: { title: "亚马逊 Review 分析学习路径:从评价挖掘到产品优化", href: "/articles/review-learning-path/" },
+    resources: [
+      {
+        name: "Review 学习路径导图(PDF)",
+        slug: "review-learning-path",
+        wechatKeyword: "R路径",
+        audience: "Review 体系入门新手",
+        publicClassScene: "Review 公开课开场,5 步导览讲稿",
+        content: "数据 / 矩阵 / 行动 / 反哺 5 步导图"
+      },
+      {
+        name: "Review 矩阵分析模板",
+        slug: "review-analysis-matrix",
+        wechatKeyword: "R矩阵",
+        audience: "想从 Review 反推产品与 Listing 改进的卖家",
+        publicClassScene: "Review 公开课矩阵拆解,好评/差评/中评/Q&A",
+        content: "4 类拆解矩阵 + 跨数据反哺动作"
+      },
+      {
+        name: "Review 痛点分析表",
+        slug: "ai-review-analysis",
+        wechatKeyword: "痛点",
+        audience: "想用 AI 提炼 Review 高频痛点的卖家",
+        publicClassScene: "Review 公开课评价拆解演示,从好评差评反推产品与页面",
+        content: "痛点归类 + 高频问题提炼 + Listing 改进点"
+      },
+      {
+        name: "差评归因与 Listing 修复表",
+        slug: "negative-review-listing-fix",
+        wechatKeyword: "差评",
+        audience: "想用差评反推下一版 Listing 改动的卖家",
+        publicClassScene: "Review 公开课差评修复案例,哪些改产品 / 哪些改页面",
+        content: "物流 / 预期 / 质量 / 服务 4 类差评归因 + 修复动作"
+      }
+    ]
+  },
+  {
+    id: "ai-search",
+    name: "AI 工具",
+    icon: "🤖",
+    desc: "想用 AI 提效的卖家。从工具评测、运营全景、消费者搜索到平台 AI 趋势,搭起 AI 运营体系。",
+    learningPath: { title: "亚马逊 AI 搜索学习路径:从工具理解到运营应用", href: "/articles/ai-search-learning-path/" },
+    resources: [
+      {
+        name: "AI 搜索学习路径导图(PDF)",
+        slug: "ai-search-learning-path",
+        wechatKeyword: "AI路径",
+        audience: "AI 搜索入门新手",
+        publicClassScene: "AI 公开课开场,4 步导览讲稿",
+        content: "工具 / 消费者 / 运营 / 内容 4 步导图"
+      },
+      {
+        name: "2026 亚马逊 AI 运营全景图",
+        slug: "2026-amazon-ai-operations",
+        wechatKeyword: "全景",
+        audience: "想看 AI 运营全貌的新手",
+        publicClassScene: "AI 公开课开场,用全景图讲清 AI 在各模块的位置",
+        content: "选品 / Listing / 广告 / Review / SOP 五大场景图"
+      },
+      {
+        name: "亚马逊 AI 工具评测表",
+        slug: "amazon-ai-tools-review",
+        wechatKeyword: "AI评测",
+        audience: "想判断 AI 工具值不值得用的卖家",
+        publicClassScene: "AI 公开课工具选择模块,4 判断标准 + 6 类适合 + 5 类不适合",
+        content: "8 字段工具评测模板 + 4 坑自检"
+      },
+      {
+        name: "亚马逊 AI 运营工具包",
+        slug: "ai-operations-resource-pack",
+        wechatKeyword: "AI工具",
+        audience: "需要把 AI 工具串成 SOP 的卖家",
+        publicClassScene: "公开课结尾工具资料包介绍",
+        content: "检查表 + Listing Prompt + Review Prompt + 复盘表"
+      },
+      {
+        name: "工具资料汇总清单",
+        slug: "tools-learning-path",
+        wechatKeyword: "工具包",
+        audience: "想搭起完整运营工具链的卖家",
+        publicClassScene: "工具公开课开篇导览",
+        content: "检查表 / Prompt / 复盘表 / SOP 4 类工具汇总"
+      },
+      {
+        name: "Rufus 与 Alexa Shopping 对比表",
+        slug: "amazon-rufus-alexa-shopping",
+        wechatKeyword: "Rufus",
+        audience: "关心消费者端 AI 工具影响的卖家",
+        publicClassScene: "AI 公开课案例,讲清平台 AI 对 Listing 的影响",
+        content: "Rufus / Alexa Shopping 对 Listing 表达与评价质量的影响对比"
+      },
+      {
+        name: "消费者 AI 搜索问题清单",
+        slug: "consumer-ai-search-amazon",
+        wechatKeyword: "C搜索",
+        audience: "想理解消费者 AI 搜索行为的卖家",
+        publicClassScene: "AI 公开课用户行为分析环节",
+        content: "用户提问方式调研表(关键词/场景/图片/AI 推荐)"
+      }
+    ]
+  }
+];
+
+const totalResources = resourceCategories.reduce((sum, cat) => sum + cat.resources.length, 0);
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" }
+  ]
+};
+---
+<BaseLayout title="亚马逊运营资料包中心 | 阿岩跨境笔记" description="把公开课配套的 28 个亚马逊运营资料包集中整理,按 7 个专题分类:新手规则、选品、关键词、Listing、PPC、Review、AI 工具,适合公开课前预习和课后复盘。">
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="hero-eyebrow">资源中心</div>
+      <h1>亚马逊运营资料包中心</h1>
+      <p class="hero-subtitle">把关键词、Listing、PPC、Review、选品和 AI 工具资料集中整理,适合公开课前预习和课后复盘。</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">{resourceCategories.length}</span>
+          <span class="hero-meta-label">个专题分类</span>
+        </div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">{totalResources}</span>
+          <span class="hero-meta-label">个资料包</span>
+        </div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">28</span>
+          <span class="hero-meta-label">个微信关键词</span>
+        </div>
+      </div>
+      <a class="hero-cta" href="#rules">按专题领取资料 →</a>
+    </div>
+  </section>
+
+  <section class="section">
+    {resourceCategories.map((cat) => (
+      <div class="resource-section" id={cat.id}>
+        <div class="topic-intro">
+          <div class="resource-section-head">
+            <div class="resource-section-icon">{cat.icon}</div>
+            <div class="resource-section-head-text">
+              <h2>{cat.name}<span class="resource-count">共 {cat.resources.length} 个资料包</span></h2>
+              <p>{cat.desc}</p>
+            </div>
+          </div>
+          {cat.learningPath && (
+            <a class="guide-card" href={cat.learningPath.href}>
+              <div class="guide-card-hint">推荐先读 · 学习路径</div>
+              <h3>{cat.learningPath.title}</h3>
+              <span class="guide-card-cta">看完整学习路径 →</span>
+            </a>
+          )}
+        </div>
+
+        <div class="resource-grid">
+          {cat.resources.map((r) => (
+            <article class="resource-card">
+              <div class="resource-card-head">
+                <div class="resource-card-tag">{cat.name}</div>
+                <div class="resource-card-keyword" title="微信关键词">
+                  <span class="resource-card-keyword-icon">📱</span>
+                  <span class="resource-card-keyword-text">"{r.wechatKeyword}"</span>
+                </div>
+              </div>
+              <h3 class="resource-card-title">{r.name}</h3>
+              <div class="resource-card-meta">
+                <div class="resource-card-meta-row">
+                  <span class="resource-card-meta-label">适合谁用</span>
+                  <span class="resource-card-meta-value">{r.audience}</span>
+                </div>
+                <div class="resource-card-meta-row">
+                  <span class="resource-card-meta-label">公开课场景</span>
+                  <span class="resource-card-meta-value">{r.publicClassScene}</span>
+                </div>
+                <div class="resource-card-meta-row">
+                  <span class="resource-card-meta-label">实物内容</span>
+                  <span class="resource-card-meta-value">{r.content}</span>
+                </div>
+              </div>
+              <div class="resource-card-actions">
+                <a class="resource-card-article" href={`/articles/${r.slug}/`}>查看文章 →</a>
+                <span class="resource-card-cta">回复关键词"{r.wechatKeyword}",领取</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    ))}
+
+    <div class="conversion-note">
+      <h2>使用资料包之前,先看这 3 条</h2>
+      <ul>
+        <li>
+          <strong>资料包不是万能模板。</strong>
+          同一份表格在不同产品、不同类目、不同时段填出来的结果,可能完全相反。资料包的价值是"让你知道该问什么问题",不是"替你做判断"。
+        </li>
+        <li>
+          <strong>需要结合产品、类目、广告阶段判断。</strong>
+          新品期和成熟期用同一份 PPC 报表,看出来的结论会冲突。资料包里的字段是固定的,你的产品和阶段是动态的。
+        </li>
+        <li>
+          <strong>可以带到公开课或私域答疑中一起分析。</strong>
+          公开课会基于真实学员的资料包填写数据,做现场拆解;私域答疑里可以贴自己的填写结果,带具体问题来。
+        </li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background:
+      radial-gradient(circle at 18% 28%, rgba(19, 104, 255, 0.10), transparent 26%),
+      linear-gradient(180deg, #f5f8fd 0%, #eef3fa 100%);
+    padding: 56px 24px 48px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  }
+
+  .page-hero-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #eaf2ff;
+    color: #1368ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 18px;
+    border: 1px solid #cfe0ff;
+  }
+
+  .page-hero h1 {
+    margin: 0 0 16px;
+    font-size: 42px;
+    line-height: 1.18;
+    letter-spacing: -1.4px;
+    color: #0f172a;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto 28px;
+    max-width: 760px;
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hero-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 24px;
+    background: #fff;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
+    margin-bottom: 24px;
+  }
+
+  .hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .hero-meta-num {
+    font-size: 24px;
+    font-weight: 900;
+    color: #1368ff;
+    line-height: 1;
+  }
+
+  .hero-meta-label {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+  }
+
+  .hero-meta-divider {
+    width: 1px;
+    height: 28px;
+    background: #e2e8f0;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #1368ff, #2f7bff);
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.22);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(19, 104, 255, 0.32);
+  }
+
+  .section {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  .resource-section {
+    margin: 0 0 48px;
+  }
+
+  .resource-section:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .topic-intro {
+    margin: 0 0 24px;
+    padding: 24px 28px;
+    background:
+      radial-gradient(circle at 92% 6%, rgba(19, 104, 255, 0.08), transparent 28%),
+      linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 22px;
+    box-shadow:
+      0 18px 50px rgba(15, 23, 42, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .resource-section-head {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .resource-section-icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    background:
+      radial-gradient(circle at 35% 25%, #ffffff, transparent 42%),
+      linear-gradient(135deg, #edf5ff, #dceafe);
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(19, 104, 255, 0.14);
+  }
+
+  .resource-section-head-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .resource-section-head-text h2 {
+    margin: 0 0 6px;
+    font-size: 26px;
+    line-height: 1.3;
+    color: #0f172a;
+    letter-spacing: -0.4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .resource-count {
+    display: inline-flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+
+  .resource-section-head-text p {
+    margin: 0;
+    color: #5f6f86;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .guide-card {
+    display: block;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    box-shadow: 0 8px 22px rgba(19, 104, 255, 0.10);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .guide-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 32px rgba(19, 104, 255, 0.16);
+  }
+
+  .guide-card-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 6px;
+  }
+
+  .guide-card h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0f172a;
+    font-weight: 800;
+  }
+
+  .guide-card-cta {
+    color: #1368ff;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .resource-card {
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow:
+      0 14px 36px rgba(15, 23, 42, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resource-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #1368ff, #7dd3fc);
+    opacity: 0.85;
+  }
+
+  .resource-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(19, 104, 255, 0.32);
+    box-shadow:
+      0 22px 56px rgba(19, 104, 255, 0.10),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .resource-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .resource-card-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+
+  .resource-card-keyword {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    border: 1px solid #86efac;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .resource-card-keyword-icon {
+    font-size: 11px;
+  }
+
+  .resource-card-keyword-text {
+    color: #15803d;
+    letter-spacing: 0.2px;
+  }
+
+  .resource-card-title {
+    margin: 0 0 16px;
+    font-size: 19px;
+    line-height: 1.42;
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+  }
+
+  .resource-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex: 1;
+  }
+
+  .resource-card-meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .resource-card-meta-label {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  .resource-card-meta-value {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .resource-card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #eef2f7;
+  }
+
+  .resource-card-article {
+    color: #1368ff;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s ease;
+  }
+
+  .resource-card-article:hover {
+    color: #0d52cf;
+  }
+
+  .resource-card-cta {
+    color: #15803d;
+    font-size: 12px;
+    font-weight: 700;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+
+  .conversion-note {
+    margin-top: 56px;
+    padding: 32px 36px;
+    background:
+      radial-gradient(circle at 92% 8%, rgba(19, 104, 255, 0.06), transparent 28%),
+      linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 22px;
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.04);
+  }
+
+  .conversion-note h2 {
+    margin: 0 0 18px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 14px;
+  }
+
+  .conversion-note h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #1368ff, #7dd3fc);
+  }
+
+  .conversion-note ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .conversion-note li {
+    color: #475569;
+    line-height: 1.78;
+    font-size: 15px;
+    padding-left: 28px;
+    position: relative;
+  }
+
+  .conversion-note li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #1368ff, #60a5fa);
+    box-shadow: 0 0 0 4px rgba(19, 104, 255, 0.10);
+  }
+
+  .conversion-note strong {
+    color: #0f172a;
+    font-weight: 800;
+  }
+
+  @media (max-width: 980px) {
+    .page-hero h1 {
+      font-size: 34px;
+    }
+
+    .resource-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-meta {
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .page-hero {
+      padding: 40px 20px 36px;
+    }
+
+    .page-hero h1 {
+      font-size: 28px;
+      letter-spacing: -0.8px;
+    }
+
+    .resource-section-head {
+      flex-direction: column;
+    }
+
+    .resource-card-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

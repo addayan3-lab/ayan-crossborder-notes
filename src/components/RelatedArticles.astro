@@ -1,0 +1,64 @@
+---
+const { post, allPosts, max = 4 } = Astro.props;
+
+const topicLabelMap = {
+  keyword: "关键词",
+  listing: "Listing",
+  ppc: "PPC",
+  review: "Review",
+  "ai-search": "AI 搜索",
+  tools: "工具",
+  selection: "选品"
+};
+
+function topicLabel(t) {
+  return topicLabelMap[t] || t || "";
+}
+
+const currentId = post?.id || "";
+const currentTopic = post?.data?.topic || "";
+const relatedTopics = Array.isArray(post?.data?.relatedTopics) ? post.data.relatedTopics : [];
+
+const candidates = (Array.isArray(allPosts) ? allPosts : []).filter((p) => {
+  if (!p || p.id === currentId) return false;
+  if (p?.data?.draft) return false;
+  return Boolean(p?.data?.topic);
+});
+
+const preferred = candidates
+  .filter((p) => relatedTopics.includes(p.data.topic))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const fallback = candidates
+  .filter((p) => !relatedTopics.includes(p.data.topic) && p.data.topic === currentTopic)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const merged = [...preferred, ...fallback].slice(0, Math.max(1, Number(max) || 4));
+
+let hint = "你可能也想读";
+if (preferred.length > 0) {
+  hint = relatedTopics.length > 0
+    ? "按相关专题推荐"
+    : "按当前专题推荐";
+} else if (currentTopic) {
+  hint = "同专题其他文章";
+}
+---
+
+{merged.length > 0 && (
+  <section class="related-articles" aria-label="相关文章">
+    <div class="related-articles-head">
+      <div class="related-articles-title">相关文章</div>
+      <div class="related-articles-hint">{hint}</div>
+    </div>
+    <div class="related-articles-grid">
+      {merged.map((p) => (
+        <a class="related-article-card" href={`/articles/${p.id}/`}>
+          <span class="related-article-topic">{topicLabel(p.data.topic)}</span>
+          <div class="related-article-title">{p.data.title}</div>
+          <p class="related-article-desc">{p.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

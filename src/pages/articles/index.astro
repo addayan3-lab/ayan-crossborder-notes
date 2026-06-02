@@ -18,6 +18,7 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
     <div class="grid grid-3">
       {posts.map((post) => (
         <a class="card" href={`/articles/${post.id}/`}>
+          {post.data.image && <div class="card-cover" style={`background-image: url(${post.data.image})`}></div>}
           <span class="tag">{post.data.category}</span>
           <h3>{post.data.title}</h3>
           <p>{post.data.description}</p>
