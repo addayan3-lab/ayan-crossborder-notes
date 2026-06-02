@@ -11,7 +11,8 @@
                     "infographics:generate":  "node scripts/generate-article-infographics.mjs",
                     "infographics:first":  "node scripts/generate-article-infographics.mjs 2026-amazon-ai-operations",
                     "build:astro":  "astro build",
-                    "search:index":  "pagefind --site dist"
+                    "search:index":  "pagefind --site dist",
+                    "indexnow:submit":  "node scripts/submit-indexnow.mjs"
                 },
     "dependencies":  {
                          "@astrojs/sitemap":  "latest",
