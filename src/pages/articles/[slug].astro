@@ -38,9 +38,45 @@ const headings = [...rawBody.matchAll(/^##\s+(.+)$/gm)].map((match) => {
     id: slugify(text)
   };
 });
+
+// AYAN_ARTICLE_JSONLD_FRONTMATTER_START
+const ayanArticleSiteUrl = "https://amz.hao1234.top";
+const ayanArticleUrl = new URL(Astro.url.pathname, ayanArticleSiteUrl).toString();
+const ayanArticleImage = ayanArticleSiteUrl + "/images/og-default.svg";
+
+const ayanArticleStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "url": ayanArticleUrl,
+  "mainEntityOfPage": ayanArticleUrl,
+  "datePublished": new Date(post.data.pubDate).toISOString(),
+  "dateModified": new Date(post.data.pubDate).toISOString(),
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Person",
+    "name": "阿岩"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "阿岩跨境笔记",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ayanArticleImage
+    }
+  },
+  "image": [
+    ayanArticleImage
+  ]
+};
+// AYAN_ARTICLE_JSONLD_FRONTMATTER_END
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
+  <!-- AYAN_ARTICLE_JSONLD_START -->
+  <script type="application/ld+json" set:html={JSON.stringify(ayanArticleStructuredData)}></script>
+  <!-- AYAN_ARTICLE_JSONLD_END -->
   <main class="article-page">
     <div class="article-shell">
       <aside class="article-toc">

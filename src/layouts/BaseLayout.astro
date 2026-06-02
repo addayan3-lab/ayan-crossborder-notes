@@ -18,6 +18,34 @@ const navItems = [
 ];
 
 const pathname = Astro.url.pathname;
+
+// AYAN_JSONLD_FRONTMATTER_START
+const ayanSiteUrl = "https://amz.hao1234.top";
+const ayanCurrentUrl = new URL(Astro.url.pathname, ayanSiteUrl).toString();
+
+const ayanBaseStructuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "阿岩跨境笔记",
+    "url": ayanSiteUrl,
+    "logo": ayanSiteUrl + "/images/og-default.svg",
+    "description": "阿岩跨境笔记聚焦亚马逊卖家的 AI 运营实战，覆盖选品、Listing 优化、广告 PPC、Review 分析、工具模板和运营 SOP。"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "阿岩跨境笔记",
+    "url": ayanSiteUrl,
+    "inLanguage": "zh-CN",
+    "description": description,
+    "publisher": {
+      "@type": "Organization",
+      "name": "阿岩跨境笔记"
+    }
+  }
+];
+// AYAN_JSONLD_FRONTMATTER_END
 ---
 
 <!doctype html>
@@ -43,6 +71,9 @@ const pathname = Astro.url.pathname;
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content="https://amz.hao1234.top/images/og-default.svg" />
 <!-- AYAN_SEO_META_END -->
+<!-- AYAN_JSONLD_HEAD_START -->
+<script type="application/ld+json" set:html={JSON.stringify(ayanBaseStructuredData)}></script>
+<!-- AYAN_JSONLD_HEAD_END -->
 </head>
   <body>
     <header class="site-header">
