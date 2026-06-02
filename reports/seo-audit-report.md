@@ -1,6 +1,6 @@
 # 018｜站点 SEO 基础体检报告
 
-生成时间：2026-06-02T01:47:36.709Z
+生成时间：2026-06-02T02:48:43.277Z
 
 站点：https://amz.hao1234.top
 
@@ -93,7 +93,7 @@
 - title：如何用 AI 做亚马逊关键词表 | 阿岩跨境笔记
 - description：用 AI 辅助亚马逊卖家整理核心词、长尾词、场景词、竞品词和广告测试词，形成可用于 Listing 与 PPC 的关键词表。
 - H1：1
-- H2：3
+- H2：10
 - canonical：https://amz.hao1234.top/articles/ai-keyword-table/
 - og:title：如何用 AI 做亚马逊关键词表
 - og:description：用 AI 辅助亚马逊卖家整理核心词、长尾词、场景词、竞品词和广告测试词，形成可用于 Listing 与 PPC 的关键词表。
