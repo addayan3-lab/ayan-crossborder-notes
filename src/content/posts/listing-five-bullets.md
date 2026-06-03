@@ -15,6 +15,11 @@ relatedTopics:
 publicLessonUse: 适合作为 Listing 公开课的五点改写演示,带学员把一句话卖点拆成 5 条场景化表达。
 leadMagnet: 五点重写对比模板(三品类)
 wechatHook: 回复关键词"五点",领取三品类五点重写对比模板。
+nextArticle: listing-checklist
+relatedArticleLinks:
+  - slug: listing-checklist
+    label: Listing 自检清单
+    context: Listing 第 2 篇
 ---
 
 <div class="article-callout article-callout-blue">

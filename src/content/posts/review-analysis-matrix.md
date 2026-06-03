@@ -15,6 +15,15 @@ relatedTopics:
 publicLessonUse: 适合作为 Review 公开课的矩阵拆解演示,带学员从好评、差评、中评、Q&A 反推产品与 Listing 改进点。
 leadMagnet: Review 矩阵分析模板
 wechatHook: 回复关键词"R矩阵",领取 Review 矩阵分析模板。
+prevArticle: ai-review-analysis
+nextArticle: negative-review-listing-fix
+relatedArticleLinks:
+  - slug: ai-review-analysis
+    label: AI 分析 Review
+    context: Review 第 1 篇
+  - slug: negative-review-listing-fix
+    label: 差评改 Listing
+    context: Review 第 3 篇
 ---
 
 <div class="article-callout article-callout-blue">

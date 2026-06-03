@@ -16,6 +16,11 @@ publicLessonUse: 适合作为关键词公开课的找词方法模块，带学员
 leadMagnet: 4 类关键词来源拆解表
 wechatHook: 回复关键词"4源"，领取 4 类关键词来源拆解表。
 draft: false
+nextArticle: keyword-cleaning-method
+relatedArticleLinks:
+  - slug: keyword-cleaning-method
+    label: 关键词清洗方法
+    context: 关键词第 2 篇
 ---
 
 <div class="article-callout article-callout-blue">

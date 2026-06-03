@@ -16,6 +16,11 @@ leadMagnet: Review 痛点分析表
 wechatHook: 回复关键词"痛点"，领取 Review 痛点分析表。
 draft: false
 image: "/images/articles/ai-review-analysis/cover.svg"
+nextArticle: review-analysis-matrix
+relatedArticleLinks:
+  - slug: review-analysis-matrix
+    label: Review 分析矩阵
+    context: Review 第 2 篇
 ---
 
 这是一篇占位文章。

@@ -20,11 +20,11 @@ prevArticle: ai-market-size-estimate
 nextArticle: selection-pain-reverse
 relatedArticleLinks:
   - slug: ai-market-size-estimate
-    label: "选品第 1 篇"
-    context: "市场容量判断"
+    label: AI 估算市场容量
+    context: 选品第 1 篇
   - slug: selection-pain-reverse
-    label: "选品第 4 篇"
-    context: "痛点反推"
+    label: 痛点反推选品
+    context: 选品第 3 篇
 ---
 
 <div class="article-callout article-callout-green">

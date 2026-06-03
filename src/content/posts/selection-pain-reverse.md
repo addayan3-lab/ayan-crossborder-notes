@@ -9,11 +9,11 @@ draft: false
 prevArticle: ai-competitor-matrix
 relatedArticleLinks:
   - slug: ai-market-size-estimate
-    label: "选品第 1 篇"
-    context: "市场容量判断"
+    label: AI 估算市场容量
+    context: 选品第 1 篇
   - slug: ai-competitor-matrix
-    label: "选品第 2 篇"
-    context: "竞品矩阵拆解"
+    label: 竞品矩阵拆解方法
+    context: 选品第 2 篇
 topic: selection
 stage: 进阶
 intent: 决策

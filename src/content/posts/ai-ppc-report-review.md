@@ -16,6 +16,14 @@ leadMagnet: PPC 报表诊断模板
 wechatHook: 回复关键词"报表"，领取 PPC 报表诊断模板。
 draft: false
 image: "/images/articles/ai-ppc-report-review/cover.svg"
+prevArticle: sp-ad-structure
+relatedArticleLinks:
+  - slug: new-product-ppc-week-one
+    label: 新品 PPC 第一周
+    context: PPC 第 1 篇
+  - slug: sp-ad-structure
+    label: SP 广告结构
+    context: PPC 第 2 篇
 ---
 
 这是一篇占位文章。

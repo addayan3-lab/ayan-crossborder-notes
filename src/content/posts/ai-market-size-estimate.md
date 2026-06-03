@@ -19,11 +19,8 @@ draft: false
 nextArticle: ai-competitor-matrix
 relatedArticleLinks:
   - slug: ai-competitor-matrix
-    label: "选品第 2 篇"
-    context: "竞品矩阵拆解"
-  - slug: selection-pain-reverse
-    label: "选品第 4 篇"
-    context: "痛点反推"
+    label: 竞品矩阵拆解方法
+    context: 选品第 2 篇
 ---
 
 <div class="article-callout article-callout-green">

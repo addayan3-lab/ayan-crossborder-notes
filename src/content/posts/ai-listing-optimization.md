@@ -16,6 +16,14 @@ leadMagnet: AI Listing 改写对比模板
 wechatHook: 回复关键词"L重写"，领取 AI Listing 改写对比模板。
 draft: false
 image: "/images/articles/ai-listing-optimization/cover.svg"
+prevArticle: listing-checklist
+relatedArticleLinks:
+  - slug: listing-five-bullets
+    label: Listing 五点写法
+    context: Listing 第 1 篇
+  - slug: listing-checklist
+    label: Listing 自检清单
+    context: Listing 第 2 篇
 ---
 
 这是一篇占位文章。

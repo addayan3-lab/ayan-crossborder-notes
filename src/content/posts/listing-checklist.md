@@ -16,6 +16,15 @@ leadMagnet: Listing 自检清单
 wechatHook: 回复关键词"自检"，领取 Listing 自检清单。
 draft: false
 image: "/images/articles/listing-checklist/cover.svg"
+prevArticle: listing-five-bullets
+nextArticle: ai-listing-optimization
+relatedArticleLinks:
+  - slug: listing-five-bullets
+    label: Listing 五点写法
+    context: Listing 第 1 篇
+  - slug: ai-listing-optimization
+    label: AI Listing 写法
+    context: Listing 第 3 篇
 ---
 
 这是一篇占位文章。
