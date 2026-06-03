@@ -6,6 +6,7 @@ import NextUp from "../../components/NextUp.astro";
 import BackToLearningPath from "../../components/BackToLearningPath.astro";
 import LearningPathStats from "../../components/LearningPathStats.astro";
 import ArticleResourceCTA from "../../components/ArticleResourceCTA.astro";
+import ArticleNavHints from "../../components/ArticleNavHints.astro";
 import manifest from "../../data/image-manifest.json";
 
 const imageAltMap = Object.fromEntries(
@@ -188,6 +189,8 @@ const ayanBreadcrumbStructuredData = {
             {post.data.intent && <span data-pagefind-filter="intent" data-pagefind-meta="intent">{post.data.intent}</span>}
           </div>
         )}
+
+        <ArticleNavHints post={post} allPosts={allPosts} />
 
         <section class="article-content" id="article-content">
           <Content />

@@ -16,6 +16,15 @@ publicLessonUse: 适合作为选品公开课的竞品拆解环节，带学员把
 leadMagnet: 竞品矩阵拆解表
 wechatHook: 回复关键词"矩阵"，领取竞品矩阵拆解表。
 draft: false
+prevArticle: ai-market-size-estimate
+nextArticle: selection-pain-reverse
+relatedArticleLinks:
+  - slug: ai-market-size-estimate
+    label: "选品第 1 篇"
+    context: "市场容量判断"
+  - slug: selection-pain-reverse
+    label: "选品第 4 篇"
+    context: "痛点反推"
 ---
 
 <div class="article-callout article-callout-green">

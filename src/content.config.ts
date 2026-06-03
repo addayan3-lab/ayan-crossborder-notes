@@ -18,7 +18,17 @@ const posts = defineCollection({
     relatedTopics: z.array(z.string()).optional(),
     publicLessonUse: z.string().optional(),
     leadMagnet: z.string().optional(),
-    wechatHook: z.string().optional()
+    wechatHook: z.string().optional(),
+
+    prevArticle: z.string().optional(),
+    nextArticle: z.string().optional(),
+    relatedArticleLinks: z.array(
+      z.object({
+        slug: z.string(),
+        label: z.string(),
+        context: z.string().optional()
+      })
+    ).optional()
   })
 });
 

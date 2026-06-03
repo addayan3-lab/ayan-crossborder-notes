@@ -1,0 +1,220 @@
+---
+const { post, allPosts } = Astro.props;
+
+const articleIndex = {};
+if (Array.isArray(allPosts)) {
+  for (const p of allPosts) {
+    if (p && p.id) {
+      articleIndex[p.id] = p.data;
+    }
+  }
+}
+
+const prevSlug = post?.data?.prevArticle;
+const nextSlug = post?.data?.nextArticle;
+const relatedLinks = Array.isArray(post?.data?.relatedArticleLinks) ? post.data.relatedArticleLinks : [];
+
+const prevArticle = prevSlug && articleIndex[prevSlug] ? { slug: prevSlug, ...articleIndex[prevSlug] } : null;
+const nextArticle = nextSlug && articleIndex[nextSlug] ? { slug: nextSlug, ...articleIndex[nextSlug] } : null;
+
+const hasNav = prevArticle || nextArticle || relatedLinks.length > 0;
+---
+
+{hasNav && (
+  <section class="article-nav-hints" aria-label="文章导航">
+    {(prevArticle || nextArticle) && (
+      <div class="article-nav-seq">
+        {prevArticle && (
+          <a href={`/articles/${prevArticle.slug}/`} target="_blank" rel="noopener noreferrer" class="article-nav-seq-link article-nav-prev">
+            <span class="article-nav-seq-arrow">←</span>
+            <div class="article-nav-seq-body">
+              <span class="article-nav-seq-label">上一篇</span>
+              <span class="article-nav-seq-title">{prevArticle.title}</span>
+            </div>
+          </a>
+        )}
+        {nextArticle && (
+          <a href={`/articles/${nextArticle.slug}/`} target="_blank" rel="noopener noreferrer" class="article-nav-seq-link article-nav-next">
+            <div class="article-nav-seq-body">
+              <span class="article-nav-seq-label">下一篇</span>
+              <span class="article-nav-seq-title">{nextArticle.title}</span>
+            </div>
+            <span class="article-nav-seq-arrow">→</span>
+          </a>
+        )}
+      </div>
+    )}
+    {relatedLinks.length > 0 && (
+      <div class="article-nav-related">
+        <span class="article-nav-related-title">系列文章</span>
+        <div class="article-nav-related-list">
+          {relatedLinks.map((link) => {
+            const resolved = articleIndex[link.slug];
+            return (
+              <a
+                href={`/articles/${link.slug}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="article-nav-related-item"
+              >
+                <span class="article-nav-related-label">{link.label}</span>
+                {resolved && <span class="article-nav-related-headline">{resolved.title}</span>}
+                {link.context && <span class="article-nav-related-context">{link.context}</span>}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
+  </section>
+)}
+
+<style is:global>
+  .article-nav-hints {
+    margin: 20px 52px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .article-nav-seq {
+    display: flex;
+    gap: 12px;
+  }
+
+  .article-nav-seq-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #f7faff;
+    border: 1px solid #e2ecfb;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    min-width: 0;
+  }
+
+  .article-nav-seq-link:hover {
+    transform: translateY(-1px);
+    border-color: rgba(19, 104, 255, 0.32);
+    background: #eef5ff;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.10);
+  }
+
+  .article-nav-prev {
+    text-align: left;
+  }
+
+  .article-nav-next {
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .article-nav-seq-arrow {
+    font-size: 18px;
+    color: #1368ff;
+    flex-shrink: 0;
+  }
+
+  .article-nav-seq-body {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .article-nav-seq-label {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+
+  .article-nav-seq-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .article-nav-related {
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: #f7faff;
+    border: 1px solid #e2ecfb;
+  }
+
+  .article-nav-related-title {
+    display: block;
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+  }
+
+  .article-nav-related-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .article-nav-related-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #e2ecfb;
+    color: inherit;
+    text-decoration: none;
+    font-size: 13px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .article-nav-related-item:hover {
+    transform: translateY(-1px);
+    border-color: rgba(19, 104, 255, 0.32);
+    background: #eef5ff;
+    box-shadow: 0 8px 20px rgba(19, 104, 255, 0.10);
+  }
+
+  .article-nav-related-label {
+    font-weight: 900;
+    color: #1368ff;
+    flex-shrink: 0;
+  }
+
+  .article-nav-related-headline {
+    color: #0f172a;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+
+  .article-nav-related-context {
+    color: #64748b;
+    font-size: 12px;
+  }
+
+  @media (max-width: 720px) {
+    .article-nav-hints {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    .article-nav-seq {
+      flex-direction: column;
+    }
+  }
+</style>
