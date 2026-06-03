@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-kcs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F4FF"/>
+      <stop offset="1" stop-color="#FAFBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-kcs)"/>
+  <circle cx="1100" cy="80" r="140" fill="#DBEAFE" opacity="0.4"/>
+  <circle cx="80" cy="580" r="160" fill="#EFF6FF" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">关键词清洗表</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">去重 · 分组 · 分配使用位置</text>
+  <!-- Table header -->
+  <rect x="60" y="160" width="200" height="44" rx="8" fill="#2563EB"/>
+  <text x="160" y="188" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">关键词</text>
+  <rect x="260" y="160" width="140" height="44" rx="8" fill="#2563EB"/>
+  <text x="330" y="188" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">搜索量</text>
+  <rect x="400" y="160" width="160" height="44" rx="8" fill="#2563EB"/>
+  <text x="480" y="188" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">分组</text>
+  <rect x="560" y="160" width="160" height="44" rx="8" fill="#2563EB"/>
+  <text x="640" y="188" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">使用位置</text>
+  <rect x="720" y="160" width="420" height="44" rx="8" fill="#2563EB"/>
+  <text x="930" y="188" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">备注</text>
+  <!-- Row 1 -->
+  <rect x="60" y="210" width="200" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="106" y="239" font-size="15" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif">wireless earbuds</text>
+  <rect x="260" y="210" width="140" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="330" y="239" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">48,200</text>
+  <rect x="400" y="210" width="160" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="410" y="220" width="80" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="450" y="237" text-anchor="middle" font-size="13" fill="#1D4ED8" font-family="system-ui, -apple-system, sans-serif">核心词</text>
+  <rect x="560" y="210" width="160" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="570" y="220" width="80" height="24" rx="12" fill="#FEF3C7"/>
+  <text x="610" y="237" text-anchor="middle" font-size="13" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">标题</text>
+  <rect x="720" y="210" width="420" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="740" y="239" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">月搜索量高，核心流量词</text>
+  <!-- Row 2 -->
+  <rect x="60" y="254" width="200" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <text x="106" y="283" font-size="15" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif">bluetooth earbuds</text>
+  <rect x="260" y="254" width="140" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <text x="330" y="283" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">36,100</text>
+  <rect x="400" y="254" width="160" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <rect x="410" y="264" width="80" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="450" y="281" text-anchor="middle" font-size="13" fill="#1D4ED8" font-family="system-ui, -apple-system, sans-serif">核心词</text>
+  <rect x="560" y="254" width="160" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <rect x="570" y="264" width="80" height="24" rx="12" fill="#FEF3C7"/>
+  <text x="610" y="281" text-anchor="middle" font-size="13" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">标题</text>
+  <rect x="720" y="254" width="420" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <text x="740" y="283" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">竞品也在用，必须覆盖</text>
+  <!-- Row 3 -->
+  <rect x="60" y="298" width="200" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="106" y="327" font-size="15" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif">earbuds for small ears</text>
+  <rect x="260" y="298" width="140" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="330" y="327" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">4,200</text>
+  <rect x="400" y="298" width="160" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="410" y="308" width="80" height="24" rx="12" fill="#D1FAE5"/>
+  <text x="450" y="325" text-anchor="middle" font-size="13" fill="#065F46" font-family="system-ui, -apple-system, sans-serif">长尾词</text>
+  <rect x="560" y="298" width="160" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="570" y="308" width="80" height="24" rx="12" fill="#FEF3C7"/>
+  <text x="610" y="325" text-anchor="middle" font-size="13" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">五点</text>
+  <rect x="720" y="298" width="420" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="740" y="327" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">精准长尾词，转化率高</text>
+  <!-- Row 4 -->
+  <rect x="60" y="342" width="200" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <text x="106" y="371" font-size="15" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif">earbuds for running</text>
+  <rect x="260" y="342" width="140" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <text x="330" y="371" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">5,800</text>
+  <rect x="400" y="342" width="160" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <rect x="410" y="352" width="80" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="450" y="369" text-anchor="middle" font-size="13" fill="#1D4ED8" font-family="system-ui, -apple-system, sans-serif">核心词</text>
+  <rect x="560" y="342" width="160" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <rect x="570" y="352" width="80" height="24" rx="12" fill="#FEF3C7"/>
+  <text x="610" y="369" text-anchor="middle" font-size="13" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">标题</text>
+  <rect x="720" y="342" width="420" height="44" fill="#FAFBFF" stroke="#E2E8F0"/>
+  <text x="740" y="371" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">场景词，适合标题/广告</text>
+  <!-- Row 5 -->
+  <rect x="60" y="386" width="200" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="106" y="415" font-size="15" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif">noise-canceling earbuds</text>
+  <rect x="260" y="386" width="140" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="330" y="415" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">12,500</text>
+  <rect x="400" y="386" width="160" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="410" y="396" width="80" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="450" y="413" text-anchor="middle" font-size="13" fill="#1D4ED8" font-family="system-ui, -apple-system, sans-serif">核心词</text>
+  <rect x="560" y="386" width="160" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="570" y="396" width="100" height="24" rx="12" fill="#BFDBFE"/>
+  <text x="620" y="413" text-anchor="middle" font-size="13" fill="#1E3A8A" font-family="system-ui, -apple-system, sans-serif">标题+广告</text>
+  <rect x="720" y="386" width="420" height="44" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="740" y="415" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">功能词，高转化</text>
+  <!-- Bottom label -->
+  <rect x="60" y="460" width="1080" height="60" rx="16" fill="#EFF6FF" stroke="#2563EB" stroke-dasharray="6,4"/>
+  <text x="600" y="495" text-anchor="middle" font-size="18" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">去重 → 分组（核心/长尾/否定） → 分配使用位置 → 录入广告活动</text>
+</svg>

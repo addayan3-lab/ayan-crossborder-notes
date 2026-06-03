@@ -6,6 +6,11 @@ import NextUp from "../../components/NextUp.astro";
 import BackToLearningPath from "../../components/BackToLearningPath.astro";
 import LearningPathStats from "../../components/LearningPathStats.astro";
 import ArticleResourceCTA from "../../components/ArticleResourceCTA.astro";
+import manifest from "../../data/image-manifest.json";
+
+const imageAltMap = Object.fromEntries(
+  manifest.map((item) => [item.path, item.alt])
+);
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("posts", ({ data }) => !data.draft);
@@ -164,6 +169,11 @@ const ayanBreadcrumbStructuredData = {
           <div class="article-category">{post.data.category}</div>
           <h1>{post.data.title}</h1>
           <p class="article-desc">{post.data.description}</p>
+          {post.data.image && post.data.image !== "/images/og-default.svg" && (
+            <div class="article-cover">
+              <img src={post.data.image} alt={imageAltMap[post.data.image] || "文章封面图"} loading="lazy" />
+            </div>
+          )}
           <div class="article-meta">
             <span>{formatDate(post.data.pubDate)}</span>
             <span>阿岩跨境笔记</span>
@@ -340,6 +350,21 @@ const ayanBreadcrumbStructuredData = {
       radial-gradient(circle at 85% 0%, rgba(19, 104, 255, 0.09), transparent 28%),
       linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
     border-bottom: 1px solid #eef2f7;
+  }
+
+  .article-cover {
+    margin: 20px 0 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+  }
+
+  .article-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
   }
 
   .article-category {

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-ls" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0FDF4"/>
+      <stop offset="1" stop-color="#FAFFFE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ls)"/>
+  <circle cx="1100" cy="80" r="160" fill="#DCFCE7" opacity="0.5"/>
+  <circle cx="100" cy="580" r="180" fill="#ECFDF5" opacity="0.6"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">Listing 优化学习路径</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">四个模块打造高转化 Listing</text>
+  <!-- Four cards -->
+  <rect x="60" y="180" width="250" height="300" rx="20" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="60" y="180" width="250" height="80" rx="20" fill="#059669" opacity="0.9"/>
+  <rect x="60" y="220" width="250" height="40" fill="#059669" opacity="0.9"/>
+  <text x="185" y="226" text-anchor="middle" font-size="22" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">标题</text>
+  <circle cx="100" cy="280" r="6" fill="#059669"/>
+  <text x="120" y="285" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">核心关键词前置</text>
+  <circle cx="100" cy="320" r="6" fill="#059669"/>
+  <text x="120" y="325" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">品牌 + 卖点 + 属性</text>
+  <circle cx="100" cy="360" r="6" fill="#059669"/>
+  <text x="120" y="365" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">不堆词，通顺可读</text>
+  <circle cx="100" cy="400" r="6" fill="#059669"/>
+  <text x="120" y="405" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">A/B 测试优化</text>
+  <rect x="345" y="180" width="250" height="300" rx="20" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="345" y="180" width="250" height="80" rx="20" fill="#2563EB" opacity="0.9"/>
+  <rect x="345" y="220" width="250" height="40" fill="#2563EB" opacity="0.9"/>
+  <text x="470" y="226" text-anchor="middle" font-size="22" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">五点描述</text>
+  <circle cx="385" cy="280" r="6" fill="#2563EB"/>
+  <text x="405" y="285" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">痛点 → 解决方案</text>
+  <circle cx="385" cy="320" r="6" fill="#2563EB"/>
+  <text x="405" y="325" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">数据支撑卖点</text>
+  <circle cx="385" cy="360" r="6" fill="#2563EB"/>
+  <text x="405" y="365" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">差异化表达</text>
+  <circle cx="385" cy="400" r="6" fill="#2563EB"/>
+  <text x="405" y="405" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">移动端优先</text>
+  <rect x="630" y="180" width="250" height="300" rx="20" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="630" y="180" width="250" height="80" rx="20" fill="#D97706" opacity="0.9"/>
+  <rect x="630" y="220" width="250" height="40" fill="#D97706" opacity="0.9"/>
+  <text x="755" y="226" text-anchor="middle" font-size="22" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">图片与视频</text>
+  <circle cx="670" cy="280" r="6" fill="#D97706"/>
+  <text x="690" y="285" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">主图白底 + 场景图</text>
+  <circle cx="670" cy="320" r="6" fill="#D97706"/>
+  <text x="690" y="325" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">A+ 图文排版</text>
+  <circle cx="670" cy="360" r="6" fill="#D97706"/>
+  <text x="690" y="365" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">视频展示使用场景</text>
+  <circle cx="670" cy="400" r="6" fill="#D97706"/>
+  <text x="690" y="405" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">6 张辅图策略</text>
+  <rect x="915" y="180" width="250" height="300" rx="20" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="915" y="180" width="250" height="80" rx="20" fill="#0891B2" opacity="0.9"/>
+  <rect x="915" y="220" width="250" height="40" fill="#0891B2" opacity="0.9"/>
+  <text x="1040" y="226" text-anchor="middle" font-size="22" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review</text>
+  <circle cx="955" cy="280" r="6" fill="#0891B2"/>
+  <text x="975" y="285" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">差评关键词分析</text>
+  <circle cx="955" cy="320" r="6" fill="#0891B2"/>
+  <text x="975" y="325" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">Listing 问题修复</text>
+  <circle cx="955" cy="360" r="6" fill="#0891B2"/>
+  <text x="975" y="365" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">QA 维护</text>
+  <circle cx="955" cy="400" r="6" fill="#0891B2"/>
+  <text x="975" y="405" font-size="16" fill="#334155" font-family="system-ui, -apple-system, sans-serif">持续迭代</text>
+  <!-- bottom result -->
+  <rect x="370" y="530" width="460" height="52" rx="26" fill="#0F172A"/>
+  <text x="600" y="564" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">→ 高转化 Listing</text>
+</svg>

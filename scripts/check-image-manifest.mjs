@@ -39,21 +39,20 @@ for (const item of manifest) {
   }
 }
 
-const articlesDir = path.join(publicDir, "images", "article-assets");
-
-if (fs.existsSync(articlesDir)) {
-  function walk(dir) {
-    const out = [];
-    for (const item of fs.readdirSync(dir)) {
-      const full = path.join(dir, item);
-      const stat = fs.statSync(full);
-      if (stat.isDirectory()) out.push(...walk(full));
-      else if (/\.(svg|png|jpg|jpeg|webp)$/i.test(item)) out.push(full);
-    }
-    return out;
+function walk(dir) {
+  const out = [];
+  for (const item of fs.readdirSync(dir)) {
+    const full = path.join(dir, item);
+    const stat = fs.statSync(full);
+    if (stat.isDirectory()) out.push(...walk(full));
+    else if (/\.(svg|png|jpg|jpeg|webp)$/i.test(item)) out.push(full);
   }
+  return out;
+}
 
-  for (const file of walk(articlesDir)) {
+const imagesDir = path.join(publicDir, "images");
+if (fs.existsSync(imagesDir)) {
+  for (const file of walk(imagesDir)) {
     if (!referencedPaths.has(file)) {
       const rel = path.relative(publicDir, file).replace(/\\/g, "/");
       console.log(`[ORPHAN] asset not in manifest: /${rel}`);

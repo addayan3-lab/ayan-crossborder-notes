@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-rv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FEF2F2"/>
+      <stop offset="1" stop-color="#FFFAFA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-rv)"/>
+  <circle cx="1100" cy="550" r="180" fill="#FEE2E2" opacity="0.4"/>
+  <circle cx="80" cy="60" r="140" fill="#FFF1F2" opacity="0.5"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">Review 分析学习路径</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">从评论中挖掘产品优化的方向</text>
+  <!-- left: positive review -->
+  <rect x="80" y="180" width="480" height="180" rx="20" fill="#FFFFFF" stroke="#DCFCE7" stroke-width="2"/>
+  <rect x="80" y="180" width="480" height="54" rx="20" fill="#059669"/>
+  <rect x="80" y="216" width="480" height="18" fill="#059669"/>
+  <text x="100" y="215" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">好评分析 · 确认优势</text>
+  <circle cx="120" cy="270" r="5" fill="#059669"/>
+  <text x="140" y="275" font-size="15" fill="#334155" font-family="system-ui, -apple-system, sans-serif">高频正面关键词提取</text>
+  <circle cx="120" cy="305" r="5" fill="#059669"/>
+  <text x="140" y="310" font-size="15" fill="#334155" font-family="system-ui, -apple-system, sans-serif">核心卖点验证</text>
+  <circle cx="120" cy="340" r="5" fill="#059669"/>
+  <text x="140" y="345" font-size="15" fill="#334155" font-family="system-ui, -apple-system, sans-serif">评分趋势监控</text>
+  <rect x="640" y="180" width="480" height="180" rx="20" fill="#FFFFFF" stroke="#FECACA" stroke-width="2"/>
+  <rect x="640" y="180" width="480" height="54" rx="20" fill="#F43F5E"/>
+  <rect x="640" y="216" width="480" height="18" fill="#F43F5E"/>
+  <text x="660" y="215" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">差评分析 · 定位问题</text>
+  <circle cx="680" cy="270" r="5" fill="#F43F5E"/>
+  <text x="700" y="275" font-size="15" fill="#334155" font-family="system-ui, -apple-system, sans-serif">痛点分类：质量 / 物流 / 描述不符</text>
+  <circle cx="680" cy="305" r="5" fill="#F43F5E"/>
+  <text x="700" y="310" font-size="15" fill="#334155" font-family="system-ui, -apple-system, sans-serif">差评关键词聚类</text>
+  <circle cx="680" cy="340" r="5" fill="#F43F5E"/>
+  <text x="700" y="345" font-size="15" fill="#334155" font-family="system-ui, -apple-system, sans-serif">竞品对比分析</text>
+  <!-- bottom flow -->
+  <path d="M320 360 L320 420 L600 420" stroke="#94A3B8" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <path d="M880 360 L880 420 L600 420" stroke="#94A3B8" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+  <polygon points="590,414 600,426 610,414" fill="#94A3B8"/>
+  <rect x="360" y="420" width="480" height="60" rx="20" fill="#0F172A"/>
+  <text x="600" y="458" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">→ Listing 修复清单</text>
+  <!-- 3 action bubbles -->
+  <rect x="140" y="520" width="200" height="50" rx="14" fill="#EFF6FF" stroke="#2563EB"/>
+  <text x="240" y="547" text-anchor="middle" font-size="16" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="600">QA 优化</text>
+  <rect x="420" y="520" width="200" height="50" rx="14" fill="#EFF6FF" stroke="#2563EB"/>
+  <text x="520" y="547" text-anchor="middle" font-size="16" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="600">产品改进</text>
+  <rect x="700" y="520" width="200" height="50" rx="14" fill="#EFF6FF" stroke="#2563EB"/>
+  <text x="800" y="547" text-anchor="middle" font-size="16" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="600">广告策略调整</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F4FF"/>
+      <stop offset="1" stop-color="#F5F3FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ai)"/>
+  <circle cx="1100" cy="80" r="160" fill="#E0E7FF" opacity="0.4"/>
+  <circle cx="80" cy="580" r="180" fill="#EDE9FE" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 搜索学习路径</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">理解 AI 购物入口，优化搜索可见性</text>
+  <!-- Center: AI search box -->
+  <rect x="400" y="170" width="400" height="70" rx="35" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+  <text x="420" y="203" font-size="18" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif">向 RUFUS 提问...</text>
+  <rect x="720" y="183" width="50" height="44" rx="22" fill="#7C3AED"/>
+  <text x="745" y="212" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif">▸</text>
+  <!-- AI answer card -->
+  <rect x="340" y="260" width="520" height="80" rx="16" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="380" y="295" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">RUFUS 推荐：适用于...</text>
+  <text x="380" y="318" font-size="13" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif">基于 1,234 条 Review 分析</text>
+  <!-- Left: 3 task cards -->
+  <rect x="80" y="380" width="310" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <circle cx="110" cy="415" r="10" fill="#2563EB"/>
+  <text x="110" y="420" text-anchor="middle" font-size="12" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif">1</text>
+  <text x="135" y="410" font-size="16" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">理解 AI 搜索机制</text>
+  <text x="135" y="432" font-size="13" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">RUFUS / Alexa 工作原理</text>
+  <rect x="80" y="470" width="310" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <circle cx="110" cy="505" r="10" fill="#2563EB"/>
+  <text x="110" y="510" text-anchor="middle" font-size="12" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif">2</text>
+  <text x="135" y="500" font-size="16" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">优化搜索可见性</text>
+  <text x="135" y="522" font-size="13" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">Review 关键词 / 结构化数据</text>
+  <rect x="80" y="560" width="310" height="60" rx="14" fill="#2563EB"/>
+  <text x="235" y="592" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">3 → 持续监测迭代</text>
+  <!-- Right: 3 note cards -->
+  <rect x="460" y="380" width="280" height="50" rx="12" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="600" y="410" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif">Review 关键信息提取</text>
+  <rect x="460" y="450" width="280" height="50" rx="12" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="600" y="480" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif">产品属性结构化标签</text>
+  <rect x="460" y="520" width="280" height="50" rx="12" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="600" y="550" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif">竞品 AI 覆盖率追踪</text>
+  <!-- Right side label -->
+  <rect x="810" y="380" width="260" height="190" rx="16" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="940" y="420" text-anchor="middle" font-size="16" fill="#7C3AED" font-family="system-ui, -apple-system, sans-serif" font-weight="700">人工复核</text>
+  <circle cx="850" cy="460" r="4" fill="#7C3AED"/>
+  <text x="870" y="464" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">AI 推荐词人工筛选</text>
+  <circle cx="850" cy="495" r="4" fill="#7C3AED"/>
+  <text x="870" y="499" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">Listing 内容真实性</text>
+  <circle cx="850" cy="530" r="4" fill="#7C3AED"/>
+  <text x="870" y="534" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">品牌合规检查</text>
+</svg>

@@ -4,7 +4,7 @@ description: "把 Listing 优化拆成 4 步：卖点提炼、文案生成、检
 pubDate: "2026-06-02"
 category: "Listing"
 tags: ["Listing", "学习路径", "AI 提效"]
-image: "/images/og-default.svg"
+image: "/images/articles/listing-learning-path/cover.svg"
 draft: false
 topic: listing
 stage: 新手

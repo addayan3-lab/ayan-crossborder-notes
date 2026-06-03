@@ -131,6 +131,9 @@ const courses = [
       <div class="hero-eyebrow">公开课</div>
       <h1>亚马逊运营公开课</h1>
       <p>围绕关键词、Listing、PPC、Review、选品、AI 工具和新手规则，把文章、资料包和实操讲解串成可学习的路径。</p>
+      <div class="hero-cover">
+        <img src="/images/open-class/open-class-center/cover.svg" alt="亚马逊公开课中心封面图" loading="lazy" />
+      </div>
     </div>
   </section>
 
@@ -399,6 +402,23 @@ const courses = [
 
   .callout-note strong {
     color: #0f172a;
+  }
+
+  .hero-cover {
+    margin: 24px auto 0;
+    max-width: 720px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  }
+
+  .hero-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
   }
 
   @media (max-width: 720px) {

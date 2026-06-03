@@ -320,6 +320,9 @@ const ayanBreadcrumbData = {
       <div class="hero-eyebrow">资源中心</div>
       <h1>亚马逊运营资料包中心</h1>
       <p class="hero-subtitle">把关键词、Listing、PPC、Review、选品和 AI 工具资料集中整理,适合公开课前预习和课后复盘。</p>
+      <div class="hero-cover">
+        <img src="/images/resources/resources-center/cover.svg" alt="亚马逊卖家资源中心封面图" loading="lazy" />
+      </div>
       <div class="hero-meta">
         <div class="hero-meta-item">
           <span class="hero-meta-num">{resourceCategories.length}</span>
@@ -971,6 +974,23 @@ const ayanBreadcrumbData = {
 
   .open-class-teaser-cta:hover {
     background: #0f5ae0;
+  }
+
+  .hero-cover {
+    margin: 24px auto 0;
+    max-width: 720px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  }
+
+  .hero-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
   }
 
   @media (max-width: 720px) {

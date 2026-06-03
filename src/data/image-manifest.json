@@ -54,5 +54,189 @@
     "topics": ["common"],
     "keywords": ["总结", "方法", "流程", "SOP"],
     "alt": "亚马逊 AI 运营核心总结图"
+  },
+  {
+    "id": "keyword-table-overview-01",
+    "path": "/images/articles/ai-keyword-table/keyword-table-overview.png",
+    "type": "section",
+    "topics": ["keyword"],
+    "keywords": ["关键词", "关键词表", "拓展"],
+    "alt": "亚马逊关键词拓展表示意图"
+  },
+  {
+    "id": "new-product-ppc-week-one-cover-01",
+    "path": "/images/articles/new-product-ppc-week-one/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "new-product"],
+    "keywords": ["新品", "PPC", "广告", "上线"],
+    "alt": "新品上线 PPC 第一周广告操作指南封面"
+  },
+  {
+    "id": "new-product-ppc-week-one-guide-01",
+    "path": "/images/articles/new-product-ppc-week-one/guide.svg",
+    "type": "section",
+    "topics": ["ppc", "new-product"],
+    "keywords": ["新品", "PPC", "操作流程"],
+    "alt": "新品 PPC 第一周操作流程图"
+  },
+  {
+    "id": "cover-ai-operations-01",
+    "path": "/images/covers/cover-ai-operations.svg",
+    "type": "cover",
+    "topics": ["ai-operations"],
+    "keywords": ["AI", "运营"],
+    "alt": "亚马逊 AI 运营专题封面图"
+  },
+  {
+    "id": "cover-keyword-01",
+    "path": "/images/covers/cover-keyword.svg",
+    "type": "cover",
+    "topics": ["keyword"],
+    "keywords": ["关键词", "研究"],
+    "alt": "亚马逊关键词研究专题封面图"
+  },
+  {
+    "id": "cover-listing-01",
+    "path": "/images/covers/cover-listing.svg",
+    "type": "cover",
+    "topics": ["listing"],
+    "keywords": ["Listing", "优化"],
+    "alt": "亚马逊 Listing 优化专题封面图"
+  },
+  {
+    "id": "ai-operations-framework-01",
+    "path": "/images/generated-infographics/2026-amazon-ai-operations/framework.svg",
+    "type": "framework",
+    "topics": ["ai-operations"],
+    "keywords": ["AI", "运营", "框架"],
+    "alt": "AI 与卖家的分工示意图"
+  },
+  {
+    "id": "ai-operations-hero-01",
+    "path": "/images/generated-infographics/2026-amazon-ai-operations/hero.svg",
+    "type": "hero",
+    "topics": ["ai-operations"],
+    "keywords": ["AI", "运营", "场景"],
+    "alt": "亚马逊 AI 运营五大场景图"
+  },
+  {
+    "id": "ai-operations-summary-01",
+    "path": "/images/generated-infographics/2026-amazon-ai-operations/summary.svg",
+    "type": "summary",
+    "topics": ["ai-operations"],
+    "keywords": ["AI", "运营", "SOP"],
+    "alt": "阿岩卖家 AI 落地 SOP 图"
+  },
+  {
+    "id": "site-ayan-avatar-01",
+    "path": "/images/ayan-avatar.png",
+    "type": "site",
+    "topics": ["site"],
+    "keywords": ["头像", "阿岩"],
+    "alt": "阿岩头像"
+  },
+  {
+    "id": "site-ayan-hero-01",
+    "path": "/images/ayan-hero.png",
+    "type": "site",
+    "topics": ["site"],
+    "keywords": ["hero", "背景"],
+    "alt": "阿岩 hero 背景图"
+  },
+  {
+    "id": "site-hero-pattern-01",
+    "path": "/images/hero-pattern.svg",
+    "type": "site",
+    "topics": ["site"],
+    "keywords": ["装饰", "背景"],
+    "alt": "站点背景装饰图案"
+  },
+  {
+    "id": "site-og-default-01",
+    "path": "/images/og-default.svg",
+    "type": "site",
+    "topics": ["site"],
+    "keywords": ["OG", "默认"],
+    "alt": "站点默认社交分享图"
+  },
+  {
+    "id": "article-keyword-learning-path-cover",
+    "path": "/images/articles/keyword-learning-path/cover.svg",
+    "type": "cover",
+    "topics": ["keyword"],
+    "keywords": ["关键词", "学习路径", "漏斗", "筛选"],
+    "alt": "亚马逊关键词学习路径封面图"
+  },
+  {
+    "id": "article-listing-learning-path-cover",
+    "path": "/images/articles/listing-learning-path/cover.svg",
+    "type": "cover",
+    "topics": ["listing"],
+    "keywords": ["Listing", "标题", "五点", "图片", "Review"],
+    "alt": "亚马逊 Listing 优化学习路径封面图"
+  },
+  {
+    "id": "article-ppc-learning-path-cover",
+    "path": "/images/articles/ppc-learning-path/cover.svg",
+    "type": "cover",
+    "topics": ["ppc"],
+    "keywords": ["PPC", "广告", "自动广告", "精准广告", "ACOS"],
+    "alt": "亚马逊 PPC 广告学习路径封面图"
+  },
+  {
+    "id": "article-review-learning-path-cover",
+    "path": "/images/articles/review-learning-path/cover.svg",
+    "type": "cover",
+    "topics": ["review"],
+    "keywords": ["Review", "差评", "好评", "痛点", "优化"],
+    "alt": "亚马逊 Review 分析学习路径封面图"
+  },
+  {
+    "id": "article-ai-search-learning-path-cover",
+    "path": "/images/articles/ai-search-learning-path/cover.svg",
+    "type": "cover",
+    "topics": ["ai-search"],
+    "keywords": ["AI搜索", "RUFUS", "搜索可见性", "结构化"],
+    "alt": "亚马逊 AI 搜索学习路径封面图"
+  },
+  {
+    "id": "article-tools-learning-path-cover",
+    "path": "/images/articles/tools-learning-path/cover.svg",
+    "type": "cover",
+    "topics": ["tools"],
+    "keywords": ["工具", "资料", "表格", "清单", "SOP"],
+    "alt": "亚马逊工具资料学习路径封面图"
+  },
+  {
+    "id": "resources-center-cover",
+    "path": "/images/resources/resources-center/cover.svg",
+    "type": "cover",
+    "topics": ["resources"],
+    "keywords": ["资源中心", "资料", "模板", "清单"],
+    "alt": "亚马逊卖家资源中心封面图"
+  },
+  {
+    "id": "open-class-center-cover",
+    "path": "/images/open-class/open-class-center/cover.svg",
+    "type": "cover",
+    "topics": ["open-class"],
+    "keywords": ["公开课", "课程", "系统学习"],
+    "alt": "亚马逊公开课中心封面图"
+  },
+  {
+    "id": "resource-keyword-cleaning-sheet-cover",
+    "path": "/images/resources/keyword-cleaning-sheet/cover.svg",
+    "type": "cover",
+    "topics": ["keyword", "resources"],
+    "keywords": ["关键词", "清洗", "去重", "分组"],
+    "alt": "关键词清洗表封面图"
+  },
+  {
+    "id": "resource-ppc-weekly-review-cover",
+    "path": "/images/resources/ppc-weekly-review/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "resources"],
+    "keywords": ["PPC", "周复盘", "广告", "ACOS"],
+    "alt": "PPC 周复盘表封面图"
   }
 ]

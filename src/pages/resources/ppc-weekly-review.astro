@@ -22,6 +22,9 @@ const ayanBreadcrumbData = {
       <div class="resource-eyebrow">资源中心 · PPC</div>
       <h1>PPC 周复盘表</h1>
       <p>把"广告看了一堆数据,不知道该改什么"变成"按表勾 9 项,得出下周动作清单"。</p>
+      <div class="hero-cover">
+        <img src="/images/resources/ppc-weekly-review/cover.svg" alt="PPC 周复盘表封面图" loading="lazy" />
+      </div>
     </div>
   </section>
 
@@ -593,5 +596,22 @@ const ayanBreadcrumbData = {
       border-bottom: 1px solid #fef3c7;
       background: #fffbeb;
     }
+  }
+
+  .hero-cover {
+    margin: 24px auto 0;
+    max-width: 720px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  }
+
+  .hero-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
   }
 </style>

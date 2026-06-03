@@ -4,7 +4,7 @@ description: "把关键词这件事拆成 4 步：找来源、洗词表、判定
 pubDate: "2026-06-02"
 category: "关键词"
 tags: ["关键词", "学习路径", "AI 提效"]
-image: "/images/og-default.svg"
+image: "/images/articles/keyword-learning-path/cover.svg"
 draft: false
 topic: keyword
 stage: 新手

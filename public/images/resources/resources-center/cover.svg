@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-rc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F4FF"/>
+      <stop offset="1" stop-color="#FAFBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-rc)"/>
+  <circle cx="1050" cy="80" r="160" fill="#DBEAFE" opacity="0.4"/>
+  <circle cx="80" cy="580" r="170" fill="#EFF6FF" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">资源中心</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">运营工具 · 模板 · 检查清单 · SOP</text>
+  <!-- 7 resource cards in 2 rows -->
+  <rect x="60" y="180" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="60" y="180" width="240" height="60" rx="18" fill="#2563EB"/>
+  <rect x="60" y="222" width="240" height="18" fill="#2563EB"/>
+  <text x="180" y="216" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">关键词清洗表</text>
+  <text x="180" y="270" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">去重 · 分组 · 布局</text>
+  <text x="180" y="300" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">一键管理关键词池</text>
+  <rect x="320" y="180" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="320" y="180" width="240" height="60" rx="18" fill="#059669"/>
+  <rect x="320" y="222" width="240" height="18" fill="#059669"/>
+  <text x="440" y="216" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">PPC 周复盘表</text>
+  <text x="440" y="270" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">广告数据追踪</text>
+  <text x="440" y="300" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">ACOS 优化策略</text>
+  <rect x="580" y="180" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="580" y="180" width="240" height="60" rx="18" fill="#D97706"/>
+  <rect x="580" y="222" width="240" height="18" fill="#D97706"/>
+  <text x="700" y="216" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">竞品分析矩阵</text>
+  <text x="700" y="270" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">竞品数据录入</text>
+  <text x="700" y="300" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">差异化定位</text>
+  <rect x="840" y="180" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="840" y="180" width="240" height="60" rx="18" fill="#0891B2"/>
+  <rect x="840" y="222" width="240" height="18" fill="#0891B2"/>
+  <text x="960" y="216" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review 分析表</text>
+  <text x="960" y="270" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">评论数据导入</text>
+  <text x="960" y="300" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">痛点自动分类</text>
+  <!-- Row 2 -->
+  <rect x="60" y="380" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="60" y="380" width="240" height="60" rx="18" fill="#7C3AED"/>
+  <rect x="60" y="422" width="240" height="18" fill="#7C3AED"/>
+  <text x="180" y="416" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing 检查清单</text>
+  <text x="180" y="470" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">上线前自检</text>
+  <text x="180" y="500" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">合规核验</text>
+  <rect x="320" y="380" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="320" y="380" width="240" height="60" rx="18" fill="#DC2626"/>
+  <rect x="320" y="422" width="240" height="18" fill="#DC2626"/>
+  <text x="440" y="416" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">平台规则清单</text>
+  <text x="440" y="470" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">禁售/限售检查</text>
+  <text x="440" y="500" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">账号安全</text>
+  <rect x="580" y="380" width="240" height="170" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="580" y="380" width="240" height="60" rx="18" fill="#0F172A"/>
+  <rect x="580" y="422" width="240" height="18" fill="#0F172A"/>
+  <text x="700" y="416" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 工具评测表</text>
+  <text x="700" y="470" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">工具功能对比</text>
+  <text x="700" y="500" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">性价比评估</text>
+  <!-- Bottom bar -->
+  <rect x="840" y="380" width="300" height="120" rx="18" fill="#EFF6FF" stroke="#2563EB" stroke-dasharray="8,4"/>
+  <text x="990" y="430" text-anchor="middle" font-size="20" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">更多资料即将上线</text>
+  <text x="990" y="465" text-anchor="middle" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">持续更新中</text>
+</svg>
