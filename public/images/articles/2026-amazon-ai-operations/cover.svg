@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-ao" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F9FF"/>
+      <stop offset="1" stop-color="#F8FAFE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ao)"/>
+  <circle cx="1050" cy="80" r="160" fill="#E0F2FE" opacity="0.5"/>
+  <circle cx="120" cy="580" r="180" fill="#F0F9FF" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">2026 AI 运营全景</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">5 大场景 × AI 提效路径</text>
+  <!-- 5 scene layout -->
+  <rect x="80" y="170" width="200" height="130" rx="14" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+  <circle cx="180" cy="200" r="20" fill="#0EA5E9"/>
+  <text x="180" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">1</text>
+  <text x="180" y="240" text-anchor="middle" font-size="17" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">关键词</text>
+  <text x="180" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">拓词·清洗·判断</text>
+  <text x="180" y="288" text-anchor="middle" font-size="13" fill="#0EA5E9" font-family="system-ui, -apple-system, sans-serif" font-weight="600">AI 提效 70%</text>
+  <rect x="300" y="170" width="200" height="130" rx="14" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+  <circle cx="400" cy="200" r="20" fill="#0EA5E9"/>
+  <text x="400" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">2</text>
+  <text x="400" y="240" text-anchor="middle" font-size="17" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing</text>
+  <text x="400" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">初稿·优化·检查</text>
+  <text x="400" y="288" text-anchor="middle" font-size="13" fill="#0EA5E9" font-family="system-ui, -apple-system, sans-serif" font-weight="600">AI 提效 50%</text>
+  <rect x="520" y="170" width="200" height="130" rx="14" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+  <circle cx="620" cy="200" r="20" fill="#0EA5E9"/>
+  <text x="620" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">3</text>
+  <text x="620" y="240" text-anchor="middle" font-size="17" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">广告 PPC</text>
+  <text x="620" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">报表·否词·诊断</text>
+  <text x="620" y="288" text-anchor="middle" font-size="13" fill="#0EA5E9" font-family="system-ui, -apple-system, sans-serif" font-weight="600">AI 提效 60%</text>
+  <rect x="740" y="170" width="200" height="130" rx="14" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+  <circle cx="840" cy="200" r="20" fill="#0EA5E9"/>
+  <text x="840" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">4</text>
+  <text x="840" y="240" text-anchor="middle" font-size="17" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review</text>
+  <text x="840" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">分类·提炼·反哺</text>
+  <text x="840" y="288" text-anchor="middle" font-size="13" fill="#0EA5E9" font-family="system-ui, -apple-system, sans-serif" font-weight="600">AI 提效 70%</text>
+  <rect x="960" y="170" width="160" height="130" rx="14" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+  <circle cx="1040" cy="200" r="20" fill="#0EA5E9"/>
+  <text x="1040" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">5</text>
+  <text x="1040" y="240" text-anchor="middle" font-size="17" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">SOP</text>
+  <text x="1040" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">流程·检查·复盘</text>
+  <text x="1040" y="288" text-anchor="middle" font-size="13" fill="#0EA5E9" font-family="system-ui, -apple-system, sans-serif" font-weight="600">AI 提效 40%</text>
+  <!-- AI role section -->
+  <rect x="80" y="340" width="1040" height="70" rx="14" fill="#F0F9FF" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="600" y="372" text-anchor="middle" font-size="16" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 的角色：数据处理 + 初稿生成 + 模式识别</text>
+  <text x="600" y="394" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-weight="600">人工的角色：判断校准 + 商业决策 + 最后一公里</text>
+  <!-- Flow -->
+  <rect x="80" y="445" width="240" height="50" rx="12" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2"/>
+  <text x="200" y="477" text-anchor="middle" font-size="15" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">工具入口</text>
+  <path d="M325 470 L380 470" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="375,465 385,470 375,475" fill="#94A3B8"/>
+  <rect x="390" y="445" width="240" height="50" rx="12" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2"/>
+  <text x="510" y="477" text-anchor="middle" font-size="15" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 提效</text>
+  <path d="M635 470 L690 470" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="685,465 695,470 685,475" fill="#94A3B8"/>
+  <rect x="700" y="445" width="240" height="50" rx="12" fill="#0EA5E9"/>
+  <text x="820" y="477" text-anchor="middle" font-size="15" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">人工决策</text>
+  <path d="M945 470 L1000 470" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="995,465 1005,470 995,475" fill="#94A3B8"/>
+  <rect x="1010" y="445" width="110" height="50" rx="12" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1065" y="477" text-anchor="middle" font-size="15" fill="#0284C7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">迭代</text>
+</svg>

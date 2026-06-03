@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-ras" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1F5F9"/>
+      <stop offset="1" stop-color="#FAFBFC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ras)"/>
+  <circle cx="150" cy="100" r="150" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="1080" cy="580" r="170" fill="#F1F5F9" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">Rufus &amp; Alexa Shopping</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">平台 AI 工具对卖家的影响与应对</text>
+  <!-- Comparison table: before vs after -->
+  <rect x="80" y="170" width="480" height="200" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="80" y="170" width="480" height="50" rx="16" fill="#64748B"/>
+  <rect x="80" y="200" width="480" height="20" fill="#64748B"/>
+  <text x="320" y="203" text-anchor="middle" font-size="17" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 搜索推出前</text>
+  <text x="120" y="245" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 关键词精确匹配为主</text>
+  <text x="120" y="270" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 搜索词来自搜索框输入</text>
+  <text x="120" y="295" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 流量路径：搜索 → Listing</text>
+  <text x="120" y="320" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 评价主要影响转化</text>
+  <text x="120" y="345" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 侧重关键词密度</text>
+  <rect x="640" y="170" width="480" height="200" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="640" y="170" width="480" height="50" rx="16" fill="#3B82F6"/>
+  <rect x="640" y="200" width="480" height="20" fill="#3B82F6"/>
+  <text x="880" y="203" text-anchor="middle" font-size="17" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 搜索推出后</text>
+  <text x="680" y="245" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 语义理解 + 意图识别</text>
+  <text x="680" y="270" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 问题式 / 场景式搜索</text>
+  <text x="680" y="295" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 流量路径：AI 摘要 → Listing</text>
+  <text x="680" y="320" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 评价质量 = AI 引用素材</text>
+  <text x="680" y="345" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 需要内容结构化</text>
+  <!-- Key impacts -->
+  <rect x="80" y="410" width="240" height="60" rx="12" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="200" y="440" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">场景词 > 关键词</text>
+  <rect x="340" y="410" width="240" height="60" rx="12" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="460" y="440" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">A+ 内容重要性提升</text>
+  <rect x="600" y="410" width="240" height="60" rx="12" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="720" y="440" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review 质量影响 AI 摘要</text>
+  <rect x="860" y="410" width="260" height="60" rx="12" fill="#EFF6FF" stroke="#93C5FD"/>
+  <text x="990" y="440" text-anchor="middle" font-size="15" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">结构化描述 = AI 友好型</text>
+  <!-- Result -->
+  <rect x="340" y="505" width="520" height="50" rx="16" fill="#2563EB"/>
+  <text x="600" y="538" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">适应 AI 搜索 = 提前布局内容策略</text>
+</svg>

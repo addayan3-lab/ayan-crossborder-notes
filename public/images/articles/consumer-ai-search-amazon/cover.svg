@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-csa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1F5F9"/>
+      <stop offset="1" stop-color="#FAFBFC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-csa)"/>
+  <circle cx="1050" cy="100" r="160" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="120" cy="560" r="180" fill="#F1F5F9" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">消费者 AI 搜索行为</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">问题式搜索·对比式搜索·场景式搜索</text>
+  <!-- 3 search modes -->
+  <rect x="80" y="170" width="320" height="180" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <circle cx="240" cy="200" r="24" fill="#64748B"/>
+  <text x="240" y="207" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">1</text>
+  <text x="240" y="245" text-anchor="middle" font-size="18" fill="#334155" font-family="system-ui, -apple-system, sans-serif" font-weight="700">问题式搜索</text>
+  <text x="240" y="275" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">"What is the best…"</text>
+  <text x="240" y="298" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">"How to fix…"</text>
+  <text x="240" y="321" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 需要内容型描述</text>
+  <rect x="440" y="170" width="320" height="180" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <circle cx="600" cy="200" r="24" fill="#64748B"/>
+  <text x="600" y="207" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">2</text>
+  <text x="600" y="245" text-anchor="middle" font-size="18" fill="#334155" font-family="system-ui, -apple-system, sans-serif" font-weight="700">对比式搜索</text>
+  <text x="600" y="275" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">"A vs B"</text>
+  <text x="600" y="298" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">"X or Y which is better"</text>
+  <text x="600" y="321" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 需要差异化卖点</text>
+  <rect x="800" y="170" width="320" height="180" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <circle cx="960" cy="200" r="24" fill="#64748B"/>
+  <text x="960" y="207" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">3</text>
+  <text x="960" y="245" text-anchor="middle" font-size="18" fill="#334155" font-family="system-ui, -apple-system, sans-serif" font-weight="700">场景式搜索</text>
+  <text x="960" y="275" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">"For small bathroom"</text>
+  <text x="960" y="298" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">"For large families"</text>
+  <text x="960" y="321" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 需要场景化表达</text>
+  <!-- Impact panel -->
+  <rect x="80" y="385" width="1040" height="70" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="600" y="417" text-anchor="middle" font-size="16" fill="#475569" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 搜索对卖家的影响：</text>
+  <text x="600" y="438" text-anchor="middle" font-size="14" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">Listing 需要更完整的结构描述 · 场景词比参数词更重要 · FAQ 和 A+ 影响 AI 摘要</text>
+  <!-- Result -->
+  <rect x="340" y="490" width="520" height="56" rx="16" fill="#475569"/>
+  <text x="600" y="526" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">理解 AI 搜索 → 调整内容策略 → 获得更多可见性</text>
+</svg>

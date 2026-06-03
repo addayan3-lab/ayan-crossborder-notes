@@ -15,6 +15,7 @@ publicLessonUse: 适合作为 AI 搜索趋势公开课案例，讲清 Rufus、Al
 leadMagnet: Rufus 与 Alexa Shopping 对比表
 wechatHook: 回复关键词"Rufus"，领取 Rufus 与 Alexa Shopping 对比表。
 draft: false
+image: "/images/articles/amazon-rufus-alexa-shopping/cover.svg"
 ---
 
 这是一篇占位文章。

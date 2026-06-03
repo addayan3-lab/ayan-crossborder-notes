@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-ara" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1F2"/>
+      <stop offset="1" stop-color="#FFFAFB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ara)"/>
+  <circle cx="150" cy="100" r="150" fill="#FFE4E6" opacity="0.5"/>
+  <circle cx="1080" cy="560" r="170" fill="#FFF1F2" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 分析 Review 提炼卖点</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">痛点 → 卖点 → 场景词 → 回填页面</text>
+  <!-- Flow: Reviews → AI Extraction → Manual Review → Apply -->
+  <rect x="80" y="170" width="240" height="90" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <text x="200" y="208" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review 原数据</text>
+  <text x="200" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">好评·差评·竞品评价</text>
+  <path d="M325 215 L370 215" stroke="#BE123C" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="365,210 375,215 365,220" fill="#BE123C"/>
+  <rect x="380" y="170" width="240" height="90" rx="14" fill="#E11D48"/>
+  <text x="500" y="208" text-anchor="middle" font-size="17" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 分类提取</text>
+  <text x="500" y="235" text-anchor="middle" font-size="14" fill="#FECDD3" font-family="system-ui, -apple-system, sans-serif">痛点·卖点·场景词</text>
+  <path d="M625 215 L670 215" stroke="#BE123C" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="665,210 675,215 665,220" fill="#BE123C"/>
+  <rect x="680" y="170" width="240" height="90" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <text x="800" y="208" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">人工复核</text>
+  <text x="800" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">校准分类·验证真实性</text>
+  <path d="M925 215 L970 215" stroke="#BE123C" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="965,210 975,215 965,220" fill="#BE123C"/>
+  <rect x="980" y="170" width="140" height="90" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <text x="1050" y="208" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">回填</text>
+  <text x="1050" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">标题·五点·A+</text>
+  <!-- 3 extraction categories -->
+  <rect x="80" y="300" width="320" height="130" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <circle cx="120" cy="330" r="18" fill="#FECDD3"/><text x="120" y="336" text-anchor="middle" font-size="15" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">1</text>
+  <text x="160" y="335" font-size="17" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">痛点提取</text>
+  <text x="100" y="365" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 差评高频问题聚合</text>
+  <text x="100" y="388" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 归因分类（4 类）</text>
+  <text x="100" y="411" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 频率统计排序</text>
+  <rect x="440" y="300" width="320" height="130" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <circle cx="480" cy="330" r="18" fill="#FECDD3"/><text x="480" y="336" text-anchor="middle" font-size="15" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">2</text>
+  <text x="520" y="335" font-size="17" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">卖点提炼</text>
+  <text x="460" y="365" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 好评重复卖点识别</text>
+  <text x="460" y="388" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 竞品差评反向卖点</text>
+  <text x="460" y="411" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 差异化机会排序</text>
+  <rect x="800" y="300" width="320" height="130" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <circle cx="840" cy="330" r="18" fill="#FECDD3"/><text x="840" y="336" text-anchor="middle" font-size="15" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">3</text>
+  <text x="880" y="335" font-size="17" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">场景词提取</text>
+  <text x="820" y="365" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 用户真实语言采集</text>
+  <text x="820" y="388" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 场景词 → 关键词表</text>
+  <text x="820" y="411" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 写入五点场景点</text>
+  <!-- Bottom -->
+  <rect x="340" y="470" width="520" height="56" rx="16" fill="#E11D48"/>
+  <text x="600" y="506" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review → 数据 → 回填 → 提升转化</text>
+</svg>

@@ -4,7 +4,7 @@ description: "亚马逊差评不是终点，是下一版 Listing 的需求文档
 pubDate: "2026-06-02"
 category: "Review 分析"
 tags: ["差评", "Listing", "用户反馈"]
-image: "/images/og-default.svg"
+image: "/images/articles/negative-review-listing-fix/cover.svg"
 topic: review
 stage: 实操
 intent: 工具

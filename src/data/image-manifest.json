@@ -326,5 +326,69 @@
     "topics": ["ai", "tools"],
     "keywords": ["AI", "工具", "评测", "标准"],
     "alt": "亚马逊 AI 工具评测封面图"
+  },
+  {
+    "id": "article-negative-review-listing-fix-cover",
+    "path": "/images/articles/negative-review-listing-fix/cover.svg",
+    "type": "cover",
+    "topics": ["review"],
+    "keywords": ["差评", "归因", "修复", "Listing"],
+    "alt": "差评归因与修复：4 类差评对应动作封面图"
+  },
+  {
+    "id": "article-ai-review-analysis-cover",
+    "path": "/images/articles/ai-review-analysis/cover.svg",
+    "type": "cover",
+    "topics": ["review", "ai"],
+    "keywords": ["AI", "Review", "卖点", "痛点", "场景词"],
+    "alt": "AI 分析 Review 提炼卖点封面图"
+  },
+  {
+    "id": "article-ai-market-size-estimate-cover",
+    "path": "/images/articles/ai-market-size-estimate/cover.svg",
+    "type": "cover",
+    "topics": ["selection"],
+    "keywords": ["市场", "容量", "搜索量", "销量", "价格带"],
+    "alt": "AI 做亚马逊市场容量判断封面图"
+  },
+  {
+    "id": "article-selection-pain-reverse-cover",
+    "path": "/images/articles/selection-pain-reverse/cover.svg",
+    "type": "cover",
+    "topics": ["selection"],
+    "keywords": ["痛点", "反推", "选品", "差评"],
+    "alt": "痛点反推选品：从差评和问答找机会封面图"
+  },
+  {
+    "id": "article-consumer-ai-search-amazon-cover",
+    "path": "/images/articles/consumer-ai-search-amazon/cover.svg",
+    "type": "cover",
+    "topics": ["ai-search"],
+    "keywords": ["AI搜索", "消费者", "行为", "场景"],
+    "alt": "消费者如何用 Amazon AI 搜索产品封面图"
+  },
+  {
+    "id": "article-amazon-rufus-alexa-shopping-cover",
+    "path": "/images/articles/amazon-rufus-alexa-shopping/cover.svg",
+    "type": "cover",
+    "topics": ["ai-search"],
+    "keywords": ["Rufus", "Alexa", "AI搜索", "影响"],
+    "alt": "Amazon Rufus / Alexa for Shopping 对卖家影响封面图"
+  },
+  {
+    "id": "article-2026-amazon-ai-operations-cover",
+    "path": "/images/articles/2026-amazon-ai-operations/cover.svg",
+    "type": "cover",
+    "topics": ["ai-search"],
+    "keywords": ["AI", "运营", "全景", "五大场景"],
+    "alt": "2026 亚马逊 AI 运营全景图封面"
+  },
+  {
+    "id": "article-amazon-platform-rules-beginner-cover",
+    "path": "/images/articles/amazon-platform-rules-beginner/cover.svg",
+    "type": "cover",
+    "topics": ["tools"],
+    "keywords": ["新手", "规则", "避坑", "合规"],
+    "alt": "亚马逊平台规则入门：新手避坑清单封面图"
   }
 ]

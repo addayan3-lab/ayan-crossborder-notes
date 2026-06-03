@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-nrl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1F2"/>
+      <stop offset="1" stop-color="#FFF8F9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-nrl)"/>
+  <circle cx="1050" cy="80" r="160" fill="#FFE4E6" opacity="0.5"/>
+  <circle cx="120" cy="560" r="180" fill="#FFF1F2" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">差评归因与修复</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">4 类差评归因 → 对应 Listing 修复动作</text>
+  <!-- 4 quadrant cards -->
+  <rect x="80" y="170" width="240" height="150" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="200" cy="200" r="20" fill="#F43F5E"/>
+  <text x="200" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">1</text>
+  <text x="200" y="240" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">物流问题</text>
+  <text x="200" y="265" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">破损·延迟·丢件</text>
+  <text x="200" y="290" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 加强包装·换物流商</text>
+  <rect x="340" y="170" width="240" height="150" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="460" cy="200" r="20" fill="#F43F5E"/>
+  <text x="460" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">2</text>
+  <text x="460" y="240" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">预期偏差</text>
+  <text x="460" y="265" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">尺寸不符·色差·功能差异</text>
+  <text x="460" y="290" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 优化描述·增加参照图</text>
+  <rect x="600" y="170" width="240" height="150" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="720" cy="200" r="20" fill="#F43F5E"/>
+  <text x="720" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">3</text>
+  <text x="720" y="240" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">质量问题</text>
+  <text x="720" y="265" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">材质差·耐用不足·做工</text>
+  <text x="720" y="290" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 反馈供应链·升级材料</text>
+  <rect x="860" y="170" width="260" height="150" rx="14" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="990" cy="200" r="20" fill="#F43F5E"/>
+  <text x="990" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">4</text>
+  <text x="990" y="240" text-anchor="middle" font-size="17" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">服务问题</text>
+  <text x="990" y="265" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">客服慢·退换难·态度</text>
+  <text x="990" y="290" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">→ 优化流程·培训客服</text>
+  <!-- Flow -->
+  <rect x="80" y="360" width="1040" height="4" rx="2" fill="#E2E8F0"/>
+  <rect x="120" y="340" width="160" height="50" rx="25" fill="#F43F5E"/>
+  <text x="200" y="372" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">采集差评</text>
+  <rect x="360" y="340" width="160" height="50" rx="25" fill="#FFFFFF" stroke="#F43F5E" stroke-width="2"/>
+  <text x="440" y="372" text-anchor="middle" font-size="16" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">分类归因</text>
+  <rect x="600" y="340" width="160" height="50" rx="25" fill="#FFFFFF" stroke="#F43F5E" stroke-width="2"/>
+  <text x="680" y="372" text-anchor="middle" font-size="16" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">匹配修复动作</text>
+  <rect x="840" y="340" width="160" height="50" rx="25" fill="#FFFFFF" stroke="#F43F5E" stroke-width="2"/>
+  <text x="920" y="372" text-anchor="middle" font-size="16" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">改进上线</text>
+  <!-- Bottom result -->
+  <rect x="340" y="440" width="520" height="56" rx="16" fill="#E11D48"/>
+  <text x="600" y="476" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">差评不是终点 → 是下一版 Listing 的输入</text>
+</svg>
