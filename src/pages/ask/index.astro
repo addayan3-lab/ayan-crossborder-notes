@@ -1,0 +1,433 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { assistantTopics } from "../../data/ayan-assistant-rules";
+const topicsJson = JSON.stringify(assistantTopics);
+---
+
+<BaseLayout title="AI 阿岩助手｜阿岩跨境笔记" description="输入你在亚马逊运营中遇到的问题，AI 阿岩助手会推荐对应的文章、工具模板和公开课。纯本地规则匹配，你的输入不会被上传或存储，无需担心隐私。">
+  <main class="ask-page">
+    <section class="ask-hero">
+      <div class="ask-kicker">AI 阿岩助手</div>
+      <h1>问问 AI 阿岩助手</h1>
+      <p>输入你在亚马逊运营中遇到的问题，我会推荐对应的文章、模板和公开课。<br />你的输入仅在你自己的浏览器中处理，不会被上传或存储。</p>
+    </section>
+
+    <section class="ask-card">
+      <div class="ask-box">
+        <input id="ayan-ask-input" type="text" placeholder="比如：不知道怎么找关键词、广告 ACOS 太高、Listing 转化率低……" autocomplete="off" />
+        <button id="ayan-ask-button" type="button">问问 AI</button>
+      </div>
+
+      <div class="ask-presets">
+        <span>试试问：</span>
+        <button type="button" data-ask="不知道怎么找关键词">不知道怎么找关键词</button>
+        <button type="button" data-ask="广告 ACOS 太高怎么办">广告 ACOS 太高怎么办</button>
+        <button type="button" data-ask="Listing 怎么优化">Listing 怎么优化</button>
+        <button type="button" data-ask="怎么分析差评">怎么分析差评</button>
+        <button type="button" data-ask="新手从哪里开始">新手从哪里开始</button>
+      </div>
+
+      <div class="ask-result" id="ayan-ask-result" hidden>
+        <div class="ask-result-topic-label" id="ayan-result-label"></div>
+        <div class="ask-result-suggestion" id="ayan-result-suggestion"></div>
+
+        <div class="ask-result-section" id="ayan-result-steps-section" hidden>
+          <h3>建议步骤</h3>
+          <ol id="ayan-result-steps"></ol>
+        </div>
+
+        <div class="ask-result-section" id="ayan-result-articles-section" hidden>
+          <h3>推荐阅读</h3>
+          <div class="ask-result-grid" id="ayan-result-articles"></div>
+        </div>
+
+        <div class="ask-result-section" id="ayan-result-resources-section" hidden>
+          <h3>推荐模板</h3>
+          <div class="ask-result-grid" id="ayan-result-resources"></div>
+        </div>
+
+        <div class="ask-result-section" id="ayan-result-classes-section" hidden>
+          <h3>推荐公开课</h3>
+          <div class="ask-result-grid" id="ayan-result-classes"></div>
+        </div>
+
+        <div class="ask-result-wechat" id="ayan-result-wechat" hidden>
+          <span>💬</span>
+          <span id="ayan-result-wechat-text"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script id="ayan-topics-data" type="application/json">{topicsJson}</script>
+
+  <script type="module">
+    const topics = JSON.parse(document.getElementById("ayan-topics-data").textContent);
+
+    const input = document.querySelector("#ayan-ask-input");
+    const button = document.querySelector("#ayan-ask-button");
+    const presets = document.querySelectorAll("[data-ask]");
+    const resultEl = document.querySelector("#ayan-ask-result");
+    const labelEl = document.querySelector("#ayan-result-label");
+    const suggestionEl = document.querySelector("#ayan-result-suggestion");
+    const stepsSection = document.querySelector("#ayan-result-steps-section");
+    const stepsEl = document.querySelector("#ayan-result-steps");
+    const articlesSection = document.querySelector("#ayan-result-articles-section");
+    const articlesEl = document.querySelector("#ayan-result-articles");
+    const resourcesSection = document.querySelector("#ayan-result-resources-section");
+    const resourcesEl = document.querySelector("#ayan-result-resources");
+    const classesSection = document.querySelector("#ayan-result-classes-section");
+    const classesEl = document.querySelector("#ayan-result-classes");
+    const wechatEl = document.querySelector("#ayan-result-wechat");
+    const wechatText = document.querySelector("#ayan-result-wechat-text");
+
+    function matchTopic(query) {
+      const q = query.toLowerCase();
+      let best = null;
+      let bestScore = 0;
+      for (const topic of topics) {
+        let score = 0;
+        for (const kw of topic.triggerKeywords) {
+          if (q.includes(kw.toLowerCase())) {
+            score += kw.length;
+          }
+        }
+        if (score > bestScore) {
+          bestScore = score;
+          best = topic;
+        }
+      }
+      return best || topics.find((t) => t.id === "beginner") || topics[0];
+    }
+
+    function displayResult(topic) {
+      if (!topic) return;
+
+      labelEl.textContent = "专题：" + topic.label;
+      suggestionEl.textContent = topic.suggestion;
+
+      if (topic.steps && topic.steps.length > 0) {
+        stepsSection.hidden = false;
+        stepsEl.innerHTML = topic.steps.map((s) => `<li>${s}</li>`).join("");
+      } else {
+        stepsSection.hidden = true;
+      }
+
+      if (topic.articles && topic.articles.length > 0) {
+        articlesSection.hidden = false;
+        articlesEl.innerHTML = topic.articles.map((a) => `
+          <a class="ask-result-item" href="/articles/${a.slug}/">
+            <div class="ask-result-item-title">${a.title}</div>
+            <div class="ask-result-item-desc">${a.desc}</div>
+          </a>
+        `).join("");
+      } else {
+        articlesSection.hidden = true;
+      }
+
+      if (topic.resources && topic.resources.length > 0) {
+        resourcesSection.hidden = false;
+        resourcesEl.innerHTML = topic.resources.map((r) => `
+          <a class="ask-result-item" href="/resources/">
+            <div class="ask-result-item-title">${r.title}</div>
+            <div class="ask-result-item-desc">${r.desc}</div>
+          </a>
+        `).join("");
+      } else {
+        resourcesSection.hidden = true;
+      }
+
+      if (topic.openClasses && topic.openClasses.length > 0) {
+        classesSection.hidden = false;
+        classesEl.innerHTML = topic.openClasses.map((oc) => `
+          <a class="ask-result-item" href="/open-class/">
+            <div class="ask-result-item-title">${oc.title}</div>
+            <div class="ask-result-item-desc">${oc.desc}</div>
+          </a>
+        `).join("");
+      } else {
+        classesSection.hidden = true;
+      }
+
+      if (topic.wechatKeyword) {
+        wechatEl.hidden = false;
+        wechatText.textContent = topic.wechatHook;
+      } else {
+        wechatEl.hidden = true;
+      }
+
+      resultEl.hidden = false;
+    }
+
+    function runAsk(query) {
+      const q = String(query || "").trim();
+      if (!q) return;
+      const topic = matchTopic(q);
+      displayResult(topic);
+    }
+
+    button.addEventListener("click", () => runAsk(input.value));
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") runAsk(input.value);
+    });
+
+    presets.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const q = btn.getAttribute("data-ask");
+        input.value = q;
+        input.focus();
+        runAsk(q);
+      });
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  .ask-page {
+    min-height: 100vh;
+    padding: 56px 24px 80px;
+    background:
+      radial-gradient(circle at 24% 14%, rgba(19, 104, 255, 0.08), transparent 26%),
+      linear-gradient(180deg, #f6f9fd 0%, #eef3fa 100%);
+  }
+
+  .ask-hero {
+    max-width: 860px;
+    margin: 0 auto 24px;
+  }
+
+  .ask-kicker {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #eef5ff, #e0edff);
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+
+  .ask-hero h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 44px;
+    line-height: 1.16;
+    letter-spacing: -1px;
+  }
+
+  .ask-hero p {
+    max-width: 720px;
+    margin: 14px 0 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .ask-card {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 26px;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(226, 232, 240, 0.96);
+    box-shadow:
+      0 24px 80px rgba(15, 23, 42, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .ask-box {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    gap: 12px;
+  }
+
+  #ayan-ask-input {
+    width: 100%;
+    height: 52px;
+    border-radius: 15px;
+    border: 1px solid #dce6f5;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 16px;
+    padding: 0 16px;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  #ayan-ask-input:focus {
+    border-color: #1368ff;
+    box-shadow: 0 0 0 4px rgba(19, 104, 255, 0.12);
+  }
+
+  #ayan-ask-button {
+    height: 52px;
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1368ff, #2563eb);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  #ayan-ask-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 36px rgba(19, 104, 255, 0.28);
+  }
+
+  .ask-presets {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .ask-presets button {
+    border: 1px solid #dceaff;
+    background: #eef5ff;
+    color: #1368ff;
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .ask-presets button:hover {
+    border-color: #93c5fd;
+    background: #e0edff;
+  }
+
+  .ask-result {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .ask-result-topic-label {
+    display: inline-flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+
+  .ask-result-suggestion {
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f0f7ff, #f5faff);
+    border: 1px solid #dceaff;
+  }
+
+  .ask-result-section {
+    margin-top: 20px;
+  }
+
+  .ask-result-section h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+    color: #0f172a;
+  }
+
+  .ask-result-grid {
+    display: grid;
+    gap: 10px;
+  }
+
+  .ask-result-item {
+    display: block;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #e6eaf2;
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .ask-result-item:hover {
+    border-color: rgba(19, 104, 255, 0.34);
+    box-shadow: 0 8px 20px rgba(19, 104, 255, 0.08);
+  }
+
+  .ask-result-item-title {
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .ask-result-item-desc {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .ask-result-wechat {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f0fdf4, #f5faf7);
+    border: 1px solid #c7eed5;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .ask-result-steps ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .ask-result-steps li {
+    color: #334155;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+
+  @media (max-width: 720px) {
+    .ask-page {
+      padding: 34px 14px 56px;
+    }
+
+    .ask-hero h1 {
+      font-size: 34px;
+    }
+
+    .ask-card {
+      padding: 18px;
+      border-radius: 22px;
+    }
+
+    .ask-box {
+      grid-template-columns: 1fr;
+    }
+
+    .ask-presets {
+      gap: 8px;
+    }
+  }
+</style>

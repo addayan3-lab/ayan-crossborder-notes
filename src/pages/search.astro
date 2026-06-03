@@ -83,6 +83,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="recommend-desc">把工具和资料拆成 4 类，搭建自己的运营工具链。</div>
           </a>
         </div>
+        <div class="ask-entry-fallback">
+          <a href="/ask/">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 5.3 18.5l3.7 1-1-3.7A10 10 0 0 0 12 2z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+            没找到？试试问问 AI 阿岩助手 →
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -588,6 +594,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     font-size: 12px;
     color: #64748b;
     line-height: 1.5;
+  }
+
+  .ask-entry-fallback {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed #cbd5e1;
+  }
+
+  .ask-entry-fallback a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #eef5ff, #f5faff);
+    border: 1px solid #cfe0ff;
+    color: #1368ff;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .ask-entry-fallback a:hover {
+    transform: translateY(-1px);
+    border-color: #93c5fd;
+    box-shadow: 0 8px 20px rgba(19, 104, 255, 0.10);
   }
 
   @media (max-width: 720px) {
