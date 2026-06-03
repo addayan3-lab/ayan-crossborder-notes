@@ -14,8 +14,20 @@ const prevSlug = post?.data?.prevArticle;
 const nextSlug = post?.data?.nextArticle;
 const relatedLinks = Array.isArray(post?.data?.relatedArticleLinks) ? post.data.relatedArticleLinks : [];
 
+const relatedBySlug = Object.fromEntries(
+  relatedLinks.map((link) => [link.slug, { label: link.label, context: link.context }])
+);
+
 const prevArticle = prevSlug && articleIndex[prevSlug] ? { slug: prevSlug, ...articleIndex[prevSlug] } : null;
 const nextArticle = nextSlug && articleIndex[nextSlug] ? { slug: nextSlug, ...articleIndex[nextSlug] } : null;
+
+function navLabel(slug, fallback) {
+  return relatedBySlug[slug]?.context || fallback;
+}
+
+function navTitle(slug, articleTitle) {
+  return relatedBySlug[slug]?.label || articleTitle;
+}
 
 const hasNav = prevArticle || nextArticle || relatedLinks.length > 0;
 ---
@@ -28,16 +40,16 @@ const hasNav = prevArticle || nextArticle || relatedLinks.length > 0;
           <a href={`/articles/${prevArticle.slug}/`} target="_blank" rel="noopener noreferrer" class="article-nav-seq-link article-nav-prev">
             <span class="article-nav-seq-arrow">←</span>
             <div class="article-nav-seq-body">
-              <span class="article-nav-seq-label">上一篇</span>
-              <span class="article-nav-seq-title">{prevArticle.title}</span>
+              <span class="article-nav-seq-label">{navLabel(prevArticle.slug, "上一篇")}</span>
+              <span class="article-nav-seq-title">{navTitle(prevArticle.slug, prevArticle.title)}</span>
             </div>
           </a>
         )}
         {nextArticle && (
           <a href={`/articles/${nextArticle.slug}/`} target="_blank" rel="noopener noreferrer" class="article-nav-seq-link article-nav-next">
             <div class="article-nav-seq-body">
-              <span class="article-nav-seq-label">下一篇</span>
-              <span class="article-nav-seq-title">{nextArticle.title}</span>
+              <span class="article-nav-seq-label">{navLabel(nextArticle.slug, "下一篇")}</span>
+              <span class="article-nav-seq-title">{navTitle(nextArticle.slug, nextArticle.title)}</span>
             </div>
             <span class="article-nav-seq-arrow">→</span>
           </a>
@@ -57,9 +69,8 @@ const hasNav = prevArticle || nextArticle || relatedLinks.length > 0;
                 rel="noopener noreferrer"
                 class="article-nav-related-item"
               >
-                <span class="article-nav-related-label">{link.label}</span>
-                {resolved && <span class="article-nav-related-headline">{resolved.title}</span>}
-                {link.context && <span class="article-nav-related-context">{link.context}</span>}
+                <span class="article-nav-related-label">{link.context || link.label}</span>
+                {resolved && <span class="article-nav-related-headline">{link.label || resolved.title}</span>}
               </a>
             );
           })}
