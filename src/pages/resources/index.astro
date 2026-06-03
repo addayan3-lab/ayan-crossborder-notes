@@ -415,6 +415,16 @@ const ayanBreadcrumbData = {
         </li>
       </ul>
     </div>
+
+    <div class="open-class-teaser">
+      <div class="open-class-teaser-inner">
+        <div>
+          <h2>资料包怎么配合公开课使用</h2>
+          <p>资料包用于课前预习、课中演示、课后复盘。每个资料包都可以对应一节公开课或一个实操环节,把文章方法论和资料包工具串成可执行的流程。</p>
+        </div>
+        <a class="open-class-teaser-cta" href="/open-class/">查看公开课学习入口 →</a>
+      </div>
+    </div>
   </section>
 </BaseLayout>
 
@@ -910,6 +920,61 @@ const ayanBreadcrumbData = {
     }
 
     .resource-card-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .open-class-teaser {
+    margin: 0 0 32px;
+  }
+
+  .open-class-teaser-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #eef5ff 100%);
+    border: 1px solid #cfe0ff;
+  }
+
+  .open-class-teaser-inner h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .open-class-teaser-inner p {
+    margin: 0;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .open-class-teaser-cta {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+
+  .open-class-teaser-cta:hover {
+    background: #0f5ae0;
+  }
+
+  @media (max-width: 720px) {
+    .open-class-teaser-inner {
       flex-direction: column;
       align-items: flex-start;
     }

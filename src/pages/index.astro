@@ -338,6 +338,33 @@ const resourceItems = [
       </div>
 
       <ResourceCenterTeaser />
+
+      <div class="open-class-entry">
+        <div class="open-class-entry-head">
+          <div>
+            <h2>公开课学习入口</h2>
+            <p>把关键词、Listing、广告、Review、选品和 AI 工具串成 8 节实操公开课。</p>
+          </div>
+          <a class="open-class-entry-cta" href="/open-class/">查看公开课安排 →</a>
+        </div>
+        <div class="open-class-mini-grid">
+          <a class="open-class-mini-card" href="/open-class/">
+            <div class="open-class-mini-num">第 1 节</div>
+            <h3>关键词到 Listing 的实操课</h3>
+            <p>找词、清洗、写标题、开广告的完整流程。</p>
+          </a>
+          <a class="open-class-mini-card" href="/open-class/">
+            <div class="open-class-mini-num">第 2 节</div>
+            <h3>新品 PPC 首周广告结构课</h3>
+            <p>新品第一周广告怎么开、预算怎么分。</p>
+          </a>
+          <a class="open-class-mini-card" href="/open-class/">
+            <div class="open-class-mini-num">第 3 节</div>
+            <h3>Review 反推选品与页面优化课</h3>
+            <p>从差评和好评里找产品改进方向。</p>
+          </a>
+        </div>
+      </div>
     </div>
 
     <aside class="content-side">
@@ -2040,6 +2067,102 @@ const resourceItems = [
 
   .topic-cta:hover .topic-cta-arrow {
     transform: translateX(3px);
+  }
+
+  .open-class-entry {
+    margin: 0 0 32px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+
+  .open-class-entry-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .open-class-entry-head h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .open-class-entry-head p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .open-class-entry-cta {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: #0f172a;
+    color: #fff;
+    font-weight: 900;
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+
+  .open-class-entry-cta:hover {
+    background: #1e293b;
+  }
+
+  .open-class-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .open-class-mini-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .open-class-mini-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .open-class-mini-num {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+  }
+
+  .open-class-mini-card h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .open-class-mini-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
   }
 
   @media (max-width: 1180px) {

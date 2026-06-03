@@ -1,123 +1,392 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "公开课", "item": "https://amz.hao1234.top/open-class/" }
+  ]
+};
+
+const courses = [
+  {
+    num: 1,
+    title: "关键词到 Listing 的实操课",
+    audience: "已选好品、准备写 Listing 的卖家",
+    problem: "找了一堆关键词,不知道怎么筛选、怎么放进标题和五点",
+    articles: [
+      { title: "如何用 AI 做亚马逊关键词表", href: "/articles/ai-keyword-table/" },
+      { title: "关键词清洗方法:从关键词池到可用词表", href: "/articles/keyword-cleaning-method/" },
+      { title: "AI 时代亚马逊 Listing 应该怎么写", href: "/articles/ai-listing-optimization/" }
+    ],
+    resource: { title: "关键词清洗表", href: "/resources/keyword-cleaning-sheet/" },
+    wechatKeyword: "清洗"
+  },
+  {
+    num: 2,
+    title: "新品 PPC 首周广告结构课",
+    audience: "已上架 Listing、要开始投广告的卖家",
+    problem: "新品上架不知道怎么开广告,预算怎么分配,第一周该看什么数据",
+    articles: [
+      { title: "新品广告第一周怎么开", href: "/articles/new-product-ppc-week-one/" },
+      { title: "SP 广告结构:自动、精准、词组、竞品怎么分工", href: "/articles/sp-ad-structure/" },
+      { title: "如何用 AI 复盘亚马逊广告报表", href: "/articles/ai-ppc-report-review/" }
+    ],
+    resource: { title: "PPC 周复盘表", href: "/resources/ppc-weekly-review/" },
+    wechatKeyword: "报表"
+  },
+  {
+    num: 3,
+    title: "Review 反推选品与页面优化课",
+    audience: "已有竞品评价数据、想从 Review 里找改进方向的卖家",
+    problem: "差评一堆不知道该改什么,好评里也看不出有效信息",
+    articles: [
+      { title: "如何用 AI 做亚马逊 Review 痛点提炼", href: "/articles/ai-review-analysis/" },
+      { title: "Review 矩阵分析:4 类评价怎么拆", href: "/articles/review-analysis-matrix/" },
+      { title: "差评归因与 Listing 修复表", href: "/articles/negative-review-listing-fix/" }
+    ],
+    resource: { title: "Review 痛点分析表", href: "/resources/review-pain-analysis/" },
+    wechatKeyword: "痛点"
+  },
+  {
+    num: 4,
+    title: "AI 工具辅助亚马逊运营课",
+    audience: "想用 AI 提效但不确定哪些工具值得用的卖家",
+    problem: "AI 工具太多不知道选哪个,试了几个觉得没用就放弃了",
+    articles: [
+      { title: "亚马逊 AI 工具评测:4 判断标准 + 6 类适合", href: "/articles/amazon-ai-tools-review/" },
+      { title: "2026 亚马逊 AI 运营全景图", href: "/articles/2026-amazon-ai-operations/" },
+      { title: "AI 搜索学习路径", href: "/articles/ai-search-learning-path/" }
+    ],
+    resource: { title: "AI 工具评测表", href: "/resources/ai-tools-review-sheet/" },
+    wechatKeyword: "AI评测"
+  },
+  {
+    num: 5,
+    title: "选品竞品矩阵拆解课",
+    audience: "正在判断一个产品能不能做的新手和进阶卖家",
+    problem: "看了很多竞品但说不清他们强在哪、弱在哪、我能不能打",
+    articles: [
+      { title: "如何用 AI 拆解竞品矩阵", href: "/articles/ai-competitor-matrix/" },
+      { title: "市场容量三数字判断表", href: "/articles/ai-market-size-estimate/" },
+      { title: "痛点反推选品 SOP", href: "/articles/selection-pain-reverse/" }
+    ],
+    resource: { title: "选品竞品矩阵", href: "/resources/competitor-selection-matrix/" },
+    wechatKeyword: "矩阵"
+  },
+  {
+    num: 6,
+    title: "Listing 自检与转化表达课",
+    audience: "已有产品页面、要优化转化率的卖家",
+    problem: "点击率下降、广告跑不动,不知道问题出在哪",
+    articles: [
+      { title: "亚马逊 Listing 优化检查清单", href: "/articles/listing-checklist/" },
+      { title: "Listing 五点写法:功能点、场景点、信任点", href: "/articles/listing-five-bullets/" },
+      { title: "AI 时代亚马逊 Listing 应该怎么写", href: "/articles/ai-listing-optimization/" }
+    ],
+    resource: { title: "Listing 自检清单", href: "/resources/listing-checklist/" },
+    wechatKeyword: "自检"
+  },
+  {
+    num: 7,
+    title: "新手平台规则避坑课",
+    audience: "刚开始做亚马逊、准备上架产品的新手卖家",
+    problem: "不知道哪些事不能做,Listing 发布后才收到违规警告",
+    articles: [
+      { title: "亚马逊新手避坑清单:10 个常见违规场景", href: "/articles/amazon-platform-rules-beginner/" },
+      { title: "亚马逊 AI 工具评测", href: "/articles/amazon-ai-tools-review/" },
+      { title: "Listing 优化学习路径", href: "/articles/listing-learning-path/" }
+    ],
+    resource: { title: "新手规则避坑清单", href: "/resources/platform-rules-checklist/" },
+    wechatKeyword: "规则"
+  },
+  {
+    num: 8,
+    title: "从文章到资料包的运营复盘课",
+    audience: "已积累一定运营经验、想系统化复盘的卖家",
+    problem: "文章读了不少,资料包也领了,但没有串成自己的运营体系",
+    articles: [
+      { title: "全部文章", href: "/articles/" },
+      { title: "资源中心", href: "/resources/" },
+      { title: "学习路径汇总", href: "/articles/keyword-learning-path/" }
+    ],
+    resource: { title: "资料包中心", href: "/resources/" },
+    wechatKeyword: "—"
+  }
+];
 ---
-<BaseLayout title="公开课｜亚马逊 AI 运营实战课与资料领取" description="阿岩亚马逊 AI 运营公开课入口，面向想提升选品、Listing、广告 PPC 和 Review 分析效率的跨境电商卖家。">
+<BaseLayout
+  title="公开课学习入口 · 亚马逊运营实操课"
+  description="围绕关键词、Listing、PPC、Review、选品、AI 工具和新手规则,把文章、资料包和实操讲解串成可学习的路径。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
   <section class="page-hero">
     <div class="page-hero-inner">
-      <h1>阿岩亚马逊 AI 实战公开课</h1>
-      <p>第一场公开课建议主题：AI 时代亚马逊卖家如何重做 Listing 和广告。</p>
+      <div class="hero-eyebrow">公开课</div>
+      <h1>亚马逊运营公开课</h1>
+      <p>围绕关键词、Listing、PPC、Review、选品、AI 工具和新手规则，把文章、资料包和实操讲解串成可学习的路径。</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="topic-intro">
-      <h2>公开课不是培训，是把方法论现场跑一遍</h2>
-      <p>阿岩的公开课不讲虚的：不开场就讲工具、不承诺月入几万、不收 9980 的私董会。一场课两个小时，目标是把一个具体问题讲透：AI 怎么用、坑在哪、什么场景下不要用。</p>
-      <p>每场公开课都有完整讲义、录播、Q&amp;A 整理，所有报名学员可同步领取最新一版 AI 运营资料包。</p>
+    <div class="course-list">
+      {courses.map((c) => (
+        <article class="course-card">
+          <div class="course-card-head">
+            <div class="course-num">第 {c.num} 节</div>
+            <h2>{c.title}</h2>
+          </div>
+          <div class="course-card-body">
+            <div class="course-field">
+              <div class="course-field-label">适合谁</div>
+              <div class="course-field-value">{c.audience}</div>
+            </div>
+            <div class="course-field">
+              <div class="course-field-label">解决什么问题</div>
+              <div class="course-field-value">{c.problem}</div>
+            </div>
+            <div class="course-field">
+              <div class="course-field-label">对应文章</div>
+              <div class="course-field-value">
+                {c.articles.map((a, i) => (
+                  <span>
+                    {i > 0 && " / "}
+                    <a href={a.href}>{a.title}</a>
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div class="course-field">
+              <div class="course-field-label">对应资料包</div>
+              <div class="course-field-value">
+                <a href={c.resource.href}>{c.resource.title}</a>
+              </div>
+            </div>
+            <div class="course-field">
+              <div class="course-field-label">微信关键词</div>
+              <div class="course-field-value course-keyword">"{c.wechatKeyword}"</div>
+            </div>
+          </div>
+          <div class="course-card-foot">
+            <a class="course-cta" href={c.resource.href}>查看配套资料 →</a>
+          </div>
+        </article>
+      ))}
     </div>
 
-    <div class="grid grid-2">
-      <div class="card course-detail">
-        <h3>近期课程</h3>
-        <p class="course-meta">主题：<strong>AI 时代亚马逊卖家的机会与挑战</strong></p>
-        <p class="course-meta">时间：6/12（周四）20:00 直播</p>
-        <p class="course-meta">形式：腾讯会议直播 + 录播回看</p>
-        <p class="course-meta">费用：免费预约</p>
-        <a class="course-cta" href="/lead/">免费预约</a>
-      </div>
-
-      <div class="card course-detail">
-        <h3>你将学到</h3>
-        <ul class="course-points">
-          <li>AI 工具在亚马逊运营中的真实定位</li>
-          <li>用 AI 重做 Listing 标题、五点和 A+ 的流程</li>
-          <li>AI 复盘广告报表的最小动作</li>
-          <li>从 Review 里提炼卖点的 Prompt 模板</li>
-        </ul>
-        <a class="course-cta-secondary" href="/ai-amazon/">先看 AI 运营专题 →</a>
-      </div>
+    <div class="callout-note">
+      <h2>关于公开课</h2>
+      <ul>
+        <li><strong>公开课适合配合文章和资料包使用。</strong>文章提供方法论,资料包提供实操工具,公开课把两者串成可执行的流程。</li>
+        <li><strong>公开课不承诺保证出单。</strong>运营判断需要结合你的产品、类目、阶段和数据,没有通用答案。</li>
+        <li><strong>具体运营决策要结合产品、类目、阶段和数据。</strong>资料包和公开课给的是框架,不是结论。</li>
+      </ul>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .topic-intro {
-    max-width: 880px;
-    margin: 0 0 28px;
-    padding: 24px 28px;
-    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
-    border: 1px solid rgba(226, 232, 240, 0.95);
-    border-radius: 20px;
-    box-shadow:
-      0 14px 40px rgba(15, 23, 42, 0.05),
-      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  .page-hero {
+    background:
+      radial-gradient(circle at 18% 28%, rgba(19, 104, 255, 0.10), transparent 26%),
+      linear-gradient(180deg, #f5f8fd 0%, #eef3fa 100%);
+    padding: 56px 24px 48px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
   }
 
-  .topic-intro h2 {
-    margin: 0 0 14px;
-    font-size: 22px;
-    color: #0f172a;
-    letter-spacing: -0.3px;
-    position: relative;
-    padding-left: 12px;
+  .page-hero-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .topic-intro h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 4px;
-    height: 22px;
+  .hero-eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
     border-radius: 999px;
-    background: #1368ff;
+    background: #eaf2ff;
+    color: #1368ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 18px;
+    border: 1px solid #cfe0ff;
   }
 
-  .topic-intro p {
-    margin: 0 0 12px;
+  .page-hero h1 {
+    margin: 0 0 16px;
+    font-size: 42px;
+    line-height: 1.18;
+    letter-spacing: -1.4px;
+    color: #0f172a;
+  }
+
+  .page-hero p {
+    margin: 0 auto;
+    max-width: 760px;
     color: #475569;
-    line-height: 1.85;
-    font-size: 15px;
-  }
-
-  .topic-intro p:last-child {
-    margin-bottom: 0;
-  }
-
-  .course-detail .course-meta {
-    margin: 0 0 10px;
-    color: #475569;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.7;
   }
 
-  .course-points {
-    margin: 0 0 16px;
-    padding-left: 22px;
-    color: #334155;
-    line-height: 1.85;
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 0 40px;
   }
 
-  .course-points li {
-    margin: 6px 0;
+  .course-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    background: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+  }
+
+  .course-card:hover {
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+  }
+
+  .course-card-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px 28px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .course-num {
+    flex: 0 0 auto;
+    padding: 6px 14px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1368ff, #3b82f6);
+    color: #fff;
+    font-weight: 900;
+    font-size: 13px;
+  }
+
+  .course-card-head h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .course-card-body {
+    padding: 22px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .course-field {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .course-field-label {
+    font-size: 12px;
+    font-weight: 900;
+    color: #64748b;
+    letter-spacing: 0.3px;
+  }
+
+  .course-field-value {
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.7;
+  }
+
+  .course-field-value a {
+    color: #1368ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .course-field-value a:hover {
+    text-decoration: underline;
+  }
+
+  .course-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .course-card-foot {
+    padding: 16px 28px;
+    border-top: 1px solid #f1f5f9;
   }
 
   .course-cta {
     display: inline-block;
-    margin-top: 8px;
-    padding: 10px 18px;
-    border-radius: 11px;
-    background: #1368ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #0f172a;
     color: #fff;
     font-weight: 900;
     font-size: 14px;
+    text-decoration: none;
+    transition: background 0.15s ease;
   }
 
-  .course-cta-secondary {
-    display: inline-block;
-    margin-top: 8px;
-    color: #1368ff;
-    font-weight: 900;
+  .course-cta:hover {
+    background: #1e293b;
+  }
+
+  .callout-note {
+    padding: 24px 28px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 14px;
+  }
+
+  .callout-note h2 {
+    margin: 0 0 14px;
+    font-size: 20px;
+    color: #0f172a;
+  }
+
+  .callout-note ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .callout-note li {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.8;
     font-size: 14px;
+  }
+
+  .callout-note li:last-child {
+    margin-bottom: 0;
+  }
+
+  .callout-note strong {
+    color: #0f172a;
+  }
+
+  @media (max-width: 720px) {
+    .page-hero h1 {
+      font-size: 30px;
+    }
+
+    .course-card-head {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .course-field {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
   }
 </style>
