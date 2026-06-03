@@ -33,6 +33,21 @@ const ayanBreadcrumbData = {
 
     <RecommendedOrder topic="selection" allPosts={allPosts} title="推荐学习顺序" />
 
+    <a class="resource-strip" href="/resources/" aria-label="查看选品配套资料包">
+      <div class="resource-strip-text">
+        <div class="resource-strip-hint">本专题配套资料包</div>
+        <h3>把选品判断沉淀为容量、矩阵、痛点和利润测算表</h3>
+        <p>4 张表 + 1 个判断框架,覆盖市场容量测算、竞品矩阵、Review 痛点反推和合规与利润自检。</p>
+        <ul class="resource-strip-chips">
+          <li>容量测算表</li>
+          <li>竞品矩阵</li>
+          <li>Review 痛点</li>
+          <li>利润自检</li>
+        </ul>
+      </div>
+      <span class="resource-strip-cta">查看资料包 →</span>
+    </a>
+
     <div class="grid grid-3">
       <a class="card" href="/articles/ai-market-size-estimate/"><h3>AI 做亚马逊市场容量判断</h3><p>从关键词倒推一个品类的天花板，判断要不要进。</p></a>
       <a class="card" href="/articles/ai-competitor-matrix/"><h3>用 AI 做竞品矩阵拆解</h3><p>从价格、卖点、人群、痛点四张矩阵找差异化空间。</p></a>
@@ -86,5 +101,109 @@ const ayanBreadcrumbData = {
 
   .topic-intro p:last-child {
     margin-bottom: 0;
+  }
+
+  .resource-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 0 28px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    box-shadow:
+      0 10px 28px rgba(217, 119, 6, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .resource-strip::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #d97706, #f59e0b);
+  }
+
+  .resource-strip:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+    box-shadow:
+      0 16px 40px rgba(217, 119, 6, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .resource-strip-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .resource-strip-hint {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .resource-strip h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+  }
+
+  .resource-strip p {
+    margin: 0 0 12px;
+    color: #57534e;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .resource-strip-chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .resource-strip-chips li {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #ffffff;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #92400e;
+    font-weight: 700;
+  }
+
+  .resource-strip-cta {
+    flex: 0 0 auto;
+    color: #b45309;
+    font-weight: 900;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 720px) {
+    .resource-strip {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .resource-strip-cta {
+      align-self: flex-start;
+    }
   }
 </style>

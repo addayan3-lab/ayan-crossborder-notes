@@ -39,6 +39,21 @@ const ayanBreadcrumbData = {
 
     <RecommendedOrder topic="ai-search" allPosts={allPosts} title="推荐学习顺序" />
 
+    <a class="resource-strip" href="/resources/" aria-label="查看 AI 运营配套资料包">
+      <div class="resource-strip-text">
+        <div class="resource-strip-hint">本专题配套资料包</div>
+        <h3>把 AI 运营判断沉淀为任务清单与工具评测模板</h3>
+        <p>1 张判断表 + 1 张工具评测矩阵,覆盖 AI 任务适配度、AI 工具 4 维评分和 6 类适合 + 5 类必须人工的任务清单。</p>
+        <ul class="resource-strip-chips">
+          <li>AI 任务判断表</li>
+          <li>工具评测矩阵</li>
+          <li>适合 + 必须人工</li>
+          <li>Prompt 模板</li>
+        </ul>
+      </div>
+      <span class="resource-strip-cta">查看资料包 →</span>
+    </a>
+
     <div class="grid grid-3">
       <a class="card" href="/articles/2026-amazon-ai-operations/"><h3>2026 年亚马逊卖家如何利用 AI 提升运营效率</h3><p>专题入口文章，从选品、Listing、广告、Review、SOP 五个角度系统拆解。</p></a>
       <a class="card" href="/articles/amazon-rufus-alexa-shopping/"><h3>Amazon Rufus / Alexa for Shopping 对卖家意味着什么</h3><p>理解消费者端 AI 购物助手的影响。</p></a>
@@ -154,5 +169,109 @@ const ayanBreadcrumbData = {
     color: #1368ff;
     font-weight: 900;
     font-size: 14px;
+  }
+
+  .resource-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 0 28px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    box-shadow:
+      0 10px 28px rgba(217, 119, 6, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .resource-strip::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #d97706, #f59e0b);
+  }
+
+  .resource-strip:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+    box-shadow:
+      0 16px 40px rgba(217, 119, 6, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .resource-strip-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .resource-strip-hint {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .resource-strip h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+  }
+
+  .resource-strip p {
+    margin: 0 0 12px;
+    color: #57534e;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .resource-strip-chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .resource-strip-chips li {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #ffffff;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #92400e;
+    font-weight: 700;
+  }
+
+  .resource-strip-cta {
+    flex: 0 0 auto;
+    color: #b45309;
+    font-weight: 900;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 720px) {
+    .resource-strip {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .resource-strip-cta {
+      align-self: flex-start;
+    }
   }
 </style>

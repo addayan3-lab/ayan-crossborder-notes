@@ -3,3 +3,13 @@ dist/
 .astro/
 .env
 .DS_Store
+
+# Local agent / MCP caches
+.serena/
+archive/
+
+# OpenCode usage snapshots and config backups
+reports/opencode-usage/
+reports/opencode_config_*/
+reports/opencode_config_fix_report.md
+reports/opencode_plugins_restore_report.md
