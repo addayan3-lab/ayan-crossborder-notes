@@ -1,0 +1,500 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "公开课", "item": "https://amz.hao1234.top/open-class/" },
+    { "@type": "ListItem", "position": 3, "name": "新手平台规则避坑课", "item": "https://amz.hao1234.top/open-class/platform-rules-beginner/" }
+  ]
+};
+---
+<BaseLayout
+  title="新手平台规则避坑课 · 公开课详情"
+  description="帮新手在做运营动作前先建立平台规则边界，避免把基础运营动作做成风险动作，减少违规警告和 Listing 下架风险。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="hero-eyebrow">第 7 节 · 新手规则避坑</div>
+      <h1>新手平台规则避坑课</h1>
+      <p>帮新手在做运营动作前先建立平台规则边界，避免把基础运营动作做成风险动作。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">适合谁</div>
+        <div class="info-value">刚开始做亚马逊、准备上架产品、准备优化 Listing 或使用 AI 生成内容的新手卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">解决什么问题</div>
+        <div class="info-value">帮新手在做运营动作前先建立平台规则边界，避免把基础运营动作做成风险动作。</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>课程结构</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">Listing 夸大表达风险</div>
+            <div class="step-desc">标题、五点里使用绝对化用语、无法验证的承诺、夸大宣传的判断标准与修改方法。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">图片和素材来源风险</div>
+            <div class="step-desc">图片版权、商标侵权、AI 素材使用边界。图片素材来源不清是新手最容易被警告的原因之一。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">索评和 Review 风险</div>
+            <div class="step-desc">平台允许的索评方式和违规索评的分界线。包装插页、邮件索评、第三方工具的合规使用。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">多账号与关联风险</div>
+            <div class="step-desc">什么情况下会被判定关联、如何判断自己有没有踩关联风险、多账号运营的合规路径。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">AI 生成内容的人工复核边界</div>
+            <div class="step-desc">AI 生成 Listing、广告词、售后回复时的合规风险点。AI 内容是草稿，不是终稿，人工复核的流程怎么做。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>对应文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/amazon-platform-rules-beginner/">
+          <div class="related-tag">实操文章</div>
+          <h3>亚马逊平台规则入门</h3>
+          <p>新手最容易踩的 10 个坑，含自检清单。本节课程的核心内容来源。</p>
+        </a>
+        <a class="related-card" href="/articles/amazon-ai-tools-review/">
+          <div class="related-tag">实操文章</div>
+          <h3>亚马逊 AI 工具评测</h3>
+          <p>AI 工具使用中的合规风险，以及工具选择的判断标准。</p>
+        </a>
+        <a class="related-card" href="/articles/listing-learning-path/">
+          <div class="related-tag">学习路径</div>
+          <h3>亚马逊 Listing 优化学习路径</h3>
+          <p>在规则边界内做 Listing 优化的完整路线，合规是优化的前提。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>对应资料包</h2>
+      <a class="learning-path-card" href="/resources/platform-rules-checklist/">
+        <div class="lp-hint">配套资料</div>
+        <h3>新手规则避坑清单</h3>
+        <p>10 个坑的详细自检表 + 发版前 checklist，带学员在实操前过一次完整的合规检查。</p>
+        <span class="lp-cta">查看资料详情 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>微信关键词</h2>
+      <div class="wechat-block">
+        <span class="wechat-badge">规则</span>
+        <p>回复关键词"规则"，领取配套资料包。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <h2>准备开始避坑</h2>
+      <p>建议先阅读对应文章，再配合资料包做课后演练。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/resources/platform-rules-checklist/">查看新手规则避坑清单</a>
+        <a class="cta-secondary" href="/open-class/">回到公开课中心</a>
+        <a class="cta-secondary" href="/resources/">回到资源中心</a>
+      </div>
+    </div>
+
+    <div class="callout-amber">
+      <strong>⚠ 使用边界</strong>
+      <p>本页面只做运营风险提示，不替代平台官方规则和专业合规判断。亚马逊平台规则会不定期更新，具体违规判定以平台官方通知为准。如涉及法律、税务或合规问题，请咨询专业人士。</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background:
+      radial-gradient(circle at 18% 28%, rgba(19, 104, 255, 0.10), transparent 26%),
+      linear-gradient(180deg, #f5f8fd 0%, #eef3fa 100%);
+    padding: 56px 24px 48px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  }
+
+  .page-hero-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #eaf2ff;
+    color: #1368ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 18px;
+    border: 1px solid #cfe0ff;
+  }
+
+  .page-hero h1 {
+    margin: 0 0 16px;
+    font-size: 42px;
+    line-height: 1.18;
+    letter-spacing: -1.4px;
+    color: #0f172a;
+  }
+
+  .page-hero p {
+    margin: 0 auto;
+    max-width: 760px;
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 34px 24px;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1368ff, #3b82f6);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .wechat-block {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border: 1px solid #a7f3d0;
+    border-radius: 12px;
+  }
+
+  .wechat-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: #059669;
+    color: #fff;
+    font-weight: 900;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .wechat-block p {
+    margin: 0;
+    color: #065f46;
+    font-size: 14px;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #1368ff, #3b82f6);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(19, 104, 255, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(19, 104, 255, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #1368ff;
+    border: 1px solid #cfe0ff;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  @media (max-width: 720px) {
+    .page-hero h1 {
+      font-size: 30px;
+    }
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
