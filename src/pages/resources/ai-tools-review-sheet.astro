@@ -1,0 +1,579 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "AI 工具", "item": "https://amz.hao1234.top/resources/#ai-search" },
+    { "@type": "ListItem", "position": 4, "name": "AI 工具评测表", "item": "https://amz.hao1234.top/resources/ai-tools-review-sheet/" }
+  ]
+};
+---
+<BaseLayout
+  title="AI 工具评测表 · 亚马逊资料包详情"
+  description="AI 工具评测表:亚马逊卖家评估 AI 工具是否值得用的资料包,7 字段结构化测试输入输出、节省时间和风险点,适合购买 AI 工具前、团队引入工具前使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · AI 工具</div>
+      <h1>AI 工具评测表</h1>
+      <p>在掏钱之前,用 7 个字段测清楚一个 AI 工具到底值不值得纳入你的 SOP。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">AI 工具评测表</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">AI 工具</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">想用 AI 提效,但不知道哪些工具适合亚马逊运营、哪些只是噱头的卖家和运营</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">购买 AI 工具前、团队引入工具前、公开课工具演示前</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">AI 公开课工具选择模块,4 判断标准 + 6 类适合 + 5 类不适合</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"AI评测"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>AI 工具越来越多,但大多数卖家的决策方式是"看到别人推荐就试试,试了几天觉得没用就放弃"。没有一个统一标准来判断"这个工具到底适不适合我的场景"。</p>
+      <p>这份评测表把 7 个字段按"先定义任务、再测试输入输出、后评估风险"的逻辑排好。你填完一张表,一个工具值不值得长期用,结论就很清楚了。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>7 个字段分别填什么</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">字段</div>
+          <div class="field-desc">填什么 / 怎么判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">工具名称</div>
+          <div class="field-desc">工具的正式名称和官网地址,方便后续回查</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">适用场景</div>
+          <div class="field-desc">关键词挖掘 / Listing 改写 / Review 分析 / 广告优化 / 图片处理 / 数据分析,明确它该用在哪</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">输入数据</div>
+          <div class="field-desc">你需要给它什么:关键词列表 / Listing 文本 / Review 数据 / 广告报表,越具体越好</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">输出结果</div>
+          <div class="field-desc">它给你什么:改写后的文案 / 分类后的痛点 / 优化建议,判断输出是否可直接用</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">人工复核点</div>
+          <div class="field-desc">哪些地方必须人看一遍:事实准确性 / 语气是否匹配品牌 / 是否违反平台规则</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">风险点</div>
+          <div class="field-desc">数据隐私 / 生成内容合规性 / 平台对 AI 内容的态度 / 成本是否可控</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">是否值得长期使用</div>
+          <div class="field-desc">综合以上字段判断:值得纳入 SOP / 仅特定场景用 / 不建议用</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">先明确任务</div>
+            <div class="step-desc">不要"试用 AI 工具",而是"用 AI 工具解决 X 任务"。把任务定义清楚:是改写五点,还是分析差评,还是挖关键词。任务越具体,评测越准。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">再测试输入输出</div>
+            <div class="step-desc">用你自己的真实数据(不是示例数据)跑一遍。输入你的 Listing 文本,看输出结果。输出质量直接决定这个工具值不值得用。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">评估节省时间</div>
+            <div class="step-desc">这个任务如果不借助 AI,你自己做要多久?用了 AI 节省了多少时间?如果节省不到 30%,工具的 ROI 可能不够。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">检查风险</div>
+            <div class="step-desc">输出内容有没有事实错误?有没有违反亚马逊规则的表述?数据是否上传到了第三方服务器?风险点不确认,不要用。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">决定是否纳入 SOP</div>
+            <div class="step-desc">如果输出质量 OK、节省时间明显、风险可控,就纳入 SOP 固定使用。如果只是"偶尔有用",不值得花时间维护。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/amazon-ai-tools-review/">
+          <div class="related-tag">配套文章</div>
+          <h3>亚马逊 AI 工具评测:4 判断标准 + 6 类适合</h3>
+          <p>讲清 AI 工具评估的底层逻辑,以及哪些场景适合用 AI、哪些不适合。</p>
+        </a>
+        <a class="related-card" href="/articles/2026-amazon-ai-operations/">
+          <div class="related-tag">关联文章</div>
+          <h3>2026 亚马逊 AI 运营全景图</h3>
+          <p>AI 在选品、Listing、广告、Review 各模块的位置,作为工具选择的全局参考。</p>
+        </a>
+        <a class="related-card" href="/articles/ai-search-learning-path/">
+          <div class="related-tag">关联文章</div>
+          <h3>AI 搜索学习路径</h3>
+          <p>从工具理解到运营应用的 4 步学习路径,评测表对应第 1 步"工具选择"。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/articles/ai-search-learning-path/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊 AI 搜索学习路径:从工具理解到运营应用</h3>
+        <p>把 AI 运营拆成 4 步:工具选择、消费者行为、运营应用、内容生产。本资料对应第 1 步"工具选择"。</p>
+        <span class="lp-cta">看完整学习路径 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ AI 工具评测不等于工具推荐</strong>
+        <p>评测表帮你把"该看什么"列全,但每个字段的判断还是要结合你的团队规模、技术能力和预算。一个人的运营团队和 10 人的运营团队,对同一个工具的评价可能完全不同。</p>
+        <p>AI 工具迭代很快,今天的评测结论可能三个月后就不适用了。建议每季度重新跑一次评测,尤其是输出质量和价格这两个维度。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"AI评测",领取 AI 工具评测表</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>

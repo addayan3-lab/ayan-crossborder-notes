@@ -1,0 +1,575 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "新手规则", "item": "https://amz.hao1234.top/resources/#rules" },
+    { "@type": "ListItem", "position": 4, "name": "新手规则避坑清单", "item": "https://amz.hao1234.top/resources/platform-rules-checklist/" }
+  ]
+};
+---
+<BaseLayout
+  title="新手规则避坑清单 · 亚马逊资料包详情"
+  description="新手规则避坑清单:亚马逊新手卖家上架前的规则检查资料包,6 字段覆盖 Listing 表达、图片素材、Review 索评、AI 内容等风险场景,适合产品上架前、Listing 发布前使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · 新手规则</div>
+      <h1>新手规则避坑清单</h1>
+      <p>把"不知道亚马逊不能做什么"变成"逐项检查,先避坑再上架"。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">新手规则避坑清单</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">新手规则</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">刚开始做亚马逊、准备上架产品、准备优化 Listing 或使用 AI 生成内容的新手卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">产品上架前、Listing 发布前、索评动作前、广告上线前、AI 内容发布前</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">公开课开场第一节,讲清平台规则边界</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"规则"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>新手卖家最容易犯的错不是"做得不好",而是"不知道有些事不能做"。Listing 里写了"最好卖",图片里有竞品 logo,索评邮件里承诺返现——这些在其他平台可能没事,在亚马逊可能直接封店。</p>
+      <p>这份避坑清单把 6 个最容易踩的坑按"先查什么、再查什么"的顺序排好。你逐项过一遍,至少能避开 80% 的新手期违规风险。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>6 个字段分别填什么</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">字段</div>
+          <div class="field-desc">填什么 / 怎么判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">风险场景</div>
+          <div class="field-desc">这个坑通常出现在什么环节:Listing 文案 / 图片素材 / Review 索评 / 广告投放 / AI 内容 / 售后沟通</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">可能问题</div>
+          <div class="field-desc">如果踩了这个坑,会出什么事: Listing 被下架 / 账号被警告 / 评价被删 / 封店</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">检查动作</div>
+          <div class="field-desc">具体怎么查:逐条扫描 Listing 文本 / 检查图片元素 / 审查邮件模板 / 核对广告词</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">是否需要人工复核</div>
+          <div class="field-desc">AI 工具能帮你初筛,但最终判断必须人来看。有些规则边界模糊,需要人来判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">是否需要查官方要求</div>
+          <div class="field-desc">有些规则亚马逊有明确条款,有些是灰色地带。明确条款的必须查,灰色地带的保守处理</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">备注</div>
+          <div class="field-desc">常见误判、补充说明、最新政策变化等</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">先检查 Listing 表达</div>
+            <div class="step-desc">标题、五点、描述、A+ 里有没有绝对化用语("最好""第一""100%"),有没有对比竞品,有没有承诺未写进产品的内容。这是最高频的坑。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">再检查图片和素材</div>
+            <div class="step-desc">主图是不是纯白底,副图里有没有竞品 logo,有没有未经授权的明星/卡通形象,有没有对比图暗示竞品不好。图片违规比文案更隐蔽。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">再检查 Review/索评动作</div>
+            <div class="step-desc">索评邮件有没有承诺折扣,有没有要求"只留好评",有没有用 Vine 之外的渠道刷评。Review 违规是封店重灾区。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">最后检查 AI 生成内容</div>
+            <div class="step-desc">如果用了 AI 写 Listing 或生成图片,必须逐条审核。AI 会编造不存在的功能、使用绝对化用语、生成侵权素材。AI 内容的违规责任在卖家,不在 AI。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">标记不确定项并留档</div>
+            <div class="step-desc">遇到判断不了的,标"不确定"并截图留档。不要硬过也不要跳过,先记下来,等有确定答案再处理。留档是为了以后回查。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/amazon-platform-rules-beginner/">
+          <div class="related-tag">配套文章</div>
+          <h3>亚马逊新手避坑清单:10 个常见违规场景</h3>
+          <p>讲清 10 个新手期最容易踩的坑,每个坑的触发条件和后果。</p>
+        </a>
+        <a class="related-card" href="/articles/amazon-ai-tools-review/">
+          <div class="related-tag">关联文章</div>
+          <h3>亚马逊 AI 工具评测</h3>
+          <p>AI 工具在亚马逊运营中的风险点,尤其是 AI 生成内容的合规性。</p>
+        </a>
+        <a class="related-card" href="/articles/listing-learning-path/">
+          <div class="related-tag">关联文章</div>
+          <h3>Listing 优化学习路径</h3>
+          <p>Listing 优化的 4 步流程,本清单对应发布前的规则检查环节。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/articles/tools-learning-path/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊工具资料学习路径:从表格、清单到实操 SOP</h3>
+        <p>把运营工具链拆成 4 步:规则检查、关键词工具、Listing 工具、广告工具。本资料对应第 1 步"规则检查"。</p>
+        <span class="lp-cta">看完整学习路径 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ 规则会变,清单需要定期更新</strong>
+        <p>亚马逊的规则不是一成不变的。政策更新、执法力度变化、新功能上线都会改变"什么能做、什么不能做"的边界。这份清单反映的是当前已知的规则,不代表未来不变。</p>
+        <p>遇到清单没覆盖的场景,保守原则是:不确定就不做。宁可少做一个功能,不要冒封店风险。如果拿不准,先查亚马逊卖家中心的最新公告,或在公开课中提问。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"规则",领取新手规则避坑清单</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>

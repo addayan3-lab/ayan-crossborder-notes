@@ -1,0 +1,583 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "Review", "item": "https://amz.hao1234.top/resources/#review" },
+    { "@type": "ListItem", "position": 4, "name": "Review 痛点分析表", "item": "https://amz.hao1234.top/resources/review-pain-analysis/" }
+  ]
+};
+---
+<BaseLayout
+  title="Review 痛点分析表 · 亚马逊资料包详情"
+  description="Review 痛点分析表:亚马逊卖家从评价中提炼产品问题和页面缺口的资料包,8 字段结构化拆解,区分产品/页面/预期问题,适合选品前、Listing 优化前、差评集中出现后使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · Review</div>
+      <h1>Review 痛点分析表</h1>
+      <p>把评价里的"买家抱怨"翻译成产品改进动作和 Listing 修复方向。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">Review 痛点分析表</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">Review</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">已经有竞品评价、差评样本,想从 Review 里找产品问题、页面缺口和选品机会的卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">选品前、Listing 优化前、差评集中出现后、准备做竞品复盘时</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">Review 学习路径第 2 步,痛点提炼与归因</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"痛点"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>大多数卖家读 Review 的方式是"一条条看过去",看完记得几个关键词,但不知道该改什么。痛点散落在好评、差评、中评里,混着物流问题、预期落差和真实产品缺陷,卖家分不清哪些值得投入,哪些只能接受。</p>
+      <p>这份痛点分析表把 8 个字段按"先分类、再归因、后动作"的逻辑排好,你填完一张表,痛点就从"感觉"变成了"可以排优先级的改进清单"。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>8 个字段分别填什么</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">字段</div>
+          <div class="field-desc">填什么 / 怎么判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">Review 类型</div>
+          <div class="field-desc">好评 / 中评 / 差评 / Q&A,不同类型挖出的问题角度不同</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">用户原话</div>
+          <div class="field-desc">摘录原文,保留买家措辞,避免自己翻译失真</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">痛点归类</div>
+          <div class="field-desc">产品质量 / 功能缺失 / 使用难度 / 预期落差 / 物流售后 / 包装体验</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">影响环节</div>
+          <div class="field-desc">选品决策 / Listing 表达 / 定价策略 / 广告承接 / 售后流程</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">是否产品问题</div>
+          <div class="field-desc">是(改产品或换供应链) / 否(只是表达或预期问题) / 待定(需更多样本)</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">是否页面表达问题</div>
+          <div class="field-desc">Listing 有没有提前说清楚这个点,避免买家产生错误预期</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">对应修复动作</div>
+          <div class="field-desc">改 Listing / 改产品 / 补 FAQ / 调定价 / 接受不改,动作要具体到执行层</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">优先级</div>
+          <div class="field-desc">高频+影响转化 = 高; 低频或不影响购买 = 低; 先处理高优先级</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">收集评价</div>
+            <div class="step-desc">把竞品或自己产品的差评、中评、Q&A 导出来。差评优先,中评补充,Q&A 看有没有被反复问到的问题。先攒 30-50 条再开始分析。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">分类痛点</div>
+            <div class="step-desc">每条评价标一个痛点归类。同一条评价可能有多个痛点,拆开填。这一步是为了看"哪类问题最多",而不是一条条孤立地看。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">区分产品/页面/预期问题</div>
+            <div class="step-desc">产品问题:改产品或换供应链。页面问题:Listing 没说清楚,补上就好。预期问题:买家对产品有误解,需要在页面提前管理预期。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">反推改进动作</div>
+            <div class="step-desc">每个痛点写一个具体动作。不是"改 Listing",而是"五点第 3 条加一句'实际尺寸为 Xcm,非桌面尺寸'"。动作越具体,执行越快。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">回填 Listing 或选品判断</div>
+            <div class="step-desc">把高优先级的动作落实到 Listing 修改或选品结论。如果是选品阶段,高频产品问题可能直接否掉这个品。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/ai-review-analysis/">
+          <div class="related-tag">配套文章</div>
+          <h3>如何用 AI 做亚马逊 Review 痛点提炼</h3>
+          <p>讲清怎么用 AI 把散乱评价归类成结构化痛点,以及 AI 判断的边界在哪里。</p>
+        </a>
+        <a class="related-card" href="/articles/review-analysis-matrix/">
+          <div class="related-tag">关联文章</div>
+          <h3>Review 矩阵分析:4 类评价怎么拆</h3>
+          <p>好评、差评、中评、Q&A 各自能挖出什么信息,作为痛点分析的上游输入。</p>
+        </a>
+        <a class="related-card" href="/articles/negative-review-listing-fix/">
+          <div class="related-tag">关联文章</div>
+          <h3>差评归因与 Listing 修复表</h3>
+          <p>从差评反推下一版 Listing 该改什么,适合痛点分析后做具体修复。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/articles/review-learning-path/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊 Review 分析学习路径:从评价挖掘到产品优化</h3>
+        <p>把 Review 工作拆成 4 步:数据收集、矩阵拆解、痛点提炼、反哺 Listing。本资料对应第 3 步"痛点提炼"。</p>
+        <span class="lp-cta">看完整学习路径 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ 痛点分析不等于产品决策</strong>
+        <p>同一份差评数据,不同卖家会得出完全不同的结论。痛点分析表帮你把"该看什么"列全,但每个痛点归到哪类、优先级怎么排、最终改不改,还是要结合你的产品阶段、供应链能力和利润空间判断。</p>
+        <p>小样本(少于 30 条评价)的痛点分析容易被极端案例带偏,建议先攒够样本再开始。差评集中在物流或售后的,可能不是产品问题,不要急着改品。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"痛点",领取 Review 痛点分析表</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>

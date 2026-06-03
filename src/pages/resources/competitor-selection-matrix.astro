@@ -1,0 +1,587 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "选品", "item": "https://amz.hao1234.top/resources/#selection" },
+    { "@type": "ListItem", "position": 4, "name": "选品竞品矩阵", "item": "https://amz.hao1234.top/resources/competitor-selection-matrix/" }
+  ]
+};
+---
+<BaseLayout
+  title="选品竞品矩阵 · 亚马逊资料包详情"
+  description="选品竞品矩阵:亚马逊卖家做竞品拆解的资料包,9 字段结构化对比竞品价格、Review、卖点、差评和广告强度,适合选品初筛后、决定是否打样前使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · 选品</div>
+      <h1>选品竞品矩阵</h1>
+      <p>把"看竞品"从浏览感觉变成 9 个字段的结构化拆解,找到真正的差异化切入口。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">选品竞品矩阵</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">选品</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">正在判断一个产品能不能做、竞品强不强、切入口是否清晰的新手和进阶卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">选品初筛后、决定是否打样前、准备做竞品拆解时</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">选品公开课第 2 节,竞品矩阵拆解与差异化机会判断</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"矩阵"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>选品最常见的困境是"看了很多竞品,但说不清他们强在哪、弱在哪、我能不能打"。卖家翻完 10 个 Listing,脑子里留下一堆零散印象,但没有一个统一框架来比较。</p>
+      <p>这份竞品矩阵把 9 个字段按"先看数据、再拆卖点、后找机会"的顺序排好。你填完 5-10 个竞品,差异化空间就自然浮出来了。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>9 个字段分别填什么</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">字段</div>
+          <div class="field-desc">填什么 / 怎么判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">竞品 ASIN</div>
+          <div class="field-desc">标准 10 位 ASIN,方便后续回查和追踪</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">价格</div>
+          <div class="field-desc">当前售价,标注是否在做促销或 Coupon</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">Review 数</div>
+          <div class="field-desc">总评价数量,反映市场成熟度和进入门槛</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">评分</div>
+          <div class="field-desc">星级,4.0 以下说明产品有明显问题空间</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">核心卖点</div>
+          <div class="field-desc">竞品主图和标题主打的 1-2 个差异点,不是罗列所有功能</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">差评痛点</div>
+          <div class="field-desc">差评里反复出现的 2-3 个问题,这是你的机会点</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">图片表达</div>
+          <div class="field-desc">主图风格、副图数量和信息密度,判断视觉竞争强度</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">广告强度</div>
+          <div class="field-desc">是否有广告位、是否在做品牌推广,判断付费流量竞争</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">机会判断</div>
+          <div class="field-desc">综合以上字段,判断"能打 / 需差异化 / 不建议进入"三档</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">选 5-10 个竞品</div>
+            <div class="step-desc">从搜索结果前 3 页挑,既有头部大卖(看天花板),也有中腰部卖家(看可切入空间)。只选和你产品定位接近的,不要把完全不同的品类混进来。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">填基础数据</div>
+            <div class="step-desc">价格、Review 数、评分这三项先填完。这三个数字能帮你快速筛掉"进不去"和"不值得做"的竞品。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">拆卖点和差评</div>
+            <div class="step-desc">每个竞品的核心卖点从标题和主图提取,差评痛点从 1-3 星评价提取。这一步是矩阵的核心,填完后你会发现"大家都在打同一个点"或者"某个痛点没人解决"。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">找共同痛点</div>
+            <div class="step-desc">横向看所有竞品的差评痛点,找出被反复提到的问题。如果 3 个以上竞品有同一个痛点,这就是你的差异化方向。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">判断差异化机会</div>
+            <div class="step-desc">综合价格带、Review 门槛、痛点覆盖和广告强度,给出"能打 / 需差异化 / 不建议进入"的结论。不要只看单个竞品,要看整体格局。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/ai-competitor-matrix/">
+          <div class="related-tag">配套文章</div>
+          <h3>如何用 AI 拆解竞品矩阵</h3>
+          <p>讲清 4 维度(价格/卖点/人群/痛点)怎么拆,以及 AI 辅助提取的边界。</p>
+        </a>
+        <a class="related-card" href="/articles/ai-market-size-estimate/">
+          <div class="related-tag">关联文章</div>
+          <h3>市场容量三数字判断表</h3>
+          <p>搜索量、销量、价格带三项数据,作为竞品矩阵的上游判断依据。</p>
+        </a>
+        <a class="related-card" href="/articles/selection-pain-reverse/">
+          <div class="related-tag">关联文章</div>
+          <h3>痛点反推选品 SOP</h3>
+          <p>从差评和退货理由反推选品标准,适合竞品矩阵之后做深度验证。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/resources/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊选品资料包合集</h3>
+        <p>选品资料包覆盖市场容量、竞品矩阵、痛点反推 3 个核心步骤。本资料对应第 2 步"竞品拆解"。</p>
+        <span class="lp-cta">查看全部选品资料 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ 竞品矩阵是选品工具,不是选品结论</strong>
+        <p>矩阵帮你把竞品信息结构化,但"能不能做"这个判断还需要结合你的资金、供应链、运营能力。同一个品类,有供应链优势的卖家看到的机会,和纯新手看到的完全不同。</p>
+        <p>填矩阵时容易犯的错误是"只看头部卖家",忽视中腰部竞品。头部卖家的数据代表天花板,中腰部卖家的数据才代表你的实际竞争环境。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"矩阵",领取选品竞品矩阵</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>
