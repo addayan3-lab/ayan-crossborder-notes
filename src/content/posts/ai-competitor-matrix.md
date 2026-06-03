@@ -4,7 +4,7 @@ description: "市场容量判断完之后，下一步是看竞品在打什么牌
 pubDate: "2026-06-02"
 category: "选品"
 tags: ["选品", "竞品分析", "AI"]
-image: "/images/og-default.svg"
+image: "/images/articles/ai-competitor-matrix/cover.svg"
 topic: selection
 stage: 进阶
 intent: 工具

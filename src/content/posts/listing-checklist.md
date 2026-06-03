@@ -15,6 +15,7 @@ publicLessonUse: 适合作为 Listing 公开课的页面体检环节，带学员
 leadMagnet: Listing 自检清单
 wechatHook: 回复关键词"自检"，领取 Listing 自检清单。
 draft: false
+image: "/images/articles/listing-checklist/cover.svg"
 ---
 
 这是一篇占位文章。

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-kcm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#F8FAFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-kcm)"/>
+  <circle cx="1100" cy="80" r="180" fill="#DBEAFE" opacity="0.4"/>
+  <circle cx="100" cy="550" r="200" fill="#EFF6FF" opacity="0.5"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">关键词清洗方法</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">从关键词池到可用词表·4 步清洗流程</text>
+  <!-- Flow: Pool → Dedup → Group → Select -->
+  <rect x="80" y="180" width="220" height="100" rx="16" fill="#2563EB"/>
+  <text x="190" y="220" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">关键词池</text>
+  <text x="190" y="252" text-anchor="middle" font-size="15" fill="#DBEAFE" font-family="system-ui, -apple-system, sans-serif">200-500 原始词</text>
+  <path d="M305 230 L360 230" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="355,225 365,230 355,235" fill="#94A3B8"/>
+  <rect x="370" y="180" width="220" height="100" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="480" y="215" text-anchor="middle" font-size="20" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">去重 + 归一化</text>
+  <text x="480" y="245" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">大小写/单复数/变体</text>
+  <path d="M595 230 L650 230" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="645,225 655,230 645,235" fill="#94A3B8"/>
+  <rect x="660" y="180" width="220" height="100" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="770" y="215" text-anchor="middle" font-size="20" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">主题聚类</text>
+  <text x="770" y="245" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">5-10 个语义分组</text>
+  <path d="M885 230 L940 230" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="935,225 945,230 935,235" fill="#94A3B8"/>
+  <rect x="950" y="180" width="170" height="100" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="1035" y="215" text-anchor="middle" font-size="20" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">优先级排序</text>
+  <text x="1035" y="245" text-anchor="middle" font-size="15" fill="#475569" font-family="system-ui, -apple-system, sans-serif">高/中/低</text>
+  <!-- Divider -->
+  <line x1="80" y1="320" x2="1120" y2="320" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- Criteria table -->
+  <text x="80" y="360" font-size="18" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">清洗判断标准</text>
+  <rect x="80" y="380" width="240" height="70" rx="12" fill="#FFFFFF" stroke="#DBEAFE"/>
+  <text x="200" y="410" text-anchor="middle" font-size="16" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">相关性</text>
+  <text x="200" y="432" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">产品匹配度</text>
+  <rect x="340" y="380" width="240" height="70" rx="12" fill="#FFFFFF" stroke="#DBEAFE"/>
+  <text x="460" y="410" text-anchor="middle" font-size="16" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">搜索意图</text>
+  <text x="460" y="432" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">浏览/对比/购买</text>
+  <rect x="600" y="380" width="250" height="70" rx="12" fill="#FFFFFF" stroke="#DBEAFE"/>
+  <text x="725" y="410" text-anchor="middle" font-size="16" fill="#2563EB" font-family="system-ui, -apple-system, sans-serif" font-weight="700">竞争度</text>
+  <text x="725" y="432" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">首页评论数 + 品牌力</text>
+  <!-- Bottom -->
+  <rect x="340" y="490" width="520" height="56" rx="16" fill="#1D4ED8"/>
+  <text x="600" y="526" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">→ 可用词表：标题·五点·Search Terms</text>
+</svg>

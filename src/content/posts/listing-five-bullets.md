@@ -4,7 +4,7 @@ description: "五点不是平铺卖点，而是三类信息的有序组合。讲
 pubDate: "2026-06-02"
 category: "Listing 优化"
 tags: ["Listing", "五点", "转化"]
-image: "/images/og-default.svg"
+image: "/images/articles/listing-five-bullets/cover.svg"
 draft: false
 topic: listing
 stage: 实操

@@ -4,7 +4,7 @@ description: "把收了一堆词变成能写进 Listing 和广告的可用词表
 pubDate: "2026-06-02"
 category: "关键词"
 tags: ["关键词", "AI 提效", "工具"]
-image: "/images/og-default.svg"
+image: "/images/articles/keyword-cleaning-method/cover.svg"
 draft: false
 topic: keyword
 stage: 实操

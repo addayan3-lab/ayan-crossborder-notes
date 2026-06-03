@@ -238,5 +238,93 @@
     "topics": ["ppc", "resources"],
     "keywords": ["PPC", "周复盘", "广告", "ACOS"],
     "alt": "PPC 周复盘表封面图"
+  },
+  {
+    "id": "article-keyword-cleaning-method-cover",
+    "path": "/images/articles/keyword-cleaning-method/cover.svg",
+    "type": "cover",
+    "topics": ["keyword"],
+    "keywords": ["关键词", "清洗", "去重", "归一化", "聚类"],
+    "alt": "关键词清洗方法：从关键词池到可用词表封面图"
+  },
+  {
+    "id": "article-keyword-source-4-types-cover",
+    "path": "/images/articles/keyword-source-4-types/cover.svg",
+    "type": "cover",
+    "topics": ["keyword"],
+    "keywords": ["关键词", "来源", "竞品", "广告", "评价"],
+    "alt": "关键词 4 类来源封面图"
+  },
+  {
+    "id": "article-keyword-search-volume-trap-cover",
+    "path": "/images/articles/keyword-search-volume-trap/cover.svg",
+    "type": "cover",
+    "topics": ["keyword"],
+    "keywords": ["搜索量", "陷阱", "判断", "相关"],
+    "alt": "搜索量陷阱：不能只看搜索量选词封面图"
+  },
+  {
+    "id": "article-listing-five-bullets-cover",
+    "path": "/images/articles/listing-five-bullets/cover.svg",
+    "type": "cover",
+    "topics": ["listing"],
+    "keywords": ["五点", "功能点", "场景点", "信任点"],
+    "alt": "Listing 五点写法：功能点·场景点·信任点封面图"
+  },
+  {
+    "id": "article-listing-checklist-cover",
+    "path": "/images/articles/listing-checklist/cover.svg",
+    "type": "cover",
+    "topics": ["listing"],
+    "keywords": ["Listing", "检查清单", "标题", "图片", "五点"],
+    "alt": "Listing 优化检查清单封面图"
+  },
+  {
+    "id": "article-ai-listing-optimization-cover",
+    "path": "/images/articles/ai-listing-optimization/cover.svg",
+    "type": "cover",
+    "topics": ["listing", "ai"],
+    "keywords": ["AI", "Listing", "优化", "改写"],
+    "alt": "AI & Listing 优化：AI 辅助改写+人工复核封面图"
+  },
+  {
+    "id": "article-sp-ad-structure-cover",
+    "path": "/images/articles/sp-ad-structure/cover.svg",
+    "type": "cover",
+    "topics": ["ppc"],
+    "keywords": ["SP", "广告", "自动", "精准", "词组", "竞品"],
+    "alt": "SP 广告结构：自动·精准·词组·竞品封面图"
+  },
+  {
+    "id": "article-ai-ppc-report-review-cover",
+    "path": "/images/articles/ai-ppc-report-review/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "ai"],
+    "keywords": ["AI", "PPC", "广告", "报表", "复盘"],
+    "alt": "AI 广告报表复盘：搜索词·ACOS·CVR 三步初筛封面图"
+  },
+  {
+    "id": "article-review-analysis-matrix-cover",
+    "path": "/images/articles/review-analysis-matrix/cover.svg",
+    "type": "cover",
+    "topics": ["review"],
+    "keywords": ["Review", "差评", "好评", "中评", "矩阵"],
+    "alt": "Review 分析矩阵：好评·差评·中评·Q&A 封面图"
+  },
+  {
+    "id": "article-ai-competitor-matrix-cover",
+    "path": "/images/articles/ai-competitor-matrix/cover.svg",
+    "type": "cover",
+    "topics": ["ai", "competitor"],
+    "keywords": ["竞品", "矩阵", "价格", "卖点", "机会"],
+    "alt": "AI 竞品矩阵拆解：4 维度发现差异化空间封面图"
+  },
+  {
+    "id": "article-amazon-ai-tools-review-cover",
+    "path": "/images/articles/amazon-ai-tools-review/cover.svg",
+    "type": "cover",
+    "topics": ["ai", "tools"],
+    "keywords": ["AI", "工具", "评测", "标准"],
+    "alt": "亚马逊 AI 工具评测封面图"
   }
 ]

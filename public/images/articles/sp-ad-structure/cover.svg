@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-sp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#FFFBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-sp)"/>
+  <circle cx="150" cy="80" r="160" fill="#FFEDD5" opacity="0.5"/>
+  <circle cx="1050" cy="550" r="180" fill="#FFF7ED" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">SP 广告结构</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">自动·精准·词组·竞品·4 类分工</text>
+  <!-- 4 column layout -->
+  <rect x="80" y="170" width="240" height="180" rx="16" fill="#FFFFFF" stroke="#FED7AA" stroke-width="2"/>
+  <text x="200" y="205" text-anchor="middle" font-size="20" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">自动广告</text>
+  <text x="200" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">宽泛匹配</text>
+  <text x="200" y="260" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">发现新关键词</text>
+  <text x="200" y="285" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">测试流量池</text>
+  <text x="200" y="310" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">新品期优先</text>
+  <rect x="340" y="170" width="240" height="180" rx="16" fill="#FFFFFF" stroke="#FED7AA" stroke-width="2"/>
+  <text x="460" y="205" text-anchor="middle" font-size="20" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">精准广告</text>
+  <text x="460" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">高转化词</text>
+  <text x="460" y="260" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">精确匹配出价</text>
+  <text x="460" y="285" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">控制 ACOS</text>
+  <text x="460" y="310" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">稳态期主力</text>
+  <rect x="600" y="170" width="240" height="180" rx="16" fill="#FFFFFF" stroke="#FED7AA" stroke-width="2"/>
+  <text x="720" y="205" text-anchor="middle" font-size="20" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">词组广告</text>
+  <text x="720" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">短语匹配</text>
+  <text x="720" y="260" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">扩展长尾词</text>
+  <text x="720" y="285" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">覆盖面补充</text>
+  <text x="720" y="310" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">成长期配置</text>
+  <rect x="860" y="170" width="260" height="180" rx="16" fill="#FFFFFF" stroke="#FED7AA" stroke-width="2"/>
+  <text x="990" y="205" text-anchor="middle" font-size="20" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">竞品 ASIN</text>
+  <text x="990" y="235" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">商品投放</text>
+  <text x="990" y="260" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">抢占类目流量</text>
+  <text x="990" y="285" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">防御 + 进攻</text>
+  <text x="990" y="310" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">成熟期必开</text>
+  <!-- Budget allocation bar -->
+  <rect x="80" y="385" width="1040" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="100" y="410" font-size="15" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">推荐预算比例</text>
+  <rect x="100" y="420" width="130" height="20" rx="6" fill="#FED7AA"/><text x="165" y="434" text-anchor="middle" font-size="11" fill="#92400E" font-weight="700">自动 30%</text>
+  <rect x="240" y="420" width="160" height="20" rx="6" fill="#FDBA74"/><text x="320" y="434" text-anchor="middle" font-size="11" fill="#92400E" font-weight="700">精准 40%</text>
+  <rect x="410" y="420" width="120" height="20" rx="6" fill="#FED7AA"/><text x="470" y="434" text-anchor="middle" font-size="11" fill="#92400E" font-weight="700">词组 20%</text>
+  <rect x="540" y="420" width="100" height="20" rx="6" fill="#FED7AA"/><text x="590" y="434" text-anchor="middle" font-size="11" fill="#92400E" font-weight="700">竞品 10%</text>
+  <!-- Timeline -->
+  <rect x="80" y="480" width="500" height="50" rx="12" fill="#D97706"/>
+  <text x="330" y="512" text-anchor="middle" font-size="17" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">新品期：自动为主</text>
+  <rect x="620" y="480" width="500" height="50" rx="12" fill="#FFFFFF" stroke="#D97706" stroke-width="2"/>
+  <text x="870" y="512" text-anchor="middle" font-size="17" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">稳态期：精准为主</text>
+  <path d="M585 505 L615 505" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="610,500 620,505 610,510" fill="#D97706"/>
+</svg>

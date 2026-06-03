@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-ram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1F2"/>
+      <stop offset="1" stop-color="#FFF8F9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ram)"/>
+  <circle cx="1100" cy="100" r="160" fill="#FEE2E2" opacity="0.5"/>
+  <circle cx="100" cy="560" r="180" fill="#FFF1F2" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">Review 分析矩阵</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">好评·差评·中评·Q&A·4 类评价拆解</text>
+  <!-- 4 quadrant matrix -->
+  <rect x="80" y="170" width="240" height="160" rx="16" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="200" cy="200" r="20" fill="#E11D48"/>
+  <text x="200" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">★</text>
+  <text x="200" y="240" text-anchor="middle" font-size="18" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">好评</text>
+  <text x="200" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">提炼卖点词 + 场景词</text>
+  <text x="200" y="292" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">找到用户最喜欢的点</text>
+  <text x="200" y="316" text-anchor="middle" font-size="13" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif">→ 强化 Listing 表达</text>
+  <rect x="340" y="170" width="240" height="160" rx="16" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="460" cy="200" r="20" fill="#E11D48"/>
+  <text x="460" y="207" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">✗</text>
+  <text x="460" y="240" text-anchor="middle" font-size="18" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">差评</text>
+  <text x="460" y="268" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">归因分析（物流/质量/预期）</text>
+  <text x="460" y="292" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">找出核心痛点</text>
+  <text x="460" y="316" text-anchor="middle" font-size="13" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif">→ 改进产品或 Listing</text>
+  <rect x="80" y="360" width="240" height="160" rx="16" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="200" cy="390" r="20" fill="#E11D48"/>
+  <text x="200" y="397" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">△</text>
+  <text x="200" y="430" text-anchor="middle" font-size="18" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">中评</text>
+  <text x="200" y="458" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">3 星 = 中性反馈</text>
+  <text x="200" y="482" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">改进空间判断</text>
+  <text x="200" y="506" text-anchor="middle" font-size="13" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif">→ 发现未被满足需求</text>
+  <rect x="340" y="360" width="240" height="160" rx="16" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="2"/>
+  <circle cx="460" cy="390" r="20" fill="#E11D48"/>
+  <text x="460" y="397" text-anchor="middle" font-size="16" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">?</text>
+  <text x="460" y="430" text-anchor="middle" font-size="18" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Q&amp;A</text>
+  <text x="460" y="458" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">用户提问 = 内容缺口</text>
+  <text x="460" y="482" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">补充 A+ 内容方向</text>
+  <text x="460" y="506" text-anchor="middle" font-size="13" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif">→ 更新 FAQ 部分</text>
+  <!-- Action flow on right -->
+  <rect x="640" y="190" width="480" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="720" y="225" font-size="18" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">矩阵输出行动清单</text>
+  <text x="680" y="258" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✓ 卖点强化：Top 3 好评关键词写入标题/五点</text>
+  <text x="680" y="282" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✓ 痛点修复：Top 3 差评原因制定修复方案</text>
+  <text x="680" y="306" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✓ 内容补充：Q&A 高频提问更新 A+ 内容</text>
+  <!-- Bottom -->
+  <rect x="640" y="370" width="480" height="130" rx="16" fill="#BE123C"/>
+  <text x="880" y="410" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review → 数据 → 行动</text>
+  <text x="880" y="440" text-anchor="middle" font-size="15" fill="#FECDD3" font-family="system-ui, -apple-system, sans-serif">把每一条评价变成可执行的优化项</text>
+  <text x="880" y="470" text-anchor="middle" font-size="15" fill="#FECDD3" font-family="system-ui, -apple-system, sans-serif">每周 30 分钟·4 类拆解·1 份行动清单</text>
+</svg>

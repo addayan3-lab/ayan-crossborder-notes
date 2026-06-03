@@ -4,7 +4,7 @@ description: "SP 不是只投一个广告。讲清自动、精准、词组、竞
 pubDate: "2026-06-02"
 category: "广告 PPC"
 tags: ["PPC", "SP", "广告结构"]
-image: "/images/og-default.svg"
+image: "/images/articles/sp-ad-structure/cover.svg"
 draft: false
 topic: ppc
 stage: 实操

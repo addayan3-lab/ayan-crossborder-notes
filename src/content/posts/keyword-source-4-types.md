@@ -4,7 +4,7 @@ description: "亚马逊关键词不是凭空出现的，也不是只靠 Helium 1
 pubDate: "2026-06-02"
 category: "关键词"
 tags: ["关键词", "词来源", "AI 提效"]
-image: "/images/og-default.svg"
+image: "/images/articles/keyword-source-4-types/cover.svg"
 topic: keyword
 stage: 实操
 intent: 工具

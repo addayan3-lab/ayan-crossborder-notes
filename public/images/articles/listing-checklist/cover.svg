@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-lcl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F3FF"/>
+      <stop offset="1" stop-color="#FAFAFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-lcl)"/>
+  <circle cx="150" cy="100" r="160" fill="#EDE9FE" opacity="0.5"/>
+  <circle cx="1100" cy="550" r="180" fill="#F5F3FF" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">Listing 优化检查清单</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">6 大模块·28 项自查</text>
+  <!-- Checklist items - 3 per row, 2 rows -->
+  <rect x="80" y="170" width="320" height="80" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="2"/>
+  <circle cx="110" cy="210" r="14" fill="#7C3AED"/><text x="110" y="215" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">✓</text>
+  <text x="145" y="204" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">标题</text>
+  <text x="145" y="230" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">核心词前置·品牌在中·<150 字符</text>
+  <rect x="440" y="170" width="320" height="80" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="2"/>
+  <circle cx="470" cy="210" r="14" fill="#7C3AED"/><text x="470" y="215" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">✓</text>
+  <text x="505" y="204" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">图片</text>
+  <text x="505" y="230" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">主图白底·7 张齐全·视频上传</text>
+  <rect x="800" y="170" width="320" height="80" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="2"/>
+  <circle cx="830" cy="210" r="14" fill="#7C3AED"/><text x="830" y="215" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">✓</text>
+  <text x="865" y="204" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">五点</text>
+  <text x="865" y="230" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">功能点 + 场景点 + 信任点排序</text>
+  <rect x="80" y="280" width="320" height="80" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="2"/>
+  <circle cx="110" cy="320" r="14" fill="#7C3AED"/><text x="110" y="325" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">✓</text>
+  <text x="145" y="314" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">A+ 内容</text>
+  <text x="145" y="340" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">品牌故事·对比图·场景展示</text>
+  <rect x="440" y="280" width="320" height="80" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="2"/>
+  <circle cx="470" cy="320" r="14" fill="#7C3AED"/><text x="470" y="325" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">✓</text>
+  <text x="505" y="314" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">后台关键词</text>
+  <text x="505" y="340" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">Search Terms 填充·不重复·空格</text>
+  <rect x="800" y="280" width="320" height="80" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="2"/>
+  <circle cx="830" cy="320" r="14" fill="#7C3AED"/><text x="830" y="325" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">✓</text>
+  <text x="865" y="314" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">转化表达</text>
+  <text x="865" y="340" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">CVR 检查·关键词覆盖率</text>
+  <!-- Score indicator -->
+  <rect x="80" y="400" width="1040" height="50" rx="14" fill="#EDE9FE"/>
+  <text x="600" y="432" text-anchor="middle" font-size="17" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-weight="700">满分 28 项 · <tspan fill="#7C3AED">≥24 项通过</tspan> 可上线 · <tspan fill="#DC2626">&lt;20 项</tspan> 需整改后重新检查</text>
+  <!-- Flow -->
+  <rect x="340" y="480" width="520" height="56" rx="16" fill="#7C3AED"/>
+  <text x="600" y="516" text-anchor="middle" font-size="20" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">检查 → 整改 → 复查 → 上线</text>
+</svg>

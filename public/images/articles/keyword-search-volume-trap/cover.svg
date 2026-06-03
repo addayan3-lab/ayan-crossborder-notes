@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-svt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFBEB"/>
+      <stop offset="1" stop-color="#FFFFF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-svt)"/>
+  <circle cx="1000" cy="100" r="160" fill="#FEF3C7" opacity="0.5"/>
+  <circle cx="200" cy="550" r="180" fill="#FFFBEB" opacity="0.4"/>
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">搜索量陷阱</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">为什么不能只看搜索量选词</text>
+  <!-- Warning icon area -->
+  <rect x="80" y="160" width="220" height="200" rx="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+  <text x="190" y="200" text-anchor="middle" font-size="40" fill="#D97706" font-weight="800">!</text>
+  <text x="190" y="240" text-anchor="middle" font-size="18" fill="#92400E" font-family="system-ui, -apple-system, sans-serif" font-weight="700">5 大搜索量误区</text>
+  <text x="190" y="270" text-anchor="middle" font-size="14" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">搜索量大 ≠ 值得抢</text>
+  <text x="190" y="295" text-anchor="middle" font-size="14" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">搜索量小 ≠ 没价值</text>
+  <text x="190" y="320" text-anchor="middle" font-size="14" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">搜索量 = 滞后指标</text>
+  <text x="190" y="345" text-anchor="middle" font-size="14" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">搜索量 ≠ 转化量</text>
+  <!-- 3 criteria cards -->
+  <text x="340" y="175" font-size="18" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">正确判断维度（三维评分）</text>
+  <rect x="340" y="195" width="260" height="80" rx="14" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+  <text x="470" y="228" text-anchor="middle" font-size="17" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">相关性</text>
+  <text x="470" y="255" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">产品匹配 × 用户意图对齐</text>
+  <rect x="620" y="195" width="260" height="80" rx="14" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+  <text x="750" y="228" text-anchor="middle" font-size="17" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">意图深度</text>
+  <text x="750" y="255" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">浏览 → 对比 → 购买</text>
+  <rect x="900" y="195" width="220" height="80" rx="14" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+  <text x="1010" y="228" text-anchor="middle" font-size="17" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">竞争度</text>
+  <text x="1010" y="255" text-anchor="middle" font-size="14" fill="#475569" font-family="system-ui, -apple-system, sans-serif">首页评论数 × 品牌力</text>
+  <!-- Priority matrix -->
+  <rect x="340" y="310" width="780" height="130" rx="16" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="440" y="345" font-size="16" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">优先级矩阵</text>
+  <rect x="360" y="360" width="170" height="60" rx="10" fill="#DCFCE7" stroke="#22C55E"/>
+  <text x="445" y="390" text-anchor="middle" font-size="15" fill="#16A34A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">高搜索量 · 高相关</text>
+  <text x="445" y="408" text-anchor="middle" font-size="12" fill="#16A34A" font-family="system-ui, -apple-system, sans-serif">优先抢</text>
+  <rect x="550" y="360" width="170" height="60" rx="10" fill="#FEF3C7" stroke="#F59E0B"/>
+  <text x="635" y="390" text-anchor="middle" font-size="15" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">低搜索量 · 高相关</text>
+  <text x="635" y="408" text-anchor="middle" font-size="12" fill="#D97706" font-family="system-ui, -apple-system, sans-serif">长尾切入</text>
+  <rect x="740" y="360" width="170" height="60" rx="10" fill="#FEE2E2" stroke="#EF4444"/>
+  <text x="825" y="390" text-anchor="middle" font-size="15" fill="#DC2626" font-family="system-ui, -apple-system, sans-serif" font-weight="700">高搜索量 · 低相关</text>
+  <text x="825" y="408" text-anchor="middle" font-size="12" fill="#DC2626" font-family="system-ui, -apple-system, sans-serif">小心陷阱</text>
+  <rect x="930" y="360" width="170" height="60" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="1015" y="390" text-anchor="middle" font-size="15" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-weight="700">低搜索量 · 低相关</text>
+  <text x="1015" y="408" text-anchor="middle" font-size="12" fill="#64748B" font-family="system-ui, -apple-system, sans-serif">直接放弃</text>
+  <!-- Bottom action -->
+  <rect x="340" y="470" width="500" height="50" rx="14" fill="#D97706"/>
+  <text x="590" y="502" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">相关性 × 意图深度 ÷ 竞争度 = 真实价值</text>
+</svg>

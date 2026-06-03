@@ -4,7 +4,7 @@ description: "搜索量是关键词表里最容易误用的一个字段。讲清
 pubDate: "2026-06-02"
 category: "关键词"
 tags: ["关键词", "搜索量", "选词"]
-image: "/images/og-default.svg"
+image: "/images/articles/keyword-search-volume-trap/cover.svg"
 topic: keyword
 stage: 进阶
 intent: 避坑
