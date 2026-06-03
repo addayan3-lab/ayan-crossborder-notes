@@ -14,6 +14,7 @@ const courses = [
   {
     num: 1,
     title: "关键词到 Listing 的实操课",
+    detailHref: "/open-class/keyword-to-listing/",
     audience: "已选好品、准备写 Listing 的卖家",
     problem: "找了一堆关键词,不知道怎么筛选、怎么放进标题和五点",
     articles: [
@@ -27,6 +28,7 @@ const courses = [
   {
     num: 2,
     title: "新品 PPC 首周广告结构课",
+    detailHref: "/open-class/ppc-week-one/",
     audience: "已上架 Listing、要开始投广告的卖家",
     problem: "新品上架不知道怎么开广告,预算怎么分配,第一周该看什么数据",
     articles: [
@@ -40,6 +42,7 @@ const courses = [
   {
     num: 3,
     title: "Review 反推选品与页面优化课",
+    detailHref: "/open-class/review-to-selection/",
     audience: "已有竞品评价数据、想从 Review 里找改进方向的卖家",
     problem: "差评一堆不知道该改什么,好评里也看不出有效信息",
     articles: [
@@ -53,6 +56,7 @@ const courses = [
   {
     num: 4,
     title: "AI 工具辅助亚马逊运营课",
+    detailHref: "/open-class/ai-tools-for-amazon/",
     audience: "想用 AI 提效但不确定哪些工具值得用的卖家",
     problem: "AI 工具太多不知道选哪个,试了几个觉得没用就放弃了",
     articles: [
@@ -136,7 +140,11 @@ const courses = [
         <article class="course-card">
           <div class="course-card-head">
             <div class="course-num">第 {c.num} 节</div>
-            <h2>{c.title}</h2>
+            {c.detailHref ? (
+              <h2><a href={c.detailHref}>{c.title}</a></h2>
+            ) : (
+              <h2>{c.title}</h2>
+            )}
           </div>
           <div class="course-card-body">
             <div class="course-field">
@@ -170,6 +178,7 @@ const courses = [
             </div>
           </div>
           <div class="course-card-foot">
+            {c.detailHref && <a class="course-cta course-cta-detail" href={c.detailHref}>查看课程详情 →</a>}
             <a class="course-cta" href={c.resource.href}>查看配套资料 →</a>
           </div>
         </article>
@@ -276,6 +285,16 @@ const courses = [
     letter-spacing: -0.3px;
   }
 
+  .course-card-head h2 a {
+    color: #0f172a;
+    text-decoration: none;
+  }
+
+  .course-card-head h2 a:hover {
+    color: #1368ff;
+    text-decoration: underline;
+  }
+
   .course-card-body {
     padding: 22px 28px;
     display: flex;
@@ -337,6 +356,15 @@ const courses = [
 
   .course-cta:hover {
     background: #1e293b;
+  }
+
+  .course-cta-detail {
+    background: #1368ff;
+    margin-right: 10px;
+  }
+
+  .course-cta-detail:hover {
+    background: #1a4fbf;
   }
 
   .callout-note {

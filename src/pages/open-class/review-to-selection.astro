@@ -1,0 +1,195 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "公开课", "item": "https://amz.hao1234.top/open-class/" },
+    { "@type": "ListItem", "position": 3, "name": "Review 反推选品与页面优化课", "item": "https://amz.hao1234.top/open-class/review-to-selection/" }
+  ]
+};
+---
+<BaseLayout
+  title="Review 反推选品与页面优化课 · 公开课详情"
+  description="从竞品评价里判断产品机会、找到页面和产品问题，把 Review 从评价内容变成选品和优化的依据。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="hero-eyebrow">第 3 节 · Review 反推</div>
+      <h1>Review 反推选品与页面优化课</h1>
+      <p>把 Review 从"评价内容"变成选品、页面优化和产品迭代的依据。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">适合谁</div>
+        <div class="info-value">想通过竞品评价判断产品机会、想从差评里找到页面和产品问题、想把 Review 分析用于 Listing 优化的卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">解决什么问题</div>
+        <div class="info-value">把 Review 从"评价内容"变成选品、页面优化和产品迭代的依据</div>
+      </div>
+    </div>
+    <div class="detail-block">
+      <h2>课程结构</h2>
+      <ol class="step-list">
+        <li><div class="step-num">1</div><div class="step-body"><div class="step-title">好评和差评分别看什么</div><div class="step-desc">好评看卖点确认和场景词提炼，差评看痛点和预期偏差。两类评价的用途不同，分析方法也不同。</div></div></li>
+        <li><div class="step-num">2</div><div class="step-body"><div class="step-title">差评怎么分类</div><div class="step-desc">物流问题、质量缺陷、预期偏差、使用困难、客服体验——不同类别的差评对应不同的改进方向。</div></div></li>
+        <li><div class="step-num">3</div><div class="step-body"><div class="step-title">哪些问题属于产品问题</div><div class="step-desc">功能缺陷、材质不耐用、尺寸不准、配件缺失——产品问题需要供应链端解决，不是改 Listing 能解决的。</div></div></li>
+        <li><div class="step-num">4</div><div class="step-body"><div class="step-title">哪些问题属于页面表达问题</div><div class="step-desc">图片和实物不符、描述夸大了功能、使用场景没讲清楚——这些是页面优化可以解决的。</div></div></li>
+        <li><div class="step-num">5</div><div class="step-body"><div class="step-title">如何反推卖点和风险点</div><div class="step-desc">从差评反推竞品的弱点和市场空白，从好评反推消费者认可的卖点并应用到自己的产品中。</div></div></li>
+      </ol>
+    </div>
+    <div class="detail-block">
+      <h2>对应文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/review-learning-path/"><div class="related-tag">学习路径</div><h3>亚马逊 Review 分析学习路径</h3><p>从评价挖掘到产品优化的完整路线，本节课程的体系框架。</p></a>
+        <a class="related-card" href="/articles/ai-review-analysis/"><div class="related-tag">实操文章</div><h3>如何用 AI 分析 Review</h3><p>用 AI 提炼 Review 高频痛点，从好评和差评中找到产品改进方向。</p></a>
+        <a class="related-card" href="/articles/review-analysis-matrix/"><div class="related-tag">实操文章</div><h3>Review 分析矩阵</h3><p>差评、好评、竞品反馈四类评价怎么拆解和交叉对比。</p></a>
+        <a class="related-card" href="/articles/negative-review-listing-fix/"><div class="related-tag">实操文章</div><h3>差评改 Listing</h3><p>5 个步骤把负反馈变成下一版卖点，差评到优化的闭环流程。</p></a>
+        <a class="related-card" href="/articles/selection-pain-reverse/"><div class="related-tag">实操文章</div><h3>痛点反推选品 SOP</h3><p>从差评和 Q&A 挖出真实选品机会，用痛点反推动选品标准。</p></a>
+      </div>
+    </div>
+    <div class="detail-block">
+      <h2>对应资料包</h2>
+      <div class="resource-grid">
+        <a class="learning-path-card" href="/resources/review-pain-analysis/"><div class="lp-hint">配套资料</div><h3>Review 痛点分析表</h3><p>痛点归类 + 高频问题提炼 + Listing 改进点，带学员从差评反推产品与页面。</p><span class="lp-cta">查看资料详情 →</span></a>
+        <a class="learning-path-card" href="/resources/competitor-selection-matrix/"><div class="lp-hint">配套资料</div><h3>选品竞品矩阵</h3><p>4 维度竞品对比模板，从 Review 数据中找出差异化空间。</p><span class="lp-cta">查看资料详情 →</span></a>
+      </div>
+    </div>
+    <div class="detail-block">
+      <h2>微信关键词</h2>
+      <div class="wechat-block"><span class="wechat-badge">痛点</span><p>回复关键词"痛点"，领取配套资料包。</p></div>
+    </div>
+    <div class="cta-block">
+      <h2>准备开始实操</h2>
+      <p>建议先阅读对应文章，再配合资料包做课后演练。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/resources/review-pain-analysis/">查看 Review 痛点分析表</a>
+        <a class="cta-primary" href="/resources/competitor-selection-matrix/">查看选品竞品矩阵</a>
+        <a class="cta-secondary" href="/open-class/">回到公开课中心</a>
+      </div>
+    </div>
+    <div class="callout-amber">
+      <strong>⚠ 使用边界</strong>
+      <p>Review 分析不能替代样品测试和真实市场验证。差评反映的是已购买用户的意见，不代表目标市场的完整画像。最终选品和产品决策需要结合样品测试、供应链评估和真实市场验证。</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background:
+      radial-gradient(circle at 18% 28%, rgba(19, 104, 255, 0.10), transparent 26%),
+      linear-gradient(180deg, #f5f8fd 0%, #eef3fa 100%);
+    padding: 56px 24px 48px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  }
+  .page-hero-inner { max-width: 1180px; margin: 0 auto; text-align: center; }
+  .hero-eyebrow {
+    display: inline-block; padding: 6px 14px; border-radius: 999px;
+    background: #eaf2ff; color: #1368ff; font-size: 12px; font-weight: 900;
+    letter-spacing: 0.4px; margin-bottom: 18px; border: 1px solid #cfe0ff;
+  }
+  .page-hero h1 { margin: 0 0 16px; font-size: 42px; line-height: 1.18; letter-spacing: -1.4px; color: #0f172a; }
+  .page-hero p { margin: 0 auto; max-width: 760px; color: #475569; font-size: 17px; line-height: 1.7; }
+  .section { max-width: 1100px; margin: 0 auto; padding: 34px 24px; }
+  .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 0 0 32px; }
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089; border-radius: 14px;
+  }
+  .info-label { font-size: 11px; color: #b45309; font-weight: 900; letter-spacing: 0.4px; margin-bottom: 8px; }
+  .info-value { font-size: 15px; color: #1f2937; line-height: 1.5; }
+  .detail-block { margin: 0 0 36px; }
+  .detail-block h2 { margin: 0 0 14px; font-size: 22px; color: #0f172a; letter-spacing: -0.3px; }
+  .detail-block p { color: #475569; line-height: 1.85; font-size: 15px; }
+  .step-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .step-list li {
+    display: flex; gap: 16px; padding: 16px 18px;
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+  }
+  .step-num {
+    flex: 0 0 auto; width: 36px; height: 36px; display: grid; place-items: center;
+    border-radius: 12px; background: linear-gradient(135deg, #1368ff, #3b82f6);
+    color: #fff; font-weight: 900; font-size: 16px;
+  }
+  .step-body { flex: 1 1 auto; min-width: 0; }
+  .step-title { font-weight: 900; color: #0f172a; font-size: 16px; margin-bottom: 6px; }
+  .step-desc { color: #475569; line-height: 1.75; font-size: 14px; }
+  .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .related-card {
+    display: block; padding: 18px 20px; background: #fff;
+    border: 1px solid var(--line); border-radius: 14px;
+    text-decoration: none; color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .related-card:hover { transform: translateY(-2px); border-color: #cfe0ff; box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08); }
+  .related-tag {
+    display: inline-block; margin-bottom: 10px; padding: 3px 9px;
+    background: #eef5ff; color: #1368ff; font-size: 11px; font-weight: 900; border-radius: 999px;
+  }
+  .related-card h3 { margin: 0 0 8px; font-size: 16px; color: #0f172a; line-height: 1.4; }
+  .related-card p { margin: 0; color: #475569; font-size: 13px; line-height: 1.7; }
+  .resource-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .learning-path-card {
+    display: block; padding: 22px 26px; border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff; text-decoration: none; color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .learning-path-card:hover { transform: translateY(-2px); border-color: #93c5fd; box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14); }
+  .lp-hint { font-size: 11px; color: #1368ff; font-weight: 900; letter-spacing: 0.4px; margin-bottom: 10px; }
+  .learning-path-card h3 { margin: 0 0 8px; color: #0f172a; font-size: 18px; }
+  .learning-path-card p { margin: 0 0 12px; color: #475569; line-height: 1.75; font-size: 14px; }
+  .lp-cta { color: #1368ff; font-weight: 900; font-size: 14px; }
+  .wechat-block {
+    display: flex; align-items: center; gap: 14px; padding: 16px 20px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border: 1px solid #a7f3d0; border-radius: 12px;
+  }
+  .wechat-badge {
+    display: inline-flex; align-items: center; height: 32px; padding: 0 14px;
+    border-radius: 999px; background: #059669; color: #fff; font-weight: 900; font-size: 13px; white-space: nowrap;
+  }
+  .wechat-block p { margin: 0; color: #065f46; font-size: 14px; }
+  .cta-block {
+    margin: 0 0 24px; padding: 28px 32px; border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089; text-align: center;
+  }
+  .cta-block h2 { margin: 0 0 10px; color: #0f172a; font-size: 24px; letter-spacing: -0.4px; }
+  .cta-block p { margin: 0 0 22px; color: #475569; font-size: 15px; }
+  .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cta-primary, .cta-secondary {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 46px; padding: 0 24px; border-radius: 12px;
+    font-weight: 900; font-size: 14px; text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .cta-primary {
+    background: linear-gradient(135deg, #1368ff, #3b82f6);
+    color: #ffffff; box-shadow: 0 12px 28px rgba(19, 104, 255, 0.22);
+  }
+  .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(19, 104, 255, 0.32); }
+  .cta-secondary { background: #ffffff; color: #1368ff; border: 1px solid #cfe0ff; }
+  .cta-secondary:hover { transform: translateY(-2px); border-color: #93c5fd; }
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089; border-left: 4px solid #d97706; border-radius: 12px;
+  }
+  .callout-amber strong { display: block; color: #b45309; font-size: 15px; margin-bottom: 10px; }
+  .callout-amber p { margin: 0; color: #57534e; line-height: 1.85; font-size: 14px; }
+  @media (max-width: 720px) {
+    .page-hero h1 { font-size: 30px; }
+    .info-grid { grid-template-columns: 1fr; }
+    .related-grid { grid-template-columns: 1fr; }
+    .resource-grid { grid-template-columns: 1fr; }
+  }
+</style>
