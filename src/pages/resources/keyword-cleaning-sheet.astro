@@ -1,0 +1,583 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "关键词", "item": "https://amz.hao1234.top/resources/#keyword" },
+    { "@type": "ListItem", "position": 4, "name": "关键词清洗表", "item": "https://amz.hao1234.top/resources/keyword-cleaning-sheet/" }
+  ]
+};
+---
+<BaseLayout
+  title="关键词清洗表 · 亚马逊资料包详情"
+  description="关键词清洗表:亚马逊卖家整理关键词池的免费资料包,8 字段清洗,3 步分类,判断词与流量词分离,适合新手卖家在找词后、写标题前、开广告前使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · 关键词</div>
+      <h1>关键词清洗表</h1>
+      <p>把杂乱的关键词池,清洗成可以直接写进 Listing 和开广告的 8 字段工作表。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">关键词清洗表</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">关键词</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">准备整理关键词池、写 Listing、开广告的新手卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">找词之后,写标题之前,开广告之前</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">关键词学习路径第 2 步,清洗与归类</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"清洗"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>关键词找回来之后,大多数卖家会卡在三件事:词太多不知道留哪些、词和词长得像不知道是否重复、词分不清该放进标题还是放进广告。这份清洗表把这三件事压成 8 个字段,你填完一张表,关键词就已经能用了。</p>
+      <p>它不是新工具,只是把"判断一个关键词值不值得用"这件事,从脑里搬到表上,避免每次都要重新想一遍。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>8 个字段分别填什么</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">字段</div>
+          <div class="field-desc">填什么 / 怎么判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">关键词</div>
+          <div class="field-desc">原始词条,中英文都可,带空格原样保留</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">来源</div>
+          <div class="field-desc">搜索下拉 / 竞品 Listing / 广告报告 / 工具导出 4 类之一</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">意图</div>
+          <div class="field-desc">浏览型(找信息) / 对比型(挑款式) / 购买型(准备下单)</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">搜索量参考</div>
+          <div class="field-desc">大 / 中 / 小 三档即可,不追求精确数</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">竞争强度</div>
+          <div class="field-desc">首页评论数 + 月销估算 + 头部卖家品牌力综合判断</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">Listing 使用位置</div>
+          <div class="field-desc">标题 / 五点 / 描述 / A+ / 后台关键词 5 选 1-N</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">广告使用方式</div>
+          <div class="field-desc">精准 / 词组 / 广泛 / 不开,附初始出价区间</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">备注</div>
+          <div class="field-desc">竞品差评相关词 / 季节性词 / 复购词 / 拒收原因</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">收集关键词</div>
+            <div class="step-desc">把搜索下拉、竞品 Listing、广告报告、Helium 10 / 卖家精灵等工具导出的词,全部丢进一张总表。不分类、不筛选,只去重。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">去重与标准化</div>
+            <div class="step-desc">统一大小写、单复数、连字符;同义词合并到主词;产品词和场景词分开两个 sheet。这一步是为了后面好分组。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">判断意图</div>
+            <div class="step-desc">每个词标 浏览 / 对比 / 购买 三类。购买型优先进标题和精准广告,浏览型进广泛广告或场景文案,对比型进五点和 A+。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">评估竞争与搜索量</div>
+            <div class="step-desc">填大 / 中 / 小,不用查精确数。重点不是数据准不准,是你对每个词心里有数。判断不了时,先标"待定",不要硬填。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">分配到 Listing / PPC</div>
+            <div class="step-desc">根据意图和竞争,决定这个词进标题还是进五点,开精准还是开广泛。分配完,关键词表就变成"动作清单",可以直接执行。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/keyword-cleaning-method/">
+          <div class="related-tag">配套文章</div>
+          <h3>如何用 AI 做关键词清洗</h3>
+          <p>讲清 8 字段怎么填、3 步分类怎么走、AI 怎么辅助但不能替你判断。</p>
+        </a>
+        <a class="related-card" href="/articles/ai-keyword-table/">
+          <div class="related-tag">关联文章</div>
+          <h3>如何用 AI 做亚马逊关键词表</h3>
+          <p>找词阶段的工具和方法,作为清洗前的输入。</p>
+        </a>
+        <a class="related-card" href="/articles/keyword-search-volume-trap/">
+          <div class="related-tag">关联文章</div>
+          <h3>搜索量陷阱检查清单</h3>
+          <p>清洗后判断"高搜索量词到底值不值得抢"。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/articles/keyword-learning-path/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊关键词学习路径:从找词、清洗到布局</h3>
+        <p>把关键词工作拆成 4 步:找词、清洗、布局、复盘。本资料对应第 2 步"清洗"。</p>
+        <span class="lp-cta">看完整学习路径 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ 这份资料不能脱离你的产品判断</strong>
+        <p>关键词清洗表是结构化工具,不是决策工具。它帮你把"该想什么"列全,但每个字段填什么、词与词之间的取舍,还是要结合你的产品定位、类目阶段和流量来源判断。新品类、成熟品、季节品的填法会不同,不要把别人的表直接套用。</p>
+        <p>如果你的类目搜索量数据本身不可靠(小语种站、新兴市场、长尾极度细分的品类),字段"搜索量参考"和"竞争强度"要降级使用,主要靠"意图"和"来源"两个字段做决策。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"清洗",领取关键词清洗表</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>

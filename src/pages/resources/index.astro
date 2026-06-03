@@ -293,6 +293,12 @@ const resourceCategories = [
 
 const totalResources = resourceCategories.reduce((sum, cat) => sum + cat.resources.length, 0);
 
+const detailPageSlugs = {
+  "keyword-cleaning-method": "keyword-cleaning-sheet",
+  "listing-checklist": "listing-checklist",
+  "ai-ppc-report-review": "ppc-weekly-review"
+};
+
 const ayanBreadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -377,6 +383,9 @@ const ayanBreadcrumbData = {
               </div>
               <div class="resource-card-actions">
                 <a class="resource-card-article" href={`/articles/${r.slug}/`}>查看文章 →</a>
+                {detailPageSlugs[r.slug] && (
+                  <a class="resource-card-detail" href={`/resources/${detailPageSlugs[r.slug]}/`}>查看资料详情 →</a>
+                )}
                 <span class="resource-card-cta">回复关键词"{r.wechatKeyword}",领取</span>
               </div>
             </article>
@@ -769,7 +778,26 @@ const ayanBreadcrumbData = {
   }
 
   .resource-card-article:hover {
-    color: #0d52cf;
+    background: #e1edff;
+  }
+
+  .resource-card-detail {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: #fffcf0;
+    border: 1px solid #f4d089;
+    color: #b45309;
+    font-weight: 800;
+    font-size: 13px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    text-decoration: none;
+  }
+
+  .resource-card-detail:hover {
+    background: #fef6e0;
+    border-color: #d97706;
   }
 
   .resource-card-cta {

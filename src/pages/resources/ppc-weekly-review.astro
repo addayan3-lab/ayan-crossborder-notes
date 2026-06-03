@@ -1,0 +1,587 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "PPC", "item": "https://amz.hao1234.top/resources/#ppc" },
+    { "@type": "ListItem", "position": 4, "name": "PPC 周复盘表", "item": "https://amz.hao1234.top/resources/ppc-weekly-review/" }
+  ]
+};
+---
+<BaseLayout
+  title="PPC 周复盘表 · 亚马逊资料包详情"
+  description="PPC 周复盘表:亚马逊广告每周复盘资料包,覆盖花费、点击、订单、ACOS、TACOS、CVR、搜索词、否词建议、下一步动作 9 个字段,适合广告运行 7 天后、调预算前、否词前使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · PPC</div>
+      <h1>PPC 周复盘表</h1>
+      <p>把"广告看了一堆数据,不知道该改什么"变成"按表勾 9 项,得出下周动作清单"。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">PPC 周复盘表</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">PPC</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">已经开始投放广告,但不知道每周该看哪些指标的卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">广告运行 7 天后,调预算前,否词前</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">PPC 学习路径第 2 步,报表复盘</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"报表"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>广告跑到第 7 天,后台数据一大堆:花费、点击、订单、ACOS、TACOS、CTR、CVR、搜索词、转化率……卖家最常见的困境是"看了数据,不知道该动什么"。要么乱动,要么不敢动,最后广告预算烧完也没留下方法论。</p>
+      <p>这份周复盘表把 9 个核心字段按"先看什么、再看什么、最后怎么决策"的顺序排好。每周用 30 分钟填一遍,你的广告就进入"看数据 → 出动作 → 看结果"的循环,而不是"看数据 → 焦虑 → 继续看"。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>9 个核心字段</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">字段</div>
+          <div class="field-desc">填什么 / 怎么用</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">花费</div>
+          <div class="field-desc">本周广告总花费,按活动分(SP / SB / SD),与上周对比判断预算节奏</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">点击</div>
+          <div class="field-desc">本周总点击数,关注 CTR 异常下降(可能 Listing 出问题或预算烧太快)</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">订单</div>
+          <div class="field-desc">本周广告订单数,分新品订单 / 复购订单,关注转化路径</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">ACOS</div>
+          <div class="field-desc">广告花费 / 广告销售额,新品期不追,稳态期参考 25-35% 区间</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">TACOS</div>
+          <div class="field-desc">广告花费 / 总销售额(含自然单),长期健康度指标,稳态期 < 15% 较优</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">CVR</div>
+          <div class="field-desc">广告点击转化率,Listing 上线 2 周内 > 5% 较正常,低于 3% 要回头查 Listing</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">搜索词</div>
+          <div class="field-desc">本周触发广告的搜索词 Top 30,按花费降序,标"相关 / 不相关 / 待定"3 类</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">否词建议</div>
+          <div class="field-desc">从"不相关"和"高花费低转化"里挑 5-10 个,精确否词,不相关的负向词组</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">下一步动作</div>
+          <div class="field-desc">3-5 条下周必做的事:加预算 / 降价 / 暂停活动 / 否词 / 加词,每条对应一个数据点</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">先看花费</div>
+            <div class="step-desc">本周花了多少,有没有超预算或烧不完。预算烧太快 → 暂停低效活动;烧不完 → 检查投放时段和出价。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">再看转化</div>
+            <div class="step-desc">广告订单、CVR、ACOS 三个数字一起看。点击多但 CVR 低 → Listing 转化承接出问题,先回去查 Listing,不要在广告上硬调。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">再看搜索词</div>
+            <div class="step-desc">本周触发的搜索词是"金矿"还是"垃圾场"。把高花费低转化的词挑出来,这是下周优化的重点。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">决定保留 / 加价 / 降价 / 否词</div>
+            <div class="step-desc">搜索词按表现分四类:保留(高转化稳态)、加价(高转化稳态仍有放量空间)、降价(ACOS 偏高但值得留)、否词(不相关 / 转化差)。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">写下周 3-5 个动作</div>
+            <div class="step-desc">每条动作对应一个数据点。空想动作没用,动作必须从本周数据来。下周复盘时,看这些动作有没有带来数据变化。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/ai-ppc-report-review/">
+          <div class="related-tag">配套文章</div>
+          <h3>如何用 AI 复盘亚马逊广告报表</h3>
+          <p>讲清 AI 怎么辅助把周复盘表里的 9 个字段串成"问题类型 → 下周动作"。</p>
+        </a>
+        <a class="related-card" href="/articles/new-product-ppc-week-one/">
+          <div class="related-tag">关联文章</div>
+          <h3>新品广告第一周怎么开</h3>
+          <p>新品期周复盘的不同节奏,前期看数据宽度,后期看 ACOS 收敛。</p>
+        </a>
+        <a class="related-card" href="/articles/sp-ad-structure/">
+          <div class="related-tag">关联文章</div>
+          <h3>SP 广告结构:自动、精准、词组、竞品怎么分工</h3>
+          <p>4 类活动的角色和分阶段否词策略,作为复盘的策略背景。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/articles/ppc-learning-path/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊 PPC 广告学习路径:从结构搭建到数据判断</h3>
+        <p>把 PPC 优化拆成 4 步:结构搭建、报表复盘、否词和预算、诊断迭代。本资料对应第 2 步"报表复盘"。</p>
+        <span class="lp-cta">看完整学习路径 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ 这份表不替代你对市场和产品的判断</strong>
+        <p>PPC 周复盘表是"动作清单生成器",不是"决策机器"。9 个字段填出来的"下一步动作"必须经过你结合产品阶段、利润结构、库存深度再判断。新品期追求曝光宽度,稳态期追求 ACOS 收敛,成熟品追求 TACOS 优化,每个阶段动作的优先级不同。</p>
+        <p>另外,周复盘表只在"广告跑满 7 天"之后才有意义。3 天就急着看数据下结论,容易把新品期的"低转化"误判为"广告失败",反而把活动暂停,错失数据积累期。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"报表",领取 PPC 周复盘表</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>

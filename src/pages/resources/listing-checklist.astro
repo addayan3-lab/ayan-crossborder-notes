@@ -1,0 +1,583 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "资源中心", "item": "https://amz.hao1234.top/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "Listing", "item": "https://amz.hao1234.top/resources/#listing" },
+    { "@type": "ListItem", "position": 4, "name": "Listing 自检清单", "item": "https://amz.hao1234.top/resources/listing-checklist/" }
+  ]
+};
+---
+<BaseLayout
+  title="Listing 自检清单 · 亚马逊资料包详情"
+  description="Listing 自检清单:亚马逊 Listing 优化检查清单资料包,覆盖标题、五点、主图、副图、A+、Review 承接、关键词布局、信任表达 8 个维度,适合 Listing 上架前、广告开跑前、转化下降时使用。"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="resource-eyebrow">资源中心 · Listing</div>
+      <h1>Listing 自检清单</h1>
+      <p>把"感觉 Listing 还差点什么"变成"逐项打勾,直到 0 漏项"。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">资料名</div>
+        <div class="info-value">Listing 自检清单</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">所属专题</div>
+        <div class="info-value">Listing</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">适合谁用</div>
+        <div class="info-value">已经有产品页面,但转化率、点击率或广告承接不稳定的卖家</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">什么时候用</div>
+        <div class="info-value">Listing 上架前,广告开跑前,转化下降时</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">公开课场景</div>
+        <div class="info-value">Listing 学习路径第 4 步,上线前自检</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">微信领取关键词</div>
+        <div class="info-value wechat-keyword">"自检"</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>这份资料解决什么问题</h2>
+      <p>大多数 Listing 不是"内容不够",而是"某些维度漏了或弱了,但卖家自己看不出"。当点击率突然下降、广告跑不动、转化率上不去时,问题往往不出在主战场,而是某个隐藏的细节。这份自检清单把 8 个最容易漏的维度列出来,按"过 / 没过 / 不确定"三档勾一遍,问题点直接暴露。</p>
+      <p>它不是创作工具,也不替你重写 Listing。它是"检测工具",帮你用最少的精力找到最该先动的那一项。</p>
+    </div>
+
+    <div class="detail-block">
+      <h2>8 个自检维度</h2>
+      <div class="field-table">
+        <div class="field-row field-row-head">
+          <div class="field-name">维度</div>
+          <div class="field-desc">自检问题 / 怎么判断"过"</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">标题</div>
+          <div class="field-desc">品牌 + 核心词 + 1-2 个场景词 / 卖点词,长度 150-200 字符,买家一眼知道这是什么</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">五点</div>
+          <div class="field-desc">5 条分别承担 1 个不同角色(功能 / 场景 / 信任 / 兼容 / 售后),不重复,首点能抓住核心卖点</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">主图</div>
+          <div class="field-desc">白底产品图 + 占据 85% 画面 + 主角清晰;在 100×100 缩略图下仍能识别</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">副图</div>
+          <div class="field-desc">6-7 张讲清"尺寸对比 / 场景使用 / 卖点特写 / 套餐清单 / 信任背书",顺序符合买家决策路径</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">A+ 内容</div>
+          <div class="field-desc">至少 3 个模块,讲清品牌故事 / 核心技术 / 解决的核心痛点,移动端折叠后仍能保留核心信息</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">Review 承接</div>
+          <div class="field-desc">QA 区主动覆盖前 10 个潜在疑问,差评对应的痛点在 Listing 里有专门回应</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">关键词布局</div>
+          <div class="field-desc">标题 / 五点 / 描述 / 后台关键词 4 处无重复,核心词有 2-3 处自然出现,长尾词不堆砌</div>
+        </div>
+        <div class="field-row">
+          <div class="field-name">信任表达</div>
+          <div class="field-desc">材质 / 认证 / 售后承诺 / 品牌背景有显性表达,不是只喊"高品质"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>5 步使用流程</h2>
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">先查关键词布局</div>
+            <div class="step-desc">关键词是 Listing 的骨架,骨架不对,其他维度再好也接不住流量。检查标题 / 五点 / 描述 / 后台 4 处是否覆盖了核心词和长尾词。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">再查卖点表达</div>
+            <div class="step-desc">五点的 5 条是否各承担不同角色。重复的、参数堆砌的、首点没有抓核心卖点的,逐条改。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">再查图片</div>
+            <div class="step-desc">主图清晰度、副图信息密度、缩略图识别度,3 个点逐个看。图片往往是"自查觉得 OK,买家觉得不行"的高发区。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">查 A+ 和 Review 承接</div>
+            <div class="step-desc">A+ 移动端折叠后保留什么;QA 区有没有覆盖潜在疑问;差评痛点有没有在 Listing 显性回应。</div>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <div class="step-title">查信任表达</div>
+            <div class="step-desc">售后承诺、认证、品牌故事是否可见。信任不是写一句"高品质",而是有具体承诺和背书。</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="detail-block">
+      <h2>配合阅读的文章</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/listing-checklist/">
+          <div class="related-tag">配套文章</div>
+          <h3>亚马逊 Listing 优化检查清单</h3>
+          <p>本资料配套文章,讲清 8 个维度的判断细节和常见误区。</p>
+        </a>
+        <a class="related-card" href="/articles/listing-five-bullets/">
+          <div class="related-tag">关联文章</div>
+          <h3>Listing 五点写法:功能点、场景点、信任点</h3>
+          <p>五点 3 类信息的组合规则,适合自检后针对性重写。</p>
+        </a>
+        <a class="related-card" href="/articles/ai-listing-optimization/">
+          <div class="related-tag">关联文章</div>
+          <h3>AI 时代亚马逊 Listing 应该怎么写</h3>
+          <p>AI 辅助下从关键词堆砌转向场景、痛点和人群表达的整体思路。</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h2>所属学习路径</h2>
+      <a class="learning-path-card" href="/articles/listing-learning-path/">
+        <div class="lp-hint">推荐按顺序跟读</div>
+        <h3>亚马逊 Listing 优化学习路径:从卖点提炼到转化表达</h3>
+        <p>把 Listing 优化拆成 4 步:卖点提炼、文案生成、检查清单、上线复盘。本资料对应第 3 步"检查清单"。</p>
+        <span class="lp-cta">看完整学习路径 →</span>
+      </a>
+    </div>
+
+    <div class="detail-block">
+      <h2>使用边界与提醒</h2>
+      <div class="callout-amber">
+        <strong>⚠ 自检清单不会替你判断"过"还是"没过"</strong>
+        <p>每个维度的"过"标准,会因类目、客单价、品牌阶段而不同。客单价 20 美金的标品和客单价 200 美金的非标品,在"信任表达"上的达标线完全不一样。新品期和成熟期的"过"标准也不同,不要直接套别人的清单。</p>
+        <p>如果你对一个维度判断不了"过 / 不过",不要硬标。把"不确定"当作重要信号,说明这个维度的判断标准还没在你心里成型,先回去读配套文章,再回来勾。</p>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-hint">资料包领取</div>
+      <h2>回复关键词"自检",领取 Listing 自检清单</h2>
+      <p>领取后会通过企业微信发送,资料按专题持续更新。</p>
+      <div class="cta-actions">
+        <a class="cta-primary" href="/lead/">立即领取</a>
+        <a class="cta-secondary" href="/resources/">返回资源中心</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero-inner {
+    color: white;
+  }
+
+  .resource-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.18);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #fcd34d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .page-hero h1 {
+    color: white;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 0 32px;
+  }
+
+  .info-card {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #b45309;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .info-value {
+    font-size: 15px;
+    color: #1f2937;
+    line-height: 1.5;
+  }
+
+  .wechat-keyword {
+    font-weight: 900;
+    color: #b45309;
+  }
+
+  .detail-block {
+    margin: 0 0 36px;
+  }
+
+  .detail-block h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+  }
+
+  .detail-block p {
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .field-table {
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-top: 1px solid #f4d089;
+  }
+
+  .field-row:first-child {
+    border-top: 0;
+  }
+
+  .field-row-head {
+    background: #fffbeb;
+  }
+
+  .field-row-head .field-name,
+  .field-row-head .field-desc {
+    font-weight: 900;
+    color: #b45309;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .field-name {
+    padding: 14px 18px;
+    font-weight: 800;
+    color: #0f172a;
+    border-right: 1px solid #fef3c7;
+  }
+
+  .field-desc {
+    padding: 14px 18px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .step-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    background: #fff;
+    border: 1px solid #f4d089;
+    border-radius: 14px;
+  }
+
+  .step-num {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+  .step-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .step-title {
+    font-weight: 900;
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .related-card {
+    display: block;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfe0ff;
+    box-shadow: 0 12px 32px rgba(19, 104, 255, 0.08);
+  }
+
+  .related-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 9px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 999px;
+  }
+
+  .related-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .learning-path-card {
+    display: block;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eef5ff 0%, #f0f7ff 100%);
+    border: 1px solid #cfe0ff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .learning-path-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
+  }
+
+  .lp-hint {
+    font-size: 11px;
+    color: #1368ff;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+
+  .learning-path-card h3 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px;
+  }
+
+  .learning-path-card p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .lp-cta {
+    color: #1368ff;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .callout-amber {
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+  }
+
+  .callout-amber strong {
+    display: block;
+    color: #b45309;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .callout-amber p {
+    margin: 0 0 10px;
+    color: #57534e;
+    line-height: 1.85;
+    font-size: 14px;
+  }
+
+  .callout-amber p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cta-block {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fffcf0 0%, #fef6e0 100%);
+    border: 1px solid #f4d089;
+    text-align: center;
+  }
+
+  .cta-hint {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+  }
+
+  .cta-block h2 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+  }
+
+  .cta-block p {
+    margin: 0 0 22px;
+    color: #475569;
+    font-size: 15px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cta-primary {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(217, 119, 6, 0.22);
+  }
+
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(217, 119, 6, 0.32);
+  }
+
+  .cta-secondary {
+    background: #ffffff;
+    color: #b45309;
+    border: 1px solid #f4d089;
+  }
+
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #d97706;
+  }
+
+  @media (max-width: 980px) {
+    .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+    .field-name {
+      border-right: 0;
+      border-bottom: 1px solid #fef3c7;
+      background: #fffbeb;
+    }
+  }
+</style>
