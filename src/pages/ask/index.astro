@@ -18,6 +18,34 @@ const topicsJson = JSON.stringify(assistantTopics);
         <button id="ayan-ask-button" type="button">问问 AI</button>
       </div>
 
+      <div class="ask-scenes">
+        <button type="button" class="ask-scene-btn" data-ask="我是亚马逊新手，应该先学什么？">
+          <span class="ask-scene-icon">🧭</span>
+          <span class="ask-scene-label">新手入门</span>
+          <span class="ask-scene-desc">不知道从哪开始，先建立学习路径</span>
+        </button>
+        <button type="button" class="ask-scene-btn" data-ask="我已经有产品，想判断还能不能做">
+          <span class="ask-scene-icon">📦</span>
+          <span class="ask-scene-label">有产品待诊断</span>
+          <span class="ask-scene-desc">市场容量和竞品判断</span>
+        </button>
+        <button type="button" class="ask-scene-btn" data-ask="广告 ACOS 太高，应该怎么优化？">
+          <span class="ask-scene-icon">📢</span>
+          <span class="ask-scene-label">广告 ACOS 高</span>
+          <span class="ask-scene-desc">报表分析和结构优化</span>
+        </button>
+        <button type="button" class="ask-scene-btn" data-ask="Listing 有流量但转化差，应该先改哪里？">
+          <span class="ask-scene-icon">📝</span>
+          <span class="ask-scene-label">Listing 转化差</span>
+          <span class="ask-scene-desc">五点写法与自检清单</span>
+        </button>
+        <button type="button" class="ask-scene-btn" data-ask="差评怎么用来优化页面和产品？">
+          <span class="ask-scene-icon">⭐</span>
+          <span class="ask-scene-label">差评怎么改</span>
+          <span class="ask-scene-desc">差评归因与 Listing 修复</span>
+        </button>
+      </div>
+
       <div class="ask-presets">
         <span>试试问：</span>
         <button type="button" data-ask="不知道怎么找关键词">不知道怎么找关键词</button>
@@ -54,6 +82,17 @@ const topicsJson = JSON.stringify(assistantTopics);
         <div class="ask-result-wechat" id="ayan-result-wechat" hidden>
           <span>💬</span>
           <span id="ayan-result-wechat-text"></span>
+        </div>
+      </div>
+
+      <div class="ask-fallback" id="ayan-ask-fallback" hidden>
+        <p class="ask-fallback-text">我还不能确定你的问题属于哪一类，试试从下面的方向中选择：</p>
+        <div class="ask-fallback-buttons">
+          <button type="button" data-ask="不知道怎么找关键词">🔑 关键词</button>
+          <button type="button" data-ask="Listing 怎么优化">📝 Listing</button>
+          <button type="button" data-ask="广告 ACOS 太高怎么办">📢 PPC 广告</button>
+          <button type="button" data-ask="怎么分析差评">⭐ Review 差评</button>
+          <button type="button" data-ask="想判断一个产品能不能做">📦 选品</button>
         </div>
       </div>
     </section>
@@ -102,11 +141,12 @@ const topicsJson = JSON.stringify(assistantTopics);
           best = topic;
         }
       }
-      return best || topics.find((t) => t.id === "beginner") || topics[0];
+      return bestScore > 0 ? best : null;
     }
 
     function displayResult(topic) {
       if (!topic) return;
+      document.querySelector("#ayan-ask-fallback").hidden = true;
 
       labelEl.textContent = "专题：" + topic.label;
       suggestionEl.textContent = topic.suggestion;
@@ -165,11 +205,20 @@ const topicsJson = JSON.stringify(assistantTopics);
       resultEl.hidden = false;
     }
 
+    function showFallback() {
+      resultEl.hidden = true;
+      document.querySelector("#ayan-ask-fallback").hidden = false;
+    }
+
     function runAsk(query) {
       const q = String(query || "").trim();
       if (!q) return;
       const topic = matchTopic(q);
-      displayResult(topic);
+      if (topic) {
+        displayResult(topic);
+      } else {
+        showFallback();
+      }
     }
 
     button.addEventListener("click", () => runAsk(input.value));
@@ -414,6 +463,88 @@ const topicsJson = JSON.stringify(assistantTopics);
     font-size: 14px;
   }
 
+  .ask-scenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 18px 0;
+  }
+
+  .ask-scene-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 14px 8px;
+    border: 1px solid #dceaff;
+    background: linear-gradient(135deg, #f6fafe, #eef5ff);
+    color: #0f172a;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: center;
+    font-family: inherit;
+  }
+
+  .ask-scene-btn:hover {
+    border-color: #93c5fd;
+    background: linear-gradient(135deg, #eef5ff, #e0edff);
+  }
+
+  .ask-scene-icon {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .ask-scene-label {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1368ff;
+  }
+
+  .ask-scene-desc {
+    font-size: 11px;
+    color: #64748b;
+    line-height: 1.4;
+  }
+
+  .ask-fallback {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .ask-fallback-text {
+    color: #64748b;
+    font-size: 15px;
+    margin: 0 0 16px;
+    line-height: 1.7;
+  }
+
+  .ask-fallback-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .ask-fallback-buttons button {
+    border: 1px solid #dceaff;
+    background: #eef5ff;
+    color: #1368ff;
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  .ask-fallback-buttons button:hover {
+    border-color: #93c5fd;
+    background: #e0edff;
+  }
+
   @media (max-width: 720px) {
     .ask-page {
       padding: 34px 14px 56px;
@@ -430,6 +561,10 @@ const topicsJson = JSON.stringify(assistantTopics);
 
     .ask-box {
       grid-template-columns: 1fr;
+    }
+
+    .ask-scenes {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .ask-presets {
