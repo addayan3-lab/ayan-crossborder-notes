@@ -2,6 +2,7 @@ export interface AssistantTopic {
   id: string
   label: string
   triggerKeywords: string[]
+  strongKeywords: string[]
   steps: string[]
   articles: { title: string; slug: string; desc: string }[]
   resources: { title: string; slug: string; desc: string; wechatHook: string }[]
@@ -15,6 +16,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "keyword",
     label: "关键词",
     triggerKeywords: ["关键词", "找词", "词表", "搜索量", "清洗", "出单词"],
+    strongKeywords: ["词表", "搜索量", "清洗", "出单词", "找词"],
     steps: [
       "先搞清楚关键词从哪里来，4 类来源各有不同价值。",
       "收到词后做清洗：去重、归一、聚类、排序。",
@@ -39,6 +41,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "listing",
     label: "Listing",
     triggerKeywords: ["Listing", "五点", "标题", "优化", "转化率", "A+", "文案"],
+    strongKeywords: ["五点", "标题", "A+", "文案"],
     steps: [
       "先梳理产品的核心卖点和用户场景。",
       "五点按功能点、场景点、信任点三类信息有序排列。",
@@ -63,6 +66,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "ppc",
     label: "广告 PPC",
     triggerKeywords: ["PPC", "广告", "ACOS", "竞价", "预算", "否词", "报表", "SP"],
+    strongKeywords: ["PPC", "ACOS", "TACOS", "搜索词报告", "否词", "预算", "竞价", "报表", "SP", "广告"],
     steps: [
       "新品第一周不要追 ACOS，目标是拿测试数据。",
       "SP 广告分自动、精准、词组、竞品四类，分工不同。",
@@ -87,6 +91,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "review",
     label: "Review",
     triggerKeywords: ["Review", "评价", "差评", "好评", "评论", "反馈", "评分"],
+    strongKeywords: ["Review", "差评", "评价", "好评", "评论", "Q&A", "QA", "痛点"],
     steps: [
       "差评不是终点，是下一版 Listing 的需求文档。",
       "把差评分类：产品问题 vs 页面问题 vs 期望差。",
@@ -111,6 +116,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "selection",
     label: "选品",
     triggerKeywords: ["选品", "市场容量", "竞品", "痛点", "蓝海", "品类", "选赛道"],
+    strongKeywords: ["选品", "竞品", "市场容量", "能不能做", "品类", "痛点反推"],
     steps: [
       "先用关键词搜索量聚合推算品类天花板。",
       "把 Top 20 竞品按价格、卖点、人群、痛点四张矩阵拆解。",
@@ -135,6 +141,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "ai-search",
     label: "AI 搜索",
     triggerKeywords: ["AI 搜索", "Rufus", "Alexa", "AI 工具", "人工智能", "搜索变化", "消费者搜索"],
+    strongKeywords: ["AI 搜索", "Rufus", "Alexa", "AI 工具", "人工智能"],
     steps: [
       "了解消费者如何使用 Amazon AI 搜索产品。",
       "关注 Rufus 和 Alexa for Shopping 对流量分配的影响。",
@@ -158,6 +165,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "tools",
     label: "工具模板",
     triggerKeywords: ["工具", "模板", "表格", "SOP", "检查表", "资料包", "资源"],
+    strongKeywords: ["模板", "SOP", "检查表", "资料包"],
     steps: [
       "先了解有哪些可用的工具和模板。",
       "根据自己的运营环节选择对应的模板。",
@@ -178,6 +186,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "platform-rules",
     label: "平台规则",
     triggerKeywords: ["规则", "违规", "封号", "政策", "合规", "平台", "Listing 下架", "警告"],
+    strongKeywords: ["违规", "合规", "索评", "侵权", "变体"],
     steps: [
       "了解亚马逊平台的核心规则和禁区。",
       "检查自己的 Listing 是否踩了常见违规坑。",
@@ -199,6 +208,7 @@ export const assistantTopics: AssistantTopic[] = [
     id: "beginner",
     label: "新手入门",
     triggerKeywords: ["新手", "入门", "开始", "第一步", "从哪里", "怎么学", "0基础", "零基础"],
+    strongKeywords: ["新手", "入门", "0基础", "零基础"],
     steps: [
       "按专题学习比按工具学习更高效。",
       "建议从关键词专题开始，这是运营的基础。",
@@ -229,6 +239,11 @@ export function matchTopic(query: string): AssistantTopic {
     for (const kw of topic.triggerKeywords) {
       if (q.includes(kw.toLowerCase())) {
         score += kw.length
+      }
+    }
+    for (const kw of (topic.strongKeywords || [])) {
+      if (q.includes(kw.toLowerCase())) {
+        score += kw.length * 100
       }
     }
     if (score > bestScore) {
