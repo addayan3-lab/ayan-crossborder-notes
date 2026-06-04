@@ -59,7 +59,7 @@ const topicsJson = JSON.stringify(assistantTopics);
     </section>
   </main>
 
-  <script id="ayan-topics-data" type="application/json">{topicsJson}</script>
+  <div id="ayan-topics-data" style="display:none" set:html={topicsJson}></div>
 
   <script type="module">
     const topics = JSON.parse(document.getElementById("ayan-topics-data").textContent);
@@ -90,6 +90,11 @@ const topicsJson = JSON.stringify(assistantTopics);
         for (const kw of topic.triggerKeywords) {
           if (q.includes(kw.toLowerCase())) {
             score += kw.length;
+          }
+        }
+        for (const kw of (topic.strongKeywords || [])) {
+          if (q.includes(kw.toLowerCase())) {
+            score += kw.length * 100;
           }
         }
         if (score > bestScore) {
@@ -149,9 +154,10 @@ const topicsJson = JSON.stringify(assistantTopics);
         classesSection.hidden = true;
       }
 
-      if (topic.wechatKeyword) {
+      const firstRes = topic.resources && topic.resources.length > 0 ? topic.resources[0] : null;
+      if (firstRes && firstRes.wechatHook) {
         wechatEl.hidden = false;
-        wechatText.textContent = topic.wechatHook;
+        wechatText.textContent = firstRes.wechatHook;
       } else {
         wechatEl.hidden = true;
       }
