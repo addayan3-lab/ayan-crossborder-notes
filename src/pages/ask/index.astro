@@ -172,6 +172,7 @@ const matchFnSource = computeScoreForTopic.toString();
         if (firstRes && firstRes.wechatHook) {
           parts.push('<div class="ask-extras-wechat">' + firstRes.wechatHook + '</div>');
         }
+        parts.push('<div class="ask-extras-survey">不确定适合哪份资料？<a href="/survey/">做 30 秒诊断</a></div>');
         extrasContent.innerHTML = parts.join("");
       } else {
         extrasEl.hidden = true;
@@ -492,6 +493,22 @@ const matchFnSource = computeScoreForTopic.toString();
     border-top: 1px solid #e2e8f0;
     color: #64748b;
     font-size: 13px;
+  }
+
+  .ask-extras-survey {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #64748b;
+  }
+
+  .ask-extras-survey a {
+    color: #1368ff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .ask-extras-survey a:hover {
+    text-decoration: underline;
   }
 
   .ask-result-steps ol {

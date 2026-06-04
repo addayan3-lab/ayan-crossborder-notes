@@ -1,0 +1,593 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const results = {
+  beginner: {
+    slug: "platform-rules-checklist",
+    name: "新手规则避坑清单",
+    audience: "适合刚开始了解亚马逊的新手卖家",
+    articles: [
+      { title: "亚马逊平台规则入门", slug: "amazon-platform-rules-beginner" }
+    ],
+    openClass: { title: "新手平台规则避坑课", slug: "platform-rules-beginner" }
+  },
+  keyword: {
+    slug: "keyword-cleaning-sheet",
+    name: "关键词清洗表",
+    audience: "适合需要整理关键词的卖家",
+    articles: [
+      { title: "关键词第 1 篇：关键词的 4 类来源", slug: "keyword-source-4-types" },
+      { title: "关键词第 2 篇：关键词清洗方法", slug: "keyword-cleaning-method" }
+    ],
+    openClass: { title: "从关键词到 Listing 的快速上手课", slug: "keyword-to-listing" }
+  },
+  listing: {
+    slug: "listing-checklist",
+    name: "Listing 自检清单",
+    audience: "适合需要优化 Listing 的卖家",
+    articles: [
+      { title: "Listing 第 1 篇：五点写法", slug: "listing-five-bullets" },
+      { title: "Listing 第 2 篇：优化检查清单", slug: "listing-checklist" }
+    ],
+    openClass: { title: "Listing 转化检查课", slug: "listing-conversion-check" }
+  },
+  ppc: {
+    slug: "ppc-weekly-review",
+    name: "PPC 周复盘表",
+    audience: "适合正在投放广告的卖家",
+    articles: [
+      { title: "PPC 第 1 篇：新品广告第一周怎么开", slug: "new-product-ppc-week-one" },
+      { title: "PPC 第 3 篇：用 AI 复盘广告报表", slug: "ai-ppc-report-review" }
+    ],
+    openClass: { title: "新品 PPC 第一周实战课", slug: "ppc-week-one" }
+  },
+  review: {
+    slug: "review-pain-analysis",
+    name: "Review 痛点分析表",
+    audience: "适合需要分析差评的卖家",
+    articles: [
+      { title: "Review 第 1 篇：用 AI 分析 Review 找到卖点", slug: "ai-review-analysis" },
+      { title: "Review 第 3 篇：差评改 Listing", slug: "negative-review-listing-fix" }
+    ],
+    openClass: { title: "Review 反推选品逻辑课", slug: "review-to-selection" }
+  },
+  selection: {
+    slug: "competitor-selection-matrix",
+    name: "竞品矩阵拆解表",
+    audience: "适合想判断产品能不能做的卖家",
+    articles: [
+      { title: "选品第 1 篇：AI 估算市场容量", slug: "ai-market-size-estimate" },
+      { title: "选品第 2 篇：用 AI 做竞品矩阵拆解", slug: "ai-competitor-matrix" }
+    ],
+    openClass: { title: "竞品选品矩阵搭建课", slug: "competitor-selection-matrix" }
+  },
+  ai: {
+    slug: "ai-tools-review-sheet",
+    name: "AI 工具评测表",
+    audience: "适合想用 AI 工具提效的卖家",
+    articles: [
+      { title: "亚马逊 AI 工具评测", slug: "amazon-ai-tools-review" },
+      { title: "2026 年亚马逊卖家如何利用 AI 提升运营效率", slug: "2026-amazon-ai-operations" }
+    ],
+    openClass: { title: "AI 工具在亚马逊运营中的实战课", slug: "ai-tools-for-amazon" }
+  }
+};
+
+const stageOptions = [
+  { value: "beginner", label: "刚开始了解亚马逊" },
+  { value: "has-product", label: "已经有产品" },
+  { value: "needs-listing", label: "Listing 需要优化" },
+  { value: "running-ads", label: "广告正在投放" },
+  { value: "needs-review", label: "Review / 差评需要分析" },
+  { value: "wants-ai", label: "想用 AI 工具提效" }
+];
+
+const goalOptions = [
+  { value: "keyword", label: "找关键词" },
+  { value: "listing", label: "写 Listing" },
+  { value: "ppc", label: "调广告" },
+  { value: "review", label: "分析差评" },
+  { value: "selection", label: "判断产品能不能做" },
+  { value: "rules", label: "避免新手规则坑" }
+];
+
+const rules = [
+  { stage: "beginner", goal: "rules", resultId: "beginner" },
+  { stage: "beginner", goal: "keyword", resultId: "keyword" },
+  { stage: "beginner", goal: "listing", resultId: "listing" },
+  { stage: "beginner", goal: "selection", resultId: "selection" },
+  { stage: "has-product", goal: "selection", resultId: "selection" },
+  { stage: "has-product", goal: "review", resultId: "review" },
+  { stage: "has-product", goal: "keyword", resultId: "keyword" },
+  { stage: "has-product", goal: "listing", resultId: "listing" },
+  { stage: "needs-listing", goal: "listing", resultId: "listing" },
+  { stage: "needs-listing", goal: "keyword", resultId: "keyword" },
+  { stage: "needs-listing", goal: "review", resultId: "review" },
+  { stage: "needs-listing", goal: "ppc", resultId: "ppc" },
+  { stage: "running-ads", goal: "ppc", resultId: "ppc" },
+  { stage: "running-ads", goal: "listing", resultId: "listing" },
+  { stage: "running-ads", goal: "keyword", resultId: "keyword" },
+  { stage: "needs-review", goal: "review", resultId: "review" },
+  { stage: "needs-review", goal: "listing", resultId: "listing" },
+  { stage: "needs-review", goal: "selection", resultId: "selection" },
+  { stage: "wants-ai", goal: "keyword", resultId: "ai" },
+  { stage: "wants-ai", goal: "listing", resultId: "ai" },
+  { stage: "wants-ai", goal: "ppc", resultId: "ai" },
+  { stage: "wants-ai", goal: "review", resultId: "ai" },
+  { stage: "wants-ai", goal: "selection", resultId: "ai" },
+  { stage: "wants-ai", goal: "rules", resultId: "ai" },
+  { stage: "beginner", goal: "ppc", resultId: "ppc" },
+  { stage: "beginner", goal: "review", resultId: "review" },
+  { stage: "beginner", goal: "ai", resultId: "ai" },
+  { stage: "has-product", goal: "ppc", resultId: "ppc" },
+  { stage: "has-product", goal: "rules", resultId: "beginner" },
+  { stage: "has-product", goal: "ai", resultId: "ai" },
+  { stage: "needs-listing", goal: "selection", resultId: "selection" },
+  { stage: "needs-listing", goal: "rules", resultId: "listing" },
+  { stage: "needs-listing", goal: "ai", resultId: "ai" },
+  { stage: "running-ads", goal: "review", resultId: "review" },
+  { stage: "running-ads", goal: "selection", resultId: "selection" },
+  { stage: "running-ads", goal: "rules", resultId: "ppc" },
+  { stage: "running-ads", goal: "ai", resultId: "ai" },
+  { stage: "needs-review", goal: "keyword", resultId: "review" },
+  { stage: "needs-review", goal: "ppc", resultId: "review" },
+  { stage: "needs-review", goal: "rules", resultId: "review" },
+  { stage: "needs-review", goal: "ai", resultId: "ai" },
+  { stage: "wants-ai", goal: "keyword", resultId: "ai" },
+];
+---
+
+<BaseLayout title="30 秒资料诊断｜阿岩跨境笔记" description="回答几个问题，帮你判断目前更适合领取哪份亚马逊运营资料包：关键词表、Listing 清单、PPC 模板还是选品矩阵。">
+  <main class="survey-page">
+    <section class="survey-hero">
+      <h1>30 秒资料诊断</h1>
+      <p>回答几个问题，看看你现在更适合哪份亚马逊运营资料。</p>
+    </section>
+
+    <section class="survey-card">
+      <div id="survey-step-1" class="survey-step">
+        <div class="survey-step-header">
+          <span class="survey-step-num">问题 1/2</span>
+          <span class="survey-step-label">你现在处在哪个阶段？</span>
+        </div>
+        <div class="survey-options" id="survey-q1">
+          {stageOptions.map((opt) => (
+            <label class="survey-option" data-value={opt.value}>
+              <input type="radio" name="stage" value={opt.value} />
+              <span class="survey-option-text">{opt.label}</span>
+            </label>
+          ))}
+        </div>
+        <button class="survey-next" id="survey-next-1" type="button" disabled>下一步</button>
+      </div>
+
+      <div id="survey-step-2" class="survey-step" hidden>
+        <div class="survey-step-header">
+          <span class="survey-step-num">问题 2/2</span>
+          <span class="survey-step-label">你最想先解决什么？</span>
+        </div>
+        <div class="survey-options" id="survey-q2">
+          {goalOptions.map((opt) => (
+            <label class="survey-option" data-value={opt.value}>
+              <input type="radio" name="goal" value={opt.value} />
+              <span class="survey-option-text">{opt.label}</span>
+            </label>
+          ))}
+        </div>
+        <button class="survey-next" id="survey-next-2" type="button" disabled>查看推荐</button>
+      </div>
+
+      <div id="survey-result" class="survey-result" hidden>
+        <div class="survey-result-header">
+          <span class="survey-result-badge">推荐结果</span>
+          <h2 id="survey-result-name"></h2>
+          <p id="survey-result-audience" class="survey-result-audience"></p>
+        </div>
+
+        <div class="survey-result-section">
+          <h3>推荐资料包</h3>
+          <a id="survey-result-link" class="survey-result-cta" target="_blank" rel="noopener noreferrer">
+            查看资料详情 →
+          </a>
+        </div>
+
+        <div class="survey-result-section">
+          <h3>推荐文章</h3>
+          <div id="survey-result-articles" class="survey-result-articles"></div>
+        </div>
+
+        <div class="survey-result-section">
+          <h3>推荐公开课</h3>
+          <div id="survey-result-open-class"></div>
+        </div>
+
+        <div class="survey-result-actions">
+          <a href="/ask/" class="survey-result-secondary">继续问 AI 阿岩助手 →</a>
+          <a href="/resources/" class="survey-result-back">返回资源中心</a>
+        </div>
+
+        <div class="survey-disclaimer">
+          <strong>说明：</strong>这是学习路径推荐，不替代真实运营判断。建议结合你的实际产品和阶段选择最适合的资料。
+        </div>
+      </div>
+
+      <div id="survey-no-match" class="survey-no-match" hidden>
+        <p>根据你的选择，暂时没有找到最匹配的资料。建议试试 AI 阿岩助手的个性化推荐。</p>
+        <a href="/ask/" class="survey-result-secondary">问 AI 阿岩助手 →</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    const results = JSON.parse(document.getElementById("survey-results-data").textContent);
+
+    function setupStep(stepId, nextId, name) {
+      const step = document.querySelector("#" + stepId);
+      const next = document.querySelector("#" + nextId);
+      if (!step || !next) return;
+      const radios = step.querySelectorAll('input[type="radio"]');
+      radios.forEach((radio) => {
+        radio.addEventListener("change", () => {
+          next.disabled = false;
+        });
+      });
+      next.addEventListener("click", () => {
+        const selected = step.querySelector('input[type="radio"]:checked');
+        if (!selected) return;
+        window._surveyAnswers = window._surveyAnswers || {};
+        window._surveyAnswers[name] = selected.value;
+        const current = step.closest(".survey-step");
+        if (current) current.hidden = true;
+        const nextStep = current ? current.nextElementSibling : null;
+        if (nextStep && nextStep.classList.contains("survey-step")) {
+          nextStep.hidden = false;
+        } else {
+          showResult();
+        }
+      });
+    }
+
+    function lookup(stage, goal) {
+      const rules = JSON.parse(document.getElementById("survey-rules-data").textContent);
+      for (const rule of rules) {
+        if (rule.stage === stage && rule.goal === goal) {
+          return results[rule.resultId];
+        }
+      }
+      const goalFirst = rules.find((r) => r.goal === goal);
+      if (goalFirst) return results[goalFirst.resultId];
+      const stageFirst = rules.find((r) => r.stage === stage);
+      if (stageFirst) return results[stageFirst.resultId];
+      return null;
+    }
+
+    function showResult() {
+      const stage = window._surveyAnswers?.stage;
+      const goal = window._surveyAnswers?.goal;
+      const match = lookup(stage, goal);
+      const resultEl = document.querySelector("#survey-result");
+      const noMatchEl = document.querySelector("#survey-no-match");
+      if (!match) {
+        if (noMatchEl) noMatchEl.hidden = false;
+        if (resultEl) resultEl.hidden = true;
+        return;
+      }
+      if (resultEl) resultEl.hidden = false;
+      if (noMatchEl) noMatchEl.hidden = true;
+
+      const nameEl = document.querySelector("#survey-result-name");
+      const audienceEl = document.querySelector("#survey-result-audience");
+      const linkEl = document.querySelector("#survey-result-link");
+      const articlesEl = document.querySelector("#survey-result-articles");
+      const openClassEl = document.querySelector("#survey-result-open-class");
+
+      if (nameEl) nameEl.textContent = match.name;
+      if (audienceEl) audienceEl.textContent = match.audience;
+      if (linkEl) linkEl.href = "/resources/" + match.slug + "/";
+
+      if (articlesEl) {
+        articlesEl.innerHTML = match.articles.map((a) =>
+          '<a class="survey-result-article" href="/articles/' + a.slug + '/" target="_blank" rel="noopener noreferrer">' + a.title + '</a>'
+        ).join("");
+      }
+
+      if (openClassEl && match.openClass) {
+        openClassEl.innerHTML = '<a class="survey-result-article" href="/open-class/' + match.openClass.slug + '/" target="_blank" rel="noopener noreferrer">' + match.openClass.title + '</a>';
+      }
+    }
+
+    setupStep("survey-step-1", "survey-next-1", "stage");
+    setupStep("survey-step-2", "survey-next-2", "goal");
+  </script>
+
+  <div id="survey-results-data" style="display:none">{JSON.stringify(results)}</div>
+  <div id="survey-rules-data" style="display:none">{JSON.stringify(rules)}</div>
+</BaseLayout>
+
+<style>
+  .survey-page {
+    min-height: 100vh;
+    padding: 48px 24px 84px;
+    background:
+      radial-gradient(circle at 24% 12%, rgba(19, 104, 255, 0.10), transparent 26%),
+      linear-gradient(180deg, #f6f9fd 0%, #eef3fa 100%);
+  }
+
+  .survey-hero {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .survey-hero h1 {
+    margin: 0 0 10px;
+    font-size: 38px;
+    color: #0f172a;
+    letter-spacing: -1px;
+  }
+
+  .survey-hero p {
+    margin: 0;
+    color: #64748b;
+    font-size: 17px;
+  }
+
+  .survey-card {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 36px;
+    border-radius: 24px;
+    background: #fff;
+    border: 1px solid #eef1f6;
+    box-shadow: 0 18px 48px rgba(15, 23, 42, 0.06);
+  }
+
+  .survey-step-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .survey-step-num {
+    display: inline-flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .survey-step-label {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .survey-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .survey-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 2px solid #eef1f6;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .survey-option:hover {
+    border-color: #cfe0ff;
+    background: #f8fbff;
+  }
+
+  .survey-option:has(input:checked) {
+    border-color: #1368ff;
+    background: #f0f7ff;
+  }
+
+  .survey-option input {
+    width: 18px;
+    height: 18px;
+    accent-color: #1368ff;
+    flex-shrink: 0;
+  }
+
+  .survey-option-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+  }
+
+  .survey-next {
+    width: 100%;
+    height: 48px;
+    border: 0;
+    border-radius: 14px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+
+  .survey-next:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .survey-next:not(:disabled):hover {
+    background: #0f5ae0;
+  }
+
+  .survey-result-header {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eef1f6;
+  }
+
+  .survey-result-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 12px;
+  }
+
+  .survey-result-header h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    color: #0f172a;
+  }
+
+  .survey-result-audience {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+  }
+
+  .survey-result-section {
+    margin-bottom: 20px;
+  }
+
+  .survey-result-section h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+
+  .survey-result-cta {
+    display: inline-flex;
+    align-items: center;
+    height: 46px;
+    padding: 0 22px;
+    border-radius: 12px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 900;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(19, 104, 255, 0.20);
+  }
+
+  .survey-result-cta:hover {
+    background: #0f5ae0;
+  }
+
+  .survey-result-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .survey-result-article {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #1e293b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .survey-result-article:hover {
+    background: #eef5ff;
+    border-color: #cfe0ff;
+  }
+
+  .survey-result-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #eef1f6;
+  }
+
+  .survey-result-secondary {
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 12px;
+    background: #f3f7ff;
+    color: #1368ff;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #d8e7ff;
+  }
+
+  .survey-result-secondary:hover {
+    background: #e8f0ff;
+  }
+
+  .survey-result-back {
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 12px;
+    color: #64748b;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .survey-result-back:hover {
+    color: #0f172a;
+  }
+
+  .survey-disclaimer {
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: #fafbfc;
+    border: 1px solid #eef1f6;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .survey-no-match {
+    text-align: center;
+    padding: 24px 0;
+  }
+
+  .survey-no-match p {
+    margin: 0 0 18px;
+    color: #64748b;
+    font-size: 15px;
+  }
+
+  @media (max-width: 720px) {
+    .survey-page {
+      padding: 32px 14px 56px;
+    }
+    .survey-hero h1 {
+      font-size: 30px;
+    }
+    .survey-card {
+      padding: 24px;
+    }
+  }
+</style>

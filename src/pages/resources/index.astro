@@ -339,7 +339,11 @@ const ayanBreadcrumbData = {
           <span class="hero-meta-label">个微信关键词</span>
         </div>
       </div>
-      <a class="hero-cta" href="#rules">按专题领取资料 →</a>
+      <div class="hero-survey-hint">
+        <p>不知道先用哪份资料？做 30 秒资料诊断。</p>
+        <a class="hero-survey-cta" href="/survey/">做资料诊断 →</a>
+      </div>
+      <a class="hero-cta" href="#rules">按专题浏览资料 →</a>
     </div>
   </section>
 
@@ -511,6 +515,44 @@ const ayanBreadcrumbData = {
     width: 1px;
     height: 28px;
     background: #e2e8f0;
+  }
+
+  .hero-survey-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    background: #f0f7ff;
+    border: 1px solid #dceaff;
+  }
+
+  .hero-survey-hint p {
+    margin: 0;
+    color: #1e3a5f;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .hero-survey-cta {
+    display: inline-flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 10px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 900;
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .hero-survey-cta:hover {
+    background: #0f5ae0;
   }
 
   .hero-cta {

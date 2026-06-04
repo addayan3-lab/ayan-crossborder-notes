@@ -14,6 +14,11 @@ const backupWechat = "addayan";
         包含 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。
       </p>
 
+      <div class="lead-survey-hint">
+        <p>不确定领哪份资料？先做 30 秒资料诊断。</p>
+        <a class="lead-survey-cta" href="/survey/">做资料诊断 →</a>
+      </div>
+
       <div class="lead-actions">
         <a class="lead-primary" href={tallyUrl} target="_blank" rel="noopener noreferrer">
           打开领取表单
@@ -121,6 +126,44 @@ const backupWechat = "addayan";
     color: #64748b;
     font-size: 17px;
     line-height: 1.8;
+  }
+
+  .lead-survey-hint {
+    margin-top: 24px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: #f0f7ff;
+    border: 1px solid #dceaff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .lead-survey-hint p {
+    margin: 0;
+    color: #1e3a5f;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .lead-survey-cta {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 18px;
+    border-radius: 10px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .lead-survey-cta:hover {
+    background: #0f5ae0;
   }
 
   .lead-actions {
