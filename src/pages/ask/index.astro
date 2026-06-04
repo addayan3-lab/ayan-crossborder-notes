@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { assistantTopics } from "../../data/ayan-assistant-rules";
+import { computeScoreForTopic } from "../../lib/ayan-assistant-match";
 const topicsJson = JSON.stringify(assistantTopics);
+const matchFnSource = computeScoreForTopic.toString();
 ---
 
 <BaseLayout title="AI 阿岩助手｜阿岩跨境笔记" description="输入你在亚马逊运营中遇到的问题，AI 阿岩助手会推荐对应的文章、工具模板和公开课。纯本地规则匹配，你的输入不会被上传或存储，无需担心隐私。">
@@ -100,6 +102,8 @@ const topicsJson = JSON.stringify(assistantTopics);
 
   <div id="ayan-topics-data" style="display:none" set:html={topicsJson}></div>
 
+  <script is:inline set:html={`window.computeScoreForTopic = ${matchFnSource};`}></script>
+
   <script type="module">
     const topics = JSON.parse(document.getElementById("ayan-topics-data").textContent);
 
@@ -125,17 +129,7 @@ const topicsJson = JSON.stringify(assistantTopics);
       let best = null;
       let bestScore = 0;
       for (const topic of topics) {
-        let score = 0;
-        for (const kw of topic.triggerKeywords) {
-          if (q.includes(kw.toLowerCase())) {
-            score += kw.length;
-          }
-        }
-        for (const kw of (topic.strongKeywords || [])) {
-          if (q.includes(kw.toLowerCase())) {
-            score += kw.length * 100;
-          }
-        }
+        const score = window.computeScoreForTopic(q, topic.triggerKeywords, topic.strongKeywords || []);
         if (score > bestScore) {
           bestScore = score;
           best = topic;

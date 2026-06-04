@@ -1,3 +1,5 @@
+import { computeScoreForTopic } from "../lib/ayan-assistant-match"
+
 export interface AssistantTopic {
   id: string
   label: string
@@ -235,17 +237,7 @@ export function matchTopic(query: string): AssistantTopic {
   let best: AssistantTopic | null = null
   let bestScore = 0
   for (const topic of assistantTopics) {
-    let score = 0
-    for (const kw of topic.triggerKeywords) {
-      if (q.includes(kw.toLowerCase())) {
-        score += kw.length
-      }
-    }
-    for (const kw of (topic.strongKeywords || [])) {
-      if (q.includes(kw.toLowerCase())) {
-        score += kw.length * 100
-      }
-    }
+    const score = computeScoreForTopic(q, topic.triggerKeywords, topic.strongKeywords)
     if (score > bestScore) {
       bestScore = score
       best = topic
