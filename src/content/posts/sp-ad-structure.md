@@ -1,5 +1,5 @@
 ---
-title: "SP 广告结构：自动、精准、词组、竞品怎么分工"
+title: "PPC 第 2 篇：SP 广告结构怎么分工"
 description: "SP 不是只投一个广告。讲清自动、精准、词组、竞品四类广告的分工逻辑、预算分配、迁移路径，以及怎么用 AI 提效报表分析。"
 pubDate: "2026-06-02"
 category: "广告 PPC"
@@ -19,10 +19,10 @@ prevArticle: new-product-ppc-week-one
 nextArticle: ai-ppc-report-review
 relatedArticleLinks:
   - slug: new-product-ppc-week-one
-    label: 新品 PPC 第一周
+    label: PPC 第 1 篇：新品广告第一周怎么开
     context: PPC 第 1 篇
   - slug: ai-ppc-report-review
-    label: AI 复盘广告报表
+    label: PPC 第 3 篇：用 AI 复盘广告报表
     context: PPC 第 3 篇
 ---
 

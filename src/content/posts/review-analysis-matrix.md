@@ -1,5 +1,5 @@
 ---
-title: "Review 分析矩阵：差评、好评、竞品反馈怎么用"
+title: "Review 第 2 篇：Review 分析矩阵"
 description: "把 Review 从知道有差评变成可对比的矩阵。讲清差评、好评、竞品反馈三类数据的价值，以及怎么用 AI 做矩阵分析。"
 pubDate: "2026-06-02"
 category: "Review 分析"
@@ -19,10 +19,10 @@ prevArticle: ai-review-analysis
 nextArticle: negative-review-listing-fix
 relatedArticleLinks:
   - slug: ai-review-analysis
-    label: AI 分析 Review
+    label: Review 第 1 篇：用 AI 分析 Review 找到卖点
     context: Review 第 1 篇
   - slug: negative-review-listing-fix
-    label: 差评改 Listing
+    label: Review 第 3 篇：差评改 Listing
     context: Review 第 3 篇
 ---
 

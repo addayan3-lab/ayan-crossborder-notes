@@ -1,5 +1,5 @@
 ---
-title: "如何用 AI 复盘亚马逊广告报表"
+title: "PPC 第 3 篇：用 AI 复盘广告报表"
 description: "用 AI 辅助复盘亚马逊广告报表，从 ACOS、TACOS、CTR、CVR、搜索词和订单转化判断广告问题。"
 pubDate: "2026-05-31"
 category: "广告 PPC"

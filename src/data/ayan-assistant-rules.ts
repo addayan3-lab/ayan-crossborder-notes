@@ -26,9 +26,9 @@ export const assistantTopics: AssistantTopic[] = [
       "把最终词表同步到 Listing 和广告中测试。"
     ],
     articles: [
-      { title: "关键词从哪里来：把来源分成 4 类", slug: "keyword-source-4-types", desc: "关键词的 4 类来源及收集方法。" },
-      { title: "关键词清洗方法：从关键词池到可用词表", slug: "keyword-cleaning-method", desc: "去重、归一、聚类、排序四步清洗流程。" },
-      { title: "为什么关键词表不能只看搜索量", slug: "keyword-search-volume-trap", desc: "搜索量的真实用法与局限。" }
+      { title: "关键词第 1 篇：关键词的 4 类来源", slug: "keyword-source-4-types", desc: "关键词的 4 类来源及收集方法。" },
+      { title: "关键词第 2 篇：关键词清洗方法", slug: "keyword-cleaning-method", desc: "去重、归一、聚类、排序四步清洗流程。" },
+      { title: "关键词第 3 篇：关键词表不能只看搜索量", slug: "keyword-search-volume-trap", desc: "搜索量的真实用法与局限。" }
     ],
     resources: [
       { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "关键词清洗的标准化操作表。", wechatHook: "回复关键词「清洗」领取" }
@@ -51,9 +51,9 @@ export const assistantTopics: AssistantTopic[] = [
       "发布前用检查清单逐项核对标题、五点、图片和关键词。"
     ],
     articles: [
-      { title: "Listing 五点写法：功能点、场景点、信任点", slug: "listing-five-bullets", desc: "五点不是 5 个卖点，是 3 类信息的有序组合。" },
-      { title: "亚马逊 Listing 优化检查清单", slug: "listing-checklist", desc: "发布前逐项检查标题、五点、图片和转化要素。" },
-      { title: "AI 时代亚马逊 Listing 应该怎么写", slug: "ai-listing-optimization", desc: "AI 能帮什么、不能替代什么的实操框架。" }
+      { title: "Listing 第 1 篇：五点写法", slug: "listing-five-bullets", desc: "五点不是 5 个卖点，是 3 类信息的有序组合。" },
+      { title: "Listing 第 2 篇：优化检查清单", slug: "listing-checklist", desc: "发布前逐项检查标题、五点、图片和转化要素。" },
+      { title: "Listing 第 3 篇：AI 时代 Listing 应该怎么写", slug: "ai-listing-optimization", desc: "AI 能帮什么、不能替代什么的实操框架。" }
     ],
     resources: [
       { title: "Listing 自检清单", slug: "listing-checklist", desc: "Listing 发布前逐项检查表。", wechatHook: "回复关键词「自检」领取" }
@@ -76,9 +76,9 @@ export const assistantTopics: AssistantTopic[] = [
       "用 AI 辅助分析搜索词、花费和转化，判断下一步动作。"
     ],
     articles: [
-      { title: "新品广告第一周怎么开：预算、关键词和否词", slug: "new-product-ppc-week-one", desc: "新品期第一周广告测试框架。" },
-      { title: "SP 广告结构：自动、精准、词组、竞品怎么分工", slug: "sp-ad-structure", desc: "四类广告的分工逻辑与预算分配。" },
-      { title: "如何用 AI 复盘亚马逊广告报表", slug: "ai-ppc-report-review", desc: "ACOS、TACOS、CTR、CVR 综合判断。" }
+      { title: "PPC 第 1 篇：新品广告第一周怎么开", slug: "new-product-ppc-week-one", desc: "新品期第一周广告测试框架。" },
+      { title: "PPC 第 2 篇：SP 广告结构怎么分工", slug: "sp-ad-structure", desc: "四类广告的分工逻辑与预算分配。" },
+      { title: "PPC 第 3 篇：用 AI 复盘广告报表", slug: "ai-ppc-report-review", desc: "ACOS、TACOS、CTR、CVR 综合判断。" }
     ],
     resources: [
       { title: "PPC 报表诊断模板", slug: "ppc-weekly-review", desc: "广告报表复盘标准化模板。", wechatHook: "回复关键词「报表」领取" }
@@ -101,9 +101,9 @@ export const assistantTopics: AssistantTopic[] = [
       "竞品反馈里藏着差异化机会，值得单独分析。"
     ],
     articles: [
-      { title: "如何用 AI 分析 Review 找到产品卖点", slug: "ai-review-analysis", desc: "用 AI 对竞品 Review 进行分类和分析。" },
-      { title: "Review 分析矩阵：差评、好评、竞品反馈怎么用", slug: "review-analysis-matrix", desc: "三类 Review 数据的矩阵分析。" },
-      { title: "差评改 Listing：5 个步骤把负反馈变成下一版卖点", slug: "negative-review-listing-fix", desc: "系统性地把差评翻译成 Listing 改动。" }
+      { title: "Review 第 1 篇：用 AI 分析 Review 找到卖点", slug: "ai-review-analysis", desc: "用 AI 对竞品 Review 进行分类和分析。" },
+      { title: "Review 第 2 篇：Review 分析矩阵", slug: "review-analysis-matrix", desc: "三类 Review 数据的矩阵分析。" },
+      { title: "Review 第 3 篇：差评改 Listing", slug: "negative-review-listing-fix", desc: "系统性地把差评翻译成 Listing 改动。" }
     ],
     resources: [
       { title: "Review 痛点分析表", slug: "review-pain-analysis", desc: "Review 痛点提取和分析模板。", wechatHook: "回复关键词「痛点」领取" }
@@ -126,9 +126,9 @@ export const assistantTopics: AssistantTopic[] = [
       "综合判断市场规模、竞争格局和差异化空间。"
     ],
     articles: [
-      { title: "AI 做亚马逊市场容量判断", slug: "ai-market-size-estimate", desc: "用 AI 辅助做市场容量判断的方法。" },
-      { title: "用 AI 做竞品矩阵拆解", slug: "ai-competitor-matrix", desc: "竞品拆成价格、卖点、人群、痛点四张矩阵。" },
-      { title: "痛点反推选品：从差评和问答找机会", slug: "selection-pain-reverse", desc: "从竞品差评和问答里挖出选品机会。" }
+      { title: "选品第 1 篇：AI 估算市场容量", slug: "ai-market-size-estimate", desc: "用 AI 辅助做市场容量判断的方法。" },
+      { title: "选品第 2 篇：用 AI 做竞品矩阵拆解", slug: "ai-competitor-matrix", desc: "竞品拆成价格、卖点、人群、痛点四张矩阵。" },
+      { title: "选品第 3 篇：痛点反推选品", slug: "selection-pain-reverse", desc: "从竞品差评和问答里挖出选品机会。" }
     ],
     resources: [
       { title: "竞品矩阵拆解表", slug: "competitor-selection-matrix", desc: "竞品四维矩阵分析模板。", wechatHook: "回复关键词「矩阵」领取" }

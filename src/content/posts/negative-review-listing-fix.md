@@ -1,5 +1,5 @@
 ---
-title: "差评改 Listing：5 个步骤把负反馈变成下一版卖点"
+title: "Review 第 3 篇：差评改 Listing"
 description: "亚马逊差评不是终点，是下一版 Listing 的需求文档。讲清楚如何用 AI 把差评分类、提炼可执行改动、避免被模板化修改。"
 pubDate: "2026-06-02"
 category: "Review 分析"
@@ -19,10 +19,10 @@ draft: false
 prevArticle: review-analysis-matrix
 relatedArticleLinks:
   - slug: ai-review-analysis
-    label: AI 分析 Review
+    label: Review 第 1 篇：用 AI 分析 Review 找到卖点
     context: Review 第 1 篇
   - slug: review-analysis-matrix
-    label: Review 分析矩阵
+    label: Review 第 2 篇：Review 分析矩阵
     context: Review 第 2 篇
 ---
 

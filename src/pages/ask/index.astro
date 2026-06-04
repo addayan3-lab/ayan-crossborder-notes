@@ -71,19 +71,11 @@ const matchFnSource = computeScoreForTopic.toString();
           <div class="ask-result-grid" id="ayan-result-articles"></div>
         </div>
 
-        <div class="ask-result-section" id="ayan-result-resources-section" hidden>
-          <h3>推荐模板</h3>
-          <div class="ask-result-grid" id="ayan-result-resources"></div>
-        </div>
-
-        <div class="ask-result-section" id="ayan-result-classes-section" hidden>
-          <h3>推荐公开课</h3>
-          <div class="ask-result-grid" id="ayan-result-classes"></div>
-        </div>
-
-        <div class="ask-result-wechat" id="ayan-result-wechat" hidden>
-          <span>💬</span>
-          <span id="ayan-result-wechat-text"></span>
+        <div class="ask-result-extras" id="ayan-result-extras" hidden>
+          <div class="ask-result-extras-trigger">查看配套资源 ▾</div>
+          <div class="ask-result-extras-body" id="ayan-result-extras-body" hidden>
+            <div id="ayan-result-extras-content"></div>
+          </div>
         </div>
       </div>
 
@@ -117,12 +109,9 @@ const matchFnSource = computeScoreForTopic.toString();
     const stepsEl = document.querySelector("#ayan-result-steps");
     const articlesSection = document.querySelector("#ayan-result-articles-section");
     const articlesEl = document.querySelector("#ayan-result-articles");
-    const resourcesSection = document.querySelector("#ayan-result-resources-section");
-    const resourcesEl = document.querySelector("#ayan-result-resources");
-    const classesSection = document.querySelector("#ayan-result-classes-section");
-    const classesEl = document.querySelector("#ayan-result-classes");
-    const wechatEl = document.querySelector("#ayan-result-wechat");
-    const wechatText = document.querySelector("#ayan-result-wechat-text");
+    const extrasEl = document.querySelector("#ayan-result-extras");
+    const extrasBody = document.querySelector("#ayan-result-extras-body");
+    const extrasContent = document.querySelector("#ayan-result-extras-content");
 
     function matchTopic(query) {
       const q = query.toLowerCase();
@@ -164,36 +153,28 @@ const matchFnSource = computeScoreForTopic.toString();
         articlesSection.hidden = true;
       }
 
-      if (topic.resources && topic.resources.length > 0) {
-        resourcesSection.hidden = false;
-        resourcesEl.innerHTML = topic.resources.map((r) => `
-          <a class="ask-result-item" href="/resources/">
-            <div class="ask-result-item-title">${r.title}</div>
-            <div class="ask-result-item-desc">${r.desc}</div>
-          </a>
-        `).join("");
+      const hasResources = topic.resources && topic.resources.length > 0;
+      const hasClasses = topic.openClasses && topic.openClasses.length > 0;
+      if (hasResources || hasClasses) {
+        extrasEl.hidden = false;
+        const parts = [];
+        if (hasResources) {
+          topic.resources.forEach((r) => {
+            parts.push('<div class="ask-extras-item"><span class="ask-extras-label">资料</span><a href="/resources/">' + r.title + '</a></div>');
+          });
+        }
+        if (hasClasses) {
+          topic.openClasses.forEach((oc) => {
+            parts.push('<div class="ask-extras-item"><span class="ask-extras-label">课程</span><a href="/open-class/">' + oc.title + '</a></div>');
+          });
+        }
+        const firstRes = topic.resources && topic.resources.length > 0 ? topic.resources[0] : null;
+        if (firstRes && firstRes.wechatHook) {
+          parts.push('<div class="ask-extras-wechat">' + firstRes.wechatHook + '</div>');
+        }
+        extrasContent.innerHTML = parts.join("");
       } else {
-        resourcesSection.hidden = true;
-      }
-
-      if (topic.openClasses && topic.openClasses.length > 0) {
-        classesSection.hidden = false;
-        classesEl.innerHTML = topic.openClasses.map((oc) => `
-          <a class="ask-result-item" href="/open-class/">
-            <div class="ask-result-item-title">${oc.title}</div>
-            <div class="ask-result-item-desc">${oc.desc}</div>
-          </a>
-        `).join("");
-      } else {
-        classesSection.hidden = true;
-      }
-
-      const firstRes = topic.resources && topic.resources.length > 0 ? topic.resources[0] : null;
-      if (firstRes && firstRes.wechatHook) {
-        wechatEl.hidden = false;
-        wechatText.textContent = firstRes.wechatHook;
-      } else {
-        wechatEl.hidden = true;
+        extrasEl.hidden = true;
       }
 
       resultEl.hidden = false;
@@ -229,6 +210,18 @@ const matchFnSource = computeScoreForTopic.toString();
         runAsk(q);
       });
     });
+
+    const extrasTrigger = document.querySelector(".ask-result-extras-trigger");
+    if (extrasTrigger) {
+      extrasTrigger.addEventListener("click", () => {
+        const body = document.querySelector("#ayan-result-extras-body");
+        if (body) {
+          const isHidden = body.hidden;
+          body.hidden = !isHidden;
+          extrasTrigger.textContent = isHidden ? "收起配套资源 ▴" : "查看配套资源 ▾";
+        }
+      });
+    }
   </script>
 </BaseLayout>
 
@@ -432,18 +425,73 @@ const matchFnSource = computeScoreForTopic.toString();
     line-height: 1.6;
   }
 
-  .ask-result-wechat {
+  .ask-result-extras {
     margin-top: 20px;
+  }
+
+  .ask-result-extras-trigger {
+    cursor: pointer;
+    color: #1368ff;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #f0f7ff;
+    border: 1px solid #dceaff;
+    display: inline-block;
+    user-select: none;
+    transition: background 0.15s ease;
+  }
+
+  .ask-result-extras-trigger:hover {
+    background: #e0edff;
+  }
+
+  .ask-result-extras-body {
+    margin-top: 12px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #fafbfc;
+    border: 1px solid #e6eaf2;
+  }
+
+  .ask-extras-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 16px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #f0fdf4, #f5faf7);
-    border: 1px solid #c7eed5;
-    color: #16a34a;
+    gap: 10px;
+    padding: 6px 0;
     font-size: 14px;
-    font-weight: 700;
+  }
+
+  .ask-extras-label {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 900;
+  }
+
+  .ask-extras-item a {
+    color: #1e3a5f;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .ask-extras-item a:hover {
+    color: #1368ff;
+  }
+
+  .ask-extras-wechat {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
   }
 
   .ask-result-steps ol {

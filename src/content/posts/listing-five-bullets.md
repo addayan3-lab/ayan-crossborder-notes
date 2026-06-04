@@ -1,5 +1,5 @@
 ---
-title: "Listing 五点写法：功能点、场景点、信任点"
+title: "Listing 第 1 篇：五点写法"
 description: "五点不是平铺卖点，而是三类信息的有序组合。讲清功能点、场景点、信任点的区别与顺序，以及怎么用 AI 生成候选并人工筛。"
 pubDate: "2026-06-02"
 category: "Listing 优化"

@@ -1,5 +1,5 @@
 ---
-title: "为什么关键词表不能只看搜索量"
+title: "关键词第 3 篇：关键词表不能只看搜索量"
 description: "搜索量是关键词表里最容易误用的一个字段。讲清楚搜索量的真实用法、它的局限，以及亚马逊卖家应该用什么替代它做选词判断。"
 pubDate: "2026-06-02"
 category: "关键词"
@@ -19,10 +19,10 @@ draft: false
 prevArticle: keyword-cleaning-method
 relatedArticleLinks:
   - slug: keyword-source-4-types
-    label: 关键词 4 类来源
+    label: 关键词第 1 篇：关键词的 4 类来源
     context: 关键词第 1 篇
   - slug: keyword-cleaning-method
-    label: 关键词清洗方法
+    label: 关键词第 2 篇：关键词清洗方法
     context: 关键词第 2 篇
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "关键词从哪里来：把来源分成 4 类，让 AI 帮你挖全"
+title: "关键词第 1 篇：关键词的 4 类来源"
 description: "亚马逊关键词不是凭空出现的，也不是只靠 Helium 10 拉。这篇把关键词来源分成 4 类，讲清每类怎么收集、怎么用 AI 提效、容易踩的坑。"
 pubDate: "2026-06-02"
 category: "关键词"
@@ -19,7 +19,7 @@ draft: false
 nextArticle: keyword-cleaning-method
 relatedArticleLinks:
   - slug: keyword-cleaning-method
-    label: 关键词清洗方法
+    label: 关键词第 2 篇：关键词清洗方法
     context: 关键词第 2 篇
 ---
 

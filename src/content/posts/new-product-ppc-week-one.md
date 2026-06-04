@@ -1,5 +1,5 @@
 ---
-title: "新品广告第一周怎么开：预算、关键词和否词"
+title: "PPC 第 1 篇：新品广告第一周怎么开"
 description: "给亚马逊新品期卖家的第一周广告测试框架，覆盖预算分配、关键词测试、否词、观察指标和复盘节奏。"
 pubDate: "2026-06-02"
 category: "广告 PPC"
@@ -19,7 +19,7 @@ draft: false
 nextArticle: sp-ad-structure
 relatedArticleLinks:
   - slug: sp-ad-structure
-    label: SP 广告结构
+    label: PPC 第 2 篇：SP 广告结构怎么分工
     context: PPC 第 2 篇
 ---
 

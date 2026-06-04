@@ -1,5 +1,5 @@
 ---
-title: "亚马逊 Listing 优化检查清单"
+title: "Listing 第 2 篇：优化检查清单"
 description: "适合亚马逊卖家发布前检查 Listing，覆盖标题、五点、图片、关键词、场景表达和转化要素。"
 pubDate: "2026-05-31"
 category: "Listing 优化"

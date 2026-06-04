@@ -1,5 +1,5 @@
 ---
-title: "痛点反推选品：从差评和问答找机会"
+title: "选品第 3 篇：痛点反推选品"
 description: "把 Review 和 Q&A 当市场调研而不是售后数据。讲清怎么从 Top 10 竞品差评和问答里挖出真实选品机会，以及怎么避免蓝海陷阱。"
 pubDate: "2026-06-02"
 category: "选品"
@@ -9,10 +9,10 @@ draft: false
 prevArticle: ai-competitor-matrix
 relatedArticleLinks:
   - slug: ai-market-size-estimate
-    label: AI 估算市场容量
+    label: 选品第 1 篇：AI 估算市场容量
     context: 选品第 1 篇
   - slug: ai-competitor-matrix
-    label: 竞品矩阵拆解方法
+    label: 选品第 2 篇：用 AI 做竞品矩阵拆解
     context: 选品第 2 篇
 topic: selection
 stage: 进阶
@@ -171,9 +171,9 @@ Q&A 数据比 Review 数据更精确地反映"买家在意但没被解决"的事
 
 ## 七、痛点反推与前面 3 篇选品文章的关系
 
-第 1 篇（市场容量）回答：这个品类有多大。
+[选品第 1 篇（市场容量）](/articles/ai-market-size-estimate/)回答：这个品类有多大。
 
-第 2 篇（竞品矩阵）回答：竞品在打什么牌。
+[选品第 2 篇（竞品矩阵）](/articles/ai-competitor-matrix/)回答：竞品在打什么牌。
 
 第 3 篇（Review 矩阵）回答：用户对现有产品哪些地方不满意。
 

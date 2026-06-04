@@ -5,7 +5,6 @@ import RelatedArticles from "../../components/RelatedArticles.astro";
 import NextUp from "../../components/NextUp.astro";
 import BackToLearningPath from "../../components/BackToLearningPath.astro";
 import LearningPathStats from "../../components/LearningPathStats.astro";
-import ArticleResourceCTA from "../../components/ArticleResourceCTA.astro";
 import ArticleNavHints from "../../components/ArticleNavHints.astro";
 import manifest from "../../data/image-manifest.json";
 
@@ -190,8 +189,6 @@ const ayanBreadcrumbStructuredData = {
           </div>
         )}
 
-        <ArticleNavHints post={post} allPosts={allPosts} />
-
         <section class="article-content" id="article-content">
           <Content />
         </section>
@@ -209,10 +206,10 @@ const ayanBreadcrumbStructuredData = {
           本文为亚马逊运营教学与方法整理，不构成平台政策、法律、税务或投资建议。具体操作请结合你的类目、账号状态、产品数据和亚马逊最新规则人工判断。
         </section>
 
+        <ArticleNavHints post={post} allPosts={allPosts} />
         <RelatedArticles post={post} allPosts={allPosts} max={4} />
         <NextUp post={post} allPosts={allPosts} />
         <BackToLearningPath post={post} />
-        <ArticleResourceCTA post={post} />
       </article>
     </div>
   </main>

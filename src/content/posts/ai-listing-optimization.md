@@ -1,5 +1,5 @@
 ---
-title: "AI 时代亚马逊 Listing 应该怎么写"
+title: "Listing 第 3 篇：AI 时代 Listing 应该怎么写"
 description: "从关键词、用户痛点、使用场景、人群定位和转化率角度，拆解 AI 时代亚马逊 Listing 的标题、五点和内容写法。"
 pubDate: "2026-05-31"
 category: "Listing 优化"
