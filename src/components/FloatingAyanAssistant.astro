@@ -80,11 +80,13 @@ const matchFnSource = computeScoreForTopic.toString();
 
   function openPanel() {
     panel.hidden = false;
+    trigger.style.display = "none";
     input.focus();
   }
 
   function closePanel() {
     panel.hidden = true;
+    trigger.style.display = "";
     resultEl.hidden = true;
     fallbackEl.hidden = true;
     quickSection.hidden = false;
