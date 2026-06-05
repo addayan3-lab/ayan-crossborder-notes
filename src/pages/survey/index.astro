@@ -19,7 +19,7 @@ const results = {
       { title: "关键词第 1 篇：关键词的 4 类来源", slug: "keyword-source-4-types" },
       { title: "关键词第 2 篇：关键词清洗方法", slug: "keyword-cleaning-method" }
     ],
-    openClass: { title: "从关键词到 Listing 的快速上手课", slug: "keyword-to-listing" }
+    openClass: { title: "关键词到 Listing 的实操课", slug: "keyword-to-listing" }
   },
   listing: {
     slug: "listing-checklist",
@@ -29,7 +29,7 @@ const results = {
       { title: "Listing 第 1 篇：五点写法", slug: "listing-five-bullets" },
       { title: "Listing 第 2 篇：优化检查清单", slug: "listing-checklist" }
     ],
-    openClass: { title: "Listing 转化检查课", slug: "listing-conversion-check" }
+    openClass: { title: "Listing 自检与转化表达课", slug: "listing-conversion-check" }
   },
   ppc: {
     slug: "ppc-weekly-review",
@@ -39,7 +39,7 @@ const results = {
       { title: "PPC 第 1 篇：新品广告第一周怎么开", slug: "new-product-ppc-week-one" },
       { title: "PPC 第 3 篇：用 AI 复盘广告报表", slug: "ai-ppc-report-review" }
     ],
-    openClass: { title: "新品 PPC 第一周实战课", slug: "ppc-week-one" }
+    openClass: { title: "新品 PPC 首周广告结构课", slug: "ppc-week-one" }
   },
   review: {
     slug: "review-pain-analysis",
@@ -49,7 +49,7 @@ const results = {
       { title: "Review 第 1 篇：用 AI 分析 Review 找到卖点", slug: "ai-review-analysis" },
       { title: "Review 第 3 篇：差评改 Listing", slug: "negative-review-listing-fix" }
     ],
-    openClass: { title: "Review 反推选品逻辑课", slug: "review-to-selection" }
+    openClass: { title: "Review 反推选品与页面优化课", slug: "review-to-selection" }
   },
   selection: {
     slug: "competitor-selection-matrix",
@@ -59,7 +59,7 @@ const results = {
       { title: "选品第 1 篇：AI 估算市场容量", slug: "ai-market-size-estimate" },
       { title: "选品第 2 篇：用 AI 做竞品矩阵拆解", slug: "ai-competitor-matrix" }
     ],
-    openClass: { title: "竞品选品矩阵搭建课", slug: "competitor-selection-matrix" }
+    openClass: { title: "选品竞品矩阵拆解课", slug: "competitor-selection-matrix" }
   },
   ai: {
     slug: "ai-tools-review-sheet",
@@ -69,7 +69,7 @@ const results = {
       { title: "亚马逊 AI 工具评测", slug: "amazon-ai-tools-review" },
       { title: "2026 年亚马逊卖家如何利用 AI 提升运营效率", slug: "2026-amazon-ai-operations" }
     ],
-    openClass: { title: "AI 工具在亚马逊运营中的实战课", slug: "ai-tools-for-amazon" }
+    openClass: { title: "AI 工具辅助亚马逊运营课", slug: "ai-tools-for-amazon" }
   }
 };
 
@@ -188,6 +188,9 @@ const rules = [
           <h3>推荐资料包</h3>
           <a id="survey-result-link" class="survey-result-cta" target="_blank" rel="noopener noreferrer">
             查看资料详情 →
+          </a>
+          <a href="/lead/" class="survey-result-lead" target="_blank" rel="noopener noreferrer">
+            立即领取资料 →
           </a>
         </div>
 
@@ -488,6 +491,24 @@ const rules = [
 
   .survey-result-cta:hover {
     background: #0f5ae0;
+  }
+
+  .survey-result-lead {
+    display: inline-flex;
+    align-items: center;
+    height: 46px;
+    padding: 0 22px;
+    border-radius: 12px;
+    background: #0f172a;
+    color: #fff;
+    font-weight: 900;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 12px;
+  }
+
+  .survey-result-lead:hover {
+    background: #1e293b;
   }
 
   .survey-result-articles {
