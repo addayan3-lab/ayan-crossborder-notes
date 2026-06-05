@@ -31,7 +31,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "关键词第 3 篇：关键词表不能只看搜索量", slug: "keyword-search-volume-trap", desc: "搜索量的真实用法与局限。" }
     ],
     resources: [
-      { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "关键词清洗的标准化操作表。", wechatHook: "回复关键词「清洗」领取" }
+      { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "关键词清洗的标准化操作表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "从关键词到 Listing 的快速上手课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" }
@@ -56,7 +56,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "Listing 第 3 篇：AI 时代 Listing 应该怎么写", slug: "ai-listing-optimization", desc: "AI 能帮什么、不能替代什么的实操框架。" }
     ],
     resources: [
-      { title: "Listing 自检清单", slug: "listing-checklist", desc: "Listing 发布前逐项检查表。", wechatHook: "回复关键词「自检」领取" }
+      { title: "Listing 自检清单", slug: "listing-checklist", desc: "Listing 发布前逐项检查表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "Listing 转化检查课", slug: "listing-conversion-check", desc: "Listing 转化率检查与优化。" }
@@ -81,7 +81,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "PPC 第 3 篇：用 AI 复盘广告报表", slug: "ai-ppc-report-review", desc: "ACOS、TACOS、CTR、CVR 综合判断。" }
     ],
     resources: [
-      { title: "PPC 报表诊断模板", slug: "ppc-weekly-review", desc: "广告报表复盘标准化模板。", wechatHook: "回复关键词「报表」领取" }
+      { title: "PPC 报表诊断模板", slug: "ppc-weekly-review", desc: "广告报表复盘标准化模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "新品 PPC 第一周实战课", slug: "ppc-week-one", desc: "新品第一周广告怎么开、预算怎么分。" }
@@ -106,7 +106,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "Review 第 3 篇：差评改 Listing", slug: "negative-review-listing-fix", desc: "系统性地把差评翻译成 Listing 改动。" }
     ],
     resources: [
-      { title: "Review 痛点分析表", slug: "review-pain-analysis", desc: "Review 痛点提取和分析模板。", wechatHook: "回复关键词「痛点」领取" }
+      { title: "Review 痛点分析表", slug: "review-pain-analysis", desc: "Review 痛点提取和分析模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "Review 反推选品逻辑课", slug: "review-to-selection", desc: "从差评和好评里找产品改进方向。" }
@@ -131,7 +131,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "选品第 3 篇：痛点反推选品", slug: "selection-pain-reverse", desc: "从竞品差评和问答里挖出选品机会。" }
     ],
     resources: [
-      { title: "竞品矩阵拆解表", slug: "competitor-selection-matrix", desc: "竞品四维矩阵分析模板。", wechatHook: "回复关键词「矩阵」领取" }
+      { title: "竞品矩阵拆解表", slug: "competitor-selection-matrix", desc: "竞品四维矩阵分析模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "竞品选品矩阵搭建课", slug: "competitor-selection-matrix", desc: "把竞品从流量、卖点、价格和评价四个维度拆开。" }
@@ -155,7 +155,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "2026 年亚马逊卖家如何利用 AI 提升运营效率", slug: "2026-amazon-ai-operations", desc: "AI 在运营全流程中的应用。" }
     ],
     resources: [
-      { title: "AI 工具评测与选择表", slug: "ai-tools-review-sheet", desc: "亚马逊 AI 工具评测对比表。", wechatHook: "回复关键词「AI 工具」领取" }
+      { title: "AI 工具评测与选择表", slug: "ai-tools-review-sheet", desc: "亚马逊 AI 工具评测对比表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "AI 工具在亚马逊运营中的实战课", slug: "ai-tools-for-amazon", desc: "AI 工具在亚马逊运营中的实战应用。" }
@@ -178,7 +178,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "亚马逊工具资料学习路径", slug: "tools-learning-path", desc: "工具和资料的分类与使用路径。" }
     ],
     resources: [
-      { title: "AI 工具评测与选择表", slug: "ai-tools-review-sheet", desc: "AI 工具评测对比表。", wechatHook: "回复关键词「AI 工具」领取" }
+      { title: "AI 工具评测与选择表", slug: "ai-tools-review-sheet", desc: "AI 工具评测对比表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [],
     wechatKeyword: "工具",
@@ -198,7 +198,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "亚马逊平台规则入门:新手最容易踩的 10 个坑", slug: "amazon-platform-rules-beginner", desc: "新手卖家常踩的平台规则坑。" }
     ],
     resources: [
-      { title: "平台规则检查清单", slug: "platform-rules-checklist", desc: "亚马逊平台规则自检清单。", wechatHook: "回复关键词「规则」领取" }
+      { title: "平台规则检查清单", slug: "platform-rules-checklist", desc: "亚马逊平台规则自检清单。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "新手平台规则避坑课", slug: "platform-rules-beginner", desc: "帮新手建立平台规则边界。" }
@@ -222,7 +222,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "亚马逊 Listing 优化学习路径", slug: "listing-learning-path", desc: "从卖点提炼到转化表达的路径。" }
     ],
     resources: [
-      { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "新手第一个可用的模板。", wechatHook: "回复关键词「清洗」领取" }
+      { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "新手第一个可用的模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
       { title: "从关键词到 Listing 的快速上手课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" }
