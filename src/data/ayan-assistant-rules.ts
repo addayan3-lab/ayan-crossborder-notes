@@ -34,7 +34,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "关键词清洗的标准化操作表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "从关键词到 Listing 的快速上手课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" }
+      { title: "关键词到 Listing 的实操课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" }
     ],
     wechatKeyword: "清洗",
     suggestion: "建议从关键词来源入手，先建立对词表的系统认知。"
@@ -59,7 +59,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "Listing 自检清单", slug: "listing-checklist", desc: "Listing 发布前逐项检查表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "Listing 转化检查课", slug: "listing-conversion-check", desc: "Listing 转化率检查与优化。" }
+      { title: "Listing 自检与转化表达课", slug: "listing-conversion-check", desc: "Listing 转化率检查与优化。" }
     ],
     wechatKeyword: "自检",
     suggestion: "建议从五点写法入手，这是 Listing 转化最相关但最容易被低估的字段。"
@@ -84,7 +84,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "PPC 报表诊断模板", slug: "ppc-weekly-review", desc: "广告报表复盘标准化模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "新品 PPC 第一周实战课", slug: "ppc-week-one", desc: "新品第一周广告怎么开、预算怎么分。" }
+      { title: "新品 PPC 首周广告结构课", slug: "ppc-week-one", desc: "新品第一周广告怎么开、预算怎么分。" }
     ],
     wechatKeyword: "报表",
     suggestion: "建议从新品第一周开始，先建立广告测试节奏感。"
@@ -109,7 +109,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "Review 痛点分析表", slug: "review-pain-analysis", desc: "Review 痛点提取和分析模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "Review 反推选品逻辑课", slug: "review-to-selection", desc: "从差评和好评里找产品改进方向。" }
+      { title: "Review 反推选品与页面优化课", slug: "review-to-selection", desc: "从差评和好评里找产品改进方向。" }
     ],
     wechatKeyword: "痛点",
     suggestion: "建议从差评改 Listing 入手，这是最直接能产生效果的切入点。"
@@ -134,7 +134,7 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "竞品矩阵拆解表", slug: "competitor-selection-matrix", desc: "竞品四维矩阵分析模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "竞品选品矩阵搭建课", slug: "competitor-selection-matrix", desc: "把竞品从流量、卖点、价格和评价四个维度拆开。" }
+      { title: "选品竞品矩阵拆解课", slug: "competitor-selection-matrix", desc: "把竞品从流量、卖点、价格和评价四个维度拆开。" }
     ],
     wechatKeyword: "矩阵",
     suggestion: "建议从市场容量判断开始，先确认赛道天花板再深入。"
@@ -158,16 +158,38 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "AI 工具评测与选择表", slug: "ai-tools-review-sheet", desc: "亚马逊 AI 工具评测对比表。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "AI 工具在亚马逊运营中的实战课", slug: "ai-tools-for-amazon", desc: "AI 工具在亚马逊运营中的实战应用。" }
+      { title: "AI 工具辅助亚马逊运营课", slug: "ai-tools-for-amazon", desc: "AI 工具在亚马逊运营中的实战应用。" }
     ],
     wechatKeyword: "AI 工具",
     suggestion: "建议从消费者搜索行为变化入手，理解底层逻辑后再看工具。"
   },
   {
+    id: "open-class",
+    label: "公开课",
+    triggerKeywords: ["公开课", "课程", "讲座", "直播", "免费课", "实操课"],
+    strongKeywords: ["公开课", "课程安排", "全部公开课"],
+    steps: [
+      "公开课围绕关键词、Listing、PPC、Review、选品和 AI 工具，帮新手跑通最小闭环。",
+      "每节课配合文章和资料包使用，先看方法、再领工具、最后听课。",
+      "建议先选一个你最卡壳的专题，从第 1 节开始跟。"
+    ],
+    articles: [
+      { title: "亚马逊运营公开课", slug: "open-class", desc: "8 节实操公开课，串起文章和资料包。" }
+    ],
+    resources: [],
+    openClasses: [
+      { title: "关键词到 Listing 的实操课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" },
+      { title: "新品 PPC 首周广告结构课", slug: "ppc-week-one", desc: "新品第一周广告怎么开、预算怎么分。" },
+      { title: "Review 反推选品与页面优化课", slug: "review-to-selection", desc: "从差评和好评里找产品改进方向。" }
+    ],
+    wechatKeyword: "公开课",
+    suggestion: "公开课配合文章和资料包效果更好。建议先浏览对应的专题文章，再听课实操。"
+  },
+  {
     id: "tools",
     label: "工具模板",
     triggerKeywords: ["工具", "模板", "表格", "SOP", "检查表", "资料包", "资源"],
-    strongKeywords: ["模板", "SOP", "检查表", "资料包"],
+    strongKeywords: ["模板", "SOP", "检查表", "资料包", "表格"],
     steps: [
       "先了解有哪些可用的工具和模板。",
       "根据自己的运营环节选择对应的模板。",
@@ -209,7 +231,7 @@ export const assistantTopics: AssistantTopic[] = [
   {
     id: "beginner",
     label: "新手入门",
-    triggerKeywords: ["新手", "入门", "开始", "第一步", "从哪里", "怎么学", "0基础", "零基础"],
+    triggerKeywords: ["新手", "入门", "开始", "第一步", "从哪里", "从哪", "怎么学", "0基础", "零基础"],
     strongKeywords: ["新手", "入门", "0基础", "零基础"],
     steps: [
       "按专题学习比按工具学习更高效。",
@@ -225,14 +247,14 @@ export const assistantTopics: AssistantTopic[] = [
       { title: "关键词清洗 SOP 模板", slug: "keyword-cleaning-sheet", desc: "新手第一个可用的模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
     ],
     openClasses: [
-      { title: "从关键词到 Listing 的快速上手课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" }
+      { title: "关键词到 Listing 的实操课", slug: "keyword-to-listing", desc: "找词、清洗、写标题、开广告的完整流程。" }
     ],
     wechatKeyword: "清洗",
     suggestion: "建议先选一个专题跑通最小闭环：找词 → 写 Listing → 开广告 → 看数据。"
   }
 ]
 
-export function matchTopic(query: string): AssistantTopic {
+export function matchTopic(query: string): AssistantTopic | null {
   const q = query.toLowerCase()
   let best: AssistantTopic | null = null
   let bestScore = 0
@@ -243,5 +265,5 @@ export function matchTopic(query: string): AssistantTopic {
       best = topic
     }
   }
-  return best || assistantTopics.find((t) => t.id === "beginner")!
+  return bestScore > 0 ? best : null
 }
