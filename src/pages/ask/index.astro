@@ -170,7 +170,7 @@ const matchFnSource = computeScoreForTopic.toString();
         }
         const firstRes = topic.resources && topic.resources.length > 0 ? topic.resources[0] : null;
         if (firstRes && firstRes.wechatHook) {
-          parts.push('<div class="ask-extras-wechat">' + firstRes.wechatHook + '</div>');
+          parts.push('<div class="ask-extras-wechat">资料详情页会说明领取方式。</div>');
         }
         parts.push('<div class="ask-extras-survey">不确定适合哪份资料？<a href="/survey/">做 30 秒诊断</a></div>');
         extrasContent.innerHTML = parts.join("");
