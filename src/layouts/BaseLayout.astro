@@ -1,4 +1,6 @@
 ---
+import FloatingAyanAssistant from "../components/FloatingAyanAssistant.astro";
+
 const {
   title = "阿岩跨境笔记",
   description = "写给亚马逊卖家的 AI 运营实战知识站",
@@ -116,10 +118,7 @@ const ayanBaseStructuredData = [
         <a href="/open-class/">公开课</a>
       </div>
     </footer>
-    <a class="ai-widget" href="/tools/" aria-label="阿岩助手">
-      <div class="ai-widget-title">阿岩助手</div>
-      <div class="ai-widget-text">站内 AI 问答入口预留中</div>
-    </a>
+    <FloatingAyanAssistant />
   
 <!-- AYAN_TALLY_LEAD_START -->
 <script is:inline>
@@ -628,45 +627,6 @@ const ayanBaseStructuredData = [
     }
   }
 
-  .ai-widget {
-    position: fixed;
-    right: 22px;
-    bottom: 22px;
-    width: 220px;
-    padding: 16px 18px;
-    border-radius: 18px;
-    background: linear-gradient(135deg, #06152f, #0b2b64);
-    color: white;
-    box-shadow: 0 18px 60px rgba(2, 10, 24, 0.32);
-    border: 1px solid rgba(125, 185, 255, 0.22);
-    z-index: 9999;
-    display: block;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
-  }
-
-  .ai-widget:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 24px 72px rgba(2, 10, 24, 0.40);
-  }
-
-  .ai-widget-title {
-    font-weight: 900;
-    font-size: 16px;
-    margin-bottom: 6px;
-  }
-
-  .ai-widget-text {
-    color: rgba(255, 255, 255, 0.72);
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 720px) {
-    .ai-widget {
-      display: none;
-    }
-  }
-
   .top-actions {
     display: flex;
     align-items: center;
@@ -788,11 +748,6 @@ const ayanBaseStructuredData = [
     box-shadow: 0 12px 28px rgba(19, 104, 255, 0.22) !important;
   }
 
-  .ai-widget {
-    border-radius: 20px !important;
-    background: linear-gradient(135deg, #06152f, #0b3473) !important;
-    box-shadow: 0 24px 80px rgba(2, 10, 24, 0.36) !important;
-  }
   /* AYAN_FORCE_TOP_FINAL_END */
 
   .card-cover {
