@@ -41,7 +41,17 @@
 ### 修改后检查
 
 - [ ] 新增或修改的 `triggerKeywords`/`strongKeywords` 不会误匹配
-- [ ] 用典型 query 回归（如"广告 ACOS 太高" → PPC，"选品" → 选品）
+- [ ] 用典型 query 回归，至少验证以下场景：
+
+  | Query | 期望 topic |
+  |-------|-----------|
+  | "广告 ACOS 太高怎么办" | ppc |
+  | "不知道怎么找关键词" | keyword |
+  | "Listing 转化差怎么优化" | listing |
+  | "怎么分析差评" | review |
+  | "想判断一个产品能不能做" | selection |
+  | "AI 搜索怎么用" | ai-search |
+  | "新手从哪开始" | beginner |
 - [ ] 浮窗助手（`FloatingAyanAssistant.astro`）和 `/ask/` 页行为一致
 - [ ] 无 API 调用泄漏
 - [ ] `npm run build` 通过

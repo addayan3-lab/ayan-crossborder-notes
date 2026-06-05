@@ -6,6 +6,7 @@
 
 - [ ] 先读 `AGENTS.md` 第 5 节 frontmatter 规则
 - [ ] 先读 `docs/content-production-sop.md`
+- [ ] 先读 `docs/image-naming-and-manifest-rules.md`（如存在）
 - [ ] 先读同类已发布文章的 frontmatter 作为对齐参考
 - [ ] 确认操作范围，不改 AI 阿岩助手运行代码和业务逻辑
 
