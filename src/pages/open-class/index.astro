@@ -186,7 +186,7 @@ const courses = [
           </div>
           <div class="course-card-foot">
             {c.detailHref && <a class="course-cta course-cta-detail" href={c.detailHref}>查看课程详情 →</a>}
-            <a class="course-cta" href={c.resource.href}>查看配套资料 →</a>
+            <a class="course-cta-text" href={c.resource.href}>查看配套资料 →</a>
           </div>
         </article>
       ))}
@@ -372,6 +372,20 @@ const courses = [
 
   .course-cta-detail:hover {
     background: #1a4fbf;
+  }
+
+  .course-cta-text {
+    display: inline;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .course-cta-text:hover {
+    color: #1368ff;
+    text-decoration: underline;
   }
 
   .callout-note {

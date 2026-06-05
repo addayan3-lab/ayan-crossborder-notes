@@ -1,5 +1,5 @@
 ---
-const { post, allPosts, max = 4 } = Astro.props;
+const { post, allPosts, max = 2 } = Astro.props;
 
 const topicLabelMap = {
   keyword: "关键词",
@@ -33,15 +33,15 @@ const fallback = candidates
   .filter((p) => !relatedTopics.includes(p.data.topic) && p.data.topic === currentTopic)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const merged = [...preferred, ...fallback].slice(0, Math.max(1, Number(max) || 4));
+const merged = [...preferred, ...fallback].slice(0, Math.max(1, Number(max) || 2));
 
-let hint = "你可能也想读";
+let hint = "相关补充阅读";
 if (preferred.length > 0) {
   hint = relatedTopics.length > 0
-    ? "按相关专题推荐"
-    : "按当前专题推荐";
+    ? "相关补充阅读"
+    : "相关补充阅读";
 } else if (currentTopic) {
-  hint = "同专题其他文章";
+  hint = "相关补充阅读";
 }
 ---
 
