@@ -14,7 +14,7 @@ relatedTopics:
   - review
 publicLessonUse: 适合作为选品公开课的市场容量判断环节，帮助学员避免只看感觉选品。
 leadMagnet: 市场容量三数字判断表
-wechatHook: 回复关键词"容量"，领取市场容量三数字判断表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 nextArticle: ai-competitor-matrix
 relatedArticleLinks:

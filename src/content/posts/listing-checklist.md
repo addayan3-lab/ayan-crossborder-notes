@@ -13,7 +13,7 @@ relatedTopics:
   - tools
 publicLessonUse: 适合作为 Listing 公开课的页面体检环节，带学员按清单逐项检查标题、五点、图片和转化表达。
 leadMagnet: Listing 自检清单
-wechatHook: 回复关键词"自检"，领取 Listing 自检清单。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/listing-checklist/cover.svg"
 prevArticle: listing-five-bullets

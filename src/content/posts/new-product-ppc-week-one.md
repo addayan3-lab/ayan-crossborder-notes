@@ -14,7 +14,7 @@ relatedTopics:
   - selection
 publicLessonUse: 适合作为 PPC 入门公开课的新品首周广告节奏案例，帮助学员先跑通低风险测试。
 leadMagnet: 新品首周 PPC 节奏表
-wechatHook: 回复关键词"首周"，领取新品首周 PPC 节奏表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 nextArticle: sp-ad-structure
 relatedArticleLinks:

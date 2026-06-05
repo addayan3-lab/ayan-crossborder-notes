@@ -13,7 +13,7 @@ relatedTopics:
   - keyword
 publicLessonUse: 适合作为 AI 搜索趋势公开课案例，讲清 Rufus、Alexa Shopping 对 Listing 表达和评价质量的影响。
 leadMagnet: Rufus 与 Alexa Shopping 对比表
-wechatHook: 回复关键词"Rufus"，领取 Rufus 与 Alexa Shopping 对比表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/amazon-rufus-alexa-shopping/cover.svg"
 ---

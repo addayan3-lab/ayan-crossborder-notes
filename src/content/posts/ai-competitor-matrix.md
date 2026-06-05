@@ -14,7 +14,7 @@ relatedTopics:
   - review
 publicLessonUse: 适合作为选品公开课的竞品拆解环节，带学员把竞品从流量、卖点、价格和评价四个维度拆开。
 leadMagnet: 竞品矩阵拆解表
-wechatHook: 回复关键词"矩阵"，领取竞品矩阵拆解表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 prevArticle: ai-market-size-estimate
 nextArticle: selection-pain-reverse

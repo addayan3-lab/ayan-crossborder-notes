@@ -13,7 +13,7 @@ relatedTopics:
   - selection
 publicLessonUse: 适合作为公开课开场，用来讲清 AI 在选品、Listing、广告和复盘中的整体位置。
 leadMagnet: 2026 亚马逊 AI 运营全景图
-wechatHook: 回复关键词"全景"，领取 2026 亚马逊 AI 运营全景图。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/2026-amazon-ai-operations/cover.svg"
 ---

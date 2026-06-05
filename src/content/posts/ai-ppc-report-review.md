@@ -13,7 +13,7 @@ relatedTopics:
   - tools
 publicLessonUse: 适合作为 PPC 公开课的报表诊断演示，带学员从搜索词、花费和转化判断广告问题。
 leadMagnet: PPC 报表诊断模板
-wechatHook: 回复关键词"报表"，领取 PPC 报表诊断模板。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/ai-ppc-report-review/cover.svg"
 prevArticle: sp-ad-structure

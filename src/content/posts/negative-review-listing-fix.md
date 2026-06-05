@@ -14,7 +14,7 @@ relatedTopics:
   - tools
 publicLessonUse: 适合作为 Review 公开课的差评修复案例，讲清哪些差评应该改产品，哪些应该改页面。
 leadMagnet: 差评归因与 Listing 修复表
-wechatHook: 回复关键词"差评"，领取差评归因与 Listing 修复表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 prevArticle: review-analysis-matrix
 relatedArticleLinks:

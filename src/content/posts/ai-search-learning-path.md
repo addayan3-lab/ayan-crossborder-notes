@@ -14,7 +14,7 @@ relatedTopics:
   - listing
 publicLessonUse: 适合作为 AI 搜索公开课的开篇导览,带学员建立从工具理解到运营落地的整体路径。
 leadMagnet: AI 搜索学习路径导图(PDF)
-wechatHook: 回复关键词"AI路径",领取 AI 搜索学习路径导图。
+wechatHook: 资料领取方式以资料详情页说明为准。
 ---
 
 <div class="article-callout article-callout-blue">
@@ -117,7 +117,7 @@ AI 搜索是亚马逊运营的下一阶段。Rufus、Alexa for Shopping、消费
 - 运营动作调整对照表
 - 内容资产布局模板
 
-领取方式：添加企业微信，回复"AI路径"。
+可以先做 30 秒资料诊断，系统会根据阶段推荐更适合的资料。
 
 ## 九、下一步学习建议
 

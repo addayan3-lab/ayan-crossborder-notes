@@ -15,7 +15,7 @@ relatedTopics:
   - keyword-search-volume-trap
 publicLessonUse: 适合作为关键词公开课的清洗演示,带学员把 200 个散乱词清洗到 50 个可用的核心词。
 leadMagnet: 关键词清洗 SOP 模板
-wechatHook: 回复关键词"清洗",领取关键词清洗 SOP 模板。
+wechatHook: 资料领取方式以资料详情页说明为准。
 prevArticle: keyword-source-4-types
 nextArticle: keyword-search-volume-trap
 relatedArticleLinks:

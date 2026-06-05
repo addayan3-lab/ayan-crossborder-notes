@@ -23,7 +23,7 @@ relatedTopics:
   - review-analysis-matrix
 publicLessonUse: 适合作为选品公开课的反向推演核心讲稿,带学员从差评和退货理由反推选品标准。
 leadMagnet: 痛点反推选品 SOP 模板
-wechatHook: 回复关键词"反推",领取痛点反推选品 SOP 模板。
+wechatHook: 资料领取方式以资料详情页说明为准。
 ---
 
 <div class="article-callout article-callout-green">

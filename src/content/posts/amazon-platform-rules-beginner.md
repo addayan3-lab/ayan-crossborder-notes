@@ -13,7 +13,7 @@ relatedTopics:
   - selection
 publicLessonUse: 适合作为公开课的风险提醒模块,帮助新手先建立规则边界,再进入选品、Listing 和广告实操。
 leadMagnet: 亚马逊新手规则避坑清单
-wechatHook: 回复关键词"规则"，领取亚马逊新手规则避坑清单。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/amazon-platform-rules-beginner/cover.svg"
 ---
@@ -310,7 +310,7 @@ AI 写 Listing、AI 写广告词、AI 写售后回复、AI 写索评邮件——
 
 ---
 
-## 十四、资料包和微信引导
+## 十四、资料包领取
 
 这篇对应的资料包是《亚马逊新手规则避坑清单》,包含:
 
@@ -321,4 +321,4 @@ AI 写 Listing、AI 写广告词、AI 写售后回复、AI 写索评邮件——
 
 公开课讲到"风险提醒模块"时,会同步发送这份清单。
 
-领取方式:回复关键词 **"规则"**,领取《亚马逊新手规则避坑清单》。
+资料详情页会说明对应领取方式。

@@ -17,7 +17,7 @@ relatedTopics:
   - ai-search
 publicLessonUse: 适合作为工具资料公开课的开篇导览,带学员把检查表、Prompt、复盘表、SOP 4 类工具串成可落地的运营工具链。
 leadMagnet: 工具资料汇总清单(PDF)
-wechatHook: 回复关键词"工具包",领取工具资料汇总清单。
+wechatHook: 资料领取方式以资料详情页说明为准。
 ---
 
 <div class="article-callout article-callout-blue">
@@ -120,7 +120,7 @@ wechatHook: 回复关键词"工具包",领取工具资料汇总清单。
 - 周报 / 月报复盘表
 - 4 个 SOP 模板
 
-领取方式：访问 /lead/ 或添加企业微信，回复"工具包"。
+领取方式：访问 /lead/ 查看领取方式。
 
 ## 九、下一步学习建议
 

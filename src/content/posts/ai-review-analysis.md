@@ -13,7 +13,7 @@ relatedTopics:
   - tools
 publicLessonUse: 适合作为 Review 公开课的评价拆解演示，带学员从好评和差评反推产品与页面问题。
 leadMagnet: Review 痛点分析表
-wechatHook: 回复关键词"痛点"，领取 Review 痛点分析表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/ai-review-analysis/cover.svg"
 nextArticle: review-analysis-matrix

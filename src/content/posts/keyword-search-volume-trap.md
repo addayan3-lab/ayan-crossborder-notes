@@ -14,7 +14,7 @@ relatedTopics:
   - selection
 publicLessonUse: 适合作为关键词公开课的避坑环节，提醒学员不要只按搜索量判断词的价值。
 leadMagnet: 搜索量陷阱检查清单
-wechatHook: 回复关键词"陷阱"，领取搜索量陷阱检查清单。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 prevArticle: keyword-cleaning-method
 relatedArticleLinks:

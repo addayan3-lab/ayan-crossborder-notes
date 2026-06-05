@@ -14,7 +14,7 @@ relatedTopics:
   - tools
 publicLessonUse: 适合作为关键词公开课的实操演示，带学员把散乱关键词整理成可用词表。
 leadMagnet: 8 字段关键词整理表
-wechatHook: 回复关键词"词表"，领取 8 字段关键词整理表。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 ---
 

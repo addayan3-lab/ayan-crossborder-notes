@@ -14,7 +14,7 @@ relatedTopics:
   - negative-review-listing-fix
 publicLessonUse: 适合作为 Review 公开课的矩阵拆解演示,带学员从好评、差评、中评、Q&A 反推产品与 Listing 改进点。
 leadMagnet: Review 矩阵分析模板
-wechatHook: 回复关键词"R矩阵",领取 Review 矩阵分析模板。
+wechatHook: 资料领取方式以资料详情页说明为准。
 prevArticle: ai-review-analysis
 nextArticle: negative-review-listing-fix
 relatedArticleLinks:

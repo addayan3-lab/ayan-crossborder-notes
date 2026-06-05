@@ -13,7 +13,7 @@ relatedTopics:
   - ai-search
 publicLessonUse: 适合作为 Listing 优化公开课的 AI 辅助改写案例，讲清 AI 能帮什么、不能替代什么。
 leadMagnet: AI Listing 改写对比模板
-wechatHook: 回复关键词"L重写"，领取 AI Listing 改写对比模板。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/ai-listing-optimization/cover.svg"
 prevArticle: listing-checklist

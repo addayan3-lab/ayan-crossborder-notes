@@ -14,7 +14,7 @@ relatedTopics:
   - ppc
 publicLessonUse: 适合作为关键词公开课的开篇导览,带学员从找词、清洗、判断、投放到复盘 5 步搭起关键词体系。
 leadMagnet: 关键词学习路径导图(PDF)
-wechatHook: 回复关键词"K路径",领取关键词学习路径导图。
+wechatHook: 资料领取方式以资料详情页说明为准。
 ---
 
 <div class="article-callout article-callout-blue">
@@ -121,7 +121,7 @@ wechatHook: 回复关键词"K路径",领取关键词学习路径导图。
 - 三维评分卡
 - 关键词布局三件套 Prompt
 
-领取方式：添加企业微信，回复"路径"。
+可以先做 30 秒资料诊断，系统会根据阶段推荐更适合的资料。
 
 ## 九、下一步学习建议
 

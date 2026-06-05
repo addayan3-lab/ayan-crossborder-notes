@@ -13,7 +13,7 @@ relatedTopics:
   - review
 publicLessonUse: 适合作为 AI 搜索公开课的用户行为分析环节，讲清消费者提问方式如何影响运营判断。
 leadMagnet: 消费者 AI 搜索问题清单
-wechatHook: 回复关键词"C搜索"，领取消费者 AI 搜索问题清单。
+wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/consumer-ai-search-amazon/cover.svg"
 ---
