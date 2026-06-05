@@ -65,6 +65,7 @@ const matchFnSource = computeScoreForTopic.toString();
 <script type="module">
   const topics = JSON.parse(document.getElementById("ayan-floating-topics-data").textContent);
 
+  const wrap = document.querySelector(".ayan-floating-wrap");
   const trigger = document.getElementById("ayan-floating-trigger");
   const panel = document.getElementById("ayan-floating-panel");
   const closeBtn = document.getElementById("ayan-floating-close");
@@ -80,13 +81,15 @@ const matchFnSource = computeScoreForTopic.toString();
 
   function openPanel() {
     panel.hidden = false;
-    trigger.style.display = "none";
+    wrap.classList.add("is-open");
+    trigger.setAttribute("aria-expanded", "true");
     input.focus();
   }
 
   function closePanel() {
     panel.hidden = true;
-    trigger.style.display = "";
+    wrap.classList.remove("is-open");
+    trigger.setAttribute("aria-expanded", "false");
     resultEl.hidden = true;
     fallbackEl.hidden = true;
     quickSection.hidden = false;
@@ -155,7 +158,6 @@ const matchFnSource = computeScoreForTopic.toString();
 
   document.addEventListener("click", function (e) {
     if (panel.hidden) return;
-    const wrap = document.querySelector(".ayan-floating-wrap");
     if (wrap && !wrap.contains(e.target)) {
       closePanel();
     }
@@ -234,6 +236,14 @@ const matchFnSource = computeScoreForTopic.toString();
     display: flex;
     flex-direction: column;
     overflow: hidden;
+  }
+
+  .ayan-floating-panel[hidden] {
+    display: none !important;
+  }
+
+  .ayan-floating-wrap.is-open .ayan-floating-trigger {
+    display: none;
   }
 
   .ayan-floating-head {
