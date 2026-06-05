@@ -98,7 +98,7 @@ const ayanBaseStructuredData = [
         ))}
       </nav>
 
-      <div class="top-actions"><a class="top-cta top-cta-secondary" href="/ai-amazon/">开始学习</a><a class="top-cta" href="/lead/">领取资料</a></div>
+      <div class="top-actions"><a class="top-cta top-cta-secondary" href="/ai-amazon/">开始学习</a><a class="top-cta" href="/lead/" data-lead-cta>领取资料</a></div>
     </header>
 
     <main>
@@ -135,13 +135,24 @@ const ayanBaseStructuredData = [
       "立即领取",
       "领取 AI 运营资料包",
       "领取AI运营资料包",
-      "领取资料包",
-      "问问阿岩助手",
-      "立即提问",
-      "阿岩助手"
+      "领取资料包"
     ];
 
+    document.querySelectorAll("[data-lead-cta]").forEach(function (el) {
+      if (el.tagName.toLowerCase() === "a") {
+        el.setAttribute("href", window.AYAN_TALLY_URL);
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "noopener noreferrer");
+      } else {
+        el.addEventListener("click", function (event) {
+          event.preventDefault();
+          ayanOpenLeadForm();
+        });
+      }
+    });
+
     document.querySelectorAll("a, button").forEach(function (el) {
+      if (el.hasAttribute("data-lead-cta")) return;
       var text = (el.textContent || "").replace(/\s+/g, "");
       var shouldBind = leadTexts.some(function (word) {
         return text.includes(word.replace(/\s+/g, ""));
