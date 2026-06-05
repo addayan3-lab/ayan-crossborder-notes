@@ -282,16 +282,28 @@ const resourceItems = [
   </section>
 
   <section class="home-section ask-entry-section">
-    <a class="ask-entry-card" href="/ask/">
-      <div class="ask-entry-icon">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 5.3 18.5l3.7 1-1-3.7A10 10 0 0 0 12 2z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-      </div>
-      <div class="ask-entry-text">
-        <div class="ask-entry-title">还不确定从哪里开始？问问 AI 阿岩助手</div>
-        <div class="ask-entry-desc">输入你的问题，推荐对应的文章、模板和公开课。纯本地匹配，你的输入不会被上传。</div>
-      </div>
-      <span class="ask-entry-arrow">试试 →</span>
-    </a>
+    <div class="entry-pair">
+      <a class="ask-entry-card" href="/ask/">
+        <div class="ask-entry-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 5.3 18.5l3.7 1-1-3.7A10 10 0 0 0 12 2z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        </div>
+        <div class="ask-entry-text">
+          <div class="ask-entry-title">还不确定从哪里开始？问问 AI 阿岩助手</div>
+          <div class="ask-entry-desc">输入你的问题，推荐对应的文章、模板和公开课。纯本地匹配，你的输入不会被上传。</div>
+        </div>
+        <span class="ask-entry-arrow">试试 →</span>
+      </a>
+      <a class="survey-entry-card" href="/survey/">
+        <div class="survey-entry-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+        </div>
+        <div class="survey-entry-text">
+          <div class="survey-entry-title">做 30 秒资料诊断</div>
+          <div class="survey-entry-desc">不知道先领哪份资料？先做诊断。根据你的阶段推荐更适合的资料和文章。</div>
+        </div>
+        <span class="survey-entry-arrow">开始诊断 →</span>
+      </a>
+    </div>
   </section>
 
   <section class="home-section main-layout">
@@ -2221,21 +2233,31 @@ const resourceItems = [
 
   /* AYAN_TOPIC_LEARNING_PATH_END */
 
+  .entry-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
   .ask-entry-section {
     margin-top: 10px;
     margin-bottom: 4px;
   }
 
-  .ask-entry-card {
+  .ask-entry-card,
+  .survey-entry-card {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 18px 24px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #eef5ff 0%, #f5faff 100%);
-    border: 1px solid #cfe0ff;
     text-decoration: none;
     transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .ask-entry-card {
+    background: linear-gradient(135deg, #eef5ff 0%, #f5faff 100%);
+    border: 1px solid #cfe0ff;
     box-shadow: 0 8px 24px rgba(19, 104, 255, 0.08);
   }
 
@@ -2245,37 +2267,62 @@ const resourceItems = [
     box-shadow: 0 16px 40px rgba(19, 104, 255, 0.14);
   }
 
-  .ask-entry-icon {
+  .survey-entry-card {
+    background: linear-gradient(135deg, #fef7ed 0%, #fffaf2 100%);
+    border: 1px solid #fed7aa;
+    box-shadow: 0 8px 24px rgba(217, 119, 6, 0.08);
+  }
+
+  .survey-entry-card:hover {
+    transform: translateY(-2px);
+    border-color: #fdba74;
+    box-shadow: 0 16px 40px rgba(217, 119, 6, 0.14);
+  }
+
+  .ask-entry-icon,
+  .survey-entry-icon {
     flex-shrink: 0;
     width: 48px;
     height: 48px;
     border-radius: 14px;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, #1368ff, #2563eb);
     color: #fff;
+  }
+
+  .ask-entry-icon {
+    background: linear-gradient(135deg, #1368ff, #2563eb);
     box-shadow: 0 8px 20px rgba(19, 104, 255, 0.2);
   }
 
-  .ask-entry-text {
+  .survey-entry-icon {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    box-shadow: 0 8px 20px rgba(217, 119, 6, 0.2);
+  }
+
+  .ask-entry-text,
+  .survey-entry-text {
     flex: 1;
     min-width: 0;
   }
 
-  .ask-entry-title {
+  .ask-entry-title,
+  .survey-entry-title {
     font-size: 18px;
     font-weight: 900;
     color: #0f172a;
     margin-bottom: 4px;
   }
 
-  .ask-entry-desc {
+  .ask-entry-desc,
+  .survey-entry-desc {
     font-size: 14px;
     color: #64748b;
     line-height: 1.6;
   }
 
-  .ask-entry-arrow {
+  .ask-entry-arrow,
+  .survey-entry-arrow {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
@@ -2283,13 +2330,22 @@ const resourceItems = [
     height: 38px;
     padding: 0 18px;
     border-radius: 999px;
-    background: #1368ff;
-    color: #fff;
     font-size: 14px;
     font-weight: 900;
     white-space: nowrap;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .ask-entry-arrow {
+    background: #1368ff;
+    color: #fff;
     box-shadow: 0 6px 16px rgba(19, 104, 255, 0.18);
+  }
+
+  .survey-entry-arrow {
+    background: #d97706;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(217, 119, 6, 0.18);
   }
 
   .ask-entry-card:hover .ask-entry-arrow {
@@ -2297,12 +2353,25 @@ const resourceItems = [
     box-shadow: 0 8px 22px rgba(19, 104, 255, 0.28);
   }
 
+  .survey-entry-card:hover .survey-entry-arrow {
+    transform: translateX(2px);
+    box-shadow: 0 8px 22px rgba(217, 119, 6, 0.28);
+  }
+
+  @media (max-width: 980px) {
+    .entry-pair {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 720px) {
-    .ask-entry-card {
+    .ask-entry-card,
+    .survey-entry-card {
       flex-wrap: wrap;
     }
 
-    .ask-entry-arrow {
+    .ask-entry-arrow,
+    .survey-entry-arrow {
       width: 100%;
       justify-content: center;
     }
