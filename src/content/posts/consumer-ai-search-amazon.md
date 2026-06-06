@@ -4,6 +4,12 @@ description: "从关键词搜索、场景搜索、图片搜索和 AI 推荐角�
 pubDate: "2026-05-31"
 category: "AI 搜索"
 tags: ["消费者搜索", "AI搜索", "亚马逊"]
+articleType: theory
+featured: true
+priority: 70
+seriesOrder: 3
+pathRole: primary
+pathLabel: "消费者视角"
 topic: ai-search
 stage: 进阶
 intent: 学习

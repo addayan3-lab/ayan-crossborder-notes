@@ -5,6 +5,7 @@ import RelatedArticles from "../../components/RelatedArticles.astro";
 import NextUp from "../../components/NextUp.astro";
 import BackToLearningPath from "../../components/BackToLearningPath.astro";
 import LearningPathStats from "../../components/LearningPathStats.astro";
+import LearningPathArticles from "../../components/LearningPathArticles.astro";
 import ArticleNavHints from "../../components/ArticleNavHints.astro";
 import manifest from "../../data/image-manifest.json";
 
@@ -186,6 +187,11 @@ const ayanBreadcrumbStructuredData = {
 
         <section class="article-content" id="article-content">
           <Content />
+          {post.data.learningPathAutoArticles === true && post.data.topic && (
+            <div class="lp-auto-section">
+              <LearningPathArticles topic={post.data.topic} />
+            </div>
+          )}
         </section>
 
         <section class="article-bottom-cta">
@@ -1041,5 +1047,11 @@ const ayanBreadcrumbStructuredData = {
     .auto-article-image img {
       border-radius: 16px;
     }
+  }
+
+  .lp-auto-section {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
   }
 </style>

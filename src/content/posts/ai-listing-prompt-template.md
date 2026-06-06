@@ -10,6 +10,9 @@ articleType: prompt
 homepageSlot: ai-prompt
 featured: true
 priority: 80
+seriesOrder: 5
+pathRole: secondary
+pathLabel: "Listing 提示词"
 topic: ai-search
 stage: 实操
 intent: 工具

@@ -10,6 +10,9 @@ articleType: prompt
 homepageSlot: ai-prompt
 featured: true
 priority: 85
+seriesOrder: 1
+pathRole: primary
+pathLabel: "提示词基础"
 topic: ai-search
 stage: 新手
 intent: 学习

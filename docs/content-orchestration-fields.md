@@ -14,7 +14,11 @@
 | `resourceSlug` | string | 否 | 配套资源详情页 slug | 资源页文件名（不含 .astro），如 `keyword-cleaning-sheet` |
 | `openClassSlug` | string | 否 | 配套公开课 slug | 公开页文件名（不含 .astro），如 `keyword-to-listing` |
 | `featured` | boolean | 否 | 是否精选推荐 | `true`, `false`（默认 false） |
-| `priority` | int | 否 | 推荐优先级（越大越优先） | `1-100` |
+| `priority` | string | 否 | 推荐优先级字符串 | `high`, `medium`, `low` |
+| `seriesOrder` | int | 否 | 同一 topic 内学习路径阅读顺序 | 正整数，如 `1`, `2` |
+| `pathRole` | string | 否 | 在学习路径中的角色 | `primary`（主读）, `secondary`（辅助阅读） |
+| `pathLabel` | string | 否 | 学习路径卡片中显示的短描述（2-6 字） | 如 `"工具视角入口"`, `"来源扩展"` |
+| `learningPathAutoArticles` | boolean | 否 | 是否在该学习路径页面底部自动渲染专题文章卡片列表 | `true`, `false`（默认 false） |
 
 ## 已有字段（不变）
 

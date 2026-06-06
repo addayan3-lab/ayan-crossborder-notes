@@ -5,6 +5,9 @@ pubDate: 2026-06-02
 category: "AI 运营亚马逊"
 tags: ["AI工具", "工具评测", "运营效率"]
 topic: ai-search
+seriesOrder: 7
+pathRole: secondary
+pathLabel: 工具评测
 stage: 新手
 intent: 决策
 relatedTopics:

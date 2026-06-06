@@ -7,6 +7,7 @@ tags: ["AI 搜索", "学习路径", "Rufus"]
 image: "/images/articles/ai-search-learning-path/cover.svg"
 draft: false
 articleType: learning-path
+learningPathAutoArticles: true
 homepageSlot: beginner-start
 featured: true
 priority: 90
@@ -71,21 +72,14 @@ AI 搜索是亚马逊运营的下一阶段。Rufus、Alexa for Shopping、消费
 
 ## 四、对应已有文章卡片
 
-按阅读顺序：
+主专题文章卡片列表见本页底部（字段自动生成，按推荐阅读顺序排列）。
 
-- 《提示词结构入门：角色、任务、约束、输出格式是什么》— 提示词基础
-- 《Amazon Rufus / Alexa for Shopping 对卖家意味着什么》— 工具入口
-- 《消费者如何用 Amazon AI 搜索产品》— 买家视角
-- 《2026 年亚马逊 AI 运营：平台、消费者、卖家的变化》— 整体趋势
+**跨专题参考**：
 
-辅助阅读：
-
-- 《AI 竞品矩阵》— 竞品拆解
-- 《用 AI 写亚马逊 Listing 的通用提示词模板》— Listing 提示词
-- 《如何用 AI 做关键词清洗：3 条提示词就够了》— 关键词提示词
-- 《如何用 AI 做亚马逊关键词表》— AI 在关键词上的应用
-- 《AI 时代亚马逊 Listing 应该怎么写》— AI 在 Listing 上的应用
-- 《如何用 AI 复盘亚马逊广告报表》— AI 在 PPC 上的应用
+- 《AI 竞品矩阵》— 竞品拆解（选品专题）
+- 《如何用 AI 做亚马逊关键词表》— AI 在关键词上的应用（关键词专题）
+- 《AI 时代亚马逊 Listing 应该怎么写》— AI 在 Listing 上的应用（Listing 专题）
+- 《如何用 AI 复盘亚马逊广告报表》— AI 在 PPC 上的应用（PPC 专题）
 
 ## 五、本周实操任务
 
