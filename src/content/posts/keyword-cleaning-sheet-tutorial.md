@@ -6,6 +6,11 @@ category: "工具模板"
 tags: ["关键词", "关键词清洗", "运营表格", "新手选品"]
 image: "/images/og-default.svg"
 draft: false
+articleType: tutorial
+homepageSlot: resource-tutorial
+resourceSlug: keyword-cleaning-sheet
+featured: true
+priority: 75
 topic: tools
 stage: 实操
 intent: 工具

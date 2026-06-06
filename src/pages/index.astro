@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import ResourceCenterTeaser from "../components/ResourceCenterTeaser.astro";
+import { getPostsByTopic, getPostsBySlot } from "../lib/content-orchestration";
 
 const allPostsForCount = await getCollection("posts", ({ data }) => !data.draft);
 
@@ -10,6 +11,22 @@ const topicArticleCount = allPostsForCount.reduce((acc, p) => {
   if (t) acc[t] = (acc[t] || 0) + 1;
   return acc;
 }, {});
+
+const allPosts = allPostsForCount;
+const topicArticleLists = {
+  keyword: getPostsByTopic(allPosts, "keyword"),
+  listing: getPostsByTopic(allPosts, "listing"),
+  ppc: getPostsByTopic(allPosts, "ppc"),
+  review: getPostsByTopic(allPosts, "review"),
+  selection: getPostsByTopic(allPosts, "selection"),
+  "ai-search": getPostsByTopic(allPosts, "ai-search"),
+  tools: getPostsByTopic(allPosts, "tools"),
+};
+const slotArticles = {
+  "ai-prompt": getPostsBySlot(allPosts, "ai-prompt"),
+  "resource-tutorial": getPostsBySlot(allPosts, "resource-tutorial"),
+  "beginner-start": getPostsBySlot(allPosts, "beginner-start"),
+};
 
 const posts = (await getCollection("posts", ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -26,12 +43,7 @@ const topicPaths = [
       href: "/articles/keyword-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "关键词第 4 篇：用 AI 做关键词表", href: "/articles/ai-keyword-table/" },
-      { title: "关键词第 3 篇：关键词表不能只看搜索量", href: "/articles/keyword-search-volume-trap/" },
-      { title: "关键词第 1 篇：关键词的 4 类来源", href: "/articles/keyword-source-4-types/" },
-      { title: "关键词第 2 篇：关键词清洗方法", href: "/articles/keyword-cleaning-method/" }
-    ],
+    articles: topicArticleLists["keyword"],
     previews: [
     ],
     cta: { label: "看完整学习路径", href: "/articles/keyword-learning-path/" }
@@ -46,11 +58,7 @@ const topicPaths = [
       href: "/articles/listing-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "Listing 第 3 篇：AI 时代 Listing 应该怎么写", href: "/articles/ai-listing-optimization/" },
-      { title: "Listing 第 2 篇：优化检查清单", href: "/articles/listing-checklist/" },
-      { title: "Listing 第 1 篇：五点写法", href: "/articles/listing-five-bullets/" }
-    ],
+    articles: topicArticleLists["listing"],
     previews: [
       "A+ 内容的实操套路"
     ],
@@ -66,11 +74,7 @@ const topicPaths = [
       href: "/articles/ppc-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "PPC 第 3 篇：用 AI 复盘广告报表", href: "/articles/ai-ppc-report-review/" },
-      { title: "PPC 第 1 篇：新品广告第一周怎么开", href: "/articles/new-product-ppc-week-one/" },
-      { title: "PPC 第 2 篇：SP 广告结构怎么分工", href: "/articles/sp-ad-structure/" }
-    ],
+    articles: topicArticleLists["ppc"],
     previews: [
       "SP / SB / SD 的分工"
     ],
@@ -86,11 +90,7 @@ const topicPaths = [
       href: "/articles/review-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "Review 第 1 篇：用 AI 分析 Review 找到卖点", href: "/articles/ai-review-analysis/" },
-      { title: "Review 第 3 篇：差评改 Listing", href: "/articles/negative-review-listing-fix/" },
-      { title: "Review 第 2 篇：Review 分析矩阵", href: "/articles/review-analysis-matrix/" }
-    ],
+    articles: topicArticleLists["review"],
     previews: [
       "Vine 计划配合使用"
     ],
@@ -106,11 +106,7 @@ const topicPaths = [
       href: "/articles/selection-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "选品第 1 篇：AI 估算市场容量", href: "/articles/ai-market-size-estimate/" },
-      { title: "选品第 2 篇：用 AI 做竞品矩阵拆解", href: "/articles/ai-competitor-matrix/" },
-      { title: "选品第 3 篇：痛点反推选品", href: "/articles/selection-pain-reverse/" }
-    ],
+    articles: topicArticleLists["selection"],
     previews: [
       "新手选品入门",
       "选品决策表"
@@ -127,13 +123,7 @@ const topicPaths = [
       href: "/articles/ai-search-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "提示词结构入门：角色、任务、约束、输出格式", href: "/articles/prompt-structure-for-amazon-sellers/" },
-      { title: "用 AI 写亚马逊 Listing 的通用提示词模板", href: "/articles/ai-listing-prompt-template/" },
-      { title: "如何用 AI 做关键词清洗：3 条提示词就够了", href: "/articles/ai-keyword-cleaning-prompts/" },
-      { title: "Amazon Rufus / Alexa for Shopping 对卖家意味着什么", href: "/articles/amazon-rufus-alexa-shopping/" },
-      { title: "消费者如何用 Amazon AI 搜索产品", href: "/articles/consumer-ai-search-amazon/" }
-    ],
+    articles: topicArticleLists["ai-search"],
     previews: [
       "AI 复盘广告报表提示词",
       "AI 分析 Review 提示词"
@@ -150,9 +140,7 @@ const topicPaths = [
       href: "/articles/tools-learning-path/",
       hint: "推荐先读"
     },
-    articles: [
-      { title: "关键词清洗表怎么填：逐字段教学", href: "/articles/keyword-cleaning-sheet-tutorial/" }
-    ],
+    articles: topicArticleLists["tools"],
     previews: [
       "关键词清洗表逐字段教学",
       "后续按专题持续更新"
@@ -311,6 +299,45 @@ const resourceItems = [
       </a>
     </div>
   </section>
+
+  {
+    (slotArticles["ai-prompt"].length > 0 ||
+     slotArticles["resource-tutorial"].length > 0 ||
+     slotArticles["beginner-start"].length > 0) && (
+    <section class="home-section slot-section">
+      {slotArticles["ai-prompt"].length > 0 && (
+        <div class="slot-block">
+          <h3 class="slot-heading">AI 提示词专区</h3>
+          <ul class="topic-articles">
+            {slotArticles["ai-prompt"].map((a) => (
+              <li><a href={a.href}>{a.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {slotArticles["resource-tutorial"].length > 0 && (
+        <div class="slot-block">
+          <h3 class="slot-heading">资源配套教学</h3>
+          <ul class="topic-articles">
+            {slotArticles["resource-tutorial"].map((a) => (
+              <li><a href={a.href}>{a.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {slotArticles["beginner-start"].length > 0 && (
+        <div class="slot-block">
+          <h3 class="slot-heading">新手入门推荐</h3>
+          <ul class="topic-articles">
+            {slotArticles["beginner-start"].map((a) => (
+              <li><a href={a.href}>{a.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
+    )
+  }
 
   <section class="home-section main-layout">
     <div class="content-main">
@@ -2243,6 +2270,33 @@ const resourceItems = [
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
+  }
+
+  .slot-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 8px 0 0;
+  }
+
+  .slot-block {
+    background: #fff;
+    border: 1px solid #e6eaf2;
+    border-radius: 16px;
+    padding: 14px 18px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  }
+
+  .slot-heading {
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+  }
+
+  .slot-block .topic-articles {
+    margin: 0;
   }
 
   .ask-entry-section {

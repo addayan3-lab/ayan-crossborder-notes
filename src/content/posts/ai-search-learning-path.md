@@ -6,6 +6,10 @@ category: "AI 搜索"
 tags: ["AI 搜索", "学习路径", "Rufus"]
 image: "/images/articles/ai-search-learning-path/cover.svg"
 draft: false
+articleType: learning-path
+homepageSlot: beginner-start
+featured: true
+priority: 90
 topic: ai-search
 stage: 新手
 intent: 学习

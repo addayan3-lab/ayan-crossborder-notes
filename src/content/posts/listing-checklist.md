@@ -6,6 +6,12 @@ category: "Listing 优化"
 tags: ["Listing", "自检清单", "检查流程"]
 image: "/images/articles/listing-checklist/cover.svg"
 draft: false
+articleType: tutorial
+homepageSlot: resource-tutorial
+resourceSlug: listing-checklist
+openClassSlug: listing-conversion-check
+featured: true
+priority: 75
 topic: listing
 stage: 实操
 intent: 工具

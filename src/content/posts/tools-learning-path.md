@@ -6,6 +6,10 @@ category: "工具资料"
 tags: ["工具", "学习路径", "SOP"]
 image: "/images/articles/tools-learning-path/cover.svg"
 draft: false
+articleType: learning-path
+homepageSlot: beginner-start
+featured: true
+priority: 90
 topic: tools
 stage: 新手
 intent: 工具

@@ -6,6 +6,10 @@ category: "选品"
 tags: ["选品", "学习路径", "市场分析"]
 image: "/images/og-default.svg"
 draft: false
+articleType: learning-path
+homepageSlot: beginner-start
+featured: true
+priority: 90
 topic: selection
 stage: 新手
 intent: 学习

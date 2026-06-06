@@ -1,25 +1,17 @@
 ---
 title: "如何用 AI 做关键词清洗：3 条提示词就够了"
 description: "亚马逊新手卖家如何用 AI 清洗关键词：用 3 条提示词完成去重、分组、筛选，把杂乱关键词整理成 Listing 和广告可用的关键词表。"
-pubDate: "2026-06-06"
-category: "AI 运营亚马逊"
-tags: ["AI 提示词", "关键词", "关键词清洗"]
-image: "/images/og-default.svg"
-draft: false
-articleType: prompt
-homepageSlot: ai-prompt
-featured: true
-priority: 75
 topic: ai-search
 stage: 实操
 intent: 工具
 relatedTopics:
-  - prompt-structure-for-amazon-sellers
-  - keyword-cleaning-method
-  - ai-keyword-table
+  - keyword
+  - listing
+  - ppc
 publicLessonUse: "关键词到 Listing 实操课的 AI 清洗演示"
 leadMagnet: "关键词清洗表"
 wechatHook: "资料领取方式以资料详情页说明为准"
+cover: "/images/og-default.svg"
 ---
 
 关键词清洗，是很多亚马逊新手最容易跳过的一步。
@@ -70,7 +62,7 @@ AI 可以帮你做关键词清洗，但前提是你不要只说：
 2. 合并大小写、单复数、轻微顺序变化导致的重复。
 3. 标出明显无关词。
 4. 标出可能不适合当前产品的词。
-5. 不要删除不确定的词，请放到"待人工确认"里。
+5. 不要删除不确定的词，请放到“待人工确认”里。
 6. 不要编造搜索量或转化率。
 
 请按以下表格输出：
@@ -150,7 +142,7 @@ AI 可以帮你做关键词清洗，但前提是你不要只说：
 3. 描述和 A+ 可以补充长尾场景词。
 4. 广告优先测试相关度高、购买意图明确的词。
 5. 不要为了搜索量高而推荐无关词。
-6. 对不确定词标注"需要人工确认"。
+6. 对不确定词标注“需要人工确认”。
 
 请按以下格式输出：
 
@@ -215,11 +207,11 @@ bathroom storage rack
 ### 1. AI 把无关词也分得很认真
 
 AI 有时会为了完成任务，把明显不相关的词也强行解释。  
-所以你要保留"无关或低优先级词"这一列。
+所以你要保留“无关或低优先级词”这一列。
 
 ### 2. AI 编造搜索量
 
-如果 AI 输出"这个词搜索量高"，但你没有给它数据，不要相信。
+如果 AI 输出“这个词搜索量高”，但你没有给它数据，不要相信。
 
 追加：
 

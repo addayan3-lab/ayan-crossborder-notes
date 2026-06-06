@@ -1,28 +1,20 @@
 ---
 title: "用 AI 写亚马逊 Listing 的通用提示词模板"
 description: "给亚马逊新手卖家的 Listing 提示词模板：从产品信息、关键词、竞品卖点到标题、五点、描述，一步步让 AI 生成可检查的初稿。"
-pubDate: "2026-06-06"
-category: "AI 运营亚马逊"
-tags: ["AI 提示词", "Listing", "AI 写作"]
-image: "/images/og-default.svg"
-draft: false
-articleType: prompt
-homepageSlot: ai-prompt
-featured: true
-priority: 80
 topic: ai-search
 stage: 实操
 intent: 工具
 relatedTopics:
-  - prompt-structure-for-amazon-sellers
-  - listing-five-bullets
-  - listing-checklist
+  - listing
+  - keyword
+  - tools
 publicLessonUse: "Listing 优化公开课的 AI 写作示例"
 leadMagnet: "Listing 自检清单"
 wechatHook: "资料领取方式以资料详情页说明为准"
+cover: "/images/og-default.svg"
 ---
 
-用 AI 写亚马逊 Listing，最怕的不是写不出来，而是写得太像"万能广告文案"。
+用 AI 写亚马逊 Listing，最怕的不是写不出来，而是写得太像“万能广告文案”。
 
 很多新手输入一句：
 
@@ -83,7 +75,7 @@ Review 痛点：
 3. 不要写医疗、治疗、治愈等敏感表达。
 4. 关键词要自然融入，不要硬塞。
 5. 标题优先放主关键词和最核心卖点。
-6. 五点描述按"场景痛点 → 产品特征 → 用户好处"写。
+6. 五点描述按“场景痛点 → 产品特征 → 用户好处”写。
 7. 如果信息不足，请先列出缺失信息。
 
 请按以下格式输出：
@@ -112,7 +104,7 @@ Review 痛点：
 - 核心功能
 - 产品限制
 
-"产品限制"很重要。比如你的产品只是防泼水，就不要让 AI 写 waterproof。
+“产品限制”很重要。比如你的产品只是防泼水，就不要让 AI 写 waterproof。
 
 ### 2. 关键词
 
@@ -155,11 +147,11 @@ AI 就可以把卖点写成：
 Clear size details help you check fit before purchase.
 ```
 
-这种表达比"high quality"更有用。
+这种表达比“high quality”更有用。
 
 ### 5. 输出格式
 
-让 AI 同时输出"关键词使用说明"和"风险提醒"，是为了方便你检查，而不是直接复制上线。
+让 AI 同时输出“关键词使用说明”和“风险提醒”，是为了方便你检查，而不是直接复制上线。
 
 ---
 
@@ -189,7 +181,7 @@ Designed for small kitchens, apartments, and limited counter space, this foldabl
 
 ## 五、常见翻车场景
 
-### 1. AI 写得太"广告腔"
+### 1. AI 写得太“广告腔”
 
 比如：
 
@@ -212,7 +204,7 @@ Experience the ultimate kitchen revolution.
 请保留原本卖点结构，但自然加入以下关键词：...
 ```
 
-不要要求它"每个关键词都必须出现"。这样会造成硬塞。
+不要要求它“每个关键词都必须出现”。这样会造成硬塞。
 
 ### 3. AI 写了没有的功能
 
@@ -252,7 +244,7 @@ Experience the ultimate kitchen revolution.
 4. 根据广告数据和转化率继续修改
 5. 把 Review 反馈重新喂给 AI 做二次优化
 
-AI 写 Listing 不是一次完成，而是帮你把"空白页面"变成"可检查初稿"。
+AI 写 Listing 不是一次完成，而是帮你把“空白页面”变成“可检查初稿”。
 
 ---
 
