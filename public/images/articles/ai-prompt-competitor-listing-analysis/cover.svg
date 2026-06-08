@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-cp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF2FF"/>
+      <stop offset="1" stop-color="#F8FAFF"/>
+    </linearGradient>
+    <linearGradient id="accent-cp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-cp)"/>
+  <circle cx="150" cy="100" r="160" fill="#E0E7FF" opacity="0.5"/>
+  <circle cx="1050" cy="550" r="180" fill="#EEF2FF" opacity="0.4"/>
+  <!-- Title -->
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 提示词拆竞品 Listing</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">关键词 · 卖点 · 表达 · 差异化</text>
+  <!-- 3 Listing cards (left) -->
+  <rect x="80" y="160" width="260" height="120" rx="12" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="1.5"/>
+  <rect x="80" y="160" width="260" height="32" rx="12" fill="#4338CA"/>
+  <text x="100" y="181" font-size="13" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing A · 标题+五点</text>
+  <text x="100" y="210" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Ultra-thin design</text>
+  <text x="100" y="232" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• 10-hour battery</text>
+  <text x="100" y="254" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Waterproof IPX7</text>
+  <rect x="80" y="290" width="260" height="120" rx="12" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="1.5"/>
+  <rect x="80" y="290" width="260" height="32" rx="12" fill="#4338CA"/>
+  <text x="100" y="311" font-size="13" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing B · 标题+五点</text>
+  <text x="100" y="340" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Heavy-duty build</text>
+  <text x="100" y="362" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Multi-functional</text>
+  <text x="100" y="384" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Easy setup</text>
+  <rect x="80" y="420" width="260" height="120" rx="12" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="1.5"/>
+  <rect x="80" y="420" width="260" height="32" rx="12" fill="#4338CA"/>
+  <text x="100" y="441" font-size="13" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing C · 标题+五点</text>
+  <text x="100" y="470" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Value pack</text>
+  <text x="100" y="492" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• Premium design</text>
+  <text x="100" y="514" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">• All-in-one</text>
+  <!-- Arrow -->
+  <path d="M345 355 L400 355" stroke="#6366F1" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="395,347 410,355 395,363" fill="#6366F1"/>
+  <!-- AI Prompt window (center) -->
+  <rect x="415" y="180" width="340" height="340" rx="14" fill="#FFFFFF" stroke="#6366F1" stroke-width="2"/>
+  <rect x="415" y="180" width="340" height="40" rx="14" fill="#6366F1"/>
+  <circle cx="435" cy="200" r="6" fill="#FCA5A5"/>
+  <circle cx="455" cy="200" r="6" fill="#FCD34D"/>
+  <circle cx="475" cy="200" r="6" fill="#6EE7B7"/>
+  <text x="520" y="205" font-size="14" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 提示词分析中...</text>
+  <text x="440" y="250" font-size="14" fill="#4338CA" font-family="system-ui, -apple-system, sans-serif" font-weight="700">完成分析：</text>
+  <text x="440" y="278" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✅ 关键词分类·功能词/场景词</text>
+  <text x="440" y="306" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✅ 卖点分层·基础/差异化</text>
+  <text x="440" y="334" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✅ 表达风格·功能/场景/解决</text>
+  <text x="440" y="362" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✅ 差异化机会·5 个方向</text>
+  <text x="440" y="402" font-size="13" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="600">禁止事项：不要复制原文</text>
+  <text x="440" y="430" font-size="13" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="600">禁止事项：不要编造数据</text>
+  <text x="440" y="470" font-size="13" fill="#6366F1" font-family="system-ui, -apple-system, sans-serif" font-weight="500">o 输出格式：表格+结论+方向</text>
+  <text x="440" y="498" font-size="13" fill="#6366F1" font-family="system-ui, -apple-system, sans-serif" font-weight="500">o 输入格式：竞品A/B/C分组</text>
+  <!-- Right: result tags -->
+  <rect x="800" y="190" width="310" height="56" rx="28" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="955" y="224" text-anchor="middle" font-size="16" fill="#16A34A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">关键词·功能词·场景词</text>
+  <rect x="800" y="265" width="310" height="56" rx="28" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="955" y="299" text-anchor="middle" font-size="16" fill="#4338CA" font-family="system-ui, -apple-system, sans-serif" font-weight="700">基础卖点·差异化卖点</text>
+  <rect x="800" y="340" width="310" height="56" rx="28" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="955" y="374" text-anchor="middle" font-size="16" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">差异化机会·5 个方向</text>
+  <rect x="800" y="415" width="310" height="56" rx="28" fill="#FFE4E6" stroke="#FB7185" stroke-width="1.5"/>
+  <text x="955" y="449" text-anchor="middle" font-size="16" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing 改写方向建议</text>
+  <!-- Bottom CTA -->
+  <rect x="300" y="560" width="600" height="50" rx="16" fill="url(#accent-cp)"/>
+  <text x="600" y="592" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">拆竞品 → 找差异 → 写更好的 Listing</text>
+</svg>

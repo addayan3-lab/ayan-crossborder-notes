@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-st" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0FDF4"/>
+      <stop offset="1" stop-color="#FAFFFB"/>
+    </linearGradient>
+    <linearGradient id="accent-st" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-st)"/>
+  <circle cx="150" cy="100" r="160" fill="#D1FAE5" opacity="0.5"/>
+  <circle cx="1050" cy="550" r="180" fill="#F0FDF4" opacity="0.4"/>
+  <!-- Title -->
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 提示词分析搜索词报告</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">曝光 · 点击 · 花费 · 订单 · ACOS</text>
+  <!-- Report table (left) -->
+  <rect x="80" y="155" width="500" height="36" rx="6" fill="#059669"/>
+  <text x="110" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Search Term</text>
+  <text x="260" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Spend</text>
+  <text x="340" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Sales</text>
+  <text x="410" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">ACOS</text>
+  <text x="490" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Action</text>
+  <!-- Rows -->
+  <rect x="80" y="195" width="500" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="216" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">wireless earbuds</text>
+  <text x="270" y="216" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$18.50</text>
+  <text x="345" y="216" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$35.00</text>
+  <text x="420" y="216" font-size="12" fill="#16A34A" font-family="system-ui, sans-serif" font-weight="600">52.8%</text>
+  <text x="500" y="216" font-size="12" fill="#059669" font-family="system-ui, sans-serif" font-weight="600">加预算</text>
+  <rect x="80" y="231" width="500" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="252" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">bluetooth 5.3</text>
+  <text x="270" y="252" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$42.00</text>
+  <text x="345" y="252" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$0</text>
+  <text x="420" y="252" font-size="12" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="600">100%</text>
+  <text x="500" y="252" font-size="12" fill="#D97706" font-family="system-ui, sans-serif" font-weight="600">观察</text>
+  <rect x="80" y="267" width="500" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="288" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">noise cancelling</text>
+  <text x="270" y="288" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$12.30</text>
+  <text x="345" y="288" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$22.00</text>
+  <text x="420" y="288" font-size="12" fill="#16A34A" font-family="system-ui, sans-serif" font-weight="600">55.9%</text>
+  <text x="500" y="288" font-size="12" fill="#059669" font-family="system-ui, sans-serif" font-weight="600">加预算</text>
+  <rect x="80" y="303" width="500" height="32" rx="4" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="110" y="324" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">cheap earbuds</text>
+  <text x="270" y="324" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$67.00</text>
+  <text x="345" y="324" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$0</text>
+  <text x="420" y="324" font-size="12" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="600">100%</text>
+  <text x="500" y="324" font-size="12" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="600">可否定</text>
+  <rect x="80" y="339" width="500" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="360" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">sport earbuds</text>
+  <text x="270" y="360" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$5.20</text>
+  <text x="345" y="360" font-size="12" fill="#475569" font-family="system-ui, sans-serif">$0</text>
+  <text x="420" y="360" font-size="12" fill="#F59E0B" font-family="system-ui, sans-serif" font-weight="600">数据不足</text>
+  <text x="500" y="360" font-size="12" fill="#D97706" font-family="system-ui, sans-serif" font-weight="600">观察</text>
+  <!-- Arrow -->
+  <path d="M585 320 L640 320" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="635,312 650,320 635,328" fill="#059669"/>
+  <!-- AI classification (right) -->
+  <rect x="655" y="160" width="460" height="45" rx="10" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="885" y="188" text-anchor="middle" font-size="15" fill="#059669" font-family="system-ui, sans-serif" font-weight="700">✓ 高价值词：2 个 · 可加预算</text>
+  <rect x="655" y="215" width="460" height="45" rx="10" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="885" y="243" text-anchor="middle" font-size="15" fill="#D97706" font-family="system-ui, sans-serif" font-weight="700">⚠ 观察词：2 个 · 数据不足</text>
+  <rect x="655" y="270" width="460" height="45" rx="10" fill="#FEF2F2" stroke="#F87171" stroke-width="1.5"/>
+  <text x="885" y="298" text-anchor="middle" font-size="15" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="700">✗ 风险词：1 个 · 可考虑否定</text>
+  <rect x="655" y="325" width="460" height="45" rx="10" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="885" y="353" text-anchor="middle" font-size="15" fill="#4338CA" font-family="system-ui, sans-serif" font-weight="700">相关性存疑词：检查 Listing</text>
+  <!-- AI prompt window (bottom right) -->
+  <rect x="655" y="390" width="460" height="100" rx="14" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5"/>
+  <text x="680" y="420" font-size="13" fill="#059669" font-family="system-ui, sans-serif" font-weight="700">AI 复盘总结</text>
+  <text x="680" y="445" font-size="12" fill="#475569" font-family="system-ui, sans-serif">本周广告主要问题：高花费低转化词 1 个</text>
+  <text x="680" y="465" font-size="12" fill="#475569" font-family="system-ui, sans-serif">下周重点动作：调整精准投放·否定低相关词</text>
+  <text x="680" y="485" font-size="12" fill="#475569" font-family="system-ui, sans-serif">需继续观察：相关性存疑词 2 个</text>
+  <!-- Bottom CTA -->
+  <rect x="300" y="560" width="600" height="50" rx="16" fill="url(#accent-st)"/>
+  <text x="600" y="592" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">搜索词报告 → AI 分类 → 优化动作</text>
+</svg>

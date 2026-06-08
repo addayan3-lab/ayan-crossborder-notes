@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-rs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1F2"/>
+      <stop offset="1" stop-color="#FFFAFB"/>
+    </linearGradient>
+    <linearGradient id="accent-rs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#BE123C"/>
+      <stop offset="1" stop-color="#E11D48"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-rs)"/>
+  <circle cx="150" cy="100" r="160" fill="#FFE4E6" opacity="0.5"/>
+  <circle cx="1050" cy="550" r="180" fill="#FFF1F2" opacity="0.4"/>
+  <!-- Title -->
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 提示词 Review 提炼卖点</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif" stroke="#475569">好评 · 差评 · 中评 → 运营动作</text>
+  <!-- Review bubbles (left) -->
+  <rect x="80" y="160" width="340" height="70" rx="16" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="1.5"/>
+  <circle cx="110" cy="195" r="12" fill="#FBBF24"/><text x="110" y="199" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">5★</text>
+  <text x="140" y="190" font-size="14" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="600">Very good quality, fits perfectly!</text>
+  <text x="140" y="212" font-size="12" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif">场景：厨房使用·功能满意</text>
+  <rect x="80" y="245" width="340" height="70" rx="16" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="1.5"/>
+  <circle cx="110" cy="280" r="12" fill="#FBBF24"/><text x="110" y="284" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">4★</text>
+  <text x="140" y="275" font-size="14" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="600">Works well but smaller than expected</text>
+  <text x="140" y="297" font-size="12" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" stroke="#94A3B8">期望落差·页面没说清尺寸</text>
+  <rect x="80" y="330" width="340" height="70" rx="16" fill="#FFE4E6" stroke="#FB7185" stroke-width="1.5"/>
+  <circle cx="110" cy="365" r="12" fill="#F87171"/><text x="110" y="369" text-anchor="middle" font-size="10" fill="#FFFFFF" font-weight="700">3★</text>
+  <text x="140" y="360" font-size="14" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="600">Broke after one month, disappointed</text>
+  <text x="140" y="382" font-size="12" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif">痛点：产品品控·无法修复</text>
+  <!-- Arrow -->
+  <path d="M425 295 L480 295" stroke="#E11D48" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="475,287 490,295 475,303" fill="#E11D48"/>
+  <!-- AI analysis (center) -->
+  <rect x="495" y="170" width="300" height="340" rx="14" fill="#FFFFFF" stroke="#FB7185" stroke-width="2"/>
+  <rect x="495" y="170" width="300" height="40" rx="14" fill="#E11D48"/>
+  <text x="645" y="195" text-anchor="middle" font-size="15" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">AI 分析引擎</text>
+  <text x="520" y="240" font-size="14" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review 分类：</text>
+  <text x="520" y="268" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">好评：功能满意·使用场景</text>
+  <text x="520" y="296" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">差评：产品问题·页面误解</text>
+  <text x="520" y="324" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">中评：期望落差·规格不清</text>
+  <text x="520" y="364" font-size="14" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">卖点提炼：</text>
+  <text x="520" y="392" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✅ 3 个真实卖点</text>
+  <text x="520" y="420" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">✅ 2 个使用场景</text>
+  <text x="520" y="460" font-size="14" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing 建议：</text>
+  <text x="520" y="488" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">标题+五点+图片方向</text>
+  <!-- Right: output labels -->
+  <rect x="830" y="190" width="290" height="60" rx="12" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="975" y="216" text-anchor="middle" font-size="18" fill="#16A34A" font-family="system-ui, -apple-system, sans-serif" font-weight="700">卖点提炼</text>
+  <text x="975" y="238" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">买家反复提到的满意点</text>
+  <rect x="830" y="270" width="290" height="60" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="975" y="296" text-anchor="middle" font-size="18" fill="#D97706" font-family="system-ui, -apple-system, sans-serif" font-weight="700">痛点归因</text>
+  <text x="975" y="318" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">产品问题 vs 页面误导</text>
+  <rect x="830" y="350" width="290" height="60" rx="12" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="975" y="376" text-anchor="middle" font-size="18" fill="#4338CA" font-family="system-ui, -apple-system, sans-serif" font-weight="700">场景词提取</text>
+  <text x="975" y="398" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">写进五点·A+·图片文案</text>
+  <rect x="830" y="430" width="290" height="60" rx="12" fill="#FFE4E6" stroke="#FB7185" stroke-width="1.5"/>
+  <text x="975" y="456" text-anchor="middle" font-size="18" fill="#BE123C" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Listing 优化方向</text>
+  <text x="975" y="478" text-anchor="middle" font-size="13" fill="#475569" font-family="system-ui, -apple-system, sans-serif">哪些卖点不能夸大</text>
+  <!-- Bottom CTA -->
+  <rect x="300" y="560" width="600" height="50" rx="16" fill="url(#accent-rs)"/>
+  <text x="600" y="592" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Review → 卖点 → 回填 Listing → 提升转化</text>
+</svg>

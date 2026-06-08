@@ -390,5 +390,29 @@
     "topics": ["tools"],
     "keywords": ["新手", "规则", "避坑", "合规"],
     "alt": "亚马逊平台规则入门：新手避坑清单封面图"
+  },
+  {
+    "id": "article-ai-prompt-competitor-listing-analysis-cover",
+    "path": "/images/articles/ai-prompt-competitor-listing-analysis/cover.svg",
+    "type": "cover",
+    "topics": ["listing", "ai-prompt"],
+    "keywords": ["AI提示词", "竞品", "Listing拆解", "差异化"],
+    "alt": "AI 提示词拆竞品 Listing 封面图"
+  },
+  {
+    "id": "article-ai-prompt-review-selling-points-cover",
+    "path": "/images/articles/ai-prompt-review-selling-points/cover.svg",
+    "type": "cover",
+    "topics": ["review", "ai-prompt"],
+    "keywords": ["AI提示词", "Review", "卖点提炼", "痛点"],
+    "alt": "AI 提示词从 Review 提炼卖点封面图"
+  },
+  {
+    "id": "article-ai-prompt-search-term-report-cover",
+    "path": "/images/articles/ai-prompt-search-term-report/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "ai-prompt"],
+    "keywords": ["AI提示词", "搜索词报告", "PPC", "广告分析"],
+    "alt": "AI 提示词分析搜索词报告封面图"
   }
 ]
