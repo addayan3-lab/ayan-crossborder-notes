@@ -7,6 +7,7 @@ tags: ["选品", "学习路径", "市场分析"]
 image: "/images/og-default.svg"
 draft: false
 articleType: learning-path
+learningPathAutoArticles: true
 homepageSlot: beginner-start
 featured: true
 priority: 90
@@ -73,13 +74,9 @@ wechatHook: 资料领取方式以资料详情页说明为准。
 
 ## 四、对应已有文章卡片
 
-按阅读顺序：
+主专题文章卡片列表见本页底部（字段自动生成，按推荐阅读顺序排列）。
 
-- 《AI 估算市场容量》—— 市场容量判断
-- 《用 AI 做竞品矩阵拆解》—— 竞品拆解
-- 《痛点反推选品》—— 需求验证
-
-辅助阅读：
+**跨专题参考**：
 
 - 《Review 分析矩阵》—— 差评拆解基础
 - 《如何用 AI 做亚马逊关键词表》—— 关键词竞争度分析

@@ -6,6 +6,9 @@ category: "选品"
 tags: ["选品", "竞品分析", "AI"]
 image: "/images/articles/ai-competitor-matrix/cover.svg"
 topic: selection
+seriesOrder: 2
+pathRole: primary
+pathLabel: 竞品拆解
 stage: 进阶
 intent: 工具
 relatedTopics:

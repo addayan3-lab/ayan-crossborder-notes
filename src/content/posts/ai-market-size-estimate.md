@@ -6,6 +6,9 @@ category: "选品"
 tags: ["选品", "市场容量", "AI"]
 image: "/images/articles/ai-market-size-estimate/cover.svg"
 topic: selection
+seriesOrder: 1
+pathRole: primary
+pathLabel: 市场容量
 stage: 进阶
 intent: 决策
 relatedTopics:

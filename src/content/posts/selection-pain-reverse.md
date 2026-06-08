@@ -15,6 +15,9 @@ relatedArticleLinks:
     label: 选品第 2 篇：用 AI 做竞品矩阵拆解
     context: 选品第 2 篇
 topic: selection
+seriesOrder: 3
+pathRole: primary
+pathLabel: 痛点反推
 stage: 进阶
 intent: 决策
 relatedTopics:
