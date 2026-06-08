@@ -414,5 +414,61 @@
     "topics": ["ppc", "ai-prompt"],
     "keywords": ["AI提示词", "搜索词报告", "PPC", "广告分析"],
     "alt": "AI 提示词分析搜索词报告封面图"
+  },
+  {
+    "id": "article-ai-prompt-bullet-points-writing-cover",
+    "path": "/images/articles/ai-prompt-bullet-points-writing/cover.svg",
+    "type": "cover",
+    "topics": ["listing", "ai-prompt"],
+    "keywords": ["AI提示词", "五点描述", "Listing", "卖点"],
+    "alt": "AI 提示词生成五点描述封面图"
+  },
+  {
+    "id": "article-ai-prompt-product-differentiation-cover",
+    "path": "/images/articles/ai-prompt-product-differentiation/cover.svg",
+    "type": "cover",
+    "topics": ["selection", "ai-prompt"],
+    "keywords": ["AI提示词", "差异化", "选品", "竞品分析"],
+    "alt": "AI 提示词判断产品差异化机会封面图"
+  },
+  {
+    "id": "article-ai-prompt-negative-keyword-suggestions-cover",
+    "path": "/images/articles/ai-prompt-negative-keyword-suggestions/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "ai-prompt"],
+    "keywords": ["AI提示词", "否定关键词", "PPC", "否词"],
+    "alt": "AI 提示词生成广告否词建议封面图"
+  },
+  {
+    "id": "article-ai-prompt-weekly-operation-review-cover",
+    "path": "/images/articles/ai-prompt-weekly-operation-review/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "ai-prompt"],
+    "keywords": ["AI提示词", "运营复盘", "周报", "数据分析"],
+    "alt": "AI 提示词写每周运营复盘封面图"
+  },
+  {
+    "id": "article-ai-prompt-listing-risk-check-cover",
+    "path": "/images/articles/ai-prompt-listing-risk-check/cover.svg",
+    "type": "cover",
+    "topics": ["listing", "ai-prompt"],
+    "keywords": ["AI提示词", "Listing", "风险检查", "合规"],
+    "alt": "AI 提示词检查 Listing 风险封面图"
+  },
+  {
+    "id": "article-ai-prompt-keyword-grouping-cover",
+    "path": "/images/articles/ai-prompt-keyword-grouping/cover.svg",
+    "type": "cover",
+    "topics": ["keyword", "ai-prompt"],
+    "keywords": ["AI提示词", "关键词", "分组", "整理"],
+    "alt": "AI 提示词整理关键词分组封面图"
+  },
+  {
+    "id": "article-ai-prompt-new-product-launch-plan-cover",
+    "path": "/images/articles/ai-prompt-new-product-launch-plan/cover.svg",
+    "type": "cover",
+    "topics": ["ppc", "ai-prompt"],
+    "keywords": ["AI提示词", "新品", "冷启动", "计划"],
+    "alt": "AI 提示词做新品冷启动计划封面图"
   }
 ]

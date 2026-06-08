@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-np" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#FAFBFF"/>
+    </linearGradient>
+    <linearGradient id="accent-np" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-np)"/>
+  <circle cx="150" cy="100" r="160" fill="#DBEAFE" opacity="0.5"/>
+  <circle cx="1050" cy="550" r="180" fill="#EFF6FF" opacity="0.4"/>
+  <!-- Title -->
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 提示词做新品冷启动计划</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">上线 · 广告 · 优化 · 复盘</text>
+  <!-- Left: Launch timeline -->
+  <rect x="80" y="155" width="340" height="36" rx="6" fill="#1D4ED8"/>
+  <text x="250" y="179" text-anchor="middle" font-size="14" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">新品上线第 1 周计划</text>
+  <!-- Timeline cards -->
+  <rect x="80" y="200" width="340" height="50" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="105" y="222" font-size="13" fill="#1D4ED8" font-family="system-ui, sans-serif" font-weight="700">Day 1</text>
+  <text x="160" y="222" font-size="13" fill="#475569" font-family="system-ui, sans-serif">上线检查 · Listing 自检</text>
+  <text x="160" y="240" font-size="12" fill="#94A3B8" font-family="system-ui, sans-serif">图片 / 价格 / 文案</text>
+  <rect x="80" y="258" width="340" height="50" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="105" y="280" font-size="13" fill="#1D4ED8" font-family="system-ui, sans-serif" font-weight="700">Day 2-3</text>
+  <text x="175" y="280" font-size="13" fill="#475569" font-family="system-ui, sans-serif">自动广告开启</text>
+  <text x="175" y="298" font-size="12" fill="#94A3B8" font-family="system-ui, sans-serif">预算 $20/天 · BID+</text>
+  <rect x="80" y="316" width="340" height="50" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="105" y="338" font-size="13" fill="#1D4ED8" font-family="system-ui, sans-serif" font-weight="700">Day 4-7</text>
+  <text x="175" y="338" font-size="13" fill="#475569" font-family="system-ui, sans-serif">数据观察 · 微调出价</text>
+  <text x="175" y="356" font-size="12" fill="#94A3B8" font-family="system-ui, sans-serif">搜索词 · ACOS · 曝光</text>
+  <!-- Arrow -->
+  <path d="M425 290 L480 290" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="475,282 490,290 475,298" fill="#3B82F6"/>
+  <!-- Center: AI planning -->
+  <rect x="495" y="160" width="300" height="340" rx="14" fill="#FFFFFF" stroke="#60A5FA" stroke-width="2"/>
+  <rect x="495" y="160" width="300" height="40" rx="14" fill="#1D4ED8"/>
+  <text x="645" y="185" text-anchor="middle" font-size="15" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">AI 冷启动方案</text>
+  <text x="520" y="230" font-size="14" fill="#1D4ED8" font-family="system-ui, sans-serif" font-weight="700">输入信息：</text>
+  <text x="520" y="258" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✓ 产品品类 · 价格带</text>
+  <text x="520" y="286" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✓ 关键词列表 · 竞品</text>
+  <text x="520" y="314" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✓ 预算 · 库存</text>
+  <text x="520" y="354" font-size="14" fill="#1D4ED8" font-family="system-ui, sans-serif" font-weight="700">输出方案：</text>
+  <text x="520" y="382" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 上线前检查清单</text>
+  <text x="520" y="410" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 第 1 周全周行动表</text>
+  <text x="520" y="438" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 广告结构模板</text>
+  <text x="520" y="466" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 每日观察指标清单</text>
+  <!-- Right: output cards -->
+  <rect x="830" y="180" width="290" height="56" rx="28" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="975" y="214" text-anchor="middle" font-size="16" fill="#1D4ED8" font-family="system-ui, sans-serif" font-weight="700">上线检查清单</text>
+  <rect x="830" y="255" width="290" height="56" rx="28" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="975" y="289" text-anchor="middle" font-size="16" fill="#059669" font-family="system-ui, sans-serif" font-weight="700">全周行动计划</text>
+  <rect x="830" y="330" width="290" height="56" rx="28" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="975" y="364" text-anchor="middle" font-size="16" fill="#D97706" font-family="system-ui, sans-serif" font-weight="700">广告结构模板</text>
+  <rect x="830" y="405" width="290" height="56" rx="28" fill="#F3E8FF" stroke="#A855F7" stroke-width="1.5"/>
+  <text x="975" y="439" text-anchor="middle" font-size="16" fill="#9333EA" font-family="system-ui, sans-serif" font-weight="700">每日观察指标</text>
+  <!-- Bottom CTA -->
+  <rect x="300" y="560" width="600" height="50" rx="16" fill="url(#accent-np)"/>
+  <text x="600" y="592" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">产品信息 → AI 冷启动方案 → 执行</text>
+</svg>

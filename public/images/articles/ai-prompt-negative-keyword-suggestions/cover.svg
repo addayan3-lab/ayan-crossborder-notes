@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-nk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#FFFBFA"/>
+    </linearGradient>
+    <linearGradient id="accent-nk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2410C"/>
+      <stop offset="1" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-nk)"/>
+  <circle cx="150" cy="100" r="160" fill="#FFEDD5" opacity="0.5"/>
+  <circle cx="1050" cy="550" r="180" fill="#FFF7ED" opacity="0.4"/>
+  <!-- Title -->
+  <text x="80" y="80" font-size="36" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-weight="800">AI 提示词生成否词建议</text>
+  <text x="80" y="120" font-size="20" fill="#475569" font-family="system-ui, -apple-system, sans-serif">不相关 · 相关差 · 数据不足 · 保留</text>
+  <!-- Left: search term table -->
+  <rect x="80" y="155" width="380" height="36" rx="6" fill="#C2410C"/>
+  <text x="110" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Search Term</text>
+  <text x="240" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Spend</text>
+  <text x="310" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">Orders</text>
+  <text x="390" y="179" font-size="13" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">建议</text>
+  <rect x="80" y="195" width="380" height="32" rx="4" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="110" y="216" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">cheap earbuds</text>
+  <text x="250" y="216" font-size="12" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="600">$67</text>
+  <text x="320" y="216" font-size="12" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="600">0</text>
+  <text x="390" y="216" font-size="12" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="600">否定</text>
+  <rect x="80" y="231" width="380" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="252" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">bluetooth earphones</text>
+  <text x="250" y="252" font-size="12" fill="#F59E0B" font-family="system-ui, sans-serif" font-weight="600">$42</text>
+  <text x="320" y="252" font-size="12" fill="#F59E0B" font-family="system-ui, sans-serif" font-weight="600">0</text>
+  <text x="390" y="252" font-size="12" fill="#D97706" font-family="system-ui, sans-serif" font-weight="600">观察</text>
+  <rect x="80" y="267" width="380" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="288" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">wireless earbuds</text>
+  <text x="250" y="288" font-size="12" fill="#16A34A" font-family="system-ui, sans-serif" font-weight="600">$18</text>
+  <text x="320" y="288" font-size="12" fill="#16A34A" font-family="system-ui, sans-serif" font-weight="600">1</text>
+  <text x="390" y="288" font-size="12" fill="#059669" font-family="system-ui, sans-serif" font-weight="600">保留</text>
+  <rect x="80" y="303" width="380" height="32" rx="4" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="110" y="324" font-size="12" fill="#0F172A" font-family="system-ui, sans-serif">sport earphone</text>
+  <text x="250" y="324" font-size="12" fill="#94A3B8" font-family="system-ui, sans-serif">$5</text>
+  <text x="320" y="324" font-size="12" fill="#94A3B8" font-family="system-ui, sans-serif" font-weight="600">0</text>
+  <text x="390" y="324" font-size="12" fill="#D97706" font-family="system-ui, sans-serif" font-weight="600">观察</text>
+  <!-- First 3 highlighted risk term -->
+  <rect x="80" y="345" width="380" height="36" rx="4" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+  <text x="110" y="368" font-size="13" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="700">⚠ 风险词：cheap / discount / bargain</text>
+  <!-- Arrow -->
+  <path d="M465 285 L520 285" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="515,277 530,285 515,293" fill="#EA580C"/>
+  <!-- Center: AI screening -->
+  <rect x="535" y="160" width="300" height="340" rx="14" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <rect x="535" y="160" width="300" height="40" rx="14" fill="#EA580C"/>
+  <text x="685" y="185" text-anchor="middle" font-size="15" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="700">AI 否词筛选</text>
+  <text x="560" y="230" font-size="14" fill="#C2410C" font-family="system-ui, sans-serif" font-weight="700">分级处理：</text>
+  <text x="560" y="258" font-size="13" fill="#475569" font-family="system-ui, sans-serif">🔴 不相关 · 高花费 · 无订单</text>
+  <text x="560" y="286" font-size="13" fill="#475569" font-family="system-ui, sans-serif">🟡 相关但表现差 · 暂留观察</text>
+  <text x="560" y="314" font-size="13" fill="#475569" font-family="system-ui, sans-serif">🟢 高转化 · 保留并加预算</text>
+  <text x="560" y="354" font-size="14" fill="#C2410C" font-family="system-ui, sans-serif" font-weight="700">关键原则：</text>
+  <text x="560" y="382" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 不相关词立即否定</text>
+  <text x="560" y="410" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 相关词先观察再决定</text>
+  <text x="560" y="438" font-size="13" fill="#475569" font-family="system-ui, sans-serif">✅ 品牌 / 竞品词选择性否</text>
+  <text x="560" y="478" font-size="13" fill="#D97706" font-family="system-ui, sans-serif" font-weight="600">⚠ 盲目否词会浪费流量</text>
+  <!-- Right: risk level badges -->
+  <rect x="870" y="180" width="250" height="56" rx="28" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="995" y="214" text-anchor="middle" font-size="16" fill="#EF4444" font-family="system-ui, sans-serif" font-weight="700">高 · 立即否定</text>
+  <rect x="870" y="255" width="250" height="56" rx="28" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="995" y="289" text-anchor="middle" font-size="16" fill="#D97706" font-family="system-ui, sans-serif" font-weight="700">中 · 观察 1-2 周</text>
+  <rect x="870" y="330" width="250" height="56" rx="28" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="995" y="364" text-anchor="middle" font-size="16" fill="#16A34A" font-family="system-ui, sans-serif" font-weight="700">低 · 保留加预算</text>
+  <rect x="870" y="405" width="250" height="56" rx="28" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="995" y="439" text-anchor="middle" font-size="16" fill="#4338CA" font-family="system-ui, sans-serif" font-weight="700">品牌词 · 选择性否</text>
+  <!-- Bottom CTA -->
+  <rect x="300" y="560" width="600" height="50" rx="16" fill="url(#accent-nk)"/>
+  <text x="600" y="592" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="700">搜索词报告 → AI 分级 → 否词建议</text>
+</svg>
