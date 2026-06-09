@@ -300,6 +300,21 @@ const resourceItems = [
     </div>
   </section>
 
+  <section class="home-section cases-entry-section">
+    <a class="cases-entry-card" href="/cases/">
+      <div class="cases-entry-content">
+        <div class="cases-entry-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <div class="cases-entry-text">
+          <span class="cases-entry-title">实操案例库</span>
+          <span class="cases-entry-desc">用脱敏案例拆解选品、Listing、PPC、Review 和新品冷启动问题。</span>
+        </div>
+        <span class="cases-entry-arrow">查看实操案例 →</span>
+      </div>
+    </a>
+  </section>
+
   {
     (slotArticles["ai-prompt"].length > 0 ||
      slotArticles["resource-tutorial"].length > 0 ||
@@ -2432,6 +2447,95 @@ const resourceItems = [
 
     .ask-entry-arrow,
     .survey-entry-arrow {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .cases-entry-section {
+    margin-top: 0;
+  }
+
+  .cases-entry-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 16px;
+    border: 1px solid #e6eaf2;
+    background: linear-gradient(135deg, #f8faff 0%, #f0f6ff 100%);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    overflow: hidden;
+  }
+
+  .cases-entry-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(19, 104, 255, 0.32);
+    box-shadow: 0 18px 48px rgba(19, 104, 255, 0.09);
+  }
+
+  .cases-entry-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 22px;
+  }
+
+  .cases-entry-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: #eaf2ff;
+    color: #1368ff;
+  }
+
+  .cases-entry-text {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .cases-entry-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .cases-entry-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+  }
+
+  .cases-entry-arrow {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+
+  .cases-entry-arrow:hover {
+    background: #0f5ae0;
+  }
+
+  @media (max-width: 720px) {
+    .cases-entry-content {
+      flex-wrap: wrap;
+    }
+
+    .cases-entry-arrow {
       width: 100%;
       justify-content: center;
     }

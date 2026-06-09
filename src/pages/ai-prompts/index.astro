@@ -169,6 +169,14 @@ const ayanBreadcrumbData = {
       ))}
     </div>
 
+    <!-- 案例联动入口 -->
+    <div class="cases-link-bar">
+      <div class="cases-link-bar-inner">
+        <span class="cases-link-bar-label">想看这些 Prompt 怎么用于真实运营判断？</span>
+        <a class="cases-link-bar-cta" href="/cases/">进入实操案例库 →</a>
+      </div>
+    </div>
+
     <!-- 低调转化区 -->
     <div class="topic-intro cta-soft">
       <h2>不确定先用哪一篇？</h2>
@@ -495,6 +503,58 @@ const ayanBreadcrumbData = {
     .resource-list-item {
       flex-direction: column;
       align-items: flex-start;
+    }
+  }
+
+  .cases-link-bar {
+    margin-bottom: 28px;
+  }
+
+  .cases-link-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 22px;
+    border-radius: 14px;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+  }
+
+  .cases-link-bar-label {
+    font-size: 14px;
+    color: #78350f;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .cases-link-bar-cta {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+
+  .cases-link-bar-cta:hover {
+    background: #0f5ae0;
+  }
+
+  @media (max-width: 720px) {
+    .cases-link-bar-inner {
+      flex-wrap: wrap;
+    }
+
+    .cases-link-bar-cta {
+      width: 100%;
+      justify-content: center;
     }
   }
 </style>
