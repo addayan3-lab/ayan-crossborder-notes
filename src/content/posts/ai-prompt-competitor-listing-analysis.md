@@ -16,6 +16,18 @@ relatedTopics:
   - ai-search
   - selection
   - review
+series: ai-prompt
+seriesOrder: 1
+pathRole: primary
+pathLabel: 竞品 Listing 拆解
+nextArticle: ai-prompt-review-selling-points
+relatedArticleLinks:
+  - slug: ai-prompt-review-selling-points
+    label: Review 提炼卖点
+    context: 下一篇
+  - slug: ai-prompt-bullet-points-writing
+    label: 五点描述生成
+    context: 系列文章
 publicLessonUse: "Listing 自检与转化表达课"
 leadMagnet: "Listing 自检清单"
 wechatHook: "资料领取方式以资料详情页说明为准"

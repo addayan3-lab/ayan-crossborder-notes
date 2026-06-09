@@ -16,6 +16,22 @@ relatedTopics:
   - keyword
   - ai-search
   - listing
+series: ai-prompt
+seriesOrder: 3
+pathRole: primary
+pathLabel: 搜索词报告分析
+prevArticle: ai-prompt-review-selling-points
+nextArticle: ai-prompt-bullet-points-writing
+relatedArticleLinks:
+  - slug: ai-prompt-review-selling-points
+    label: Review 提炼卖点
+    context: 上一篇
+  - slug: ai-prompt-bullet-points-writing
+    label: 五点描述生成
+    context: 下一篇
+  - slug: ai-prompt-negative-keyword-suggestions
+    label: 广告否词建议
+    context: 系列文章
 publicLessonUse: "新品 PPC 首周广告结构课"
 leadMagnet: "PPC 周复盘表"
 wechatHook: "资料领取方式以资料详情页说明为准"

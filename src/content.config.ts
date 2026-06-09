@@ -20,6 +20,13 @@ const posts = defineCollection({
     leadMagnet: z.string().optional(),
     wechatHook: z.string().optional(),
 
+    series: z.string().optional(),
+    seriesOrder: z.number().optional(),
+    articleType: z.string().optional(),
+    homepageSlot: z.string().optional(),
+    pathRole: z.string().optional(),
+    pathLabel: z.string().optional(),
+
     prevArticle: z.string().optional(),
     nextArticle: z.string().optional(),
     relatedArticleLinks: z.array(

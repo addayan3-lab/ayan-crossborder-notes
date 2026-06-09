@@ -1,0 +1,500 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+const promptArticles = allPosts.filter((p) => p.data.series === "ai-prompt").sort((a, b) => (a.data.seriesOrder || 0) - (b.data.seriesOrder || 0));
+
+const articleMap = Object.fromEntries(promptArticles.map((p) => [p.id, p.data]));
+
+function getArticle(id) {
+  return articleMap[id] || null;
+}
+
+const beginnerOrder = [
+  { slug: "ai-prompt-review-selling-points", label: "Review 提炼卖点" },
+  { slug: "ai-prompt-competitor-listing-analysis", label: "竞品 Listing 拆解" },
+  { slug: "ai-prompt-bullet-points-writing", label: "五点描述生成" },
+  { slug: "ai-prompt-search-term-report", label: "搜索词报告分析" },
+  { slug: "ai-prompt-weekly-operation-review", label: "每周运营复盘" }
+];
+
+const groups = [
+  {
+    name: "Listing 文案类",
+    items: [
+      { slug: "ai-prompt-competitor-listing-analysis", label: "竞品 Listing 拆解" },
+      { slug: "ai-prompt-bullet-points-writing", label: "五点描述生成" },
+      { slug: "ai-prompt-listing-risk-check", label: "Listing 风险检查" }
+    ]
+  },
+  {
+    name: "Review 洞察类",
+    items: [
+      { slug: "ai-prompt-review-selling-points", label: "Review 提炼卖点" }
+    ]
+  },
+  {
+    name: "PPC 广告类",
+    items: [
+      { slug: "ai-prompt-search-term-report", label: "搜索词报告分析" },
+      { slug: "ai-prompt-negative-keyword-suggestions", label: "广告否词建议" },
+      { slug: "ai-prompt-weekly-operation-review", label: "每周运营复盘" },
+      { slug: "ai-prompt-new-product-launch-plan", label: "新品冷启动计划" }
+    ]
+  },
+  {
+    name: "关键词整理类",
+    items: [
+      { slug: "ai-prompt-keyword-grouping", label: "关键词分组" }
+    ]
+  },
+  {
+    name: "选品判断类",
+    items: [
+      { slug: "ai-prompt-product-differentiation", label: "产品差异化机会" }
+    ]
+  }
+];
+
+const resources = [
+  { name: "Listing 自检清单", href: "/resources/listing-checklist/", desc: "覆盖标题、五点、图片、关键词的上线前逐项检查" },
+  { name: "Review 痛点分析表", href: "/resources/review-pain-analysis/", desc: "Review 痛点归类 + 高频问题提炼 + Listing 改进点" },
+  { name: "PPC 周复盘表", href: "/resources/ppc-weekly-review/", desc: "销量、广告、ACOS、关键词、Review 的周复盘模板" },
+  { name: "关键词清洗表", href: "/resources/keyword-cleaning-sheet/", desc: "200 词 → 50 词的 5 步清洗卡点模板" },
+  { name: "选品竞品矩阵", href: "/resources/competitor-selection-matrix/", desc: "4 维度竞品对比 + 差异化机会判断" }
+];
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "AI 运营亚马逊", "item": "https://amz.hao1234.top/ai-amazon/" },
+    { "@type": "ListItem", "position": 3, "name": "AI 提示词实操库", "item": "https://amz.hao1234.top/ai-prompts/" }
+  ]
+};
+---
+<BaseLayout title="亚马逊 AI 提示词实操库｜阿岩跨境笔记" description="10 套亚马逊运营可直接复制使用的 AI 提示词，覆盖竞品分析、Listing 优化、Review 洞察、PPC 广告、关键词分组和新品冷启动。">
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>亚马逊 AI 提示词实操库</h1>
+      <p>把选品、Listing、Review、PPC、关键词、复盘这些工作，拆成可以直接复制使用的 Prompt。</p>
+      <div class="hero-actions">
+        <a class="cta-primary" href="/articles/ai-prompt-competitor-listing-analysis/">从第 1 篇开始看 →</a>
+        <a class="cta-secondary" href="/survey/">做 30 秒资料诊断</a>
+      </div>
+      <div class="hero-links">
+        <a href="/ask/">问 AI 阿岩助手</a>
+        <span class="hero-links-sep">·</span>
+        <a href="/resources/">查看配套资料</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <!-- 新手推荐阅读顺序 -->
+    <div class="topic-intro">
+      <h2>新手推荐阅读顺序</h2>
+      <p>如果你是新手，不建议从广告调价开始。先看买家反馈、竞品页面和 Listing 承接，再进入 PPC 和复盘。</p>
+      <ol class="beginner-order-list">
+        {beginnerOrder.map((item, i) => {
+          const article = getArticle(item.slug);
+          return (
+            <li>
+              <a href={`/articles/${item.slug}/`}>
+                <span class="beginner-order-num">{i + 1}</span>
+                <span class="beginner-order-label">{item.label}</span>
+                {article && <span class="beginner-order-desc">{article.description}</span>}
+              </a>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+
+    <!-- 使用场景分组 -->
+    {groups.map((group) => (
+      <div class="topic-intro">
+        <h2>{group.name}</h2>
+        <div class="grid grid-3">
+          {group.items.map((item) => {
+            const article = getArticle(item.slug);
+            if (!article) return null;
+            const orderNum = article.seriesOrder || promptArticles.findIndex((p) => p.id === item.slug) + 1;
+            return (
+              <a class="card" href={`/articles/${item.slug}/`}>
+                <span class="tag">第 {orderNum} 篇</span>
+                <h3>{article.title}</h3>
+                <p>{article.description}</p>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+
+    <!-- 10 篇文章卡片 -->
+    <div class="topic-intro">
+      <h2>全部 10 篇 AI 提示词</h2>
+      <p>按系列编号排列，每一篇都配有可直接复制的提示词模板。</p>
+    </div>
+    <div class="grid grid-3">
+      {promptArticles.map((post) => (
+        <a class="card" href={`/articles/${post.id}/`}>
+          <span class="tag">第 {post.data.seriesOrder} 篇</span>
+          <h3>{post.data.title}</h3>
+          <p>{post.data.description}</p>
+        </a>
+      ))}
+    </div>
+
+    <!-- 配套资料模板 -->
+    <div class="topic-intro" style="margin-top: 40px;">
+      <h2>配套资料模板</h2>
+      <p>每篇提示词都搭配一份可以直接套用的运营模板，把 Prompt 输出落地为运营动作。</p>
+    </div>
+    <div class="resource-list">
+      {resources.map((r) => (
+        <a class="resource-list-item" href={r.href}>
+          <div class="resource-list-body">
+            <h3>{r.name}</h3>
+            <p>{r.desc}</p>
+          </div>
+          <span class="resource-list-cta">查看 →</span>
+        </a>
+      ))}
+    </div>
+
+    <!-- 低调转化区 -->
+    <div class="topic-intro cta-soft">
+      <h2>不确定先用哪一篇？</h2>
+      <p>如果你现在不知道该先改 Listing、看 Review、查广告还是重新判断产品，可以先做 30 秒资料诊断，系统会按你的阶段推荐文章和资料。</p>
+      <div class="cta-soft-actions">
+        <a class="cta-primary" href="/survey/">做 30 秒资料诊断</a>
+        <a class="cta-secondary" href="/ask/">问问 AI 阿岩助手</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .hero-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .hero-links a {
+    color: #1368ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .hero-links a:hover {
+    text-decoration: underline;
+  }
+
+  .hero-links-sep {
+    color: #cbd5e1;
+  }
+
+  .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+
+  .cta-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1368ff;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #dce2ec;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .cta-secondary:hover {
+    border-color: #1368ff;
+    background: #f8faff;
+  }
+
+  .topic-intro {
+    max-width: 880px;
+    margin: 0 0 28px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .topic-intro h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .topic-intro h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .topic-intro p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .topic-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  .beginner-order-list {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .beginner-order-list li a {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #eef1f6;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .beginner-order-list li a:hover {
+    border-color: #cfe0ff;
+    background: #f8faff;
+  }
+
+  .beginner-order-num {
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #1368ff;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  .beginner-order-label {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 15px;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  .beginner-order-desc {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #eef1f6;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: #dce2ec;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+  }
+
+  .card .tag {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #0f172a;
+    line-height: 1.5;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .resource-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #eef1f6;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .resource-list-item:hover {
+    border-color: #f4d089;
+    background: #fffcf0;
+  }
+
+  .resource-list-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .resource-list-body h3 {
+    margin: 0 0 4px;
+    font-size: 15px;
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  .resource-list-body p {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  .resource-list-cta {
+    flex: 0 0 auto;
+    font-size: 13px;
+    font-weight: 800;
+    color: #b45309;
+    white-space: nowrap;
+  }
+
+  .cta-soft {
+    background: linear-gradient(135deg, #f0f7ff 0%, #eef5ff 100%);
+    border-color: #cfe0ff;
+  }
+
+  .cta-soft-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 720px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .cta-soft-actions {
+      flex-direction: column;
+    }
+
+    .resource-list-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

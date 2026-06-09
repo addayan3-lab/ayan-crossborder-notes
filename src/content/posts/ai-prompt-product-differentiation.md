@@ -16,6 +16,22 @@ relatedTopics:
   - listing
   - review
   - ai-search
+series: ai-prompt
+seriesOrder: 5
+pathRole: primary
+pathLabel: 产品差异化机会
+prevArticle: ai-prompt-bullet-points-writing
+nextArticle: ai-prompt-negative-keyword-suggestions
+relatedArticleLinks:
+  - slug: ai-prompt-bullet-points-writing
+    label: 五点描述生成
+    context: 上一篇
+  - slug: ai-prompt-negative-keyword-suggestions
+    label: 广告否词建议
+    context: 下一篇
+  - slug: ai-prompt-keyword-grouping
+    label: 关键词分组
+    context: 系列文章
 publicLessonUse: "Review 反推选品与页面优化课"
 leadMagnet: "选品竞品矩阵"
 wechatHook: "资料领取方式以资料详情页说明为准"

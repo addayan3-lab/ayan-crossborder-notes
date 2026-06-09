@@ -16,6 +16,22 @@ relatedTopics:
   - keyword
   - listing
   - ai-search
+series: ai-prompt
+seriesOrder: 6
+pathRole: primary
+pathLabel: 广告否词建议
+prevArticle: ai-prompt-product-differentiation
+nextArticle: ai-prompt-weekly-operation-review
+relatedArticleLinks:
+  - slug: ai-prompt-product-differentiation
+    label: 产品差异化机会
+    context: 上一篇
+  - slug: ai-prompt-weekly-operation-review
+    label: 每周运营复盘
+    context: 下一篇
+  - slug: ai-prompt-search-term-report
+    label: 搜索词报告分析
+    context: 系列文章
 publicLessonUse: "新品 PPC 首周广告结构课"
 leadMagnet: "PPC 周复盘表"
 wechatHook: "资料领取方式以资料详情页说明为准"

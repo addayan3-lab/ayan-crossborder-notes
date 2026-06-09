@@ -16,6 +16,22 @@ relatedTopics:
   - ppc
   - listing
   - ai-search
+series: ai-prompt
+seriesOrder: 9
+pathRole: primary
+pathLabel: 关键词分组
+prevArticle: ai-prompt-listing-risk-check
+nextArticle: ai-prompt-new-product-launch-plan
+relatedArticleLinks:
+  - slug: ai-prompt-listing-risk-check
+    label: Listing 风险检查
+    context: 上一篇
+  - slug: ai-prompt-new-product-launch-plan
+    label: 新品冷启动计划
+    context: 下一篇
+  - slug: ai-prompt-search-term-report
+    label: 搜索词报告分析
+    context: 系列文章
 publicLessonUse: "关键词到 Listing 的底层逻辑课"
 leadMagnet: "关键词清洗表"
 wechatHook: "资料领取方式以资料详情页说明为准"

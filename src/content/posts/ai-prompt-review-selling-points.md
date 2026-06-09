@@ -16,6 +16,22 @@ relatedTopics:
   - listing
   - selection
   - ai-search
+series: ai-prompt
+seriesOrder: 2
+pathRole: primary
+pathLabel: Review 提炼卖点
+prevArticle: ai-prompt-competitor-listing-analysis
+nextArticle: ai-prompt-search-term-report
+relatedArticleLinks:
+  - slug: ai-prompt-competitor-listing-analysis
+    label: 竞品 Listing 拆解
+    context: 上一篇
+  - slug: ai-prompt-search-term-report
+    label: 搜索词报告分析
+    context: 下一篇
+  - slug: ai-prompt-bullet-points-writing
+    label: 五点描述生成
+    context: 系列文章
 publicLessonUse: "Review 反推选品与页面优化课"
 leadMagnet: "Review 痛点分析表"
 wechatHook: "资料领取方式以资料详情页说明为准"

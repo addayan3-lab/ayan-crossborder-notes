@@ -16,6 +16,22 @@ relatedTopics:
   - platform-rules
   - ai-search
   - keyword
+series: ai-prompt
+seriesOrder: 8
+pathRole: primary
+pathLabel: Listing 风险检查
+prevArticle: ai-prompt-weekly-operation-review
+nextArticle: ai-prompt-keyword-grouping
+relatedArticleLinks:
+  - slug: ai-prompt-weekly-operation-review
+    label: 每周运营复盘
+    context: 上一篇
+  - slug: ai-prompt-keyword-grouping
+    label: 关键词分组
+    context: 下一篇
+  - slug: ai-prompt-bullet-points-writing
+    label: 五点描述生成
+    context: 系列文章
 publicLessonUse: "平台规则新手避坑课"
 leadMagnet: "Listing 自检清单"
 wechatHook: "资料领取方式以资料详情页说明为准"

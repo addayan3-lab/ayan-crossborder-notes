@@ -16,6 +16,22 @@ relatedTopics:
   - ai-search
   - keyword
   - review
+series: ai-prompt
+seriesOrder: 4
+pathRole: primary
+pathLabel: 五点描述生成
+prevArticle: ai-prompt-search-term-report
+nextArticle: ai-prompt-product-differentiation
+relatedArticleLinks:
+  - slug: ai-prompt-search-term-report
+    label: 搜索词报告分析
+    context: 上一篇
+  - slug: ai-prompt-product-differentiation
+    label: 产品差异化机会
+    context: 下一篇
+  - slug: ai-prompt-competitor-listing-analysis
+    label: 竞品 Listing 拆解
+    context: 系列文章
 publicLessonUse: "Listing 自检与转化表达课"
 leadMagnet: "Listing 自检清单"
 wechatHook: "资料领取方式以资料详情页说明为准"

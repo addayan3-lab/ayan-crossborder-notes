@@ -17,6 +17,18 @@ relatedTopics:
   - listing
   - keyword
   - ai-search
+series: ai-prompt
+seriesOrder: 10
+pathRole: primary
+pathLabel: 新品冷启动计划
+prevArticle: ai-prompt-keyword-grouping
+relatedArticleLinks:
+  - slug: ai-prompt-keyword-grouping
+    label: 关键词分组
+    context: 上一篇
+  - slug: ai-prompt-weekly-operation-review
+    label: 每周运营复盘
+    context: 系列文章
 publicLessonUse: "新品 PPC 首周广告结构课"
 leadMagnet: "PPC 周复盘表"
 wechatHook: "资料领取方式以资料详情页说明为准"

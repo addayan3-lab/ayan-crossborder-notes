@@ -16,6 +16,22 @@ relatedTopics:
   - listing
   - review
   - selection
+series: ai-prompt
+seriesOrder: 7
+pathRole: primary
+pathLabel: 每周运营复盘
+prevArticle: ai-prompt-negative-keyword-suggestions
+nextArticle: ai-prompt-listing-risk-check
+relatedArticleLinks:
+  - slug: ai-prompt-negative-keyword-suggestions
+    label: 广告否词建议
+    context: 上一篇
+  - slug: ai-prompt-listing-risk-check
+    label: Listing 风险检查
+    context: 下一篇
+  - slug: ai-prompt-new-product-launch-plan
+    label: 新品冷启动计划
+    context: 系列文章
 publicLessonUse: "新品 PPC 首周广告结构课"
 leadMagnet: "PPC 周复盘表"
 wechatHook: "资料领取方式以资料详情页说明为准"
