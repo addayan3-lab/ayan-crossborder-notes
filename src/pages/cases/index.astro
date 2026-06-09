@@ -6,44 +6,44 @@ const categories = [
     name: "选品判断",
     desc: "产品能不能做、市场容量判断、竞品分析",
     items: [
-      { title: "一个产品为什么看起来能做，但不建议继续", desc: "搜索量高的品类，品牌集中度 > 70%，新卖家进去大概率亏广告费", status: "待上线" }
+      { title: "一个产品为什么看起来能做，但不建议继续", desc: "搜索量高的品类，品牌集中度 > 70%，新卖家进去大概率亏广告费", href: "/articles/case-selection-seems-ok-dont-do/" }
     ]
   },
   {
     name: "Listing 诊断",
     desc: "有流量没转化、点击率低、CVR 低",
     items: [
-      { title: "一个 Listing 有流量没转化，问题出在哪里", desc: "广告 CTR 正常但 CVR 极低，排查后发现五点写成了功能列表而不是卖点表达", status: "待上线" }
+      { title: "一个 Listing 有流量没转化，问题出在哪里", desc: "广告 CTR 正常但 CVR 极低，排查后发现五点写成了功能列表而不是卖点表达", href: "/articles/case-listing-traffic-no-conversion/" }
     ]
   },
   {
     name: "PPC 广告复盘",
     desc: "ACOS 高、曝光低、预算分配、搜索词分析",
     items: [
-      { title: "广告 ACOS 高，先别急着关广告", desc: "ACOS 高不是广告的问题，是选词策略和 Listing 承接的问题——调竞价没用，改 Listing 才有用", status: "待上线" }
+      { title: "广告 ACOS 高，先别急着关广告", desc: "ACOS 高不是广告的问题，是选词策略和 Listing 承接的问题——调竞价没用，改 Listing 才有用", href: "/articles/case-ppc-high-acos-dont-panic/" }
     ]
   },
   {
     name: "Review 痛点反推",
     desc: "差评归因、退货分析、产品改进方向",
     items: [
-      { title: "从 50 条差评里反推出产品改进方向", desc: "差评最多的不一定是最紧急的——排名第一的改起来要 3 个月，排名第三的改起来只要 1 周", status: "待上线" }
+      { title: "从 50 条差评里反推出产品改进方向", desc: "差评最多的不一定是最紧急的——排名第一的改起来要 3 个月，排名第三的改起来只要 1 周", href: "/articles/case-review-pain-reverse-improvement/" }
     ]
   },
   {
     name: "新品冷启动",
     desc: "新品第一周评估、前期准备、节奏把控",
     items: [
-      { title: "新品上线第一周怎么复盘", desc: "新品第一周最该看的不是 ACOS，是哪些词有点击有出单——数据是用来做判断的，不是用来焦虑的", status: "待上线" }
+      { title: "新品上线第一周怎么复盘", desc: "新品第一周最该看的不是 ACOS，是哪些词有点击有出单——数据是用来做判断的，不是用来焦虑的", href: "/articles/case-new-product-week-one-review/" }
     ]
   }
 ];
 
 const beginnerOrder = [
-  { title: "选品判断案例：产品能不能做", desc: "先确认赛道有没有新卖家机会" },
-  { title: "Listing 诊断案例：有流量不出单", desc: "检查页面承接是否到位" },
-  { title: "PPC 广告复盘案例：ACOS 高", desc: "不要急着关广告，先查原因" },
-  { title: "新品冷启动案例：上线第一周", desc: "第一周看什么、做什么" }
+  { title: "选品判断案例：产品能不能做", desc: "先确认赛道有没有新卖家机会", href: "/articles/case-selection-seems-ok-dont-do/" },
+  { title: "Listing 诊断案例：有流量不出单", desc: "检查页面承接是否到位", href: "/articles/case-listing-traffic-no-conversion/" },
+  { title: "PPC 广告复盘案例：ACOS 高", desc: "不要急着关广告，先查原因", href: "/articles/case-ppc-high-acos-dont-panic/" },
+  { title: "新品冷启动案例：上线第一周", desc: "第一周看什么、做什么", href: "/articles/case-new-product-week-one-review/" }
 ];
 
 const resources = [
@@ -90,11 +90,11 @@ const ayanBreadcrumbData = {
       <ol class="beginner-order-list">
         {beginnerOrder.map((item, i) => (
           <li>
-            <div class="beginner-order-item">
+            <a class="beginner-order-item" href={item.href}>
               <span class="beginner-order-num">{i + 1}</span>
               <span class="beginner-order-label">{item.title}</span>
               <span class="beginner-order-desc">{item.desc}</span>
-            </div>
+            </a>
           </li>
         ))}
       </ol>
@@ -107,20 +107,19 @@ const ayanBreadcrumbData = {
         <p>{group.desc}</p>
         <div class="grid grid-3">
           {group.items.map((item) => (
-            <div class="card card-pending">
-              <span class="tag tag-pending">待上线</span>
+            <a class="card" href={item.href}>
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
     ))}
 
-    <!-- 全部案例预告 -->
+    <!-- 全部案例相关资源 -->
     <div class="topic-intro">
-      <h2>全部案例</h2>
-      <p>首批 5 篇案例覆盖选品、Listing、PPC、Review 和新品冷启动，正在写作中。你可以先看对应的 AI 提示词文章和资料模板。</p>
+      <h2>案例配套资源</h2>
+      <p>每篇案例都搭配了对应的 AI 提示词文章和运营资料模板。先看案例掌握分析思路，再拿着模板去落地执行。</p>
     </div>
     <div class="grid grid-3">
       <a class="card" href="/ai-prompts/">
@@ -297,7 +296,14 @@ const ayanBreadcrumbData = {
     border-radius: 12px;
     background: #ffffff;
     border: 1px solid #eef1f6;
+    text-decoration: none;
     color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .beginner-order-item:hover {
+    border-color: #ccd5e3;
+    background: #f8faff;
   }
 
   .beginner-order-num {
@@ -358,34 +364,6 @@ const ayanBreadcrumbData = {
     transform: translateY(-3px);
     border-color: #dce2ec;
     box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
-  }
-
-  .card-pending {
-    opacity: 0.65;
-    cursor: default;
-  }
-
-  .card-pending:hover {
-    transform: none;
-    border-color: #eef1f6;
-    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
-  }
-
-  .card .tag {
-    display: inline-block;
-    align-self: flex-start;
-    padding: 3px 10px;
-    border-radius: 999px;
-    background: #eef5ff;
-    color: #1368ff;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-  }
-
-  .card .tag-pending {
-    background: #f1f5f9;
-    color: #94a3b8;
   }
 
   .card h3 {
