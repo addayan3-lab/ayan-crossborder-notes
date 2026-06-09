@@ -3,31 +3,42 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const categories = [
   {
+    name: "关键词整理",
+    desc: "关键词筛选、分组、优先级判断",
+    items: [
+      { title: "关键词有 200 个，为什么最后只放 30 个进 Listing", desc: "搜索量高不代表该放标题——从 200 个候选词里按相关性和购买意图筛出 30 个可执行的词", href: "/articles/case-keyword-200-to-30-listing/" }
+    ]
+  },
+  {
     name: "选品判断",
     desc: "产品能不能做、市场容量判断、竞品分析",
     items: [
-      { title: "一个产品为什么看起来能做，但不建议继续", desc: "搜索量高的品类，品牌集中度 > 70%，新卖家进去大概率亏广告费", href: "/articles/case-selection-seems-ok-dont-do/" }
+      { title: "一个产品为什么看起来能做，但不建议继续", desc: "搜索量高的品类，品牌集中度 > 70%，新卖家进去大概率亏广告费", href: "/articles/case-selection-seems-ok-dont-do/" },
+      { title: "供应商说能做，为什么还不能马上下单", desc: "供应商能生产 ≠ 你能卖——下单前先确认差异化、成本、风险和页面可表达性", href: "/articles/case-supplier-can-make-dont-order/" }
     ]
   },
   {
     name: "Listing 诊断",
     desc: "有流量没转化、点击率低、CVR 低",
     items: [
-      { title: "一个 Listing 有流量没转化，问题出在哪里", desc: "广告 CTR 正常但 CVR 极低，排查后发现五点写成了功能列表而不是卖点表达", href: "/articles/case-listing-traffic-no-conversion/" }
+      { title: "一个 Listing 有流量没转化，问题出在哪里", desc: "广告 CTR 正常但 CVR 极低，排查后发现五点写成了功能列表而不是卖点表达", href: "/articles/case-listing-traffic-no-conversion/" },
+      { title: "产品有点击没转化，先改主图还是先改价格", desc: "有点击不出单不一定是价格问题——主图表达、五点承接和信任要素缺一不可", href: "/articles/case-clicks-no-orders-image-price/" }
     ]
   },
   {
     name: "PPC 广告复盘",
     desc: "ACOS 高、曝光低、预算分配、搜索词分析",
     items: [
-      { title: "广告 ACOS 高，先别急着关广告", desc: "ACOS 高不是广告的问题，是选词策略和 Listing 承接的问题——调竞价没用，改 Listing 才有用", href: "/articles/case-ppc-high-acos-dont-panic/" }
+      { title: "广告 ACOS 高，先别急着关广告", desc: "ACOS 高不是广告的问题，是选词策略和 Listing 承接的问题——调竞价没用，改 Listing 才有用", href: "/articles/case-ppc-high-acos-dont-panic/" },
+      { title: "自动广告跑出 300 个词，哪些值得单独建广告", desc: "300 个搜索词不是全否也不用全留着——按意图分层筛选出 12 个重点词", href: "/articles/case-auto-ads-300-search-terms/" }
     ]
   },
   {
     name: "Review 痛点反推",
     desc: "差评归因、退货分析、产品改进方向",
     items: [
-      { title: "从 50 条差评里反推出产品改进方向", desc: "差评最多的不一定是最紧急的——排名第一的改起来要 3 个月，排名第三的改起来只要 1 周", href: "/articles/case-review-pain-reverse-improvement/" }
+      { title: "从 50 条差评里反推出产品改进方向", desc: "差评最多的不一定是最紧急的——排名第一的改起来要 3 个月，排名第三的改起来只要 1 周", href: "/articles/case-review-pain-reverse-improvement/" },
+      { title: "评分 4.2 不低，为什么转化还是差", desc: "评分不是全部——Q&A 里反复出现的问题和页面解释缺口才是转化下降的真实原因", href: "/articles/case-rating-42-qa-risk/" }
     ]
   },
   {
@@ -50,7 +61,8 @@ const resources = [
   { name: "选品竞品矩阵", href: "/resources/competitor-selection-matrix/", desc: "4 维度竞品对比 + 差异化机会判断" },
   { name: "Listing 自检清单", href: "/resources/listing-checklist/", desc: "覆盖标题、五点、图片、关键词的上线前逐项检查" },
   { name: "PPC 周复盘表", href: "/resources/ppc-weekly-review/", desc: "销量、广告、ACOS、关键词、Review 的周复盘模板" },
-  { name: "Review 痛点分析表", href: "/resources/review-pain-analysis/", desc: "Review 痛点归类 + 高频问题提炼 + Listing 改进点" }
+  { name: "Review 痛点分析表", href: "/resources/review-pain-analysis/", desc: "Review 痛点归类 + 高频问题提炼 + Listing 改进点" },
+  { name: "关键词清洗表", href: "/resources/keyword-cleaning-sheet/", desc: "关键词清洗 + 按意图分组 + 优先级排序模板" }
 ];
 
 const ayanBreadcrumbData = {
