@@ -1,0 +1,544 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const liveRoles = [
+  {
+    num: 1,
+    title: "亚马逊选品顾问",
+    slug: "ai-role-selection-consultant",
+    problem: "看到一个产品，不知道该查什么、怎么判断竞争程度和差异化机会",
+    input: "产品类型、目标站点、价格带、竞品标题、Review 观察、供应链优势",
+    output: "市场容量判断、竞争难度评估、Review 痛点机会、差异化方向、下一步调研清单"
+  },
+  {
+    num: 2,
+    title: "Listing 文案优化师",
+    slug: "ai-role-listing-copywriter",
+    problem: "有产品资料但不知道怎么写成买家能看懂的卖点，担心 AI 写过头",
+    input: "产品信息、关键词清单、Review 好评点和差评点、不能夸大的地方",
+    output: "关键词分配表、五点结构表、标题方向、图片文案建议、风险提醒"
+  },
+  {
+    num: 3,
+    title: "PPC 广告分析师",
+    slug: "ai-role-ppc-analyst",
+    problem: "搜索词报告很多不知道怎么分类，ACOS 高但不知道问题出在哪",
+    input: "广告目标、搜索词报告、花费/点击/订单数据、产品毛利、Listing 情况",
+    output: "广告阶段判断、搜索词分类、动作建议、风险提醒、周复盘总结"
+  },
+  {
+    num: 4,
+    title: "Review 分析师",
+    slug: "ai-role-review-analyst",
+    problem: "看了几十条 Review 但不知道哪些问题值得优先处理，不知道怎么转成 Listing 优化",
+    input: "产品名称、10-30 条好评和差评、竞品 Review、改进限制",
+    output: "好评卖点提炼、差评问题分类、产品改进机会、Listing 优化方向"
+  },
+  {
+    num: 5,
+    title: "竞品研究员",
+    slug: "ai-role-competitor-researcher",
+    problem: "看到了几个竞品但不知道从哪些维度对比，找不到差异化切入点",
+    input: "产品类型、3-5 个竞品信息、Review 要点、供应链优势和限制",
+    output: "逐个竞品拆解、横向对比表、差异化机会、可借鉴和必须避开的点"
+  },
+  {
+    num: 6,
+    title: "退货诊断师",
+    slug: "ai-role-return-diagnostician",
+    problem: "退货率上升但不知道具体原因，分不清是产品问题、页面问题还是物流问题",
+    input: "产品名称、退货率、退货原因反馈、差评内容、产品功能和限制",
+    output: "退货原因分类、优先级排序、页面可预防的退货、行动建议"
+  },
+  {
+    num: 7,
+    title: "Amazon SEO 顾问",
+    slug: "ai-role-seo-consultant",
+    problem: "有关键词清单但不知道放哪里，标题写满了但搜索排名上不去",
+    input: "产品名称、目标关键词、当前标题和五点、Search Terms、核心卖点",
+    output: "关键词分配建议、标题 SEO 检查、五点检查、Search Terms 补充"
+  },
+  {
+    num: 8,
+    title: "避坑顾问",
+    slug: "ai-role-avoid-pitfalls-advisor",
+    problem: "看中一个产品但不知道有没有侵权、认证、物流、季节性等风险",
+    input: "产品名称、尺寸重量、材质功能、竞品差评、资金预算、经验水平",
+    output: "侵权检查、认证合规、物流评估、季节性分析、综合风险判断"
+  },
+  {
+    num: 9,
+    title: "库存规划师",
+    slug: "ai-role-inventory-planner",
+    problem: "不知道当前库存还能撑多少天，不确定什么时候该补货、补多少",
+    input: "产品 SKU、当前库存、日均销量、补货周期、广告计划、资金情况",
+    output: "库存健康度检查、补货时机和数量、现金流分析、广告库存联动"
+  },
+  {
+    num: 10,
+    title: "补货决策师",
+    slug: "ai-role-replenishment-decision-maker",
+    problem: "不确定现在该补货还是再等等，不知道补多少合适",
+    input: "近 30 天和 7 天销量、库存数量、补货周期、广告表现、资金可用量",
+    output: "补货必要性判断、补货数量和时机、风险分析、替代方案"
+  }
+];
+
+const usageSteps = [
+  { num: 1, title: "选一个具体角色", desc: "根据你当前遇到的运营问题，选择最匹配的 AI 身份。" },
+  { num: 2, title: "准备对应资料", desc: "按页面提示准备好产品信息、关键词、Review 或广告数据。" },
+  { num: 3, title: "复制提示词", desc: "把身份 Prompt 复制到 ChatGPT 或其他 AI 工具中。" },
+  { num: 4, title: "按格式输入资料", desc: "把准备好的资料粘贴到提示词指定位置，越具体越好。" },
+  { num: 5, title: "检查输出结果", desc: "对照页面说明判断输出质量，不满足时追问或调整输入。" }
+];
+
+const links = [
+  { title: "AI 提示词实操库", href: "/ai-prompts/", desc: "10 套可直接复制的运营 Prompt" },
+  { title: "实操案例库", href: "/cases/", desc: "用脱敏案例拆解真实运营判断" },
+  { title: "资料模板中心", href: "/resources/", desc: "免费运营模板和自查清单" },
+  { title: "公开课入口", href: "/open-class/", desc: "把关键词、Listing、广告串成实操课" }
+];
+
+const ayanBreadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://amz.hao1234.top/" },
+    { "@type": "ListItem", "position": 2, "name": "AI 身份专区", "item": "https://amz.hao1234.top/ai-roles/" }
+  ]
+};
+---
+<BaseLayout title="AI 亚马逊运营身份库｜阿岩跨境笔记" description="不是只给 AI 一句提示词，而是让 AI 扮演具体运营岗位，帮你完成选品、Listing、广告、Review、库存和避坑分析。">
+  <script type="application/ld+json" set:html={JSON.stringify(ayanBreadcrumbData)}></script>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>AI 亚马逊运营身份库</h1>
+      <p>不是只给 AI 一句提示词，而是让 AI 扮演具体运营岗位，帮你完成选品、Listing、广告、Review、库存和避坑分析。</p>
+      <div class="hero-actions">
+        <a class="cta-primary" href="#live-roles">查看已上线 AI 身份</a>
+        <a class="cta-secondary" href="/ai-prompts/">回到 AI 提示词专区</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+
+    <!-- 已上线 AI 身份 -->
+    <div id="live-roles" class="topic-intro">
+      <h2>已上线 AI 身份</h2>
+      <p>每一套身份都包含：适合解决什么问题、需要准备什么资料、可直接复制的 Prompt、输出结果怎么看。</p>
+    </div>
+    <div class="roles-grid">
+      {liveRoles.map((role) => (
+        <a class="role-card" href={`/articles/${role.slug}/`}>
+          <div class="role-card-head">
+            <span class="role-num">第 {role.num} 篇</span>
+            <span class="role-status role-status-live">已上线</span>
+          </div>
+          <h3>{role.title}</h3>
+          <div class="role-section">
+            <div class="role-label">解决什么问题</div>
+            <p>{role.problem}</p>
+          </div>
+          <div class="role-section">
+            <div class="role-label">需要准备什么</div>
+            <p>{role.input}</p>
+          </div>
+          <div class="role-section">
+            <div class="role-label">能输出什么</div>
+            <p>{role.output}</p>
+          </div>
+          <span class="role-card-cta">查看完整身份 Prompt →</span>
+        </a>
+      ))}
+    </div>
+
+    <!-- 使用方法 -->
+    <div class="topic-intro" style="margin-top: 40px;">
+      <h2>怎么使用 AI 身份</h2>
+      <p>和直接问 AI 不同，AI 身份的关键是：先给角色，再给资料，按格式输出，对照检查。</p>
+    </div>
+    <div class="steps-list">
+      {usageSteps.map((step) => (
+        <div class="step-item">
+          <div class="step-num">{step.num}</div>
+          <div class="step-body">
+            <div class="step-title">{step.title}</div>
+            <div class="step-desc">{step.desc}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- 内链区 -->
+    <div class="topic-intro" style="margin-top: 40px;">
+      <h2>搭配这些入口一起用</h2>
+      <p>AI 身份不是孤立工具，搭配提示词库、案例复盘和资料模板，效果更好。</p>
+    </div>
+    <div class="links-grid">
+      {links.map((link) => (
+        <a class="link-card" href={link.href}>
+          <h3>{link.title}</h3>
+          <p>{link.desc}</p>
+          <span class="link-card-cta">进入 →</span>
+        </a>
+      ))}
+    </div>
+
+    <!-- 低调转化区 -->
+    <div class="topic-intro cta-soft" style="margin-top: 40px;">
+      <h2>不确定先用哪个身份？</h2>
+      <p>如果你不知道现在该先优化选品、Listing、广告还是 Review，可以先做 30 秒资料诊断，系统会按你的阶段推荐最合适的 AI 身份和文章。</p>
+      <div class="cta-soft-actions">
+        <a class="cta-primary" href="/survey/">做 30 秒资料诊断</a>
+        <a class="cta-secondary" href="/ask/">问问 AI 阿岩助手</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #1368ff;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+
+  .cta-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1368ff;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #dce2ec;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .cta-secondary:hover {
+    border-color: #1368ff;
+    background: #f8faff;
+  }
+
+  .topic-intro {
+    max-width: 880px;
+    margin: 0 0 28px;
+    padding: 24px 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  .topic-intro h2 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .topic-intro h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 22px;
+    border-radius: 999px;
+    background: #1368ff;
+  }
+
+  .topic-intro p {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.85;
+    font-size: 15px;
+  }
+
+  .topic-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ===== Live Roles Grid ===== */
+  .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .role-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #eef1f6;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .role-card:hover {
+    transform: translateY(-3px);
+    border-color: #93c5fd;
+    box-shadow: 0 18px 44px rgba(19, 104, 255, 0.10);
+  }
+
+  .role-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .role-num {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #eef5ff;
+    color: #1368ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+
+  .role-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  .role-status-live {
+    background: #f0fdf4;
+    color: #16a34a;
+  }
+
+  .role-status-soon {
+    background: #fef7ed;
+    color: #d97706;
+  }
+
+  .role-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+    color: #0f172a;
+    line-height: 1.4;
+  }
+
+  .role-section {
+    padding-top: 10px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .role-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .role-section p {
+    margin: 0;
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.65;
+  }
+
+  .role-card-cta {
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px 0 0;
+    font-size: 13px;
+    font-weight: 800;
+    color: #1368ff;
+    transition: transform 0.15s ease;
+  }
+
+  .role-card:hover .role-card-cta {
+    transform: translateX(4px);
+  }
+
+  /* ===== Steps ===== */
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 22px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #eef1f6;
+    transition: border-color 0.15s ease;
+  }
+
+  .step-item:hover {
+    border-color: #cfe0ff;
+  }
+
+  .step-num {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #2d7aff, #1560f0);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: 0 6px 14px rgba(21, 96, 240, 0.14);
+  }
+
+  .step-body {
+    flex: 1;
+  }
+
+  .step-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 4px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  /* ===== Links Grid ===== */
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .link-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 22px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #eef1f6;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.03);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .link-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 14px 36px rgba(19, 104, 255, 0.08);
+  }
+
+  .link-card h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .link-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.55;
+    flex: 1;
+  }
+
+  .link-card-cta {
+    font-size: 13px;
+    font-weight: 800;
+    color: #1368ff;
+    transition: transform 0.15s ease;
+  }
+
+  .link-card:hover .link-card-cta {
+    transform: translateX(3px);
+  }
+
+  /* ===== CTA Soft ===== */
+  .cta-soft {
+    background: linear-gradient(135deg, #f0f7ff 0%, #eef5ff 100%);
+    border-color: #cfe0ff;
+  }
+
+  .cta-soft-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 980px) {
+    .roles-grid {
+      grid-template-columns: 1fr;
+    }
+    .links-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 720px) {
+    .hero-actions {
+      flex-direction: column;
+    }
+    .links-grid {
+      grid-template-columns: 1fr;
+    }
+    .cta-soft-actions {
+      flex-direction: column;
+    }
+    .step-item {
+      padding: 14px 16px;
+    }
+  }
+</style>
