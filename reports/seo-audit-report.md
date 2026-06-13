@@ -1,13 +1,13 @@
 # 018｜站点 SEO 基础体检报告
 
-生成时间：2026-06-13T02:49:24.877Z
+生成时间：2026-06-13T16:30:13.825Z
 
 站点：https://amz.hao1234.top
 
 ## 一、总览
 
-- 检查页面数：87
-- 通过项：696
+- 检查页面数：95
+- 通过项：760
 - 问题项：0
 - robots.txt：PASS
 - sitemap-index.xml：PASS
@@ -81,6 +81,29 @@
 
 - PASS：title 正常：29
 - PASS：description 正常：72
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/ai-roles/
+
+- title：AI 亚马逊运营身份库｜阿岩跨境笔记 | 阿岩跨境笔记
+- description：不是只给 AI 一句提示词，而是让 AI 扮演具体运营岗位，帮你完成选品、Listing、广告、Review、库存和避坑分析。
+- H1：1
+- H2：4
+- canonical：https://amz.hao1234.top/ai-roles/
+- og:title：AI 亚马逊运营身份库｜阿岩跨境笔记
+- og:description：不是只给 AI 一句提示词，而是让 AI 扮演具体运营岗位，帮你完成选品、Listing、广告、Review、库存和避坑分析。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：27
+- PASS：description 正常：63
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -548,6 +571,75 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/ai-role-avoid-pitfalls-advisor/
+
+- title：AI 身份第 8 篇：避坑顾问 Prompt | 阿岩跨境笔记
+- description：这篇给你一套避坑顾问 AI 身份提示词，帮助新手从侵权、认证、物流、季节性、差评集中等维度判断产品是否适合进入。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-avoid-pitfalls-advisor/
+- og:title：AI 身份第 8 篇：避坑顾问 Prompt
+- og:description：这篇给你一套避坑顾问 AI 身份提示词，帮助新手从侵权、认证、物流、季节性、差评集中等维度判断产品是否适合进入。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：31
+- PASS：description 正常：56
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ai-role-competitor-researcher/
+
+- title：AI 身份第 5 篇：竞品研究员 Prompt | 阿岩跨境笔记
+- description：这篇给你一套竞品研究员 AI 身份提示词，帮助新手系统拆解竞品 Listing、定价、卖点、Review 和差异化切入点。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-competitor-researcher/
+- og:title：AI 身份第 5 篇：竞品研究员 Prompt
+- og:description：这篇给你一套竞品研究员 AI 身份提示词，帮助新手系统拆解竞品 Listing、定价、卖点、Review 和差异化切入点。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：32
+- PASS：description 正常：61
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ai-role-inventory-planner/
+
+- title：AI 身份第 9 篇：库存规划师 Prompt | 阿岩跨境笔记
+- description：这篇给你一套库存规划师 AI 身份提示词，帮助新手根据销量、补货周期、广告节奏和库存天数判断库存风险。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-inventory-planner/
+- og:title：AI 身份第 9 篇：库存规划师 Prompt
+- og:description：这篇给你一套库存规划师 AI 身份提示词，帮助新手根据销量、补货周期、广告节奏和库存天数判断库存风险。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：32
+- PASS：description 正常：51
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/ai-role-listing-copywriter/
 
 - title：AI 身份第 2 篇：Listing 文案优化师 Prompt | 阿岩跨境笔记
@@ -594,6 +686,75 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/ai-role-replenishment-decision-maker/
+
+- title：AI 身份第 10 篇：补货决策师 Prompt | 阿岩跨境笔记
+- description：这篇给你一套补货决策师 AI 身份提示词，帮助新手判断什么时候补货、补多少、是否暂停补货或清库存。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-replenishment-decision-maker/
+- og:title：AI 身份第 10 篇：补货决策师 Prompt
+- og:description：这篇给你一套补货决策师 AI 身份提示词，帮助新手判断什么时候补货、补多少、是否暂停补货或清库存。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：33
+- PASS：description 正常：49
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ai-role-return-diagnostician/
+
+- title：AI 身份第 6 篇：退货诊断师 Prompt | 阿岩跨境笔记
+- description：这篇给你一套退货诊断师 AI 身份提示词，帮助新手从退货原因、差评和客服反馈中定位产品和页面问题。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-return-diagnostician/
+- og:title：AI 身份第 6 篇：退货诊断师 Prompt
+- og:description：这篇给你一套退货诊断师 AI 身份提示词，帮助新手从退货原因、差评和客服反馈中定位产品和页面问题。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：32
+- PASS：description 正常：49
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ai-role-review-analyst/
+
+- title：AI 身份第 4 篇：Review 分析师 Prompt | 阿岩跨境笔记
+- description：这篇给你一套 Review 分析师 AI 身份提示词，帮助新手从好评和差评中提炼用户真实痛点、卖点机会和 Listing 优化方向。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-review-analyst/
+- og:title：AI 身份第 4 篇：Review 分析师 Prompt
+- og:description：这篇给你一套 Review 分析师 AI 身份提示词，帮助新手从好评和差评中提炼用户真实痛点、卖点机会和 Listing 优化方向。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：37
+- PASS：description 正常：66
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/ai-role-selection-consultant/
 
 - title：AI 身份第 1 篇：亚马逊选品顾问 Prompt | 阿岩跨境笔记
@@ -610,6 +771,29 @@
 
 - PASS：title 正常：34
 - PASS：description 正常：67
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ai-role-seo-consultant/
+
+- title：AI 身份第 7 篇：Amazon SEO 顾问 Prompt | 阿岩跨境笔记
+- description：这篇给你一套 Amazon SEO 顾问 AI 身份提示词，帮助新手从关键词布局、标题、五点和 Search Terms 中优化自然流量。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/ai-role-seo-consultant/
+- og:title：AI 身份第 7 篇：Amazon SEO 顾问 Prompt
+- og:description：这篇给你一套 Amazon SEO 顾问 AI 身份提示词，帮助新手从关键词布局、标题、五点和 Search Terms 中优化自然流量。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：40
+- PASS：description 正常：69
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
