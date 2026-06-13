@@ -80,7 +80,7 @@ const ayanBaseStructuredData = [
 <!-- AYAN_JSONLD_HEAD_END -->
 </head>
   <body>
-    <header class="site-header">
+    <header class={`site-header${pathname === "/" ? " site-header--home" : ""}`}>
       <a href="/" class="brand">
         <div class="brand-mark">岩</div>
         <div>
@@ -108,14 +108,48 @@ const ayanBaseStructuredData = [
     </main>
 
     <footer class="site-footer">
-      <div>
-        <strong>阿岩跨境笔记</strong>
-        <p>写给亚马逊卖家的 AI 运营实战知识站。本站为第三方教学与运营笔记，与 Amazon 官方无隶属、授权或背书关系。</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-head">
+            <div class="footer-brand-mark">岩</div>
+            <div>
+              <div class="footer-brand-title">阿岩跨境笔记</div>
+              <div class="footer-brand-subtitle">亚马逊运营 × AI 实战 SOP</div>
+            </div>
+          </div>
+          <p>写给亚马逊卖家的 AI 运营实战知识站。聚焦选品、Listing、广告 PPC、Review 分析与 SOP 执行，用 AI 提效，让运营更精准。</p>
+          <p class="footer-disclaimer">本站为第三方教学与运营笔记，与 Amazon 官方无隶属、授权或背书关系。</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">学习路径</div>
+          <a href="/articles/keyword-learning-path/">关键词搜索</a>
+          <a href="/articles/listing-learning-path/">Listing 优化</a>
+          <a href="/articles/ppc-learning-path/">广告 PPC</a>
+          <a href="/articles/review-learning-path/">Review 分析</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">资源中心</div>
+          <a href="/ai-prompts/">提示词大全</a>
+          <a href="/resources/">免费资料包</a>
+          <a href="/open-class/">公开课</a>
+          <a href="/tools/">工具模板</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">关于我们</div>
+          <a href="/about/">关于阿岩</a>
+          <a href="/articles/">全部文章</a>
+          <a href="/ask/">AI 助手</a>
+        </div>
+        <div class="footer-about-card">
+          <div class="footer-about-avatar"></div>
+          <div class="footer-about-name">阿岩</div>
+          <div class="footer-about-desc">专注亚马逊运营与 AI 提效实践，致力于用可复制的方法，帮助卖家实现长期稳定增长。</div>
+          <a class="footer-about-link" href="/about/">了解更多 →</a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="/articles/">全部文章</a>
-        <a href="/tools/">资料包</a>
-        <a href="/open-class/">公开课</a>
+      <div class="footer-bottom">
+        <span>© {new Date().getFullYear()} 阿岩跨境笔记</span>
+        <span>内容仅供参考，不构成运营建议</span>
       </div>
     </footer>
     <FloatingAyanAssistant />
@@ -550,25 +584,142 @@ const ayanBaseStructuredData = [
   }
 
   .site-footer {
-    max-width: 1220px;
-    margin: 30px auto 0;
-    padding: 28px 24px 42px;
-    border-top: 1px solid var(--line);
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    max-width: 1520px;
+    margin: 32px auto 0;
+    padding: 0 24px 36px;
     color: var(--muted);
   }
 
-  .site-footer p {
-    max-width: 680px;
-    line-height: 1.7;
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.9fr 0.9fr 0.9fr 1.1fr;
+    gap: 28px;
+    padding: 36px 0 28px;
+    border-top: 1px solid var(--line);
   }
 
-  .footer-links {
+  .footer-brand-head {
     display: flex;
-    gap: 18px;
-    white-space: nowrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .footer-brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #051937, #0d6efd);
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: 0 8px 20px rgba(19,104,255,.20);
+    flex-shrink: 0;
+  }
+
+  .footer-brand-title {
+    font-weight: 800;
+    font-size: 17px;
+    color: #0f172a;
+  }
+
+  .footer-brand-subtitle {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+
+  .footer-brand > p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #667085;
+    max-width: 420px;
+    margin: 0 0 12px;
+  }
+
+  .footer-disclaimer {
+    font-size: 11px !important;
+    color: #9ca3af !important;
+    max-width: 400px !important;
+  }
+
+  .footer-col-title {
+    font-weight: 800;
+    font-size: 15px;
+    color: #0f172a;
+    margin-bottom: 16px;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-col a {
+    color: #667085;
+    font-size: 13px;
+    transition: color 0.15s ease;
+    text-decoration: none;
+  }
+
+  .footer-col a:hover {
+    color: #1560f0;
+  }
+
+  .footer-about-card {
+    background: #f8fafc;
+    border: 1px solid #e8ecf4;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-about-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    margin: 0 auto 10px;
+    background: url("/images/ayan-avatar.png") center / cover no-repeat, linear-gradient(135deg, #dbeafe, #1560f0);
+    border: 2px solid #eaf2ff;
+  }
+
+  .footer-about-name {
+    font-weight: 900;
+    font-size: 15px;
+    color: #0f172a;
+    margin-bottom: 8px;
+  }
+
+  .footer-about-desc {
+    font-size: 12px;
+    color: #667085;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .footer-about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #1560f0;
+    text-decoration: none;
+  }
+
+  .footer-about-link:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 0;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: #9ca3af;
   }
 
   @media (max-width: 980px) {
@@ -622,8 +773,14 @@ const ayanBaseStructuredData = [
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .site-footer {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .footer-bottom {
       flex-direction: column;
+      gap: 6px;
     }
   }
 
@@ -749,6 +906,54 @@ const ayanBaseStructuredData = [
   }
 
   /* AYAN_FORCE_TOP_FINAL_END */
+
+  /* AYAN_HOMEPAGE_HEADER_DARK_START */
+  .site-header--home {
+    background: rgba(6, 21, 47, 0.96) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(14px);
+  }
+
+  .site-header--home .brand-mark {
+    background: linear-gradient(135deg, #2d7aff, #1560f0) !important;
+    box-shadow: 0 10px 24px rgba(21, 96, 240, 0.30) !important;
+  }
+
+  .site-header--home .brand-title {
+    color: #fff !important;
+  }
+
+  .site-header--home .brand-subtitle {
+    color: rgba(255, 255, 255, 0.72) !important;
+  }
+
+  .site-header--home .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .site-header--home .nav-link:hover {
+    color: #fff !important;
+  }
+
+  .site-header--home .nav-link.active {
+    color: #8ec5ff !important;
+    border-bottom-color: #8ec5ff !important;
+  }
+
+  .site-header--home .top-cta {
+    background: linear-gradient(135deg, #2d7aff, #1560f0) !important;
+    box-shadow: 0 8px 24px rgba(21, 96, 240, 0.28) !important;
+  }
+
+  .site-header--home .top-cta-secondary {
+    background: rgba(255, 255, 255, 0.10) !important;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.16) !important;
+  }
+
+
+  /* AYAN_HOMEPAGE_HEADER_DARK_END */
 
   .card-cover {
     width: 100%;

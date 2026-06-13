@@ -470,5 +470,13 @@
     "topics": ["ppc", "ai-prompt"],
     "keywords": ["AI提示词", "新品", "冷启动", "计划"],
     "alt": "AI 提示词做新品冷启动计划封面图"
+  },
+  {
+    "id": "hero-bg-tech-globe",
+    "path": "/images/home/ayan-home-hero-tech-bg.png",
+    "type": "hero",
+    "topics": ["homepage"],
+    "keywords": ["科技", "地球", "背景"],
+    "alt": "阿岩跨境笔记首页科技感世界地图背景图"
   }
 ]
