@@ -3,7 +3,7 @@
 ## 一、当前内容资产盘点
 
 ### 1.1 文章数量
-- 文章总数：33 篇
+- 文章总数：83 篇（2026-06-18 更新，含 8 篇 method 深度文 + 5 篇新钩子案例 + 7 篇 case 改写）
 - 学习路径文章：3 篇（ai-search、selection、tools 标记 articleType: learning-path）
 - 另有 4 篇学习路径类型文章未标记 articleType（keyword、listing、ppc、review）
 

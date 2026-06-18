@@ -4,6 +4,11 @@ import { getCollection } from "astro:content";
 import { getPostsBySlot } from "../lib/content-orchestration";
 
 const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+const heroStats = {
+  articles: allPosts.length,
+  resources: 7,
+  openClasses: 8,
+};
 const slotArticles = {
   "ai-prompt": getPostsBySlot(allPosts, "ai-prompt"),
   "resource-tutorial": getPostsBySlot(allPosts, "resource-tutorial"),
@@ -82,17 +87,17 @@ const trustItems = [
         </p>
         <div class="hero-metrics">
           <div class="hero-metric">
-            <span class="hero-metric-num">56</span>
+            <span class="hero-metric-num">{heroStats.articles}</span>
             <span class="hero-metric-label">实操文章</span>
           </div>
           <div class="hero-metric-dot"></div>
           <div class="hero-metric">
-            <span class="hero-metric-num">28</span>
+            <span class="hero-metric-num">{heroStats.resources}</span>
             <span class="hero-metric-label">资料模板</span>
           </div>
           <div class="hero-metric-dot"></div>
           <div class="hero-metric">
-            <span class="hero-metric-num">3</span>
+            <span class="hero-metric-num">{heroStats.openClasses}</span>
             <span class="hero-metric-label">系列公开课</span>
           </div>
         </div>

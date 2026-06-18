@@ -1,14 +1,14 @@
 # 018｜站点 SEO 基础体检报告
 
-生成时间：2026-06-13T16:55:05.408Z
+生成时间：2026-06-18T15:25:07.079Z
 
 站点：https://amz.hao1234.top
 
 ## 一、总览
 
-- 检查页面数：95
-- 通过项：760
-- 问题项：0
+- 检查页面数：110
+- 通过项：872
+- 问题项：8
 - robots.txt：PASS
 - sitemap-index.xml：PASS
 
@@ -801,6 +801,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/ai-rufus-listing-writing-2026/
+
+- title：AI 搜索第 4 篇：Rufus 时代 Listing 怎么写（2026 实操版） | 阿岩跨境笔记
+- description：亚马逊 Rufus 和 AI 搜索改变了 Listing 的理解方式。本文从标题、五点、A+、问答和结构化表达出发，拆解 2026 年亚马逊 Listing 如何同时服务传统 SEO、用户决策和 AI 理解。
+- H1：1
+- H2：10
+- canonical：https://amz.hao1234.top/articles/ai-rufus-listing-writing-2026/
+- og:title：AI 搜索第 4 篇：Rufus 时代 Listing 怎么写（2026 实操版）
+- og:description：亚马逊 Rufus 和 AI 搜索改变了 Listing 的理解方式。本文从标题、五点、A+、问答和结构化表达出发，拆解 2026 年亚马逊 Listing 如何同时服务传统 SEO、用户决策和 AI 理解。
+- og:image：https://amz.hao1234.top/images/articles/ai-rufus-listing-writing-2026/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：50
+- PASS：description 正常：104
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/ai-search-learning-path/
 
 - title：亚马逊 AI 搜索学习路径：从工具理解到运营应用 | 阿岩跨境笔记
@@ -893,22 +916,91 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
-### https://amz.hao1234.top/articles/case-auto-ads-300-search-terms/
+### https://amz.hao1234.top/articles/case-5000-sales-still-losing-money/
 
-- title：案例第 8 篇：自动广告跑出 300 个词，哪些值得单独建广告 | 阿岩跨境笔记
-- description：自动广告跑出很多搜索词后，新手常常不知道哪些该否、哪些该观察、哪些该单独建广告。这个案例拆解 300 个词如何筛成 12 个重点词。
+- title：案例：月销 $5000 还在亏钱，利润到底算错在哪 | 阿岩跨境笔记
+- description：月销 $5000 不代表赚钱。本文用脱敏案例拆解亚马逊卖家只看前台售价和销售额，却漏算 FBA、佣金、广告、退货和优惠后出现净亏的原因。
 - H1：1
-- H2：11
-- canonical：https://amz.hao1234.top/articles/case-auto-ads-300-search-terms/
-- og:title：案例第 8 篇：自动广告跑出 300 个词，哪些值得单独建广告
-- og:description：自动广告跑出很多搜索词后，新手常常不知道哪些该否、哪些该观察、哪些该单独建广告。这个案例拆解 300 个词如何筛成 12 个重点词。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- H2：9
+- canonical：https://amz.hao1234.top/articles/case-5000-sales-still-losing-money/
+- og:title：案例：月销 $5000 还在亏钱，利润到底算错在哪
+- og:description：月销 $5000 不代表赚钱。本文用脱敏案例拆解亚马逊卖家只看前台售价和销售额，却漏算 FBA、佣金、广告、退货和优惠后出现净亏的原因。
+- og:image：https://amz.hao1234.top/images/articles/case-5000-sales-still-losing-money/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
-- PASS：title 正常：40
-- PASS：description 正常：66
+- PASS：title 正常：34
+- PASS：description 正常：68
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-ai-search-listing-old-method-losing-traffic/
+
+- title：案例：2026 亚马逊 AI 搜索下，Listing 还按老方法写会丢哪些流量 | 阿岩跨境笔记
+- description：AI 搜索和 Rufus 让亚马逊 Listing 不再只靠关键词堆叠。本文用脱敏案例拆解同一产品改写前后，页面语义、用户问题承接和 AI 入口曝光可能出现的变化。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/case-ai-search-listing-old-method-losing-traffic/
+- og:title：案例：2026 亚马逊 AI 搜索下，Listing 还按老方法写会丢哪些流量
+- og:description：AI 搜索和 Rufus 让亚马逊 Listing 不再只靠关键词堆叠。本文用脱敏案例拆解同一产品改写前后，页面语义、用户问题承接和 AI 入口曝光可能出现的变化。
+- og:image：https://amz.hao1234.top/images/articles/case-ai-search-listing-old-method-losing-traffic/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：48
+- PASS：description 正常：82
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-auto-ads-300-search-terms/
+
+- title：自动广告跑出 300 词：不是词多就好 | 阿岩跨境笔记
+- description：自动广告跑出 300 词：不是词多就好。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊广告 PPC中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- H1：1
+- H2：10
+- canonical：https://amz.hao1234.top/articles/case-auto-ads-300-search-terms/
+- og:title：自动广告跑出 300 词：不是词多就好
+- og:description：自动广告跑出 300 词：不是词多就好。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊广告 PPC中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-auto-ads-300-search-terms/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：28
+- PASS：description 正常：84
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-bad-reviews-selection-opportunity/
+
+- title：案例：差评里藏着的选品机会——3 个脱敏复盘 | 阿岩跨境笔记
+- description：差评不只是产品问题，也可能暴露真实需求缺口。本文用 3 个脱敏亚马逊案例，拆解如何从 Review、Q&amp;A 和退货理由里发现竞品没做好但用户愿意买单的选品机会。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/case-bad-reviews-selection-opportunity/
+- og:title：案例：差评里藏着的选品机会——3 个脱敏复盘
+- og:description：差评不只是产品问题，也可能暴露真实需求缺口。本文用 3 个脱敏亚马逊案例，拆解如何从 Review、Q&amp;A 和退货理由里发现竞品没做好但用户愿意买单的选品机会。
+- og:image：https://amz.hao1234.top/images/articles/case-bad-reviews-selection-opportunity/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：31
+- PASS：description 正常：84
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -918,20 +1010,20 @@
 
 ### https://amz.hao1234.top/articles/case-clicks-no-orders-image-price/
 
-- title：案例第 7 篇：产品有点击没转化，先改主图还是先改价格 | 阿岩跨境笔记
-- description：一个 Listing 有点击但不出单，卖家想立刻降价。这个案例拆解为什么不能只看转化率，而要同时看主图、价格带、卖点承接和竞品对比。
+- title：有点击没订单：90% 是图和价格，不是关键词 | 阿岩跨境笔记
+- description：有点击没订单：90% 是图和价格，不是关键词。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊Listing 优化中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
 - H1：1
-- H2：11
+- H2：10
 - canonical：https://amz.hao1234.top/articles/case-clicks-no-orders-image-price/
-- og:title：案例第 7 篇：产品有点击没转化，先改主图还是先改价格
-- og:description：一个 Listing 有点击但不出单，卖家想立刻降价。这个案例拆解为什么不能只看转化率，而要同时看主图、价格带、卖点承接和竞品对比。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:title：有点击没订单：90% 是图和价格，不是关键词
+- og:description：有点击没订单：90% 是图和价格，不是关键词。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊Listing 优化中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-clicks-no-orders-image-price/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
-- PASS：title 正常：36
-- PASS：description 正常：66
+- PASS：title 正常：31
+- PASS：description 正常：91
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -941,20 +1033,20 @@
 
 ### https://amz.hao1234.top/articles/case-keyword-200-to-30-listing/
 
-- title：案例第 6 篇：关键词有 200 个，为什么最后只放 30 个进 Listing | 阿岩跨境笔记
-- description：一个新手卖家整理出 200 个关键词，却不知道哪些该放进 Listing。这个案例拆解如何从相关性、购买意图和页面承接角度，把关键词收敛到可执行的 30 个。
+- title：200 个关键词进 Listing 反而没流量 | 阿岩跨境笔记
+- description：200 个关键词进 Listing 反而没流量。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊关键词中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
 - H1：1
-- H2：11
+- H2：10
 - canonical：https://amz.hao1234.top/articles/case-keyword-200-to-30-listing/
-- og:title：案例第 6 篇：关键词有 200 个，为什么最后只放 30 个进 Listing
-- og:description：一个新手卖家整理出 200 个关键词，却不知道哪些该放进 Listing。这个案例拆解如何从相关性、购买意图和页面承接角度，把关键词收敛到可执行的 30 个。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:title：200 个关键词进 Listing 反而没流量
+- og:description：200 个关键词进 Listing 反而没流量。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊关键词中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-keyword-200-to-30-listing/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
-- PASS：title 正常：49
-- PASS：description 正常：79
+- PASS：title 正常：32
+- PASS：description 正常：85
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1008,22 +1100,68 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
-### https://amz.hao1234.top/articles/case-ppc-high-acos-dont-panic/
+### https://amz.hao1234.top/articles/case-platform-warning-email-checklist/
 
-- title：案例第 3 篇：广告 ACOS 高，先别急着关广告 | 阿岩跨境笔记
-- description：新品上线两周 ACOS 超过 80%，卖家想关广告。排查后发现问题不在广告竞价太高，而在于选词策略太宽、Listing 承接不够、预算结构不合理。
+- title：案例：平台警告邮件来了——新手先别慌，按这张清单查 | 阿岩跨境笔记
+- description：收到亚马逊平台警告或绩效通知时，新手最怕乱改 Listing、乱申诉。本文用脱敏案例拆解警告邮件后的 24 小时检查顺序、证据保存和账号健康自查清单。
 - H1：1
-- H2：11
-- canonical：https://amz.hao1234.top/articles/case-ppc-high-acos-dont-panic/
-- og:title：案例第 3 篇：广告 ACOS 高，先别急着关广告
-- og:description：新品上线两周 ACOS 超过 80%，卖家想关广告。排查后发现问题不在广告竞价太高，而在于选词策略太宽、Listing 承接不够、预算结构不合理。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- H2：9
+- canonical：https://amz.hao1234.top/articles/case-platform-warning-email-checklist/
+- og:title：案例：平台警告邮件来了——新手先别慌，按这张清单查
+- og:description：收到亚马逊平台警告或绩效通知时，新手最怕乱改 Listing、乱申诉。本文用脱敏案例拆解警告邮件后的 24 小时检查顺序、证据保存和账号健康自查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-platform-warning-email-checklist/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
 - PASS：title 正常：34
-- PASS：description 正常：73
+- PASS：description 正常：75
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-ppc-high-acos-dont-panic/
+
+- title：广告 ACOS 80% 别急着关：先查这 3 项 | 阿岩跨境笔记
+- description：广告 ACOS 80% 别急着关：先查这 3 项。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊广告 PPC中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- H1：1
+- H2：10
+- canonical：https://amz.hao1234.top/articles/case-ppc-high-acos-dont-panic/
+- og:title：广告 ACOS 80% 别急着关：先查这 3 项
+- og:description：广告 ACOS 80% 别急着关：先查这 3 项。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊广告 PPC中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-ppc-high-acos-dont-panic/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：33
+- PASS：description 正常：89
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-ppc-week-one-add-or-negative/
+
+- title：案例：新品第一周广告复盘——该加词还是该否词 | 阿岩跨境笔记
+- description：新品第一周广告跑完后，15 个搜索词有花费，3 个出单，8 个点击无单。本文用脱敏案例拆解亚马逊 PPC 第一周复盘时，加词、否词和改 Listing 的判断顺序。
+- H1：1
+- H2：9
+- canonical：https://amz.hao1234.top/articles/case-ppc-week-one-add-or-negative/
+- og:title：案例：新品第一周广告复盘——该加词还是该否词
+- og:description：新品第一周广告跑完后，15 个搜索词有花费，3 个出单，8 个点击无单。本文用脱敏案例拆解亚马逊 PPC 第一周复盘时，加词、否词和改 Listing 的判断顺序。
+- og:image：https://amz.hao1234.top/images/articles/case-ppc-week-one-add-or-negative/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：31
+- PASS：description 正常：82
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1033,20 +1171,20 @@
 
 ### https://amz.hao1234.top/articles/case-rating-42-qa-risk/
 
-- title：案例第 10 篇：评分 4.2 不低，为什么转化还是差 | 阿岩跨境笔记
-- description：一个产品评分 4.2 看起来不差，但转化仍然偏低。这个案例拆解 Q&amp;A、差评关键词和页面解释缺口如何影响买家决策。
+- title：4.2 分还能卖？Rating 背后的 Q&amp;A 风险 | 阿岩跨境笔记
+- description：4.2 分还能卖？Rating 背后的 Q&amp;A 风险。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊Review 分析中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
 - H1：1
-- H2：11
+- H2：10
 - canonical：https://amz.hao1234.top/articles/case-rating-42-qa-risk/
-- og:title：案例第 10 篇：评分 4.2 不低，为什么转化还是差
-- og:description：一个产品评分 4.2 看起来不差，但转化仍然偏低。这个案例拆解 Q&amp;A、差评关键词和页面解释缺口如何影响买家决策。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:title：4.2 分还能卖？Rating 背后的 Q&amp;A 风险
+- og:description：4.2 分还能卖？Rating 背后的 Q&amp;A 风险。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊Review 分析中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-rating-42-qa-risk/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
-- PASS：title 正常：36
-- PASS：description 正常：61
+- PASS：title 正常：39
+- PASS：description 正常：98
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1079,20 +1217,20 @@
 
 ### https://amz.hao1234.top/articles/case-selection-seems-ok-dont-do/
 
-- title：案例第 1 篇：一个产品为什么看起来能做，但不建议继续 | 阿岩跨境笔记
-- description：一款家居收纳产品搜索量高、竞品少，新手卖家以为有机会。深挖后发现品牌集中度过高、Review 门槛过高、价格带被压死，最终判断不建议入场。
+- title：搜索量 12 万但不该入场：品牌集中度陷阱 | 阿岩跨境笔记
+- description：搜索量 12 万但不该入场：品牌集中度陷阱。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊选品中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
 - H1：1
-- H2：11
+- H2：10
 - canonical：https://amz.hao1234.top/articles/case-selection-seems-ok-dont-do/
-- og:title：案例第 1 篇：一个产品为什么看起来能做，但不建议继续
-- og:description：一款家居收纳产品搜索量高、竞品少，新手卖家以为有机会。深挖后发现品牌集中度过高、Review 门槛过高、价格带被压死，最终判断不建议入场。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:title：搜索量 12 万但不该入场：品牌集中度陷阱
+- og:description：搜索量 12 万但不该入场：品牌集中度陷阱。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊选品中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-selection-seems-ok-dont-do/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
-- PASS：title 正常：36
-- PASS：description 正常：69
+- PASS：title 正常：30
+- PASS：description 正常：82
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1102,20 +1240,20 @@
 
 ### https://amz.hao1234.top/articles/case-supplier-can-make-dont-order/
 
-- title：案例第 9 篇：供应商说能做，为什么还不能马上下单 | 阿岩跨境笔记
-- description：供应商说产品能做，不代表它适合马上下单。这个案例拆解为什么选品阶段还要确认差异化、成本、质检、包装和 Listing 表达。
+- title：供应商说能做别急着下单：5 个必问问题 | 阿岩跨境笔记
+- description：供应商说能做别急着下单：5 个必问问题。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊选品中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
 - H1：1
-- H2：11
+- H2：10
 - canonical：https://amz.hao1234.top/articles/case-supplier-can-make-dont-order/
-- og:title：案例第 9 篇：供应商说能做，为什么还不能马上下单
-- og:description：供应商说产品能做，不代表它适合马上下单。这个案例拆解为什么选品阶段还要确认差异化、成本、质检、包装和 Listing 表达。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:title：供应商说能做别急着下单：5 个必问问题
+- og:description：供应商说能做别急着下单：5 个必问问题。本文为阿岩跨境笔记脱敏案例覆盖版，围绕亚马逊选品中的真实判断场景，拆解问题现象、错误路径、正确处理顺序和可复用检查清单。
+- og:image：https://amz.hao1234.top/images/articles/case-supplier-can-make-dont-order/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
-- PASS：title 正常：34
-- PASS：description 正常：62
+- PASS：title 正常：28
+- PASS：description 正常：80
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1238,6 +1376,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/keyword-longtail-fifth-source/
+
+- title：关键词第 5 篇：长尾词挖掘——4 种来源之外的第 5 种 | 阿岩跨境笔记
+- description：亚马逊卖家不能只靠工具拉关键词。本文在 4 类关键词来源之外，补充广告搜索词报告加 Q&amp;A 交叉验证的长尾词挖掘方法，帮助卖家找到更接近真实购买意图的 Listing 词。
+- H1：1
+- H2：10
+- canonical：https://amz.hao1234.top/articles/keyword-longtail-fifth-source/
+- og:title：关键词第 5 篇：长尾词挖掘——4 种来源之外的第 5 种
+- og:description：亚马逊卖家不能只靠工具拉关键词。本文在 4 类关键词来源之外，补充广告搜索词报告加 Q&amp;A 交叉验证的长尾词挖掘方法，帮助卖家找到更接近真实购买意图的 Listing 词。
+- og:image：https://amz.hao1234.top/images/articles/keyword-longtail-fifth-source/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：38
+- PASS：description 正常：90
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/keyword-search-volume-trap/
 
 - title：关键词第 3 篇：关键词表不能只看搜索量 | 阿岩跨境笔记
@@ -1353,6 +1514,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/listing-main-image-ctr-checklist/
+
+- title：Listing 第 4 篇：主图点击率诊断——从 0.3% 到 0.8% 的检查 8 项 | 阿岩跨境笔记
+- description：广告曝光不少但主图点击率低，问题可能不在关键词，而在主图表达。本文用 8 个检查项拆解亚马逊 Listing 主图 CTR 诊断方法，帮助卖家判断先改图、改词还是改价格。
+- H1：1
+- H2：14
+- canonical：https://amz.hao1234.top/articles/listing-main-image-ctr-checklist/
+- og:title：Listing 第 4 篇：主图点击率诊断——从 0.3% 到 0.8% 的检查 8 项
+- og:description：广告曝光不少但主图点击率低，问题可能不在关键词，而在主图表达。本文用 8 个检查项拆解亚马逊 Listing 主图 CTR 诊断方法，帮助卖家判断先改图、改词还是改价格。
+- og:image：https://amz.hao1234.top/images/articles/listing-main-image-ctr-checklist/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：53
+- PASS：description 正常：85
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/negative-review-listing-fix/
 
 - title：Review 第 3 篇：差评改 Listing | 阿岩跨境笔记
@@ -1399,6 +1583,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/new-seller-90-day-operation-rhythm/
+
+- title：运营总览：新卖家 90 天运营节奏表 | 阿岩跨境笔记
+- description：亚马逊新卖家前 90 天最怕顺序混乱：还没理解规则就选品，还没打好 Listing 就开广告，还没复盘就加预算。本文给出 1–90 天运营节奏表和每周 checklist。
+- H1：1
+- H2：11
+- canonical：https://amz.hao1234.top/articles/new-seller-90-day-operation-rhythm/
+- og:title：运营总览：新卖家 90 天运营节奏表
+- og:description：亚马逊新卖家前 90 天最怕顺序混乱：还没理解规则就选品，还没打好 Listing 就开广告，还没复盘就加预算。本文给出 1–90 天运营节奏表和每周 checklist。
+- og:image：https://amz.hao1234.top/images/articles/new-seller-90-day-operation-rhythm/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：27
+- PASS：description 正常：86
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/ppc-learning-path/
 
 - title：亚马逊 PPC 广告学习路径：从结构搭建到数据判断 | 阿岩跨境笔记
@@ -1415,6 +1622,29 @@
 
 - PASS：title 正常：34
 - PASS：description 正常：72
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ppc-negative-keyword-week-one/
+
+- title：PPC 第 4 篇：否词策略——新品第一周后怎么筛搜索词 | 阿岩跨境笔记
+- description：新品第一周跑完自动广告和手动广告后，搜索词报告往往会出现大量点击、花费和少量订单。本文拆解 PPC 否词策略、暂否与永久否的区别，以及如何把搜索词整理成可复盘的广告动作。
+- H1：1
+- H2：8
+- canonical：https://amz.hao1234.top/articles/ppc-negative-keyword-week-one/
+- og:title：PPC 第 4 篇：否词策略——新品第一周后怎么筛搜索词
+- og:description：新品第一周跑完自动广告和手动广告后，搜索词报告往往会出现大量点击、花费和少量订单。本文拆解 PPC 否词策略、暂否与永久否的区别，以及如何把搜索词整理成可复盘的广告动作。
+- og:image：https://amz.hao1234.top/images/articles/ppc-negative-keyword-week-one/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：37
+- PASS：description 正常：85
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1491,6 +1721,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/review-return-data-analysis/
+
+- title：Review 第 4 篇：退货数据分析——比看 Review 更早发现问题 | 阿岩跨境笔记
+- description：Review 更新慢，退货理由往往更早暴露产品、尺寸、描述和物流问题。本文拆解亚马逊退货数据分析方法，用 5 类归因把退货报告转化为 Listing 修改、产品改进和选品复盘动作。
+- H1：1
+- H2：8
+- canonical：https://amz.hao1234.top/articles/review-return-data-analysis/
+- og:title：Review 第 4 篇：退货数据分析——比看 Review 更早发现问题
+- og:description：Review 更新慢，退货理由往往更早暴露产品、尺寸、描述和物流问题。本文拆解亚马逊退货数据分析方法，用 5 类归因把退货报告转化为 Listing 修改、产品改进和选品复盘动作。
+- og:image：https://amz.hao1234.top/images/articles/review-return-data-analysis/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：46
+- PASS：description 正常：90
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/selection-learning-path/
 
 - title：亚马逊选品学习路径：从市场容量到选品决策 | 阿岩跨境笔记
@@ -1537,6 +1790,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/selection-profit-reverse-calculation/
+
+- title：选品第 4 篇：利润倒推——从售价算成本能不能做 | 阿岩跨境笔记
+- description：亚马逊新手选品不能只看搜索量和售价，更要用利润倒推判断采购、头程、FBA、佣金、广告和退货损耗是否还能留下净利润。本文给出选品利润倒推公式与三个脱敏场景。
+- H1：1
+- H2：10
+- canonical：https://amz.hao1234.top/articles/selection-profit-reverse-calculation/
+- og:title：选品第 4 篇：利润倒推——从售价算成本能不能做
+- og:description：亚马逊新手选品不能只看搜索量和售价，更要用利润倒推判断采购、头程、FBA、佣金、广告和退货损耗是否还能留下净利润。本文给出选品利润倒推公式与三个脱敏场景。
+- og:image：https://amz.hao1234.top/images/articles/selection-profit-reverse-calculation/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：33
+- PASS：description 正常：77
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/sp-ad-structure/
 
 - title：PPC 第 2 篇：SP 广告结构怎么分工 | 阿岩跨境笔记
@@ -1553,6 +1829,29 @@
 
 - PASS：title 正常：30
 - PASS：description 正常：61
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/tools-account-health-self-check/
+
+- title：工具第 2 篇：账号健康自查——ODR、迟发与政策警告怎么处理 | 阿岩跨境笔记
+- description：亚马逊新卖家收到绩效通知或账号健康警告时，最怕乱改、乱申诉。本文用账号健康自查清单拆解 ODR、迟发、取消率、政策警告和 24 小时处理优先级。
+- H1：1
+- H2：8
+- canonical：https://amz.hao1234.top/articles/tools-account-health-self-check/
+- og:title：工具第 2 篇：账号健康自查——ODR、迟发与政策警告怎么处理
+- og:description：亚马逊新卖家收到绩效通知或账号健康警告时，最怕乱改、乱申诉。本文用账号健康自查清单拆解 ODR、迟发、取消率、政策警告和 24 小时处理优先级。
+- og:image：https://amz.hao1234.top/images/articles/tools-account-health-self-check/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：40
+- PASS：description 正常：72
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1606,12 +1905,35 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/baidu_verify_codeva-IH9obSJr6f.html
+
+- title：缺失
+- description：缺失
+- H1：0
+- H2：0
+- canonical：缺失
+- og:title：缺失
+- og:description：缺失
+- og:image：缺失
+- twitter:card：缺失
+
+检查结果：
+
+- FAIL：title 缺失
+- FAIL：description 缺失
+- FAIL：H1 数量异常：0
+- FAIL：canonical 缺失
+- FAIL：og:title 缺失
+- FAIL：og:description 缺失
+- FAIL：og:image 缺失
+- FAIL：twitter:card 缺失
+
 ### https://amz.hao1234.top/cases/
 
 - title：亚马逊运营实操案例库｜阿岩跨境笔记 | 阿岩跨境笔记
 - description：用脱敏案例拆解亚马逊选品、Listing、PPC、Review 和新品冷启动问题，帮助新手把 AI 提示词、资料表格和运营动作串起来。
 - H1：1
-- H2：10
+- H2：1
 - canonical：https://amz.hao1234.top/cases/
 - og:title：亚马逊运营实操案例库｜阿岩跨境笔记
 - og:description：用脱敏案例拆解亚马逊选品、Listing、PPC、Review 和新品冷启动问题，帮助新手把 AI 提示词、资料表格和运营动作串起来。
@@ -1655,19 +1977,19 @@
 ### https://amz.hao1234.top/lead/
 
 - title：领取 AI 运营资料包｜阿岩跨境笔记 | 阿岩跨境笔记
-- description：领取亚马逊 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。
+- description：领取AI 运营资料包，包含亚马逊运营实操模板与检查表。填写表单或加微信备注「AI运营资料包」即可获取对应资料。
 - H1：1
 - H2：1
 - canonical：https://amz.hao1234.top/lead/
 - og:title：领取 AI 运营资料包｜阿岩跨境笔记
-- og:description：领取亚马逊 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。
+- og:description：领取AI 运营资料包，包含亚马逊运营实操模板与检查表。填写表单或加微信备注「AI运营资料包」即可获取对应资料。
 - og:image：https://amz.hao1234.top/images/og-default.svg
 - twitter:card：summary_large_image
 
 检查结果：
 
 - PASS：title 正常：27
-- PASS：description 正常：57
+- PASS：description 正常：55
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -1691,6 +2013,29 @@
 
 - PASS：title 正常：36
 - PASS：description 正常：56
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/map/
+
+- title：亚马逊卖家知识地图｜阿岩跨境笔记 | 阿岩跨境笔记
+- description：一屏浏览阿岩跨境笔记 7 大专题、学习路径、资料包、公开课与实操案例库，快速找到你要学的内容。
+- H1：1
+- H2：5
+- canonical：https://amz.hao1234.top/map/
+- og:title：亚马逊卖家知识地图｜阿岩跨境笔记
+- og:description：一屏浏览阿岩跨境笔记 7 大专题、学习路径、资料包、公开课与实操案例库，快速找到你要学的内容。
+- og:image：https://amz.hao1234.top/images/og-default.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：25
+- PASS：description 正常：47
 - PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
@@ -2206,4 +2551,6 @@
 
 ## 四、建议
 
-- 当前 SEO 基础项通过。下一步可以做结构化数据和 OG 分享图。
+- 优先修复 canonical、OG、twitter card、H1 数量异常。
+- 页面 description 太短或缺失的页面需要补充更明确的摘要。
+- og:image 缺失会影响微信、社群、搜索结果分享卡片展示。

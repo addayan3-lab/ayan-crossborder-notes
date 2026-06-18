@@ -82,7 +82,7 @@ export function getLearningPathArticles(
           ? parseInt(p.data.seriesOrder, 10) || 999
           : 999;
     return {
-      href: `/posts/${p.id}/`,
+      href: `/articles/${p.id}/`,
       title: p.data.title,
       pathRole: (p.data.pathRole === "primary" || p.data.pathRole === "secondary")
         ? p.data.pathRole
@@ -122,7 +122,7 @@ function sortPosts(posts: Post[]): Post[] {
 
 function toLink(post: Post): ArticleLink {
   return {
-    href: `/posts/${post.id}/`,
+    href: `/articles/${post.id}/`,
     title: post.data.title,
   };
 }

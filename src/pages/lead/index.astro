@@ -3,15 +3,61 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const tallyUrl = "https://tally.so/r/EkMNAr";
 const backupWechat = "addayan";
+
+const magnetPacks: Record<string, { name: string; note: string; items: string[] }> = {
+  "platform-rules-checklist": {
+    name: "新手规则避坑清单",
+    note: "规则",
+    items: ["10 个常见违规场景", "发版前 7 项 checklist", "违规话术对照表"],
+  },
+  "keyword-cleaning-sheet": {
+    name: "关键词清洗表",
+    note: "清洗",
+    items: ["8 字段关键词整理表", "关键词清洗 SOP", "按意图分组模板"],
+  },
+  "listing-checklist": {
+    name: "Listing 自检清单",
+    note: "自检",
+    items: ["标题/五点检查项", "图片与转化要素", "上线前逐项核对表"],
+  },
+  "ppc-weekly-review": {
+    name: "PPC 周复盘表",
+    note: "报表",
+    items: ["销量与广告数据复盘", "ACOS / 搜索词分析", "下周动作清单"],
+  },
+  "review-pain-analysis": {
+    name: "Review 痛点分析表",
+    note: "痛点",
+    items: ["Review 痛点归类", "高频问题提炼", "Listing 改进点"],
+  },
+  "competitor-selection-matrix": {
+    name: "竞品矩阵拆解表",
+    note: "矩阵",
+    items: ["4 维度竞品对比", "差异化机会判断", "选品决策辅助表"],
+  },
+  "ai-tools-review-sheet": {
+    name: "AI 工具评测表",
+    note: "AI评测",
+    items: ["AI 工具 4 判断标准", "6 类适合场景", "选型对照表"],
+  },
+  default: {
+    name: "AI 运营资料包",
+    note: "AI运营资料包",
+    items: ["AI 运营检查表", "Listing 优化 Prompt", "广告 PPC 复盘表", "Review 分析模板"],
+  },
+};
+
+const magnetKey = Astro.url.searchParams.get("magnet") || "default";
+const pack = magnetPacks[magnetKey] || magnetPacks.default;
 ---
 
-<BaseLayout title="领取 AI 运营资料包｜阿岩跨境笔记" description="领取亚马逊 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。">
+<BaseLayout title={`领取 ${pack.name}｜阿岩跨境笔记`} description={`领取${pack.name}，包含亚马逊运营实操模板与检查表。填写表单或加微信备注「${pack.note}」即可获取对应资料。`}>
   <main class="lead-page">
     <section class="lead-card">
       <div class="lead-kicker">AI Amazon Resource Pack</div>
-      <h1>领取 AI 运营资料包</h1>
+      <h1>领取 {pack.name}</h1>
       <p class="lead-desc">
-        包含 AI 运营检查表、Listing 优化 Prompt、广告 PPC 复盘表和 Review 分析模板。
+        根据你的诊断结果，推荐领取「{pack.name}」。填写表单或直接加微信，我会按备注发送对应资料。
       </p>
 
       <div class="lead-survey-hint">
@@ -19,7 +65,7 @@ const backupWechat = "addayan";
         <a class="lead-survey-cta" href="/survey/">做资料诊断 →</a>
       </div>
 
-      <div class="lead-divider">已经确定要领取哪份资料？使用下方方式：</div>
+      <div class="lead-divider">已经确定要领取这份资料？使用下方方式：</div>
 
       <div class="lead-actions">
         <a class="lead-primary" href={tallyUrl} target="_blank" rel="noopener noreferrer">
@@ -43,15 +89,14 @@ const backupWechat = "addayan";
         </div>
 
         <p class="hint">
-          添加时备注：<strong>AI运营资料包</strong>，我会按顺序发送资料。
+          添加时备注：<strong id="wechat-note">{pack.note}</strong>，我会按顺序发送资料。
         </p>
       </div>
 
       <div class="resource-list">
-        <div>✓ AI 运营检查表</div>
-        <div>✓ Listing 优化 Prompt</div>
-        <div>✓ 广告 PPC 复盘表</div>
-        <div>✓ Review 分析模板</div>
+        {pack.items.map((item) => (
+          <div>✓ {item}</div>
+        ))}
       </div>
     </section>
   </main>

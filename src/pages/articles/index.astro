@@ -1,9 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import { hookTypeLabels } from "../../lib/knowledge-map";
 
 const posts = (await getCollection("posts", ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const filterTypes = ["全部", "案例", "方法", "提示词", "学习路径"];
 ---
 
 <BaseLayout title="全部文章｜亚马逊 AI 运营、PPC、Listing 与选品笔记" description="浏览阿岩跨境笔记全部文章，涵盖亚马逊 AI 运营、关键词研究、Listing 优化、广告 PPC、Review 分析和选品指南。">
@@ -15,16 +18,113 @@ const posts = (await getCollection("posts", ({ data }) => !data.draft))
   </section>
 
   <section class="section">
-    <div class="grid grid-3">
-      {posts.map((post) => (
-        <a class="card" href={`/articles/${post.id}/`}>
-          {post.data.image && <div class="card-cover" style={`background-image: url(${post.data.image})`}></div>}
-          <span class="tag">{post.data.category}</span>
-          <h3>{post.data.title}</h3>
-          <p>{post.data.description}</p>
-          <div class="meta">{post.data.pubDate.toLocaleDateString("zh-CN")}</div>
-        </a>
+    <div class="filter-bar" role="tablist" aria-label="文章类型筛选">
+      {filterTypes.map((type, i) => (
+        <button type="button" class:list={["filter-btn", i === 0 && "active"]} data-filter={type}>{type}</button>
+      ))}
+      {hookTypeLabels.filter((t) => t !== "全部").map((type) => (
+        <button type="button" class="filter-btn filter-btn-hook" data-filter={`hook:${type}`}>{type}</button>
       ))}
     </div>
+
+    <div class="grid grid-3" id="article-grid">
+      {posts.map((post) => {
+        const articleType = post.data.articleType || "method";
+        const hookType = post.data.hookType || "";
+        return (
+          <a
+            class="card article-card"
+            href={`/articles/${post.id}/`}
+            data-article-type={articleType}
+            data-hook-type={hookType}
+          >
+            {post.data.image && <div class="card-cover" style={`background-image: url(${post.data.image})`}></div>}
+            {hookType && <span class="tag tag-hook">{hookType}</span>}
+            <span class="tag">{post.data.category}</span>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="meta">{post.data.pubDate.toLocaleDateString("zh-CN")}</div>
+          </a>
+        );
+      })}
+    </div>
   </section>
+
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".article-card");
+
+    function typeMatch(card, filter) {
+      if (filter === "全部") return true;
+      if (filter.startsWith("hook:")) {
+        return card.getAttribute("data-hook-type") === filter.slice(5);
+      }
+      const type = card.getAttribute("data-article-type") || "";
+      if (filter === "案例") return type === "case-study";
+      if (filter === "方法") return type === "method" || type === "tutorial" || type === "theory";
+      if (filter === "提示词") return type === "prompt";
+      if (filter === "学习路径") return type === "learning-path";
+      return true;
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const filter = btn.getAttribute("data-filter") || "全部";
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        cards.forEach((card) => {
+          card.style.display = typeMatch(card, filter) ? "" : "none";
+        });
+      });
+    });
+  </script>
 </BaseLayout>
+
+<style>
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .filter-btn-hook {
+    background: #f8fafc;
+  }
+
+  .filter-btn.active {
+    background: #1368ff;
+    border-color: #1368ff;
+    color: #fff;
+  }
+
+  .tag-hook {
+    background: #eef5ff;
+    color: #1368ff;
+  }
+
+  .card-cover {
+    height: 140px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4px;
+  }
+
+  .meta {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: auto;
+  }
+</style>

@@ -189,7 +189,7 @@ const rules = [
           <a id="survey-result-link" class="survey-result-cta" target="_blank" rel="noopener noreferrer">
             查看资料详情 →
           </a>
-          <a href="/lead/" class="survey-result-lead" target="_blank" rel="noopener noreferrer">
+          <a id="survey-result-lead" class="survey-result-lead" target="_blank" rel="noopener noreferrer">
             立即领取资料 →
           </a>
         </div>
@@ -281,12 +281,14 @@ const rules = [
       const nameEl = document.querySelector("#survey-result-name");
       const audienceEl = document.querySelector("#survey-result-audience");
       const linkEl = document.querySelector("#survey-result-link");
+      const leadEl = document.querySelector("#survey-result-lead");
       const articlesEl = document.querySelector("#survey-result-articles");
       const openClassEl = document.querySelector("#survey-result-open-class");
 
       if (nameEl) nameEl.textContent = match.name;
       if (audienceEl) audienceEl.textContent = match.audience;
       if (linkEl) linkEl.href = "/resources/" + match.slug + "/";
+      if (leadEl) leadEl.href = "/lead/?magnet=" + encodeURIComponent(match.slug);
 
       if (articlesEl) {
         articlesEl.innerHTML = match.articles.map((a) =>

@@ -24,6 +24,10 @@ export async function getStaticPaths() {
 
 const { post, allPosts } = Astro.props;
 const { Content } = await render(post);
+const isHookArticle = Boolean(post.data.hookType);
+const surveyCtaHref = isHookArticle
+  ? `/survey/?from=${post.id}`
+  : "/survey/";
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString("zh-CN", {
@@ -195,22 +199,45 @@ const ayanBreadcrumbStructuredData = {
         </section>
 
         <section class="article-bottom-cta">
-          <div>
-            <h2>想把 AI 真正用进亚马逊运营？</h2>
-            <p>先从一张检查表、一套 Prompt 和一份广告复盘模板开始，把方法落到每天的运营动作里。</p>
-          </div>
-          <a href="/lead/" target="_blank" rel="noopener noreferrer">领取 AI 运营资料包</a>
+          {isHookArticle ? (
+            <>
+              <div>
+                <h2>不确定自己的情况属于哪一类？</h2>
+                <p>做 30 秒资料诊断，我会按你的阶段推荐对应资料和学习路径。</p>
+              </div>
+              <a href={surveyCtaHref}>做 30 秒资料诊断</a>
+            </>
+          ) : (
+            <>
+              <div>
+                <h2>想把 AI 真正用进亚马逊运营？</h2>
+                <p>先从一张检查表、一套 Prompt 和一份广告复盘模板开始，把方法落到每天的运营动作里。</p>
+              </div>
+              <a href="/lead/" target="_blank" rel="noopener noreferrer">领取 AI 运营资料包</a>
+            </>
+          )}
         </section>
+
+        {!isHookArticle && (
+          <>
+        <ArticleNavHints post={post} allPosts={allPosts} />
+        <RelatedArticles post={post} allPosts={allPosts} max={2} />
+        <NextUp post={post} allPosts={allPosts} />
+        <BackToLearningPath post={post} />
+          </>
+        )}
+
+        {isHookArticle && (
+          <>
+        <ArticleNavHints post={post} allPosts={allPosts} />
+        <RelatedArticles post={post} allPosts={allPosts} max={2} />
+          </>
+        )}
 
         <section class="article-disclaimer">
           <strong>说明：</strong>
           本文为亚马逊运营教学与方法整理，不构成平台政策、法律、税务或投资建议。具体操作请结合你的类目、账号状态、产品数据和亚马逊最新规则人工判断。
         </section>
-
-        <ArticleNavHints post={post} allPosts={allPosts} />
-        <RelatedArticles post={post} allPosts={allPosts} max={2} />
-        <NextUp post={post} allPosts={allPosts} />
-        <BackToLearningPath post={post} />
       </article>
     </div>
   </main>

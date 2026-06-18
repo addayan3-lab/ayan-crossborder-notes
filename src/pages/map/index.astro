@@ -1,0 +1,445 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { knowledgeMapTopics } from "../../lib/knowledge-map";
+import { getPostsByTopic } from "../../lib/content-orchestration";
+
+const allPosts = await getCollection("posts", ({ data }) => !data.draft);
+const caseCount = allPosts.filter(
+  (p) => p.data.articleType === "case-study" || p.data.hookType,
+).length;
+const promptCount = allPosts.filter((p) => p.data.series === "ai-prompt").length;
+const roleCount = allPosts.filter((p) => p.data.series === "ai-role").length;
+
+const topicArticles = Object.fromEntries(
+  knowledgeMapTopics.map((topic) => [
+    topic.id,
+    getPostsByTopic(allPosts, topic.id, 5),
+  ]),
+);
+
+const quickEntries = [
+  { label: "全部文章", href: "/articles/", desc: `${allPosts.length} 篇` },
+  { label: "AI 提示词库", href: "/ai-prompts/", desc: `${promptCount} 套 Prompt` },
+  { label: "AI 身份库", href: "/ai-roles/", desc: `${roleCount} 个角色` },
+  { label: "实操案例库", href: "/cases/", desc: `${caseCount} 篇案例` },
+  { label: "免费资料包", href: "/resources/", desc: "7 套模板" },
+];
+---
+
+<BaseLayout
+  title="亚马逊卖家知识地图｜阿岩跨境笔记"
+  description="一屏浏览阿岩跨境笔记 7 大专题、学习路径、资料包、公开课与实操案例库，快速找到你要学的内容。"
+>
+  <section class="map-hero">
+    <div class="map-hero-inner">
+      <nav class="map-breadcrumb" aria-label="面包屑">
+        <a href="/">首页</a>
+        <span>/</span>
+        <span>知识地图</span>
+      </nav>
+      <h1>亚马逊卖家知识地图</h1>
+      <p>不是首页推荐位，而是全站索引：7 大专题 × 学习路径 × 核心文章 × 资料包 × 公开课。</p>
+      <div class="map-stats">
+        <div class="map-stat"><strong>{allPosts.length}</strong><span>文章</span></div>
+        <div class="map-stat"><strong>{knowledgeMapTopics.length}</strong><span>专题</span></div>
+        <div class="map-stat"><strong>{caseCount}</strong><span>案例</span></div>
+        <div class="map-stat"><strong>{promptCount + roleCount}</strong><span>AI Prompt</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="cta-primary" href="#topics">浏览专题索引 →</a>
+        <a class="cta-secondary" href="/survey/">做资料诊断</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section map-quick">
+    <h2 class="map-section-title">快速入口</h2>
+    <div class="map-quick-grid">
+      {quickEntries.map((entry) => (
+        <a class="map-quick-card" href={entry.href}>
+          <span class="map-quick-label">{entry.label}</span>
+          <span class="map-quick-desc">{entry.desc}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" id="topics">
+    <h2 class="map-section-title">7 大专题索引</h2>
+    <p class="map-section-desc">每个专题列出学习路径、资料包、公开课，以及该专题下的核心文章。</p>
+
+    <div class="map-grid">
+      {knowledgeMapTopics.map((topic) => (
+        <article class="map-card">
+          <div class="map-card-head">
+            <span class="map-icon">{topic.icon}</span>
+            <h3><a href={topic.hubHref}>{topic.title}</a></h3>
+          </div>
+
+          <div class="map-block">
+            <div class="map-label">学习路径</div>
+            <a class="map-link" href={topic.learningPath.href}>{topic.learningPath.title} →</a>
+          </div>
+
+          <div class="map-block">
+            <div class="map-label">资料包</div>
+            <div class="map-links">
+              {topic.resources.map((r) => (
+                <a class="map-link" href={r.href}>{r.title}</a>
+              ))}
+            </div>
+          </div>
+
+          <div class="map-block">
+            <div class="map-label">公开课</div>
+            <div class="map-links">
+              {topic.openClasses.map((oc) => (
+                <a class="map-link" href={oc.href}>{oc.title}</a>
+              ))}
+            </div>
+          </div>
+
+          {topicArticles[topic.id]?.length > 0 && (
+            <div class="map-block map-articles">
+              <div class="map-label">专题文章</div>
+              <ul class="map-article-list">
+                {topicArticles[topic.id].map((article) => (
+                  <li><a href={article.href}>{article.title}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+
+    <div class="map-extra">
+      <div class="map-extra-card">
+        <h2>钩子案例库</h2>
+        <p>共 {caseCount} 篇脱敏实操案例，按避坑、反常识、数字冲击等类型拆解真实运营判断。</p>
+        <a class="cta-primary" href="/cases/">进入案例库 →</a>
+      </div>
+      <div class="map-extra-card">
+        <h2>AI 提示词与身份库</h2>
+        <p>{promptCount} 套场景 Prompt + {roleCount} 个 AI 运营身份，复制即用。</p>
+        <div class="map-extra-actions">
+          <a class="cta-primary" href="/ai-prompts/">提示词库 →</a>
+          <a class="cta-secondary" href="/ai-roles/">身份库 →</a>
+        </div>
+      </div>
+      <div class="map-extra-card">
+        <h2>不确定从哪开始？</h2>
+        <p>做 30 秒资料诊断，按你的阶段推荐对应资料和学习路径。</p>
+        <a class="cta-secondary" href="/survey/">做资料诊断 →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .map-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 55%, #1368ff 100%);
+    color: #fff;
+    padding: 36px 24px 40px;
+  }
+
+  .map-hero-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .map-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .map-breadcrumb a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+  }
+
+  .map-breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .map-hero h1 {
+    margin: 0 0 12px;
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+
+  .map-hero p {
+    margin: 0;
+    max-width: 680px;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.75;
+    font-size: 16px;
+  }
+
+  .map-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 24px 0;
+  }
+
+  .map-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .map-stat strong {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .map-stat span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .cta-primary {
+    background: #fff;
+    color: #1368ff;
+  }
+
+  .cta-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .map-section-title {
+    margin: 0 0 8px;
+    font-size: 24px;
+    color: #0f172a;
+  }
+
+  .map-section-desc {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.7;
+  }
+
+  .map-quick {
+    padding-top: 28px;
+  }
+
+  .map-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .map-quick-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #e8ecf4;
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .map-quick-card:hover {
+    border-color: #1368ff;
+    box-shadow: 0 10px 28px rgba(19, 104, 255, 0.08);
+  }
+
+  .map-quick-label {
+    font-weight: 800;
+    color: #0f172a;
+    font-size: 15px;
+  }
+
+  .map-quick-desc {
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  .map-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .map-card {
+    padding: 24px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #eef1f6;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  }
+
+  .map-card-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .map-icon {
+    font-size: 28px;
+  }
+
+  .map-card h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .map-card h3 a {
+    color: #0f172a;
+    text-decoration: none;
+  }
+
+  .map-card h3 a:hover {
+    color: #1368ff;
+  }
+
+  .map-block {
+    margin-bottom: 14px;
+  }
+
+  .map-label {
+    font-size: 12px;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 0.4px;
+    margin-bottom: 6px;
+  }
+
+  .map-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .map-link {
+    color: #1368ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .map-link:hover {
+    text-decoration: underline;
+  }
+
+  .map-article-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .map-article-list a {
+    color: #334155;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.5;
+    display: block;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #eef1f6;
+  }
+
+  .map-article-list a:hover {
+    color: #1368ff;
+    border-color: #cfe0ff;
+    background: #f8faff;
+  }
+
+  .map-extra {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .map-extra-card {
+    padding: 28px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #eef5ff 100%);
+    border: 1px solid #cfe0ff;
+  }
+
+  .map-extra-card h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #0f172a;
+  }
+
+  .map-extra-card p {
+    margin: 0 0 16px;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .map-extra-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .map-extra .cta-primary {
+    background: #1368ff;
+    color: #fff;
+  }
+
+  .map-extra .cta-secondary {
+    background: #fff;
+    color: #1368ff;
+    border: 1px solid #dce2ec;
+  }
+
+  @media (max-width: 1100px) {
+    .map-quick-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .map-extra {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .map-grid,
+    .map-quick-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .map-hero h1 {
+      font-size: 28px;
+    }
+  }
+</style>

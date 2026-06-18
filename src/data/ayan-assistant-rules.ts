@@ -77,8 +77,8 @@ export const assistantTopics: AssistantTopic[] = [
     ],
     articles: [
       { title: "PPC 第 1 篇：新品广告第一周怎么开", slug: "new-product-ppc-week-one", desc: "新品期第一周广告测试框架。" },
-      { title: "PPC 第 2 篇：SP 广告结构怎么分工", slug: "sp-ad-structure", desc: "四类广告的分工逻辑与预算分配。" },
-      { title: "PPC 第 3 篇：用 AI 复盘广告报表", slug: "ai-ppc-report-review", desc: "ACOS、TACOS、CTR、CVR 综合判断。" }
+      { title: "案例：ACOS 80% 别急着关", slug: "case-ppc-high-acos-dont-panic", desc: "先查 3 项再决定是否关广告。" },
+      { title: "PPC 第 4 篇：否词策略", slug: "ppc-negative-keyword-week-one", desc: "第一周搜索词怎么筛。" }
     ],
     resources: [
       { title: "PPC 报表诊断模板", slug: "ppc-weekly-review", desc: "广告报表复盘标准化模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
@@ -102,8 +102,8 @@ export const assistantTopics: AssistantTopic[] = [
     ],
     articles: [
       { title: "Review 第 1 篇：用 AI 分析 Review 找到卖点", slug: "ai-review-analysis", desc: "用 AI 对竞品 Review 进行分类和分析。" },
-      { title: "Review 第 2 篇：Review 分析矩阵", slug: "review-analysis-matrix", desc: "三类 Review 数据的矩阵分析。" },
-      { title: "Review 第 3 篇：差评改 Listing", slug: "negative-review-listing-fix", desc: "系统性地把差评翻译成 Listing 改动。" }
+      { title: "案例：差评里的选品机会", slug: "case-bad-reviews-selection-opportunity", desc: "3 个脱敏复盘。" },
+      { title: "Review 第 4 篇：退货数据分析", slug: "review-return-data-analysis", desc: "比看 Review 更早发现问题。" }
     ],
     resources: [
       { title: "Review 痛点分析表", slug: "review-pain-analysis", desc: "Review 痛点提取和分析模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
@@ -127,8 +127,8 @@ export const assistantTopics: AssistantTopic[] = [
     ],
     articles: [
       { title: "选品第 1 篇：AI 估算市场容量", slug: "ai-market-size-estimate", desc: "用 AI 辅助做市场容量判断的方法。" },
-      { title: "选品第 2 篇：用 AI 做竞品矩阵拆解", slug: "ai-competitor-matrix", desc: "竞品拆成价格、卖点、人群、痛点四张矩阵。" },
-      { title: "选品第 3 篇：痛点反推选品", slug: "selection-pain-reverse", desc: "从竞品差评和问答里挖出选品机会。" }
+      { title: "案例：月销 $5000 还在亏钱", slug: "case-5000-sales-still-losing-money", desc: "利润算错在哪。" },
+      { title: "选品第 4 篇：利润倒推", slug: "selection-profit-reverse-calculation", desc: "从售价算成本能不能做。" }
     ],
     resources: [
       { title: "竞品矩阵拆解表", slug: "competitor-selection-matrix", desc: "竞品四维矩阵分析模板。", wechatHook: "资料领取方式以资料详情页说明为准。" }
@@ -217,7 +217,9 @@ export const assistantTopics: AssistantTopic[] = [
       "建立规则检查清单，每次上架前核对。"
     ],
     articles: [
-      { title: "亚马逊平台规则入门:新手最容易踩的 10 个坑", slug: "amazon-platform-rules-beginner", desc: "新手卖家常踩的平台规则坑。" }
+      { title: "亚马逊平台规则入门:新手最容易踩的 10 个坑", slug: "amazon-platform-rules-beginner", desc: "新手卖家常踩的平台规则坑。" },
+      { title: "案例：平台警告邮件来了", slug: "case-platform-warning-email-checklist", desc: "按清单逐项自查。" },
+      { title: "工具第 2 篇：账号健康自查", slug: "tools-account-health-self-check", desc: "ODR、迟发与政策警告怎么处理。" }
     ],
     resources: [
       { title: "平台规则检查清单", slug: "platform-rules-checklist", desc: "亚马逊平台规则自检清单。", wechatHook: "资料领取方式以资料详情页说明为准。" }
