@@ -15,6 +15,7 @@ relatedTopics:
 publicLessonUse: 适合作为 Review 公开课的开篇导览,带学员从好评提炼、差评归因、中评反推、Q&A 答疑到体系搭建。
 leadMagnet: Review 学习路径导图(PDF)
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: learning-path
 ---
 
 <div class="article-callout article-callout-blue">

@@ -27,6 +27,8 @@ relatedTopics:
 publicLessonUse: 适合作为选品公开课的反向推演核心讲稿,带学员从差评和退货理由反推选品标准。
 leadMagnet: 痛点反推选品 SOP 模板
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: method
+openClassSlug: competitor-selection-matrix
 ---
 
 <div class="article-callout article-callout-green">

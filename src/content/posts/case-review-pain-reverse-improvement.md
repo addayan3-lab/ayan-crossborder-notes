@@ -4,7 +4,7 @@ description: "一款家居产品退货率 15%，差评集中在 3 个维度。�
 pubDate: "2026-06-09"
 category: "案例拆解"
 tags: ["案例", "Review"]
-articleType: case
+articleType: case-study
 topic: review
 stage: 实操
 intent: 工具
@@ -16,6 +16,10 @@ relatedTopics:
 publicLessonUse: "本篇可作为 Review 反推公开课的数据分析环节，展示差评聚类和优先级排序的完整流程。"
 leadMagnet: "附 Review 痛点分析表下载"
 wechatHook: 资料领取方式以资料详情页说明为准。
+hookType: 案例复盘
+featured: true
+homepageSlot: hot-practical
+resourceSlug: review-pain-analysis
 ---
 
 ## 1. 案例背景

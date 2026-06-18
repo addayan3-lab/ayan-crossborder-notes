@@ -28,6 +28,9 @@ relatedArticleLinks:
   - slug: selection-pain-reverse
     label: 痛点反推选品
     context: 选品第 3 篇
+articleType: method
+resourceSlug: competitor-selection-matrix
+openClassSlug: competitor-selection-matrix
 ---
 
 <div class="article-callout article-callout-green">

@@ -16,6 +16,9 @@ leadMagnet: 亚马逊新手规则避坑清单
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/amazon-platform-rules-beginner/cover.svg"
+articleType: method
+resourceSlug: platform-rules-checklist
+openClassSlug: platform-rules-beginner
 ---
 
 <div class="article-callout article-callout-yellow">

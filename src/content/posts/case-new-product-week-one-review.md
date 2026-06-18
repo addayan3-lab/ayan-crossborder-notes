@@ -4,7 +4,7 @@ description: "新品上架第一周的数据出来了，卖家不知道怎么判
 pubDate: "2026-06-09"
 category: "案例拆解"
 tags: ["案例", "新品冷启动", "PPC"]
-articleType: case
+articleType: case-study
 topic: ppc
 stage: 新手
 intent: 工具
@@ -17,6 +17,11 @@ relatedTopics:
 publicLessonUse: "本篇可作为新品冷启动公开课的复盘环节，展示第一周数据怎么看、怎么判断。"
 leadMagnet: "附 PPC 周复盘表下载"
 wechatHook: 资料领取方式以资料详情页说明为准。
+hookType: 数字冲击
+featured: true
+homepageSlot: hot-practical
+resourceSlug: ppc-weekly-review
+openClassSlug: ppc-week-one
 ---
 
 ## 1. 案例背景

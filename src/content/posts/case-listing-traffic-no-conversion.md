@@ -4,7 +4,7 @@ description: "Listing 每天有曝光、有点击，就是不出单。卖家以�
 pubDate: "2026-06-09"
 category: "案例拆解"
 tags: ["案例", "Listing"]
-articleType: case
+articleType: case-study
 topic: listing
 stage: 新手
 intent: 避坑
@@ -17,6 +17,10 @@ relatedTopics:
 publicLessonUse: "本篇可作为 Listing 优化公开课的诊断环节，展示如何系统排查有流量没转化的 Listing。"
 leadMagnet: "附 Listing 自检清单下载"
 wechatHook: 资料领取方式以资料详情页说明为准。
+hookType: 案例复盘
+featured: true
+homepageSlot: hot-practical
+resourceSlug: listing-checklist
 ---
 
 ## 1. 案例背景

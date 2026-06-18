@@ -21,6 +21,7 @@ relatedArticleLinks:
   - slug: keyword-cleaning-method
     label: 关键词第 2 篇：关键词清洗方法
     context: 关键词第 2 篇
+articleType: method
 ---
 
 <div class="article-callout article-callout-blue">

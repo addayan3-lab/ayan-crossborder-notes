@@ -15,6 +15,7 @@ relatedTopics:
 publicLessonUse: 适合作为 PPC 公开课的开篇导览,带学员从预算分配、关键词测试、否词、复盘到报表诊断搭起 PPC 体系。
 leadMagnet: PPC 学习路径导图(PDF)
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: learning-path
 ---
 
 <div class="article-callout article-callout-blue">

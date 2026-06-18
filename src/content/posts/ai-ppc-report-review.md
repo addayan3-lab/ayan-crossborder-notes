@@ -24,6 +24,9 @@ relatedArticleLinks:
   - slug: sp-ad-structure
     label: SP 广告结构
     context: PPC 第 2 篇
+articleType: method
+resourceSlug: ppc-weekly-review
+openClassSlug: ppc-week-one
 ---
 
 这是一篇占位文章。

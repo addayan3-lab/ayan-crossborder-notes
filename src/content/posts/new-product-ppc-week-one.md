@@ -21,6 +21,9 @@ relatedArticleLinks:
   - slug: sp-ad-structure
     label: PPC 第 2 篇：SP 广告结构怎么分工
     context: PPC 第 2 篇
+articleType: method
+resourceSlug: ppc-weekly-review
+openClassSlug: ppc-week-one
 ---
 
 新品上架第一周，很多卖家最容易犯的错，就是追 ACOS。

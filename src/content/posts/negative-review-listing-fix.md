@@ -24,6 +24,9 @@ relatedArticleLinks:
   - slug: review-analysis-matrix
     label: Review 第 2 篇：Review 分析矩阵
     context: Review 第 2 篇
+articleType: method
+resourceSlug: review-pain-analysis
+openClassSlug: review-to-selection
 ---
 
 <div class="article-callout article-callout-blue">

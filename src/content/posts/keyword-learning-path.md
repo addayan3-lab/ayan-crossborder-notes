@@ -15,6 +15,7 @@ relatedTopics:
 publicLessonUse: 适合作为关键词公开课的开篇导览,带学员从找词、清洗、判断、投放到复盘 5 步搭起关键词体系。
 leadMagnet: 关键词学习路径导图(PDF)
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: learning-path
 ---
 
 <div class="article-callout article-callout-blue">

@@ -15,6 +15,7 @@ publicLessonUse: 适合作为公开课结尾的工具资料包介绍，把关键
 leadMagnet: 亚马逊 AI 运营工具包
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
+articleType: tutorial
 ---
 
 这是一篇占位文章。

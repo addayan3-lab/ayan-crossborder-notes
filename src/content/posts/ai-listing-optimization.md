@@ -24,6 +24,7 @@ relatedArticleLinks:
   - slug: listing-checklist
     label: Listing 自检清单
     context: Listing 第 2 篇
+articleType: method
 ---
 
 这是一篇占位文章。

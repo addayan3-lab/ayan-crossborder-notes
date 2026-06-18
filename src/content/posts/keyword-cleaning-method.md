@@ -25,6 +25,9 @@ relatedArticleLinks:
   - slug: keyword-search-volume-trap
     label: 搜索量陷阱
     context: 关键词第 3 篇
+articleType: method
+resourceSlug: keyword-cleaning-sheet
+openClassSlug: keyword-to-listing
 ---
 
 <div class="article-callout article-callout-blue">

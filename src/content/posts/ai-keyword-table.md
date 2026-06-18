@@ -16,6 +16,7 @@ publicLessonUse: 适合作为关键词公开课的实操演示，带学员把散
 leadMagnet: 8 字段关键词整理表
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
+articleType: method
 ---
 
 <div class="article-callout article-callout-blue">

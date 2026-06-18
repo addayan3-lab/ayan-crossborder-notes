@@ -20,6 +20,8 @@ relatedArticleLinks:
   - slug: listing-checklist
     label: Listing 自检清单
     context: Listing 第 2 篇
+articleType: method
+openClassSlug: listing-conversion-check
 ---
 
 <div class="article-callout article-callout-blue">

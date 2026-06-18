@@ -24,6 +24,8 @@ relatedArticleLinks:
   - slug: ai-competitor-matrix
     label: 竞品矩阵拆解方法
     context: 选品第 2 篇
+articleType: method
+openClassSlug: competitor-selection-matrix
 ---
 
 <div class="article-callout article-callout-green">

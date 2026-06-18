@@ -19,6 +19,9 @@ leadMagnet: 亚马逊 AI 工具评测表
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/amazon-ai-tools-review/cover.svg"
+articleType: theory
+resourceSlug: ai-tools-review-sheet
+openClassSlug: ai-tools-for-amazon
 ---
 
 <div class="article-callout article-callout-blue">

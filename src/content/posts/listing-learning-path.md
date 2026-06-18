@@ -16,6 +16,7 @@ relatedTopics:
 publicLessonUse: 适合作为 Listing 优化公开课的开篇导览,带学员从关键词、卖点、表达、场景到自查搭起 Listing 体系。
 leadMagnet: Listing 优化学习路径导图(PDF)
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: learning-path
 ---
 
 <div class="article-callout article-callout-blue">

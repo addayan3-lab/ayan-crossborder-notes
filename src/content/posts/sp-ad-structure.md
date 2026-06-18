@@ -24,6 +24,9 @@ relatedArticleLinks:
   - slug: ai-ppc-report-review
     label: PPC 第 3 篇：用 AI 复盘广告报表
     context: PPC 第 3 篇
+articleType: method
+resourceSlug: ppc-weekly-review
+openClassSlug: ppc-week-one
 ---
 
 <div class="article-callout article-callout-blue">

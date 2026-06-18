@@ -24,6 +24,9 @@ relatedArticleLinks:
   - slug: negative-review-listing-fix
     label: Review 第 3 篇：差评改 Listing
     context: Review 第 3 篇
+articleType: method
+resourceSlug: review-pain-analysis
+openClassSlug: review-to-selection
 ---
 
 <div class="article-callout article-callout-blue">
