@@ -42,8 +42,8 @@ export const assistantTopics: AssistantTopic[] = [
   {
     id: "listing",
     label: "Listing",
-    triggerKeywords: ["Listing", "五点", "标题", "优化", "转化率", "A+", "文案"],
-    strongKeywords: ["五点", "标题", "A+", "文案"],
+    triggerKeywords: ["Listing", "五点", "标题", "优化", "转化率", "A+", "文案", "75字符", "Item Highlights"],
+    strongKeywords: ["五点", "标题", "A+", "文案", "75字符", "Item Highlights"],
     steps: [
       "先梳理产品的核心卖点和用户场景。",
       "五点按功能点、场景点、信任点三类信息有序排列。",
@@ -51,6 +51,7 @@ export const assistantTopics: AssistantTopic[] = [
       "发布前用检查清单逐项核对标题、五点、图片和关键词。"
     ],
     articles: [
+      { title: "重点简报：亚马逊标题规则将收紧到 75 字符", slug: "amazon-title-rule-75-characters-2026", desc: "标题变短后的 Listing 调整顺序。" },
       { title: "Listing 第 1 篇：五点写法", slug: "listing-five-bullets", desc: "五点不是 5 个卖点，是 3 类信息的有序组合。" },
       { title: "Listing 第 2 篇：优化检查清单", slug: "listing-checklist", desc: "发布前逐项检查标题、五点、图片和转化要素。" },
       { title: "Listing 第 3 篇：AI 时代 Listing 应该怎么写", slug: "ai-listing-optimization", desc: "AI 能帮什么、不能替代什么的实操框架。" }
@@ -209,14 +210,15 @@ export const assistantTopics: AssistantTopic[] = [
   {
     id: "platform-rules",
     label: "平台规则",
-    triggerKeywords: ["规则", "违规", "封号", "政策", "合规", "平台", "Listing 下架", "警告"],
-    strongKeywords: ["违规", "合规", "索评", "侵权", "变体"],
+    triggerKeywords: ["规则", "违规", "封号", "政策", "合规", "平台", "Listing 下架", "警告", "标题规则", "75字符", "Item Highlights"],
+    strongKeywords: ["违规", "合规", "索评", "侵权", "变体", "标题规则", "75字符"],
     steps: [
       "了解亚马逊平台的核心规则和禁区。",
       "检查自己的 Listing 是否踩了常见违规坑。",
       "建立规则检查清单，每次上架前核对。"
     ],
     articles: [
+      { title: "重点简报：亚马逊标题规则将收紧到 75 字符", slug: "amazon-title-rule-75-characters-2026", desc: "新标题规则和卖家应对清单。" },
       { title: "亚马逊平台规则入门:新手最容易踩的 10 个坑", slug: "amazon-platform-rules-beginner", desc: "新手卖家常踩的平台规则坑。" },
       { title: "案例：平台警告邮件来了", slug: "case-platform-warning-email-checklist", desc: "按清单逐项自查。" },
       { title: "工具第 2 篇：账号健康自查", slug: "tools-account-health-self-check", desc: "ODR、迟发与政策警告怎么处理。" }

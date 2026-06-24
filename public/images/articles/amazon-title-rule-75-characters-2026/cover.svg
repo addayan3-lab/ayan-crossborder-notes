@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">亚马逊标题 75 字符规则重点简报封面</title>
+  <desc id="desc">展示标题从长文本压缩到 75 字符，并把信息分配到 Item Highlights 和 Listing 字段的示意图。</desc>
+  <rect width="1200" height="630" fill="#f7fbff"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+  <rect x="64" y="64" width="1072" height="116" rx="28" fill="#0f172a"/>
+  <text x="104" y="126" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">重点简报</text>
+  <text x="314" y="126" fill="#93c5fd" font-family="Arial, sans-serif" font-size="28" font-weight="700">Amazon Title Rule Update</text>
+  <g transform="translate(104 226)">
+    <rect width="430" height="128" rx="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="28" y="46" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="24" font-weight="700">旧标题</text>
+    <rect x="28" y="68" width="356" height="16" rx="8" fill="#60a5fa"/>
+    <rect x="28" y="94" width="304" height="16" rx="8" fill="#93c5fd"/>
+  </g>
+  <g transform="translate(666 226)">
+    <rect width="430" height="128" rx="18" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="2"/>
+    <text x="28" y="46" fill="#166534" font-family="Arial, sans-serif" font-size="24" font-weight="700">新标题：75 字符内</text>
+    <rect x="28" y="72" width="250" height="18" rx="9" fill="#22c55e"/>
+  </g>
+  <path d="M560 290h76" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M622 270l28 20-28 20" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(104 402)">
+    <rect width="992" height="88" rx="18" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <text x="28" y="38" fill="#9a3412" font-family="Arial, sans-serif" font-size="22" font-weight="700">被移出的信息不要删除</text>
+    <text x="28" y="66" fill="#7c2d12" font-family="Arial, sans-serif" font-size="20">Item Highlights · 五点 · 图片 · A+ · 后台属性</text>
+  </g>
+  <text x="104" y="538" fill="#475569" font-family="Arial, sans-serif" font-size="20">阿岩跨境笔记 · Listing 规则变化应对方案</text>
+</svg>

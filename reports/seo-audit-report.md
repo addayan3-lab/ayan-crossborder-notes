@@ -1,14 +1,14 @@
 # 018｜站点 SEO 基础体检报告
 
-生成时间：2026-06-18T15:25:07.079Z
+生成时间：2026-06-24T01:55:50.430Z
 
 站点：https://amz.hao1234.top
 
 ## 一、总览
 
-- 检查页面数：110
-- 通过项：872
-- 问题项：8
+- 检查页面数：131
+- 通过项：1020
+- 问题项：28
 - robots.txt：PASS
 - sitemap-index.xml：PASS
 
@@ -128,6 +128,29 @@
 - PASS：title 正常：34
 - PASS：description 正常：64
 - PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ai-amazon-operator-prompt-library/
+
+- title：AI 工具第 3 篇：亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断 | 阿岩跨境笔记
+- description：这篇文章围绕亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/ai-amazon-operator-prompt-library/
+- og:title：AI 工具第 3 篇：亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断
+- og:description：这篇文章围绕亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/ai-amazon-operator-prompt-library/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：47
+- PASS：description 正常：85
+- FAIL：H1 数量异常：2
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -916,6 +939,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/amazon-title-rule-75-characters-2026/
+
+- title：重点简报：亚马逊标题规则将收紧到 75 字符，卖家现在该怎么改 | 阿岩跨境笔记
+- description：亚马逊官方卖家论坛公告称，2026-07-27 起，除 Media 类目外，商品标题将需要控制在 75 字符以内，并用 Item Highlights 承接额外 125 字符。本文整理新规则影响、Listing 调整顺序和新手卖家的应对清单。
+- H1：1
+- H2：10
+- canonical：https://amz.hao1234.top/articles/amazon-title-rule-75-characters-2026/
+- og:title：重点简报：亚马逊标题规则将收紧到 75 字符，卖家现在该怎么改
+- og:description：亚马逊官方卖家论坛公告称，2026-07-27 起，除 Media 类目外，商品标题将需要控制在 75 字符以内，并用 Item Highlights 承接额外 125 字符。本文整理新规则影响、Listing 调整顺序和新手卖家的应对清单。
+- og:image：https://amz.hao1234.top/images/articles/amazon-title-rule-75-characters-2026/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：40
+- PASS：description 正常：121
+- PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/case-5000-sales-still-losing-money/
 
 - title：案例：月销 $5000 还在亏钱，利润到底算错在哪 | 阿岩跨境笔记
@@ -956,6 +1002,29 @@
 - PASS：title 正常：48
 - PASS：description 正常：82
 - PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-ai-tool-made-wrong-decision/
+
+- title：案例：AI 说这个产品可以做，为什么我建议先停下 | 阿岩跨境笔记
+- description：这篇文章围绕AI 说这个产品可以做，为什么我建议先停下展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-ai-tool-made-wrong-decision/
+- og:title：案例：AI 说这个产品可以做，为什么我建议先停下
+- og:description：这篇文章围绕AI 说这个产品可以做，为什么我建议先停下展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-ai-tool-made-wrong-decision/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：33
+- PASS：description 正常：79
+- FAIL：H1 数量异常：2
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1031,6 +1100,75 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/case-coupon-cut-price-still-no-orders/
+
+- title：案例：Coupon 开到 20% 还是没订单，问题不一定是价格 | 阿岩跨境笔记
+- description：这篇文章围绕Coupon 开到 20% 还是没订单，问题不一定是价格展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-coupon-cut-price-still-no-orders/
+- og:title：案例：Coupon 开到 20% 还是没订单，问题不一定是价格
+- og:description：这篇文章围绕Coupon 开到 20% 还是没订单，问题不一定是价格展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-coupon-cut-price-still-no-orders/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：40
+- PASS：description 正常：86
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-exact-match-one-word-too-expensive/
+
+- title：案例：一个 Exact 词烧掉预算，新品广告为什么越跑越窄 | 阿岩跨境笔记
+- description：这篇文章围绕一个 Exact 词烧掉预算，新品广告为什么越跑越窄展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-exact-match-one-word-too-expensive/
+- og:title：案例：一个 Exact 词烧掉预算，新品广告为什么越跑越窄
+- og:description：这篇文章围绕一个 Exact 词烧掉预算，新品广告为什么越跑越窄展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-exact-match-one-word-too-expensive/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：38
+- PASS：description 正常：84
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-fba-fee-eats-margin/
+
+- title：案例：售价没变，FBA 费用却吃掉了利润 | 阿岩跨境笔记
+- description：这篇文章围绕售价没变，FBA 费用却吃掉了利润展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-fba-fee-eats-margin/
+- og:title：案例：售价没变，FBA 费用却吃掉了利润
+- og:description：这篇文章围绕售价没变，FBA 费用却吃掉了利润展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-fba-fee-eats-margin/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：29
+- PASS：description 正常：75
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/case-keyword-200-to-30-listing/
 
 - title：200 个关键词进 Listing 反而没流量 | 阿岩跨境笔记
@@ -1071,6 +1209,29 @@
 - PASS：title 正常：41
 - PASS：description 正常：69
 - PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-mobile-main-image-text-too-small/
+
+- title：案例：电脑端主图很好看，手机端却看不清卖点 | 阿岩跨境笔记
+- description：这篇文章围绕电脑端主图很好看，手机端却看不清卖点展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-mobile-main-image-text-too-small/
+- og:title：案例：电脑端主图很好看，手机端却看不清卖点
+- og:description：这篇文章围绕电脑端主图很好看，手机端却看不清卖点展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-mobile-main-image-text-too-small/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：30
+- PASS：description 正常：76
+- FAIL：H1 数量异常：2
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1215,6 +1376,52 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/case-review-size-chart-missing/
+
+- title：案例：差评都在说尺寸，其实是尺码表缺了一句话 | 阿岩跨境笔记
+- description：这篇文章围绕差评都在说尺寸，其实是尺码表缺了一句话展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-review-size-chart-missing/
+- og:title：案例：差评都在说尺寸，其实是尺码表缺了一句话
+- og:description：这篇文章围绕差评都在说尺寸，其实是尺码表缺了一句话展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-review-size-chart-missing/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：31
+- PASS：description 正常：77
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/case-seasonal-product-missed-window/
+
+- title：案例：季节品不是不能做，是错过窗口别硬上 | 阿岩跨境笔记
+- description：这篇文章围绕季节品不是不能做，是错过窗口别硬上展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-seasonal-product-missed-window/
+- og:title：案例：季节品不是不能做，是错过窗口别硬上
+- og:description：这篇文章围绕季节品不是不能做，是错过窗口别硬上展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-seasonal-product-missed-window/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：29
+- PASS：description 正常：75
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/case-selection-seems-ok-dont-do/
 
 - title：搜索量 12 万但不该入场：品牌集中度陷阱 | 阿岩跨境笔记
@@ -1261,6 +1468,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/case-tacos-dropping-but-profit-not-growing/
+
+- title：案例：TACOS 下降了，利润为什么没有增长 | 阿岩跨境笔记
+- description：这篇文章围绕TACOS 下降了，利润为什么没有增长展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/case-tacos-dropping-but-profit-not-growing/
+- og:title：案例：TACOS 下降了，利润为什么没有增长
+- og:description：这篇文章围绕TACOS 下降了，利润为什么没有增长展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/case-tacos-dropping-but-profit-not-growing/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：31
+- PASS：description 正常：77
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/consumer-ai-search-amazon/
 
 - title：消费者如何用 Amazon AI 搜索产品 | 阿岩跨境笔记
@@ -1301,6 +1531,29 @@
 - PASS：title 正常：41
 - PASS：description 正常：64
 - PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/keyword-buyer-intent-layering/
+
+- title：关键词第 6 篇：买家意图分层——同一个词为什么转化完全不同 | 阿岩跨境笔记
+- description：这篇文章围绕买家意图分层——同一个词为什么转化完全不同展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/keyword-buyer-intent-layering/
+- og:title：关键词第 6 篇：买家意图分层——同一个词为什么转化完全不同
+- og:description：这篇文章围绕买家意图分层——同一个词为什么转化完全不同展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/keyword-buyer-intent-layering/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：39
+- PASS：description 正常：79
+- FAIL：H1 数量异常：2
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1393,6 +1646,29 @@
 - PASS：title 正常：38
 - PASS：description 正常：90
 - PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/keyword-negative-word-library/
+
+- title：关键词第 7 篇：否词库怎么建立——让广告复盘越来越省力 | 阿岩跨境笔记
+- description：这篇文章围绕否词库怎么建立——让广告复盘越来越省力展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/keyword-negative-word-library/
+- og:title：关键词第 7 篇：否词库怎么建立——让广告复盘越来越省力
+- og:description：这篇文章围绕否词库怎么建立——让广告复盘越来越省力展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/keyword-negative-word-library/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：37
+- PASS：description 正常：77
+- FAIL：H1 数量异常：2
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1537,6 +1813,52 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/listing-mobile-first-optimization/
+
+- title：Listing 第 6 篇：移动端优先优化——手机屏幕上先赢前 3 秒 | 阿岩跨境笔记
+- description：这篇文章围绕移动端优先优化——手机屏幕上先赢前 3 秒展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/listing-mobile-first-optimization/
+- og:title：Listing 第 6 篇：移动端优先优化——手机屏幕上先赢前 3 秒
+- og:description：这篇文章围绕移动端优先优化——手机屏幕上先赢前 3 秒展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/listing-mobile-first-optimization/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：44
+- PASS：description 正常：79
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/listing-price-coupon-conversion-check/
+
+- title：Listing 第 5 篇：价格与 Coupon 自检——降价前先看这 6 个信号 | 阿岩跨境笔记
+- description：这篇文章围绕价格与 Coupon 自检——降价前先看这 6 个信号展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/listing-price-coupon-conversion-check/
+- og:title：Listing 第 5 篇：价格与 Coupon 自检——降价前先看这 6 个信号
+- og:description：这篇文章围绕价格与 Coupon 自检——降价前先看这 6 个信号展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/listing-price-coupon-conversion-check/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：50
+- PASS：description 正常：85
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/negative-review-listing-fix/
 
 - title：Review 第 3 篇：差评改 Listing | 阿岩跨境笔记
@@ -1652,6 +1974,52 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/ppc-search-term-to-campaign-sop/
+
+- title：PPC 第 5 篇：搜索词到广告组——怎么把出单词单独养起来 | 阿岩跨境笔记
+- description：这篇文章围绕搜索词到广告组——怎么把出单词单独养起来展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/ppc-search-term-to-campaign-sop/
+- og:title：PPC 第 5 篇：搜索词到广告组——怎么把出单词单独养起来
+- og:description：这篇文章围绕搜索词到广告组——怎么把出单词单独养起来展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/ppc-search-term-to-campaign-sop/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：39
+- PASS：description 正常：78
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/ppc-tacos-weekly-review/
+
+- title：PPC 第 6 篇：TACOS 周复盘——广告效率不能只看 ACOS | 阿岩跨境笔记
+- description：这篇文章围绕TACOS 周复盘——广告效率不能只看 ACOS展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/ppc-tacos-weekly-review/
+- og:title：PPC 第 6 篇：TACOS 周复盘——广告效率不能只看 ACOS
+- og:description：这篇文章围绕TACOS 周复盘——广告效率不能只看 ACOS展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/ppc-tacos-weekly-review/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：43
+- PASS：description 正常：82
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/prompt-structure-for-amazon-sellers/
 
 - title：提示词结构入门：角色、任务、约束、输出格式是什么 | 阿岩跨境笔记
@@ -1744,6 +2112,75 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/review-voice-of-customer-tagging/
+
+- title：Review 第 5 篇：VOC 标签法——把差评变成产品改进清单 | 阿岩跨境笔记
+- description：这篇文章围绕VOC 标签法——把差评变成产品改进清单展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/review-voice-of-customer-tagging/
+- og:title：Review 第 5 篇：VOC 标签法——把差评变成产品改进清单
+- og:description：这篇文章围绕VOC 标签法——把差评变成产品改进清单展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/review-voice-of-customer-tagging/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：42
+- PASS：description 正常：78
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/selection-fba-size-tier-cost-trap/
+
+- title：选品第 7 篇：FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润 | 阿岩跨境笔记
+- description：这篇文章围绕FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/selection-fba-size-tier-cost-trap/
+- og:title：选品第 7 篇：FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润
+- og:description：这篇文章围绕FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/selection-fba-size-tier-cost-trap/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：41
+- PASS：description 正常：82
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/selection-first-order-sample-checklist/
+
+- title：选品第 5 篇：首单样品检查清单——下单前先排 12 个雷 | 阿岩跨境笔记
+- description：这篇文章围绕首单样品检查清单——下单前先排 12 个雷展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/selection-first-order-sample-checklist/
+- og:title：选品第 5 篇：首单样品检查清单——下单前先排 12 个雷
+- og:description：这篇文章围绕首单样品检查清单——下单前先排 12 个雷展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/selection-first-order-sample-checklist/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：38
+- PASS：description 正常：79
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/selection-learning-path/
 
 - title：亚马逊选品学习路径：从市场容量到选品决策 | 阿岩跨境笔记
@@ -1813,6 +2250,29 @@
 - PASS：og:image 正常
 - PASS：twitter:card 正常
 
+### https://amz.hao1234.top/articles/selection-seasonality-risk-check/
+
+- title：选品第 6 篇：季节性风险判断——不要把旺季销量当常态 | 阿岩跨境笔记
+- description：这篇文章围绕季节性风险判断——不要把旺季销量当常态展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/selection-seasonality-risk-check/
+- og:title：选品第 6 篇：季节性风险判断——不要把旺季销量当常态
+- og:description：这篇文章围绕季节性风险判断——不要把旺季销量当常态展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/selection-seasonality-risk-check/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：36
+- PASS：description 正常：77
+- FAIL：H1 数量异常：2
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
 ### https://amz.hao1234.top/articles/sp-ad-structure/
 
 - title：PPC 第 2 篇：SP 广告结构怎么分工 | 阿岩跨境笔记
@@ -1876,6 +2336,29 @@
 - PASS：title 正常：34
 - PASS：description 正常：67
 - PASS：H1 数量正常：1
+- PASS：canonical 正常
+- PASS：og:title 正常
+- PASS：og:description 正常
+- PASS：og:image 正常
+- PASS：twitter:card 正常
+
+### https://amz.hao1234.top/articles/tools-weekly-business-review-dashboard/
+
+- title：工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数 | 阿岩跨境笔记
+- description：这篇文章围绕亚马逊周经营看板——每周只看这 10 个数展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- H1：2
+- H2：8
+- canonical：https://amz.hao1234.top/articles/tools-weekly-business-review-dashboard/
+- og:title：工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数
+- og:description：这篇文章围绕亚马逊周经营看板——每周只看这 10 个数展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
+- og:image：https://amz.hao1234.top/images/articles/tools-weekly-business-review-dashboard/cover.svg
+- twitter:card：summary_large_image
+
+检查结果：
+
+- PASS：title 正常：38
+- PASS：description 正常：79
+- FAIL：H1 数量异常：2
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常

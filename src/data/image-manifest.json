@@ -392,6 +392,14 @@
     "alt": "亚马逊平台规则入门：新手避坑清单封面图"
   },
   {
+    "id": "article-amazon-title-rule-75-characters-2026-cover",
+    "path": "/images/articles/amazon-title-rule-75-characters-2026/cover.svg",
+    "type": "cover",
+    "topics": ["listing", "tools"],
+    "keywords": ["标题规则", "75字符", "Listing", "Item Highlights"],
+    "alt": "亚马逊标题 75 字符规则重点简报封面图"
+  },
+  {
     "id": "article-ai-prompt-competitor-listing-analysis-cover",
     "path": "/images/articles/ai-prompt-competitor-listing-analysis/cover.svg",
     "type": "cover",
