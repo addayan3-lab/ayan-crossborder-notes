@@ -15,18 +15,18 @@ relatedTopics:
 publicLessonUse: 适合作为 PPC 公开课的 SP 广告结构演示,带学员区分 SP 自动、广泛、精准、商品 4 类广告的预算分配逻辑。
 leadMagnet: SP 四类广告预算分配模板
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: method
+resourceSlug: ppc-weekly-review
+openClassSlug: ppc-week-one
 prevArticle: new-product-ppc-week-one
 nextArticle: ai-ppc-report-review
 relatedArticleLinks:
   - slug: new-product-ppc-week-one
-    label: PPC 第 1 篇：新品广告第一周怎么开
-    context: PPC 第 1 篇
+    label: "新品广告第一周"
+    context: "PPC第 1 篇"
   - slug: ai-ppc-report-review
-    label: PPC 第 3 篇：用 AI 复盘广告报表
-    context: PPC 第 3 篇
-articleType: method
-resourceSlug: ppc-weekly-review
-openClassSlug: ppc-week-one
+    label: "AI 复盘广告报表"
+    context: "PPC第 3 篇"
 ---
 
 <div class="article-callout article-callout-blue">

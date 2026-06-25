@@ -23,6 +23,16 @@ relatedTopics:
 publicLessonUse: "关键词到 Listing 实操课的 AI 清洗演示"
 leadMagnet: "关键词清洗表"
 wechatHook: "资料领取方式以资料详情页说明为准"
+relatedArticleLinks:
+  - slug: prompt-structure-for-amazon-sellers
+    label: "提示词结构入门"
+    context: "提示词基础篇"
+  - slug: ai-keyword-table
+    label: "AI 做关键词表"
+    context: "关键词工具篇"
+  - slug: keyword-cleaning-method
+    label: "关键词清洗方法"
+    context: "关键词第 2 篇"
 ---
 
 关键词清洗，是很多亚马逊新手最容易跳过的一步。

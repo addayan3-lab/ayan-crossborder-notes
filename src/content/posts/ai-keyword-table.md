@@ -17,6 +17,16 @@ leadMagnet: 8 字段关键词整理表
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 articleType: method
+relatedArticleLinks:
+  - slug: keyword-source-4-types
+    label: "关键词 4 类来源"
+    context: "关键词第 1 篇"
+  - slug: keyword-cleaning-method
+    label: "关键词清洗方法"
+    context: "关键词第 2 篇"
+  - slug: ai-keyword-cleaning-prompts
+    label: "关键词清洗提示词"
+    context: "AI 工具篇"
 ---
 
 <div class="article-callout article-callout-blue">

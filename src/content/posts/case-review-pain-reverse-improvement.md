@@ -4,6 +4,7 @@ description: "一款家居产品退货率 15%，差评集中在 3 个维度。�
 pubDate: "2026-06-09"
 category: "案例拆解"
 tags: ["案例", "Review"]
+image: "/images/articles/case-review-pain-reverse-improvement/cover.svg"
 articleType: case-study
 topic: review
 stage: 实操
@@ -20,7 +21,19 @@ hookType: 案例复盘
 featured: true
 homepageSlot: hot-practical
 resourceSlug: review-pain-analysis
+draft: false
+relatedArticleLinks:
+  - slug: ai-review-analysis
+    label: "AI 分析 Review 找卖点"
+    context: "Review 第 1 篇"
+  - slug: review-analysis-matrix
+    label: "Review 分析矩阵"
+    context: "Review 第 2 篇"
+  - slug: negative-review-listing-fix
+    label: "差评改 Listing"
+    context: "Review 第 3 篇"
 ---
+
 
 ## 1. 案例背景
 

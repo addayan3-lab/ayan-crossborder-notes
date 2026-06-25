@@ -9,22 +9,27 @@ draft: false
 topic: "ppc"
 stage: "实操"
 intent: "工具"
+relatedTopics:
+  - keyword
+  - listing
+  - tools
+publicLessonUse: 适合作为 PPC 公开课的数据判断模块，帮助新手用广告报表拆解问题，而不是只看 ACOS。
 articleType: "method"
 resourceSlug: "ppc-weekly-review"
 openClassSlug: "ppc-week-one"
 leadMagnet: "PPC 周复盘表"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+prevArticle: ai-ppc-report-review
+nextArticle: ppc-search-term-to-campaign-sop
 relatedArticleLinks:
-  - slug: new-product-ppc-week-one
-    label: "新品广告第一周"
-    context: "理解第一周广告数据先看哪些指标"
-  - slug: sp-ad-structure
-    label: "SP 广告结构"
-    context: "否词前先确认广告结构是否清晰"
-  - slug: case-auto-ads-300-search-terms
-    label: "300 个搜索词案例"
-    context: "用案例理解词多不等于有效"
+  - slug: ai-ppc-report-review
+    label: "AI 复盘广告报表"
+    context: "PPC第 3 篇"
+  - slug: ppc-search-term-to-campaign-sop
+    label: "搜索词到广告组 SOP"
+    context: "PPC第 5 篇"
 ---
+
 
 新品第一周广告跑完，很多卖家打开搜索词报告会有一个共同感受：词很多，钱花了，单不多。自动广告里可能跑出几百条搜索词，手动广告里也会出现一些看起来相关、但没有转化的词。这个阶段最容易犯的错误，是把「否词」理解成单纯降 ACOS 的动作。
 

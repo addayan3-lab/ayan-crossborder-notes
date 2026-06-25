@@ -9,6 +9,11 @@ draft: false
 topic: ppc
 stage: 实操
 intent: 决策
+relatedTopics:
+  - keyword
+  - listing
+  - tools
+publicLessonUse: 适合作为 PPC 公开课的数据判断模块，帮助新手用广告报表拆解问题，而不是只看 ACOS。
 articleType: case-study
 hookType: 反常识
 featured: true
@@ -25,7 +30,7 @@ relatedArticleLinks:
     label: 周经营看板
     context: 与本文判断步骤配合使用
 ---
-# 案例：TACOS 下降了，利润为什么没有增长
+
 
 这个案例是脱敏复盘，类目、金额和部分细节做了比例调整，但问题逻辑是真实的。它适合新手对照自己当前的运营动作，尤其适合已经开始上架、开广告、看数据，但不知道下一步该不该加码的卖家。
 

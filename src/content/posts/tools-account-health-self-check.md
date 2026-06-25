@@ -9,6 +9,10 @@ draft: false
 topic: "tools"
 stage: "新手"
 intent: "避坑"
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为工具资料公开课的配套说明，帮助新手把资料表格接到日常运营流程里。
 articleType: "method"
 resourceSlug: "platform-rules-checklist"
 openClassSlug: "platform-rules-beginner"
@@ -22,6 +26,7 @@ relatedArticleLinks:
     label: "Q&A 风险案例"
     context: "从页面风险看账号健康隐患"
 ---
+
 
 新卖家最怕看到两类提醒：一类是账号健康指标变红，另一类是收到政策或绩效相关邮件。很多人第一反应是慌，马上改 Listing、删图片、关广告，甚至还没看清原因就提交申诉。这样做反而可能把问题扩大。
 

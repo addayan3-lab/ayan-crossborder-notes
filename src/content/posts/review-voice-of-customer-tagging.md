@@ -9,21 +9,23 @@ draft: false
 topic: review
 stage: 实操
 intent: 工具
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为 Review 分析公开课的实操模块，帮助卖家把评价、退货和用户语言反哺到选品与 Listing。
 articleType: method
 featured: false
 resourceSlug: review-pain-analysis
 openClassSlug: review-to-selection
 leadMagnet: "可配合《Review 痛点分析表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: review-return-data-analysis
 relatedArticleLinks:
   - slug: review-return-data-analysis
-    label: 退货数据分析
-    context: 与本文判断步骤配合使用
-  - slug: review-analysis-matrix
-    label: Review 分析矩阵
-    context: 与本文判断步骤配合使用
+    label: "退货数据分析"
+    context: "Review第 4 篇"
 ---
-# Review 第 5 篇：VOC 标签法——把差评变成产品改进清单
+
 
 Review 分析的重点不是把差评翻译一遍，而是把买家的抱怨整理成可行动的标签。比如尺寸偏差、材质预期、安装困难、包装破损、使用场景不符、说明书不清楚，这些标签背后对应的是产品、Listing、图片、包装和客服动作。VOC 标签法能把零散差评变成下一轮优化清单。
 

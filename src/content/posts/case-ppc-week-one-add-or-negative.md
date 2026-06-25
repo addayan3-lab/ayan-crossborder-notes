@@ -9,6 +9,11 @@ draft: false
 topic: "ppc"
 stage: "实操"
 intent: "工具"
+relatedTopics:
+  - keyword
+  - listing
+  - tools
+publicLessonUse: 适合作为 PPC 公开课的数据判断模块，帮助新手用广告报表拆解问题，而不是只看 ACOS。
 articleType: "case-study"
 hookType: "数字冲击"
 featured: true
@@ -25,6 +30,7 @@ relatedArticleLinks:
     label: "新品广告第一周"
     context: "先看关键指标"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

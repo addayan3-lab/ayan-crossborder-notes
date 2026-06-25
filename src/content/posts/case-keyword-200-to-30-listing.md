@@ -9,6 +9,10 @@ draft: false
 topic: "keyword"
 stage: "进阶"
 intent: "工具"
+relatedTopics:
+  - listing
+  - ppc
+publicLessonUse: 适合作为关键词专题公开课的课前阅读，帮助新手先理解找词、筛词和关键词进入 Listing/广告的顺序。
 articleType: "case-study"
 hookType: "数字冲击"
 featured: true
@@ -23,6 +27,7 @@ relatedArticleLinks:
     label: "关键词清洗方法"
     context: "把词压缩成可用词"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

@@ -9,6 +9,10 @@ draft: false
 topic: "selection"
 stage: "进阶"
 intent: "决策"
+relatedTopics:
+  - review
+  - tools
+publicLessonUse: 适合作为选品公开课的判断模块，帮助新手从利润、竞品、风险和差评信号综合判断产品能不能做。
 articleType: "case-study"
 hookType: "案例复盘"
 featured: true
@@ -23,6 +27,7 @@ relatedArticleLinks:
     label: "竞品矩阵"
     context: "拆品牌集中度"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

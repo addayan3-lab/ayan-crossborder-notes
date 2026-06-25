@@ -9,6 +9,10 @@ draft: false
 topic: ai-search
 stage: 新手
 intent: 工具
+relatedTopics:
+  - listing
+  - tools
+publicLessonUse: 适合作为 AI 运营公开课的趋势和实操模块，帮助卖家理解 AI 搜索、Rufus 和 AI 工具对运营动作的影响。
 articleType: method
 featured: false
 resourceSlug: ai-tools-review-sheet
@@ -16,14 +20,17 @@ openClassSlug: ai-tools-for-amazon
 leadMagnet: "可配合《AI 工具评测表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
 relatedArticleLinks:
-  - slug: ai-prompt-product-research-sop
-    label: 选品提示词 SOP
-    context: 与本文判断步骤配合使用
-  - slug: ai-prompt-listing-human-review
-    label: AI Listing 人审
-    context: 与本文判断步骤配合使用
+  - slug: ai-prompt-product-differentiation
+    label: "产品差异化 Prompt"
+    context: "提示词库实操"
+  - slug: ai-prompt-listing-risk-check
+    label: "Listing 风险检查 Prompt"
+    context: "提示词库实操"
+  - slug: prompt-structure-for-amazon-sellers
+    label: "提示词结构入门"
+    context: "提示词基础篇"
 ---
-# AI 工具第 3 篇：亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断
+
 
 AI 可以提高运营分析效率，但不能替代卖家做最终决策。适合交给 AI 的任务，是分类、整理、对比、生成检查清单和发现异常；不适合完全交给 AI 的任务，是判断能不能入场、是否侵权、是否符合平台政策、是否要下大货。提示词库的价值，是把 AI 固定在辅助角色上。
 

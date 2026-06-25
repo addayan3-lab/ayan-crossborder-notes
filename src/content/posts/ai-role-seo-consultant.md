@@ -4,6 +4,7 @@ description: "这篇给你一套 Amazon SEO 顾问 AI 身份提示词，帮助�
 pubDate: "2026-06-09"
 category: "Listing"
 tags: ["AI 身份", "SEO", "关键词"]
+image: "/images/articles/ai-role-seo-consultant/cover.svg"
 articleType: prompt
 topic: listing
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "Listing 自检清单"
 publicLessonUse: "Listing 自检与转化表达课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-return-diagnostician
+nextArticle: ai-role-avoid-pitfalls-advisor
+relatedArticleLinks:
+  - slug: ai-role-return-diagnostician
+    label: "退货诊断师 Prompt"
+    context: "AI 身份第 6 篇"
+  - slug: ai-role-avoid-pitfalls-advisor
+    label: "避坑顾问 Prompt"
+    context: "AI 身份第 8 篇"
 ---
+
 
 很多新手知道要优化关键词，但不知道关键词应该放在哪里。标题、五点、Search Terms、A+ 内容，每个位置的 SEO 作用不同。放错位置，关键词再多也没用。
 

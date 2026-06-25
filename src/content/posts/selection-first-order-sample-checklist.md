@@ -9,6 +9,10 @@ draft: false
 topic: selection
 stage: 新手
 intent: 避坑
+relatedTopics:
+  - review
+  - tools
+publicLessonUse: 适合作为选品公开课的判断模块，帮助新手从利润、竞品、风险和差评信号综合判断产品能不能做。
 articleType: method
 featured: false
 resourceSlug: competitor-selection-matrix
@@ -17,13 +21,16 @@ leadMagnet: "可配合《竞品矩阵拆解表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
 relatedArticleLinks:
   - slug: case-supplier-can-make-dont-order
-    label: 供应商说能做别急着下单
-    context: 与本文判断步骤配合使用
-  - slug: selection-certification-logistics-precheck
-    label: 认证与物流预检
-    context: 与本文判断步骤配合使用
+    label: "供应商说能做别急着下单"
+    context: "选品案例"
+  - slug: selection-fba-size-tier-cost-trap
+    label: "FBA 尺寸分段成本坑"
+    context: "选品第 4 篇"
+  - slug: selection-profit-reverse-calculation
+    label: "利润倒推选品"
+    context: "选品第 2 篇"
 ---
-# 选品第 5 篇：首单样品检查清单——下单前先排 12 个雷
+
 
 首单样品不是看供应商能不能做，而是看这个产品放到亚马逊系统里会不会出问题。很多新手一看到样品外观还可以，就急着谈大货、做包装、定头程，结果真正上架后才发现尺寸偏差、材质描述说不清、配件容易漏发、包装抗摔不够。样品检查的目标，是在最小成本下暴露最大风险。
 

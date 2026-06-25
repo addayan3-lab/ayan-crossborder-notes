@@ -16,14 +16,14 @@ publicLessonUse: 适合作为 PPC 入门公开课的新品首周广告节奏案�
 leadMagnet: 新品首周 PPC 节奏表
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
-nextArticle: sp-ad-structure
-relatedArticleLinks:
-  - slug: sp-ad-structure
-    label: PPC 第 2 篇：SP 广告结构怎么分工
-    context: PPC 第 2 篇
 articleType: method
 resourceSlug: ppc-weekly-review
 openClassSlug: ppc-week-one
+nextArticle: sp-ad-structure
+relatedArticleLinks:
+  - slug: sp-ad-structure
+    label: "SP 广告结构"
+    context: "PPC第 2 篇"
 ---
 
 新品上架第一周，很多卖家最容易犯的错，就是追 ACOS。

@@ -9,22 +9,26 @@ draft: false
 topic: "keyword"
 stage: "进阶"
 intent: "工具"
+relatedTopics:
+  - listing
+  - ppc
+publicLessonUse: 适合作为关键词专题公开课的课前阅读，帮助新手先理解找词、筛词和关键词进入 Listing/广告的顺序。
 articleType: "method"
 resourceSlug: "keyword-cleaning-sheet"
 openClassSlug: "keyword-to-listing"
 leadMagnet: "关键词清洗表"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+prevArticle: keyword-search-volume-trap
+nextArticle: keyword-buyer-intent-layering
 relatedArticleLinks:
-  - slug: keyword-source-4-types
-    label: "4 类关键词来源"
-    context: "先建立关键词来源基础框架"
-  - slug: keyword-cleaning-method
-    label: "关键词清洗方法"
-    context: "把挖到的词筛成可用词"
-  - slug: case-keyword-200-to-30-listing
-    label: "200 词压缩案例"
-    context: "避免把长尾词堆进 Listing"
+  - slug: keyword-search-volume-trap
+    label: "搜索量陷阱"
+    context: "关键词第 3 篇"
+  - slug: keyword-buyer-intent-layering
+    label: "买家意图分层"
+    context: "关键词第 6 篇"
 ---
+
 
 很多卖家做关键词，只会打开工具拉一批词，然后按搜索量排序。这样做能找到大词，但很容易漏掉真正接近成交的长尾词。长尾词不一定搜索量大，却往往更能反映用户具体需求，比如尺寸、场景、材质、适用人群、使用痛点。
 

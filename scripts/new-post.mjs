@@ -20,6 +20,12 @@ function today() {
   return d.toISOString().slice(0, 10);
 }
 
+function dateAfter(days) {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
 const rl = readline.createInterface({ input, output });
 
 const title = await rl.question("文章标题：");
@@ -52,6 +58,11 @@ description: "${description}"
 pubDate: "${today()}"
 category: "${category}"
 draft: false
+updateType: evergreen
+updateStatus: current
+lastReviewed: "${today()}"
+nextReviewDue: "${dateAfter(180)}"
+reviewCadenceDays: 180
 ---
 
 ## 一、这篇文章解决什么问题

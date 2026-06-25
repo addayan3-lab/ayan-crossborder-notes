@@ -4,6 +4,7 @@ description: "这篇给你一套退货诊断师 AI 身份提示词，帮助新�
 pubDate: "2026-06-09"
 category: "Review"
 tags: ["AI 身份", "退货", "产品优化"]
+image: "/images/articles/ai-role-return-diagnostician/cover.svg"
 articleType: prompt
 topic: review
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "Review 痛点分析表"
 publicLessonUse: "Review 反推选品与页面优化课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-competitor-researcher
+nextArticle: ai-role-seo-consultant
+relatedArticleLinks:
+  - slug: ai-role-competitor-researcher
+    label: "竞品研究员 Prompt"
+    context: "AI 身份第 5 篇"
+  - slug: ai-role-seo-consultant
+    label: "Amazon SEO 顾问 Prompt"
+    context: "AI 身份第 7 篇"
 ---
+
 
 很多新手看到退货率高，第一反应是"产品质量不行"。但退货原因有很多种：产品本身有问题、页面描述有误导、物流导致损坏、用户不会用、期望和实际不符。不同的退货原因，对应的解决方案完全不同。
 

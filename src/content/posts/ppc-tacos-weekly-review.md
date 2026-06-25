@@ -9,21 +9,24 @@ draft: false
 topic: ppc
 stage: 进阶
 intent: 决策
+relatedTopics:
+  - keyword
+  - listing
+  - tools
+publicLessonUse: 适合作为 PPC 公开课的数据判断模块，帮助新手用广告报表拆解问题，而不是只看 ACOS。
 articleType: method
 featured: false
 resourceSlug: ppc-weekly-review
 openClassSlug: ppc-week-one
 leadMagnet: "可配合《PPC 周复盘表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: ppc-search-term-to-campaign-sop
 relatedArticleLinks:
-  - slug: ppc-budget-allocation-first-month
-    label: 首月预算分配
-    context: 与本文判断步骤配合使用
-  - slug: case-tacos-dropping-but-profit-not-growing
-    label: TACOS 下降但利润没增长案例
-    context: 与本文判断步骤配合使用
+  - slug: ppc-search-term-to-campaign-sop
+    label: "搜索词到广告组 SOP"
+    context: "PPC第 5 篇"
 ---
-# PPC 第 6 篇：TACOS 周复盘——广告效率不能只看 ACOS
+
 
 ACOS 是广告订单维度，TACOS 才更接近店铺经营视角。新品期 ACOS 高不一定错，成熟期 ACOS 低也不一定健康。如果广告花费下降了，但自然订单也跟着掉，表面 ACOS 变好，实际可能是流量被削弱。每周复盘 TACOS，是为了判断广告到底在带动自然增长，还是只是在买订单。
 

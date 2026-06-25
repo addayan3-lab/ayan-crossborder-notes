@@ -9,6 +9,11 @@ draft: false
 topic: listing
 stage: 实操
 intent: 决策
+relatedTopics:
+  - keyword
+  - review
+  - ai-search
+publicLessonUse: 适合作为 Listing 优化公开课的案例或方法模块，帮助卖家把关键词、卖点、图片和转化表达串起来。
 articleType: case-study
 hookType: 反常识
 featured: true
@@ -25,7 +30,7 @@ relatedArticleLinks:
     label: 有点击没订单排查
     context: 与本文判断步骤配合使用
 ---
-# 案例：Coupon 开到 20% 还是没订单，问题不一定是价格
+
 
 这个案例是脱敏复盘，类目、金额和部分细节做了比例调整，但问题逻辑是真实的。它适合新手对照自己当前的运营动作，尤其适合已经开始上架、开广告、看数据，但不知道下一步该不该加码的卖家。
 

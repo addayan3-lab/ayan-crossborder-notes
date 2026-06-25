@@ -9,6 +9,10 @@ draft: false
 topic: review
 stage: 实操
 intent: 决策
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为 Review 分析公开课的实操模块，帮助卖家把评价、退货和用户语言反哺到选品与 Listing。
 articleType: case-study
 hookType: 案例复盘
 featured: true
@@ -25,7 +29,7 @@ relatedArticleLinks:
     label: 退货数据分析
     context: 与本文判断步骤配合使用
 ---
-# 案例：差评都在说尺寸，其实是尺码表缺了一句话
+
 
 这个案例是脱敏复盘，类目、金额和部分细节做了比例调整，但问题逻辑是真实的。它适合新手对照自己当前的运营动作，尤其适合已经开始上架、开广告、看数据，但不知道下一步该不该加码的卖家。
 

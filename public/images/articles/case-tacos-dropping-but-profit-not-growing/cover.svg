@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">案例：TACOS 下降了，利润为什么没有增长封面图</title>
+  <desc id="desc">案例：TACOS 下降了，利润为什么没有增长的亚马逊运营文章封面。</desc>
+  <rect width="1200" height="630" fill="#fff7ed"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="#ffffff" stroke="#fed7aa" stroke-width="2"/>
+  <rect x="64" y="64" width="1072" height="96" rx="28" fill="#9a3412"/>
+  <text x="104" y="124" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="30" font-weight="800">阿岩跨境笔记</text>
+  <text x="934" y="124" fill="#fed7aa" font-family="Arial, sans-serif" font-size="24" font-weight="700">PPC</text>
+  <rect x="104" y="198" width="180" height="44" rx="22" fill="#f97316"/>
+  <text x="132" y="228" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="800">广告 PPC</text>
+  <text x="104" y="270" fill="#0f172a" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="38" font-weight="800">案例：TACOS 下降了，利润为什么没有增</text>
+  <text x="104" y="324" fill="#0f172a" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="38" font-weight="800">长</text>
+  <g transform="translate(104 470)">
+    <rect width="992" height="54" rx="16" fill="#fff7ed" stroke="#fed7aa"/>
+    <text x="24" y="36" fill="#9a3412" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700">亚马逊卖家 AI 运营实战知识站</text>
+  </g>
+  <circle cx="1012" cy="300" r="72" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+  <path d="M970 300h84M1012 258v84" stroke="#f97316" stroke-width="12" stroke-linecap="round"/>
+</svg>

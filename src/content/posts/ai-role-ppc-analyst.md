@@ -4,6 +4,7 @@ description: "这篇给你一套 PPC 广告分析师 AI 身份提示词，帮助
 pubDate: "2026-06-09"
 category: "PPC"
 tags: ["AI 身份", "PPC", "广告分析"]
+image: "/images/articles/ai-role-ppc-analyst/cover.svg"
 articleType: prompt
 topic: ppc
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "PPC 周复盘表"
 publicLessonUse: "新品 PPC 首周广告结构课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-listing-copywriter
+nextArticle: ai-role-review-analyst
+relatedArticleLinks:
+  - slug: ai-role-listing-copywriter
+    label: "Listing 文案优化师 Prompt"
+    context: "AI 身份第 2 篇"
+  - slug: ai-role-review-analyst
+    label: "Review 分析师 Prompt"
+    context: "AI 身份第 4 篇"
 ---
+
 
 很多新手看亚马逊广告数据时，只盯着一个指标：ACOS 高不高。
 

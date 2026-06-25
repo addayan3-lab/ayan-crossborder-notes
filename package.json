@@ -16,6 +16,7 @@
         "seo:audit": "node scripts/seo-audit.mjs",
         "content:new": "node scripts/new-post.mjs",
         "content:publish": "node scripts/publish-content.mjs",
+        "content:update-audit": "node scripts/content-update-audit.mjs",
         "images:check": "node scripts/check-image-manifest.mjs",
         "oc:snap": "node scripts/opencode-usage-snapshot.mjs",
         "oc:diff": "node scripts/opencode-usage-diff.mjs",

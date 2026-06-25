@@ -276,6 +276,7 @@ Select-String -LiteralPath "dist\articles\<slug>\index.html" -Pattern "applicati
 npm run build
 npm run seo:audit
 npm run images:check
+npm run content:update-audit
 npm run indexnow:submit
 
 # 抽样脚本

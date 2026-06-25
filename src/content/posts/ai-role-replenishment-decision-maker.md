@@ -4,6 +4,7 @@ description: "这篇给你一套补货决策师 AI 身份提示词，帮助新�
 pubDate: "2026-06-09"
 category: "运营"
 tags: ["AI 身份", "补货", "供应链"]
+image: "/images/articles/ai-role-replenishment-decision-maker/cover.svg"
 articleType: prompt
 topic: selection
 stage: 新手
@@ -15,7 +16,14 @@ relatedTopics:
 leadMagnet: "PPC 周复盘表"
 publicLessonUse: "新品 PPC 首周广告结构课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-inventory-planner
+relatedArticleLinks:
+  - slug: ai-role-inventory-planner
+    label: "库存规划师 Prompt"
+    context: "AI 身份第 9 篇"
 ---
+
 
 很多新手补货靠感觉：感觉快卖完了就补，感觉卖不动就不补。但补货决策需要看数据：销量趋势、库存天数、广告表现、利润率、供应商交期。任何一个环节没考虑到，都可能造成断货或积压。
 

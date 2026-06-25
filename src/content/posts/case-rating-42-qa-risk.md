@@ -9,6 +9,10 @@ draft: false
 topic: "review"
 stage: "进阶"
 intent: "避坑"
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为 Review 分析公开课的实操模块，帮助卖家把评价、退货和用户语言反哺到选品与 Listing。
 articleType: "case-study"
 hookType: "避坑"
 featured: true
@@ -23,6 +27,7 @@ relatedArticleLinks:
     label: "Review 分析矩阵"
     context: "合并 Q&A 和评论"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

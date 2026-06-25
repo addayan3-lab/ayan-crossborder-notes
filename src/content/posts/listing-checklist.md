@@ -26,11 +26,11 @@ prevArticle: listing-five-bullets
 nextArticle: ai-listing-optimization
 relatedArticleLinks:
   - slug: listing-five-bullets
-    label: Listing 五点写法
-    context: Listing 第 1 篇
+    label: "五点写法"
+    context: "Listing第 1 篇"
   - slug: ai-listing-optimization
-    label: AI Listing 写法
-    context: Listing 第 3 篇
+    label: "AI 时代 Listing 写法"
+    context: "Listing第 3 篇"
 ---
 
 Listing 自检清单不是为了让你把页面"检查一遍"，而是为了避免新手在上线前漏掉关键问题。

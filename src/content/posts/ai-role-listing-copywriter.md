@@ -4,6 +4,7 @@ description: "这篇给你一套 Listing 文案优化师 AI 身份提示词，�
 pubDate: "2026-06-09"
 category: "Listing"
 tags: ["AI 身份", "Listing", "文案"]
+image: "/images/articles/ai-role-listing-copywriter/cover.svg"
 articleType: prompt
 topic: listing
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "Listing 自检清单"
 publicLessonUse: "Listing 自检与转化表达课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-selection-consultant
+nextArticle: ai-role-ppc-analyst
+relatedArticleLinks:
+  - slug: ai-role-selection-consultant
+    label: "选品顾问 Prompt"
+    context: "AI 身份第 1 篇"
+  - slug: ai-role-ppc-analyst
+    label: "PPC 广告分析师 Prompt"
+    context: "AI 身份第 3 篇"
 ---
+
 
 很多新手用 AI 写 Listing，第一句话就是：帮我写一个亚马逊标题和五点。
 

@@ -41,7 +41,15 @@ const posts = defineCollection({
         label: z.string(),
         context: z.string().optional()
       })
-    ).optional()
+    ).optional(),
+
+    updateType: z.enum(["evergreen", "policy-sensitive", "platform-update", "news-brief"]).optional(),
+    updateStatus: z.enum(["current", "watching", "needs-review", "outdated"]).optional(),
+    lastReviewed: z.coerce.date().optional(),
+    nextReviewDue: z.coerce.date().optional(),
+    reviewCadenceDays: z.number().optional(),
+    updateNote: z.string().optional(),
+    sourceUrls: z.array(z.string()).optional()
   })
 });
 

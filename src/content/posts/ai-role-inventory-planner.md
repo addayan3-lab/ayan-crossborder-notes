@@ -4,6 +4,7 @@ description: "这篇给你一套库存规划师 AI 身份提示词，帮助新�
 pubDate: "2026-06-09"
 category: "运营"
 tags: ["AI 身份", "库存", "供应链"]
+image: "/images/articles/ai-role-inventory-planner/cover.svg"
 articleType: prompt
 topic: selection
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "PPC 周复盘表"
 publicLessonUse: "新品 PPC 首周广告结构课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-avoid-pitfalls-advisor
+nextArticle: ai-role-replenishment-decision-maker
+relatedArticleLinks:
+  - slug: ai-role-avoid-pitfalls-advisor
+    label: "避坑顾问 Prompt"
+    context: "AI 身份第 8 篇"
+  - slug: ai-role-replenishment-decision-maker
+    label: "补货决策师 Prompt"
+    context: "AI 身份第 10 篇"
 ---
+
 
 很多新手只关注"卖了多少"，不关注"还剩多少"。断货会让 Listing 排名暴跌，库存积压会让现金流断裂。库存管理不是等缺货了再补，而是提前规划。
 

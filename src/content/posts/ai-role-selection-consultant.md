@@ -4,6 +4,7 @@ description: "这篇给你一套亚马逊选品顾问 AI 身份提示词，帮�
 pubDate: "2026-06-09"
 category: "选品"
 tags: ["AI 身份", "选品", "决策"]
+image: "/images/articles/ai-role-selection-consultant/cover.svg"
 articleType: prompt
 topic: selection
 stage: 新手
@@ -15,7 +16,14 @@ relatedTopics:
 leadMagnet: "选品竞品矩阵"
 publicLessonUse: "Review 反推选品与页面优化课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+nextArticle: ai-role-listing-copywriter
+relatedArticleLinks:
+  - slug: ai-role-listing-copywriter
+    label: "Listing 文案优化师 Prompt"
+    context: "AI 身份第 2 篇"
 ---
+
 
 很多新手做亚马逊选品时，最容易问 AI 一个很危险的问题：这个产品能不能做？
 

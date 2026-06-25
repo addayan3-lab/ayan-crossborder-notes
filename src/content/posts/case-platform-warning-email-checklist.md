@@ -9,6 +9,10 @@ draft: false
 topic: "tools"
 stage: "新手"
 intent: "避坑"
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为工具资料公开课的配套说明，帮助新手把资料表格接到日常运营流程里。
 articleType: "case-study"
 hookType: "避坑"
 featured: true
@@ -25,6 +29,7 @@ relatedArticleLinks:
     label: "平台规则入门"
     context: "先理解常见风险类型"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

@@ -16,15 +16,16 @@ publicLessonUse: 适合作为关键词公开课的避坑环节，提醒学员不
 leadMagnet: 搜索量陷阱检查清单
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
-prevArticle: keyword-cleaning-method
-relatedArticleLinks:
-  - slug: keyword-source-4-types
-    label: 关键词第 1 篇：关键词的 4 类来源
-    context: 关键词第 1 篇
-  - slug: keyword-cleaning-method
-    label: 关键词第 2 篇：关键词清洗方法
-    context: 关键词第 2 篇
 articleType: method
+prevArticle: keyword-cleaning-method
+nextArticle: keyword-longtail-fifth-source
+relatedArticleLinks:
+  - slug: keyword-cleaning-method
+    label: "关键词清洗方法"
+    context: "关键词第 2 篇"
+  - slug: keyword-longtail-fifth-source
+    label: "长尾词挖掘"
+    context: "关键词第 5 篇"
 ---
 
 <div class="article-callout article-callout-yellow">

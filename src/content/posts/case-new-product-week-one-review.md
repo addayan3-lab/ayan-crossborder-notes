@@ -4,6 +4,7 @@ description: "新品上架第一周的数据出来了，卖家不知道怎么判
 pubDate: "2026-06-09"
 category: "案例拆解"
 tags: ["案例", "新品冷启动", "PPC"]
+image: "/images/articles/case-new-product-week-one-review/cover.svg"
 articleType: case-study
 topic: ppc
 stage: 新手
@@ -22,7 +23,19 @@ featured: true
 homepageSlot: hot-practical
 resourceSlug: ppc-weekly-review
 openClassSlug: ppc-week-one
+draft: false
+relatedArticleLinks:
+  - slug: new-product-ppc-week-one
+    label: "新品广告第一周"
+    context: "PPC 第 1 篇"
+  - slug: case-ppc-week-one-add-or-negative
+    label: "第一周加词还是否词"
+    context: "同类 PPC 案例"
+  - slug: new-seller-90-day-operation-rhythm
+    label: "新手 90 天运营节奏"
+    context: "新品节奏表"
 ---
+
 
 ## 1. 案例背景
 

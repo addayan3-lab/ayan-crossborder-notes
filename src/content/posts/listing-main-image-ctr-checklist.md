@@ -9,22 +9,27 @@ draft: false
 topic: "listing"
 stage: "进阶"
 intent: "工具"
+relatedTopics:
+  - keyword
+  - review
+  - ai-search
+publicLessonUse: 适合作为 Listing 优化公开课的案例或方法模块，帮助卖家把关键词、卖点、图片和转化表达串起来。
 articleType: "method"
 resourceSlug: "listing-checklist"
 openClassSlug: "listing-conversion-check"
 leadMagnet: "Listing 自检清单"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+prevArticle: ai-listing-optimization
+nextArticle: listing-price-coupon-conversion-check
 relatedArticleLinks:
-  - slug: listing-five-bullets
-    label: "五点描述"
-    context: "主图负责点击，五点负责承接"
-  - slug: case-clicks-no-orders-image-price
-    label: "有点击没订单案例"
-    context: "用案例理解图和价格的排查顺序"
-  - slug: listing-checklist
-    label: "Listing 自检清单"
-    context: "把主图检查纳入页面自检"
+  - slug: ai-listing-optimization
+    label: "AI 时代 Listing 写法"
+    context: "Listing第 3 篇"
+  - slug: listing-price-coupon-conversion-check
+    label: "价格与 Coupon 自检"
+    context: "Listing第 5 篇"
 ---
+
 
 广告有曝光，但是 CTR 只有 0.3%，很多卖家的第一反应是：关键词是不是不准？这个判断有时对，但不完整。亚马逊前台搜索结果里，用户第一眼看到的不是你的关键词，而是主图、价格、评分、配送和标题前半段。关键词负责把你带到用户面前，主图负责让用户愿不愿意点进来。
 

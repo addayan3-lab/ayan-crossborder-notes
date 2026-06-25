@@ -9,6 +9,10 @@ draft: false
 topic: selection
 stage: 进阶
 intent: 决策
+relatedTopics:
+  - review
+  - tools
+publicLessonUse: 适合作为选品公开课的判断模块，帮助新手从利润、竞品、风险和差评信号综合判断产品能不能做。
 articleType: method
 featured: false
 resourceSlug: competitor-selection-matrix
@@ -23,7 +27,7 @@ relatedArticleLinks:
     label: 错过入场窗口的案例
     context: 与本文判断步骤配合使用
 ---
-# 选品第 6 篇：季节性风险判断——不要把旺季销量当常态
+
 
 季节品不是不能做，而是不能用旺季的数据做全年判断。尤其是夏季降温、节日装饰、开学用品、户外露营这类产品，搜索量、BSR、广告点击成本都会在某几个时间窗口集中变化。判断季节性的重点，不是问这个品现在卖得好不好，而是问自己是否赶得上入场节奏、是否能承担淡季库存、是否有下一季复用方案。
 

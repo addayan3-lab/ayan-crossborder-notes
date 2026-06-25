@@ -83,6 +83,7 @@ SVG 配图放 `public/images/articles/{slug}/`，常见规格：
 npm run images:check     # 校验 image-manifest
 npm run build            # astro build + pagefind
 npm run seo:audit        # 21 页面基础 SEO 体检
+npm run content:update-audit # 检查高时效内容是否过期
 ```
 
 三步全部 0 fail 才能进入下一步。
@@ -149,6 +150,11 @@ Cloudflare Pages 会自动部署。
 | `publicLessonUse` | string | 公开课延伸用途 | `本篇可直接做公开课第 3 场讲稿` |
 | `leadMagnet` | string | 资料包入口 | `附关键词表 v1 模板下载` |
 | `wechatHook` | string | 私域引流钩子 | `领取"亚马逊运营检查表"v2 PDF` |
+| `updateType` | enum | 内容时效类型 | `evergreen` / `policy-sensitive` / `platform-update` / `news-brief` |
+| `updateStatus` | enum | 当前更新状态 | `current` / `watching` / `needs-review` / `outdated` |
+| `lastReviewed` | date | 最近复核日期 | `2026-06-25` |
+| `nextReviewDue` | date | 下次复核日期 | `2026-09-25` |
+| `sourceUrls` | string[] | 官方来源或长期参考链接 | `["https://..."]` |
 
 示例 frontmatter：
 
@@ -171,6 +177,11 @@ relatedTopics:
 publicLessonUse: 本篇可作为公开课"关键词体系"模块讲稿
 leadMagnet: 附关键词清洗 SOP 模板
 wechatHook: 回复关键词"清洗"领取模板
+updateType: evergreen
+updateStatus: current
+lastReviewed: "2026-06-25"
+nextReviewDue: "2026-12-22"
+reviewCadenceDays: 180
 ---
 ```
 
@@ -192,4 +203,4 @@ wechatHook: 回复关键词"清洗"领取模板
 - 不要让 AI 工具测评挤掉运营内容。比例不超过 1:5
 - 不要让首页有"加载更多"分页。一次性展示
 - 不要让公开课与文章脱钩。每场课对应 3-5 篇文章
-
+- 不要让重点简报长期无人复核。`news-brief` 默认 30 天内必须复核，明确生效日期的规则变化要在生效日前后再次检查

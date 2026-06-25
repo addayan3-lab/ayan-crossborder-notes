@@ -9,6 +9,10 @@ draft: false
 topic: selection
 stage: 实操
 intent: 决策
+relatedTopics:
+  - review
+  - tools
+publicLessonUse: 适合作为选品公开课的判断模块，帮助新手从利润、竞品、风险和差评信号综合判断产品能不能做。
 articleType: method
 featured: false
 resourceSlug: competitor-selection-matrix
@@ -23,7 +27,7 @@ relatedArticleLinks:
     label: FBA 费用吃掉利润案例
     context: 与本文判断步骤配合使用
 ---
-# 选品第 7 篇：FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润
+
 
 很多产品不是采购价高导致亏钱，而是尺寸、重量、包装形态让 FBA 费用突然跳档。新手常犯的错误是只看裸品尺寸，不看最终包装尺寸；只看供应商报重，不看入仓后系统计费重；只估算头程，不核算仓储、退货、广告和折扣叠加后的真实利润。尺寸分段检查应该放在选品前期，而不是样品确认之后。
 

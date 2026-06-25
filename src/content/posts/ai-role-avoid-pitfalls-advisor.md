@@ -4,6 +4,7 @@ description: "这篇给你一套避坑顾问 AI 身份提示词，帮助新手�
 pubDate: "2026-06-09"
 category: "选品"
 tags: ["AI 身份", "避坑", "新手入门"]
+image: "/images/articles/ai-role-avoid-pitfalls-advisor/cover.svg"
 articleType: prompt
 topic: selection
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "选品竞品矩阵"
 publicLessonUse: "Review 反推选品与页面优化课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-seo-consultant
+nextArticle: ai-role-inventory-planner
+relatedArticleLinks:
+  - slug: ai-role-seo-consultant
+    label: "Amazon SEO 顾问 Prompt"
+    context: "AI 身份第 7 篇"
+  - slug: ai-role-inventory-planner
+    label: "库存规划师 Prompt"
+    context: "AI 身份第 9 篇"
 ---
+
 
 新手做亚马逊最容易踩的坑，不是"产品卖不动"，而是"产品根本没法卖"。侵权、认证缺失、物流难度大、易碎、大件、季节性强、差评集中——这些问题在选品阶段就能发现，但很多人等到上架了才意识到。
 

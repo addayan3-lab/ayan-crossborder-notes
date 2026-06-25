@@ -4,6 +4,7 @@ description: "这篇给你一套竞品研究员 AI 身份提示词，帮助新�
 pubDate: "2026-06-09"
 category: "选品"
 tags: ["AI 身份", "竞品分析", "选品"]
+image: "/images/articles/ai-role-competitor-researcher/cover.svg"
 articleType: prompt
 topic: selection
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "选品竞品矩阵"
 publicLessonUse: "Review 反推选品与页面优化课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-review-analyst
+nextArticle: ai-role-return-diagnostician
+relatedArticleLinks:
+  - slug: ai-role-review-analyst
+    label: "Review 分析师 Prompt"
+    context: "AI 身份第 4 篇"
+  - slug: ai-role-return-diagnostician
+    label: "退货诊断师 Prompt"
+    context: "AI 身份第 6 篇"
 ---
+
 
 很多新手做竞品分析，就是把竞品标题和价格抄一遍。但竞品分析不是抄作业，而是搞清楚：竞品为什么卖得好、你可以借鉴什么、必须避开什么。
 

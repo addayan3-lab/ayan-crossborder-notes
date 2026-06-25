@@ -15,18 +15,18 @@ relatedTopics:
 publicLessonUse: 适合作为 Review 公开课的矩阵拆解演示,带学员从好评、差评、中评、Q&A 反推产品与 Listing 改进点。
 leadMagnet: Review 矩阵分析模板
 wechatHook: 资料领取方式以资料详情页说明为准。
+articleType: method
+resourceSlug: review-pain-analysis
+openClassSlug: review-to-selection
 prevArticle: ai-review-analysis
 nextArticle: negative-review-listing-fix
 relatedArticleLinks:
   - slug: ai-review-analysis
-    label: Review 第 1 篇：用 AI 分析 Review 找到卖点
-    context: Review 第 1 篇
+    label: "AI 分析 Review 找卖点"
+    context: "Review第 1 篇"
   - slug: negative-review-listing-fix
-    label: Review 第 3 篇：差评改 Listing
-    context: Review 第 3 篇
-articleType: method
-resourceSlug: review-pain-analysis
-openClassSlug: review-to-selection
+    label: "差评改 Listing"
+    context: "Review第 3 篇"
 ---
 
 <div class="article-callout article-callout-blue">

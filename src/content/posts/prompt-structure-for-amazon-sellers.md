@@ -23,6 +23,16 @@ relatedTopics:
 publicLessonUse: "AI 工具辅助运营课的提示词基础导入"
 leadMagnet: "AI 工具评测表"
 wechatHook: "资料领取方式以资料详情页说明为准"
+relatedArticleLinks:
+  - slug: ai-keyword-cleaning-prompts
+    label: "关键词清洗提示词"
+    context: "提示词实战第 1 篇"
+  - slug: ai-listing-prompt-template
+    label: "Listing 通用提示词模板"
+    context: "提示词实战第 2 篇"
+  - slug: ai-amazon-operator-prompt-library
+    label: "亚马逊运营提示词库"
+    context: "提示词实战第 3 篇"
 ---
 
 很多新手用 AI 的第一个问题，不是工具不够强，而是提问太模糊。

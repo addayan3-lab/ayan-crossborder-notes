@@ -19,6 +19,24 @@ image: "/images/articles/amazon-platform-rules-beginner/cover.svg"
 articleType: method
 resourceSlug: platform-rules-checklist
 openClassSlug: platform-rules-beginner
+updateType: policy-sensitive
+updateStatus: current
+lastReviewed: "2026-06-25"
+nextReviewDue: "2026-09-25"
+reviewCadenceDays: 90
+updateNote: "季度复核平台规则、账号健康和 Listing 合规相关建议。"
+sourceUrls:
+  - https://sell.amazon.com/tools/account-health
+relatedArticleLinks:
+  - slug: tools-account-health-self-check
+    label: "账号健康自检工具"
+    context: "规则自检工具"
+  - slug: case-platform-warning-email-checklist
+    label: "平台警告邮件检查清单"
+    context: "规则案例"
+  - slug: amazon-title-rule-75-characters-2026
+    label: "2026 标题规则重点简报"
+    context: "规则变化简报"
 ---
 
 <div class="article-callout article-callout-yellow">

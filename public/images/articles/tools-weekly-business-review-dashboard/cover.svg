@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数封面图</title>
+  <desc id="desc">工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数的亚马逊运营文章封面。</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="64" y="64" width="1072" height="96" rx="28" fill="#334155"/>
+  <text x="104" y="124" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="30" font-weight="800">阿岩跨境笔记</text>
+  <text x="934" y="124" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="24" font-weight="700">Tools</text>
+  <rect x="104" y="198" width="180" height="44" rx="22" fill="#64748b"/>
+  <text x="132" y="228" fill="#ffffff" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="800">工具模板</text>
+  <text x="104" y="270" fill="#0f172a" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="38" font-weight="800">工具第 4 篇：亚马逊周经营看板——每周</text>
+  <text x="104" y="324" fill="#0f172a" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="38" font-weight="800">只看这 10 个数</text>
+  <g transform="translate(104 470)">
+    <rect width="992" height="54" rx="16" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="24" y="36" fill="#334155" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700">亚马逊卖家 AI 运营实战知识站</text>
+  </g>
+  <circle cx="1012" cy="300" r="72" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M970 300h84M1012 258v84" stroke="#64748b" stroke-width="12" stroke-linecap="round"/>
+</svg>

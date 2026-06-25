@@ -9,6 +9,10 @@ draft: false
 topic: selection
 stage: 实操
 intent: 决策
+relatedTopics:
+  - review
+  - tools
+publicLessonUse: 适合作为选品公开课的判断模块，帮助新手从利润、竞品、风险和差评信号综合判断产品能不能做。
 articleType: case-study
 hookType: 避坑
 featured: true
@@ -25,7 +29,7 @@ relatedArticleLinks:
     label: 市场容量判断
     context: 与本文判断步骤配合使用
 ---
-# 案例：季节品不是不能做，是错过窗口别硬上
+
 
 这个案例是脱敏复盘，类目、金额和部分细节做了比例调整，但问题逻辑是真实的。它适合新手对照自己当前的运营动作，尤其适合已经开始上架、开广告、看数据，但不知道下一步该不该加码的卖家。
 

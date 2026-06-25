@@ -9,6 +9,12 @@ draft: false
 topic: "tools"
 stage: "新手"
 intent: "学习"
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为工具资料公开课的配套说明，帮助新手把资料表格接到日常运营流程里。
+leadMagnet: 新卖家 90 天运营节奏表
+wechatHook: 资料领取方式以资料详情页说明为准。
 articleType: "method"
 featured: true
 priority: "high"
@@ -23,6 +29,7 @@ relatedArticleLinks:
     label: "PPC 学习路径"
     context: "第 31–90 天做广告测试和复盘"
 ---
+
 
 新卖家做亚马逊，最常见的问题不是不努力，而是顺序乱。还没理解平台规则就开始找产品；产品还没核算利润就打样；Listing 还没打底就开广告；广告还没复盘就加预算。最后每天都在忙，但不知道哪个动作真正推动了结果。
 

@@ -9,6 +9,10 @@ draft: false
 topic: "ai-search"
 stage: "进阶"
 intent: "工具"
+relatedTopics:
+  - listing
+  - tools
+publicLessonUse: 适合作为 AI 运营公开课的趋势和实操模块，帮助卖家理解 AI 搜索、Rufus 和 AI 工具对运营动作的影响。
 articleType: "case-study"
 hookType: "政策解读"
 featured: true
@@ -18,12 +22,13 @@ leadMagnet: "AI 工具评测表"
 wechatHook: "资料领取方式以资料详情页说明为准。"
 relatedArticleLinks:
   - slug: ai-rufus-listing-writing-2026
-    label: "Rufus 时代写法"
-    context: "系统学习 2026 Listing 写法"
+    label: "Rufus 时代 Listing 写法"
+    context: "AI 搜索第 4 篇"
   - slug: amazon-rufus-alexa-shopping
-    label: "Rufus 专题"
-    context: "理解 AI 购物入口"
+    label: "Rufus 与 Alexa Shopping"
+    context: "AI 搜索第 2 篇"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

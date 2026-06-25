@@ -9,21 +9,27 @@ draft: false
 topic: keyword
 stage: 进阶
 intent: 学习
+relatedTopics:
+  - listing
+  - ppc
+publicLessonUse: 适合作为关键词专题公开课的课前阅读，帮助新手先理解找词、筛词和关键词进入 Listing/广告的顺序。
 articleType: method
 featured: false
 resourceSlug: keyword-cleaning-sheet
 openClassSlug: keyword-to-listing
 leadMagnet: "可配合《关键词清洗表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: keyword-longtail-fifth-source
+nextArticle: keyword-negative-word-library
 relatedArticleLinks:
-  - slug: keyword-source-4-types
-    label: 关键词四类来源
-    context: 与本文判断步骤配合使用
-  - slug: keyword-search-intent-map
-    label: 搜索意图地图
-    context: 与本文判断步骤配合使用
+  - slug: keyword-longtail-fifth-source
+    label: "长尾词挖掘"
+    context: "关键词第 5 篇"
+  - slug: keyword-negative-word-library
+    label: "否词库建立方法"
+    context: "关键词第 7 篇"
 ---
-# 关键词第 6 篇：买家意图分层——同一个词为什么转化完全不同
+
 
 关键词不是只有搜索量大小的区别，更重要的是买家处在什么决策阶段。有人搜大词是在了解品类，有人搜功能词是在比较方案，有人搜规格词已经准备购买。把这些词放在同一个广告组、同一套 Listing 表达里，数据很容易被平均值骗到。买家意图分层的作用，是让关键词清洗不只停留在删词，而是进入转化路径设计。
 

@@ -4,6 +4,7 @@ description: "Listing 每天有曝光、有点击，就是不出单。卖家以�
 pubDate: "2026-06-09"
 category: "案例拆解"
 tags: ["案例", "Listing"]
+image: "/images/articles/case-listing-traffic-no-conversion/cover.svg"
 articleType: case-study
 topic: listing
 stage: 新手
@@ -21,7 +22,19 @@ hookType: 案例复盘
 featured: true
 homepageSlot: hot-practical
 resourceSlug: listing-checklist
+draft: false
+relatedArticleLinks:
+  - slug: listing-checklist
+    label: "Listing 自检清单"
+    context: "Listing 第 2 篇"
+  - slug: listing-main-image-ctr-checklist
+    label: "主图点击率诊断"
+    context: "Listing 第 4 篇"
+  - slug: case-clicks-no-orders-image-price
+    label: "有点击没订单案例"
+    context: "同类诊断案例"
 ---
+
 
 ## 1. 案例背景
 

@@ -9,21 +9,28 @@ draft: false
 topic: ppc
 stage: 实操
 intent: 工具
+relatedTopics:
+  - keyword
+  - listing
+  - tools
+publicLessonUse: 适合作为 PPC 公开课的数据判断模块，帮助新手用广告报表拆解问题，而不是只看 ACOS。
 articleType: method
 featured: false
 resourceSlug: ppc-weekly-review
 openClassSlug: ppc-week-one
 leadMagnet: "可配合《PPC 周复盘表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: ppc-negative-keyword-week-one
+nextArticle: ppc-tacos-weekly-review
 relatedArticleLinks:
-  - slug: sp-ad-structure
-    label: SP 广告结构
-    context: 与本文判断步骤配合使用
-  - slug: case-ppc-week-one-add-or-negative
-    label: 第一周加词还是否词
-    context: 与本文判断步骤配合使用
+  - slug: ppc-negative-keyword-week-one
+    label: "新品第一周否词策略"
+    context: "PPC第 4 篇"
+  - slug: ppc-tacos-weekly-review
+    label: "TACOS 周复盘"
+    context: "PPC第 6 篇"
 ---
-# PPC 第 5 篇：搜索词到广告组——怎么把出单词单独养起来
+
 
 广告搜索词报告里真正有价值的不是所有词，而是已经发生点击、加购或出单的词。把这些词单独养起来，需要判断它是精准需求、泛需求、竞品需求还是误点击。直接把所有出单词加 Exact，可能会让预算被少数高 CPC 词吃掉；完全不拆，又会让好词被自动广告平均掉。
 

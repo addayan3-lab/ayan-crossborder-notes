@@ -9,6 +9,11 @@ draft: false
 topic: "listing"
 stage: "进阶"
 intent: "避坑"
+relatedTopics:
+  - keyword
+  - review
+  - ai-search
+publicLessonUse: 适合作为 Listing 优化公开课的案例或方法模块，帮助卖家把关键词、卖点、图片和转化表达串起来。
 articleType: "case-study"
 hookType: "避坑"
 featured: true
@@ -23,6 +28,7 @@ relatedArticleLinks:
     label: "五点描述"
     context: "点击后页面承接"
 ---
+
 
 这是一篇脱敏案例复盘。案例中的类目、价格和数据都做了比例处理，不代表任何具体店铺，也不构成平台政策或投资建议。它的价值不是看一个孤立结果，而是把卖家在真实运营中容易走错的判断链拆开。
 

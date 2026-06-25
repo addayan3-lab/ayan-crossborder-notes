@@ -4,6 +4,7 @@ description: "这篇给你一套 Review 分析师 AI 身份提示词，帮助新
 pubDate: "2026-06-09"
 category: "Review"
 tags: ["AI 身份", "Review", "痛点分析"]
+image: "/images/articles/ai-role-review-analyst/cover.svg"
 articleType: prompt
 topic: review
 stage: 新手
@@ -15,7 +16,18 @@ relatedTopics:
 leadMagnet: "Review 痛点分析表"
 publicLessonUse: "Review 反推选品与页面优化课"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+draft: false
+prevArticle: ai-role-ppc-analyst
+nextArticle: ai-role-competitor-researcher
+relatedArticleLinks:
+  - slug: ai-role-ppc-analyst
+    label: "PPC 广告分析师 Prompt"
+    context: "AI 身份第 3 篇"
+  - slug: ai-role-competitor-researcher
+    label: "竞品研究员 Prompt"
+    context: "AI 身份第 5 篇"
 ---
+
 
 很多新手看 Review，只会看"好评多还是差评多"。但好评和差评本身不告诉你该怎么做。真正有用的信息藏在：买家反复提到的点是什么、差评集中在哪些维度、好评里有没有被忽略的卖点。
 

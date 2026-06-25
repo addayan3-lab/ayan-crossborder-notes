@@ -9,6 +9,10 @@ draft: false
 topic: "selection"
 stage: "新手"
 intent: "决策"
+relatedTopics:
+  - review
+  - tools
+publicLessonUse: 适合作为选品公开课的判断模块，帮助新手从利润、竞品、风险和差评信号综合判断产品能不能做。
 articleType: "method"
 resourceSlug: "competitor-selection-matrix"
 openClassSlug: "competitor-selection-matrix"
@@ -25,6 +29,7 @@ relatedArticleLinks:
     label: "品牌集中度陷阱"
     context: "高搜索量不代表值得进入"
 ---
+
 
 很多新手选品时会先看三个东西：搜索量、售价、销量。看到某个产品月销不错、客单价不低，就觉得机会来了。但真正做亚马逊，能不能赚钱不取决于「别人卖了多少钱」，而取决于你把采购、头程、FBA、佣金、广告、退货损耗都扣完以后，还能不能留下足够利润。
 

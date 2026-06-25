@@ -9,22 +9,26 @@ draft: false
 topic: "review"
 stage: "实操"
 intent: "工具"
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为 Review 分析公开课的实操模块，帮助卖家把评价、退货和用户语言反哺到选品与 Listing。
 articleType: "method"
 resourceSlug: "review-pain-analysis"
 openClassSlug: "review-to-selection"
 leadMagnet: "Review 痛点分析表"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+prevArticle: negative-review-listing-fix
+nextArticle: review-voice-of-customer-tagging
 relatedArticleLinks:
-  - slug: ai-review-analysis
-    label: "AI Review 分析"
-    context: "用 AI 批量整理用户反馈"
-  - slug: review-analysis-matrix
-    label: "Review 分析矩阵"
-    context: "把退货理由和评论痛点合并判断"
-  - slug: case-review-pain-reverse-improvement
-    label: "差评反推改进案例"
-    context: "用案例理解问题闭环"
+  - slug: negative-review-listing-fix
+    label: "差评改 Listing"
+    context: "Review第 3 篇"
+  - slug: review-voice-of-customer-tagging
+    label: "VOC 标签法"
+    context: "Review第 5 篇"
 ---
+
 
 很多卖家只盯 Review 星级，但 Review 有一个明显滞后：用户不一定写评价，平台展示也需要时间。等差评集中出现时，产品问题可能已经影响了广告转化、退货率和自然排名。
 

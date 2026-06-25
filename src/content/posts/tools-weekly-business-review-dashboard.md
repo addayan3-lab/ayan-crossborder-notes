@@ -9,6 +9,10 @@ draft: false
 topic: tools
 stage: 实操
 intent: 工具
+relatedTopics:
+  - listing
+  - selection
+publicLessonUse: 适合作为工具资料公开课的配套说明，帮助新手把资料表格接到日常运营流程里。
 articleType: method
 featured: false
 resourceSlug: platform-rules-checklist
@@ -16,14 +20,17 @@ openClassSlug: platform-rules-beginner
 leadMagnet: "可配合《平台规则避坑清单》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
 relatedArticleLinks:
-  - slug: tools-report-folder-weekly-system
-    label: 周报文件夹系统
-    context: 与本文判断步骤配合使用
   - slug: new-seller-90-day-operation-rhythm
-    label: 90 天运营节奏表
-    context: 与本文判断步骤配合使用
+    label: "90 天运营节奏表"
+    context: "运营节奏"
+  - slug: tools-account-health-self-check
+    label: "账号健康自检工具"
+    context: "工具第 1 篇"
+  - slug: ai-amazon-operator-prompt-library
+    label: "亚马逊运营提示词库"
+    context: "AI 工具"
 ---
-# 工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数
+
 
 很多卖家的周复盘不是缺数据，而是数据太散：广告后台、业务报告、库存、退货、Coupon、利润表各看一点，最后不知道该先改哪里。周经营看板的目标，是把每周必须判断的 10 个数放在一张表里，让运营动作围绕问题排序，而不是围绕感觉排序。
 

@@ -22,6 +22,15 @@ featured: true
 priority: 95
 resourceSlug: listing-checklist
 openClassSlug: listing-conversion-check
+updateType: news-brief
+updateStatus: watching
+lastReviewed: "2026-06-25"
+nextReviewDue: "2026-07-28"
+reviewCadenceDays: 14
+updateNote: "跟踪 2026-07-27 标题规则执行情况、Item Highlights 字段和后台 AI 推荐落地细节。"
+sourceUrls:
+  - https://sellercentral.amazon.com/seller-forums/discussions/t/145b6d0f-999c-4555-896c-c694bda2e470
+  - https://sellercentral.amazon.com/seller-forums/discussions/t/ac660707-60c7-43e3-a3fd-420d7321cc4e
 relatedArticleLinks:
   - slug: listing-checklist
     label: Listing 自检清单怎么用

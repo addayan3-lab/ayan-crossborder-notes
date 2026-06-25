@@ -16,17 +16,18 @@ publicLessonUse: 适合作为 Review 公开课的差评修复案例，讲清哪�
 leadMagnet: 差评归因与 Listing 修复表
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
-prevArticle: review-analysis-matrix
-relatedArticleLinks:
-  - slug: ai-review-analysis
-    label: Review 第 1 篇：用 AI 分析 Review 找到卖点
-    context: Review 第 1 篇
-  - slug: review-analysis-matrix
-    label: Review 第 2 篇：Review 分析矩阵
-    context: Review 第 2 篇
 articleType: method
 resourceSlug: review-pain-analysis
 openClassSlug: review-to-selection
+prevArticle: review-analysis-matrix
+nextArticle: review-return-data-analysis
+relatedArticleLinks:
+  - slug: review-analysis-matrix
+    label: "Review 分析矩阵"
+    context: "Review第 2 篇"
+  - slug: review-return-data-analysis
+    label: "退货数据分析"
+    context: "Review第 4 篇"
 ---
 
 <div class="article-callout article-callout-blue">

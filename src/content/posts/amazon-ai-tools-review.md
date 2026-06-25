@@ -22,6 +22,16 @@ image: "/images/articles/amazon-ai-tools-review/cover.svg"
 articleType: theory
 resourceSlug: ai-tools-review-sheet
 openClassSlug: ai-tools-for-amazon
+relatedArticleLinks:
+  - slug: 2026-amazon-ai-operations
+    label: "2026 AI 运营效率"
+    context: "AI 运营总览"
+  - slug: prompt-structure-for-amazon-sellers
+    label: "提示词结构入门"
+    context: "AI 工具基础"
+  - slug: ai-amazon-operator-prompt-library
+    label: "亚马逊运营提示词库"
+    context: "AI 工具实操"
 ---
 
 <div class="article-callout article-callout-blue">

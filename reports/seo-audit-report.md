@@ -1,14 +1,14 @@
 # 018｜站点 SEO 基础体检报告
 
-生成时间：2026-06-24T01:55:50.430Z
+生成时间：2026-06-25T02:39:52.761Z
 
 站点：https://amz.hao1234.top
 
 ## 一、总览
 
 - 检查页面数：131
-- 通过项：1020
-- 问题项：28
+- 通过项：1040
+- 问题项：8
 - robots.txt：PASS
 - sitemap-index.xml：PASS
 
@@ -138,7 +138,7 @@
 
 - title：AI 工具第 3 篇：亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断 | 阿岩跨境笔记
 - description：这篇文章围绕亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/ai-amazon-operator-prompt-library/
 - og:title：AI 工具第 3 篇：亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断
@@ -150,7 +150,7 @@
 
 - PASS：title 正常：47
 - PASS：description 正常：85
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -231,7 +231,7 @@
 - title：Listing 第 3 篇：AI 时代 Listing 应该怎么写 | 阿岩跨境笔记
 - description：从关键词、用户痛点、使用场景、人群定位和转化率角度，拆解 AI 时代亚马逊 Listing 的标题、五点和内容写法。
 - H1：1
-- H2：3
+- H2：8
 - canonical：https://amz.hao1234.top/articles/ai-listing-optimization/
 - og:title：Listing 第 3 篇：AI 时代 Listing 应该怎么写
 - og:description：从关键词、用户痛点、使用场景、人群定位和转化率角度，拆解 AI 时代亚马逊 Listing 的标题、五点和内容写法。
@@ -300,11 +300,11 @@
 - title：亚马逊 AI 运营资料包领取说明 | 阿岩跨境笔记
 - description：阿岩跨境笔记 AI 运营资料包领取说明，包含运营检查表、Listing Prompt、广告 PPC 复盘表和 Review 分析模板。
 - H1：1
-- H2：2
+- H2：6
 - canonical：https://amz.hao1234.top/articles/ai-operations-resource-pack/
 - og:title：亚马逊 AI 运营资料包领取说明
 - og:description：阿岩跨境笔记 AI 运营资料包领取说明，包含运营检查表、Listing Prompt、广告 PPC 复盘表和 Review 分析模板。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-operations-resource-pack/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -323,7 +323,7 @@
 - title：PPC 第 3 篇：用 AI 复盘广告报表 | 阿岩跨境笔记
 - description：用 AI 辅助复盘亚马逊广告报表，从 ACOS、TACOS、CTR、CVR、搜索词和订单转化判断广告问题。
 - H1：1
-- H2：3
+- H2：7
 - canonical：https://amz.hao1234.top/articles/ai-ppc-report-review/
 - og:title：PPC 第 3 篇：用 AI 复盘广告报表
 - og:description：用 AI 辅助复盘亚马逊广告报表，从 ACOS、TACOS、CTR、CVR、搜索词和订单转化判断广告问题。
@@ -576,7 +576,7 @@
 - title：Review 第 1 篇：用 AI 分析 Review 找到卖点 | 阿岩跨境笔记
 - description：用 AI 对亚马逊竞品 Review 进行分类，提炼用户痛点、购买理由、产品改进点和可用于 Listing 的真实表达。
 - H1：1
-- H2：3
+- H2：8
 - canonical：https://amz.hao1234.top/articles/ai-review-analysis/
 - og:title：Review 第 1 篇：用 AI 分析 Review 找到卖点
 - og:description：用 AI 对亚马逊竞品 Review 进行分类，提炼用户痛点、购买理由、产品改进点和可用于 Listing 的真实表达。
@@ -603,7 +603,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-avoid-pitfalls-advisor/
 - og:title：AI 身份第 8 篇：避坑顾问 Prompt
 - og:description：这篇给你一套避坑顾问 AI 身份提示词，帮助新手从侵权、认证、物流、季节性、差评集中等维度判断产品是否适合进入。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-avoid-pitfalls-advisor/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -626,7 +626,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-competitor-researcher/
 - og:title：AI 身份第 5 篇：竞品研究员 Prompt
 - og:description：这篇给你一套竞品研究员 AI 身份提示词，帮助新手系统拆解竞品 Listing、定价、卖点、Review 和差异化切入点。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-competitor-researcher/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -649,7 +649,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-inventory-planner/
 - og:title：AI 身份第 9 篇：库存规划师 Prompt
 - og:description：这篇给你一套库存规划师 AI 身份提示词，帮助新手根据销量、补货周期、广告节奏和库存天数判断库存风险。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-inventory-planner/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -672,7 +672,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-listing-copywriter/
 - og:title：AI 身份第 2 篇：Listing 文案优化师 Prompt
 - og:description：这篇给你一套 Listing 文案优化师 AI 身份提示词，帮助新手把产品信息、关键词、Review 痛点转成标题、五点和图片文案方向。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-listing-copywriter/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -695,7 +695,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-ppc-analyst/
 - og:title：AI 身份第 3 篇：PPC 广告分析师 Prompt
 - og:description：这篇给你一套 PPC 广告分析师 AI 身份提示词，帮助新手从搜索词报告、花费、订单和 ACOS 中整理广告问题和下一步动作。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-ppc-analyst/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -718,7 +718,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-replenishment-decision-maker/
 - og:title：AI 身份第 10 篇：补货决策师 Prompt
 - og:description：这篇给你一套补货决策师 AI 身份提示词，帮助新手判断什么时候补货、补多少、是否暂停补货或清库存。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-replenishment-decision-maker/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -741,7 +741,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-return-diagnostician/
 - og:title：AI 身份第 6 篇：退货诊断师 Prompt
 - og:description：这篇给你一套退货诊断师 AI 身份提示词，帮助新手从退货原因、差评和客服反馈中定位产品和页面问题。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-return-diagnostician/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -764,7 +764,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-review-analyst/
 - og:title：AI 身份第 4 篇：Review 分析师 Prompt
 - og:description：这篇给你一套 Review 分析师 AI 身份提示词，帮助新手从好评和差评中提炼用户真实痛点、卖点机会和 Listing 优化方向。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-review-analyst/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -787,7 +787,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-selection-consultant/
 - og:title：AI 身份第 1 篇：亚马逊选品顾问 Prompt
 - og:description：这篇给你一套亚马逊选品顾问 AI 身份提示词，帮助新手从市场容量、竞品集中度、Review 痛点和差异化机会判断产品是否值得继续调研。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-selection-consultant/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -810,7 +810,7 @@
 - canonical：https://amz.hao1234.top/articles/ai-role-seo-consultant/
 - og:title：AI 身份第 7 篇：Amazon SEO 顾问 Prompt
 - og:description：这篇给你一套 Amazon SEO 顾问 AI 身份提示词，帮助新手从关键词布局、标题、五点和 Search Terms 中优化自然流量。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/ai-role-seo-consultant/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -921,7 +921,7 @@
 - title：Amazon Rufus / Alexa for Shopping 对卖家意味着什么 | 阿岩跨境笔记
 - description：理解 Amazon Rufus 与 Alexa for Shopping 等消费者端 AI 工具如何影响亚马逊搜索、推荐和购买决策。
 - H1：1
-- H2：3
+- H2：6
 - canonical：https://amz.hao1234.top/articles/amazon-rufus-alexa-shopping/
 - og:title：Amazon Rufus / Alexa for Shopping 对卖家意味着什么
 - og:description：理解 Amazon Rufus 与 Alexa for Shopping 等消费者端 AI 工具如何影响亚马逊搜索、推荐和购买决策。
@@ -1012,7 +1012,7 @@
 
 - title：案例：AI 说这个产品可以做，为什么我建议先停下 | 阿岩跨境笔记
 - description：这篇文章围绕AI 说这个产品可以做，为什么我建议先停下展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-ai-tool-made-wrong-decision/
 - og:title：案例：AI 说这个产品可以做，为什么我建议先停下
@@ -1024,7 +1024,7 @@
 
 - PASS：title 正常：33
 - PASS：description 正常：79
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1104,7 +1104,7 @@
 
 - title：案例：Coupon 开到 20% 还是没订单，问题不一定是价格 | 阿岩跨境笔记
 - description：这篇文章围绕Coupon 开到 20% 还是没订单，问题不一定是价格展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-coupon-cut-price-still-no-orders/
 - og:title：案例：Coupon 开到 20% 还是没订单，问题不一定是价格
@@ -1116,7 +1116,7 @@
 
 - PASS：title 正常：40
 - PASS：description 正常：86
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1127,7 +1127,7 @@
 
 - title：案例：一个 Exact 词烧掉预算，新品广告为什么越跑越窄 | 阿岩跨境笔记
 - description：这篇文章围绕一个 Exact 词烧掉预算，新品广告为什么越跑越窄展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-exact-match-one-word-too-expensive/
 - og:title：案例：一个 Exact 词烧掉预算，新品广告为什么越跑越窄
@@ -1139,7 +1139,7 @@
 
 - PASS：title 正常：38
 - PASS：description 正常：84
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1150,7 +1150,7 @@
 
 - title：案例：售价没变，FBA 费用却吃掉了利润 | 阿岩跨境笔记
 - description：这篇文章围绕售价没变，FBA 费用却吃掉了利润展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-fba-fee-eats-margin/
 - og:title：案例：售价没变，FBA 费用却吃掉了利润
@@ -1162,7 +1162,7 @@
 
 - PASS：title 正常：29
 - PASS：description 正常：75
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1201,7 +1201,7 @@
 - canonical：https://amz.hao1234.top/articles/case-listing-traffic-no-conversion/
 - og:title：案例第 2 篇：一个 Listing 有流量没转化，问题出在哪里
 - og:description：Listing 每天有曝光、有点击，就是不出单。卖家以为是广告的问题，排查后发现五点写成了功能列表而不是卖点表达，图片也没有传递使用场景。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/case-listing-traffic-no-conversion/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -1219,7 +1219,7 @@
 
 - title：案例：电脑端主图很好看，手机端却看不清卖点 | 阿岩跨境笔记
 - description：这篇文章围绕电脑端主图很好看，手机端却看不清卖点展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-mobile-main-image-text-too-small/
 - og:title：案例：电脑端主图很好看，手机端却看不清卖点
@@ -1231,7 +1231,7 @@
 
 - PASS：title 正常：30
 - PASS：description 正常：76
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1247,7 +1247,7 @@
 - canonical：https://amz.hao1234.top/articles/case-new-product-week-one-review/
 - og:title：案例第 4 篇：新品上线第一周怎么复盘
 - og:description：新品上架第一周的数据出来了，卖家不知道怎么判断下一步。哪些词该保留、哪些词该否定、哪些词需要等更多数据——一本第一周复盘决策记录。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/case-new-product-week-one-review/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -1362,7 +1362,7 @@
 - canonical：https://amz.hao1234.top/articles/case-review-pain-reverse-improvement/
 - og:title：案例第 5 篇：从 50 条差评里反推出产品改进方向
 - og:description：一款家居产品退货率 15%，差评集中在 3 个维度。通过差评聚类、频次排序、改进成本评估，最终选了一个影响面广、改动成本低、能写进 Listing 的改进方向。
-- og:image：https://amz.hao1234.top/images/og-default.svg
+- og:image：https://amz.hao1234.top/images/articles/case-review-pain-reverse-improvement/cover.svg
 - twitter:card：summary_large_image
 
 检查结果：
@@ -1380,7 +1380,7 @@
 
 - title：案例：差评都在说尺寸，其实是尺码表缺了一句话 | 阿岩跨境笔记
 - description：这篇文章围绕差评都在说尺寸，其实是尺码表缺了一句话展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-review-size-chart-missing/
 - og:title：案例：差评都在说尺寸，其实是尺码表缺了一句话
@@ -1392,7 +1392,7 @@
 
 - PASS：title 正常：31
 - PASS：description 正常：77
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1403,7 +1403,7 @@
 
 - title：案例：季节品不是不能做，是错过窗口别硬上 | 阿岩跨境笔记
 - description：这篇文章围绕季节品不是不能做，是错过窗口别硬上展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-seasonal-product-missed-window/
 - og:title：案例：季节品不是不能做，是错过窗口别硬上
@@ -1415,7 +1415,7 @@
 
 - PASS：title 正常：29
 - PASS：description 正常：75
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1472,7 +1472,7 @@
 
 - title：案例：TACOS 下降了，利润为什么没有增长 | 阿岩跨境笔记
 - description：这篇文章围绕TACOS 下降了，利润为什么没有增长展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/case-tacos-dropping-but-profit-not-growing/
 - og:title：案例：TACOS 下降了，利润为什么没有增长
@@ -1484,7 +1484,7 @@
 
 - PASS：title 正常：31
 - PASS：description 正常：77
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1496,7 +1496,7 @@
 - title：消费者如何用 Amazon AI 搜索产品 | 阿岩跨境笔记
 - description：从关键词搜索、场景搜索、图片搜索和 AI 推荐角度，理解消费者如何使用 Amazon AI 搜索和筛选产品。
 - H1：1
-- H2：3
+- H2：6
 - canonical：https://amz.hao1234.top/articles/consumer-ai-search-amazon/
 - og:title：消费者如何用 Amazon AI 搜索产品
 - og:description：从关键词搜索、场景搜索、图片搜索和 AI 推荐角度，理解消费者如何使用 Amazon AI 搜索和筛选产品。
@@ -1541,7 +1541,7 @@
 
 - title：关键词第 6 篇：买家意图分层——同一个词为什么转化完全不同 | 阿岩跨境笔记
 - description：这篇文章围绕买家意图分层——同一个词为什么转化完全不同展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/keyword-buyer-intent-layering/
 - og:title：关键词第 6 篇：买家意图分层——同一个词为什么转化完全不同
@@ -1553,7 +1553,7 @@
 
 - PASS：title 正常：39
 - PASS：description 正常：79
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1656,7 +1656,7 @@
 
 - title：关键词第 7 篇：否词库怎么建立——让广告复盘越来越省力 | 阿岩跨境笔记
 - description：这篇文章围绕否词库怎么建立——让广告复盘越来越省力展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/keyword-negative-word-library/
 - og:title：关键词第 7 篇：否词库怎么建立——让广告复盘越来越省力
@@ -1668,7 +1668,7 @@
 
 - PASS：title 正常：37
 - PASS：description 正常：77
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1817,7 +1817,7 @@
 
 - title：Listing 第 6 篇：移动端优先优化——手机屏幕上先赢前 3 秒 | 阿岩跨境笔记
 - description：这篇文章围绕移动端优先优化——手机屏幕上先赢前 3 秒展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/listing-mobile-first-optimization/
 - og:title：Listing 第 6 篇：移动端优先优化——手机屏幕上先赢前 3 秒
@@ -1829,7 +1829,7 @@
 
 - PASS：title 正常：44
 - PASS：description 正常：79
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1840,7 +1840,7 @@
 
 - title：Listing 第 5 篇：价格与 Coupon 自检——降价前先看这 6 个信号 | 阿岩跨境笔记
 - description：这篇文章围绕价格与 Coupon 自检——降价前先看这 6 个信号展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/listing-price-coupon-conversion-check/
 - og:title：Listing 第 5 篇：价格与 Coupon 自检——降价前先看这 6 个信号
@@ -1852,7 +1852,7 @@
 
 - PASS：title 正常：50
 - PASS：description 正常：85
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -1978,7 +1978,7 @@
 
 - title：PPC 第 5 篇：搜索词到广告组——怎么把出单词单独养起来 | 阿岩跨境笔记
 - description：这篇文章围绕搜索词到广告组——怎么把出单词单独养起来展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/ppc-search-term-to-campaign-sop/
 - og:title：PPC 第 5 篇：搜索词到广告组——怎么把出单词单独养起来
@@ -1990,7 +1990,7 @@
 
 - PASS：title 正常：39
 - PASS：description 正常：78
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -2001,7 +2001,7 @@
 
 - title：PPC 第 6 篇：TACOS 周复盘——广告效率不能只看 ACOS | 阿岩跨境笔记
 - description：这篇文章围绕TACOS 周复盘——广告效率不能只看 ACOS展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/ppc-tacos-weekly-review/
 - og:title：PPC 第 6 篇：TACOS 周复盘——广告效率不能只看 ACOS
@@ -2013,7 +2013,7 @@
 
 - PASS：title 正常：43
 - PASS：description 正常：82
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -2116,7 +2116,7 @@
 
 - title：Review 第 5 篇：VOC 标签法——把差评变成产品改进清单 | 阿岩跨境笔记
 - description：这篇文章围绕VOC 标签法——把差评变成产品改进清单展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/review-voice-of-customer-tagging/
 - og:title：Review 第 5 篇：VOC 标签法——把差评变成产品改进清单
@@ -2128,7 +2128,7 @@
 
 - PASS：title 正常：42
 - PASS：description 正常：78
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -2139,7 +2139,7 @@
 
 - title：选品第 7 篇：FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润 | 阿岩跨境笔记
 - description：这篇文章围绕FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/selection-fba-size-tier-cost-trap/
 - og:title：选品第 7 篇：FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润
@@ -2151,7 +2151,7 @@
 
 - PASS：title 正常：41
 - PASS：description 正常：82
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -2162,7 +2162,7 @@
 
 - title：选品第 5 篇：首单样品检查清单——下单前先排 12 个雷 | 阿岩跨境笔记
 - description：这篇文章围绕首单样品检查清单——下单前先排 12 个雷展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/selection-first-order-sample-checklist/
 - og:title：选品第 5 篇：首单样品检查清单——下单前先排 12 个雷
@@ -2174,7 +2174,7 @@
 
 - PASS：title 正常：38
 - PASS：description 正常：79
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -2254,7 +2254,7 @@
 
 - title：选品第 6 篇：季节性风险判断——不要把旺季销量当常态 | 阿岩跨境笔记
 - description：这篇文章围绕季节性风险判断——不要把旺季销量当常态展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/selection-seasonality-risk-check/
 - og:title：选品第 6 篇：季节性风险判断——不要把旺季销量当常态
@@ -2266,7 +2266,7 @@
 
 - PASS：title 正常：36
 - PASS：description 正常：77
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常
@@ -2346,7 +2346,7 @@
 
 - title：工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数 | 阿岩跨境笔记
 - description：这篇文章围绕亚马逊周经营看板——每周只看这 10 个数展开，帮助亚马逊卖家用更清晰的步骤判断问题、拆解数据、降低试错成本，适合阿岩跨境笔记读者做日常运营复盘。
-- H1：2
+- H1：1
 - H2：8
 - canonical：https://amz.hao1234.top/articles/tools-weekly-business-review-dashboard/
 - og:title：工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数
@@ -2358,7 +2358,7 @@
 
 - PASS：title 正常：38
 - PASS：description 正常：79
-- FAIL：H1 数量异常：2
+- PASS：H1 数量正常：1
 - PASS：canonical 正常
 - PASS：og:title 正常
 - PASS：og:description 正常

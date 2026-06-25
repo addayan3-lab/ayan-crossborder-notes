@@ -9,21 +9,23 @@ draft: false
 topic: keyword
 stage: 实操
 intent: 工具
+relatedTopics:
+  - listing
+  - ppc
+publicLessonUse: 适合作为关键词专题公开课的课前阅读，帮助新手先理解找词、筛词和关键词进入 Listing/广告的顺序。
 articleType: method
 featured: false
 resourceSlug: keyword-cleaning-sheet
 openClassSlug: keyword-to-listing
 leadMagnet: "可配合《关键词清洗表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: keyword-buyer-intent-layering
 relatedArticleLinks:
-  - slug: ppc-negative-keyword-week-one
-    label: 新品第一周否词策略
-    context: 与本文判断步骤配合使用
-  - slug: case-auto-ads-300-search-terms
-    label: 自动广告 300 词案例
-    context: 与本文判断步骤配合使用
+  - slug: keyword-buyer-intent-layering
+    label: "买家意图分层"
+    context: "关键词第 6 篇"
 ---
-# 关键词第 7 篇：否词库怎么建立——让广告复盘越来越省力
+
 
 否词不是每周临时判断一次，而应该沉淀成类目自己的否词库。一个成熟的否词库至少包含材质不符词、场景不符词、人群不符词、尺寸不符词、竞品品牌词和低意图词。这样做的价值，是让新人运营不会每次从零开始，也能减少重复烧钱。
 

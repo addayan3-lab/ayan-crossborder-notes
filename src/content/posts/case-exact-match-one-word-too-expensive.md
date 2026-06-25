@@ -9,6 +9,11 @@ draft: false
 topic: ppc
 stage: 实操
 intent: 决策
+relatedTopics:
+  - keyword
+  - listing
+  - tools
+publicLessonUse: 适合作为 PPC 公开课的数据判断模块，帮助新手用广告报表拆解问题，而不是只看 ACOS。
 articleType: case-study
 hookType: 数字冲击
 featured: true
@@ -19,13 +24,16 @@ leadMagnet: "可配合《PPC 周复盘表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
 relatedArticleLinks:
   - slug: ppc-search-term-to-campaign-sop
-    label: 搜索词到广告组 SOP
-    context: 与本文判断步骤配合使用
-  - slug: ppc-budget-allocation-first-month
-    label: 首月预算分配
-    context: 与本文判断步骤配合使用
+    label: "搜索词到广告组 SOP"
+    context: "PPC 第 5 篇"
+  - slug: ppc-negative-keyword-week-one
+    label: "新品第一周否词策略"
+    context: "PPC 第 4 篇"
+  - slug: new-product-ppc-week-one
+    label: "新品广告第一周"
+    context: "PPC 第 1 篇"
 ---
-# 案例：一个 Exact 词烧掉预算，新品广告为什么越跑越窄
+
 
 这个案例是脱敏复盘，类目、金额和部分细节做了比例调整，但问题逻辑是真实的。它适合新手对照自己当前的运营动作，尤其适合已经开始上架、开广告、看数据，但不知道下一步该不该加码的卖家。
 

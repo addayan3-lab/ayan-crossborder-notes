@@ -9,22 +9,22 @@ draft: false
 topic: "ai-search"
 stage: "进阶"
 intent: "工具"
+relatedTopics:
+  - listing
+  - tools
+publicLessonUse: 适合作为 AI 运营公开课的趋势和实操模块，帮助卖家理解 AI 搜索、Rufus 和 AI 工具对运营动作的影响。
 articleType: "method"
 resourceSlug: "ai-tools-review-sheet"
 openClassSlug: "ai-tools-for-amazon"
 leadMagnet: "AI 工具评测表"
 wechatHook: "资料领取方式以资料详情页说明为准。"
+prevArticle: 2026-amazon-ai-operations
 relatedArticleLinks:
-  - slug: amazon-rufus-alexa-shopping
-    label: "Rufus 专题"
-    context: "理解亚马逊 AI 购物入口"
-  - slug: consumer-ai-search-amazon
-    label: "消费者 AI 搜索"
-    context: "看用户搜索方式如何变化"
-  - slug: ai-listing-optimization
-    label: "AI Listing 优化"
-    context: "用 AI 辅助页面写作"
+  - slug: 2026-amazon-ai-operations
+    label: "2026 AI 运营效率"
+    context: "AI 搜索第 3 篇"
 ---
+
 
 过去写亚马逊 Listing，很多卖家只盯关键词覆盖：标题里放核心词，五点里放功能词，Search Terms 里补同义词。这个逻辑仍然重要，但在 AI 搜索和 Rufus 这类购物助手出现后，Listing 还要解决另一个问题：页面内容能不能被 AI 理解成清晰的产品答案。
 

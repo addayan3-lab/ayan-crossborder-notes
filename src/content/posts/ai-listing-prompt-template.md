@@ -23,6 +23,16 @@ relatedTopics:
 publicLessonUse: "Listing 优化公开课的 AI 写作示例"
 leadMagnet: "Listing 自检清单"
 wechatHook: "资料领取方式以资料详情页说明为准"
+relatedArticleLinks:
+  - slug: prompt-structure-for-amazon-sellers
+    label: "提示词结构入门"
+    context: "提示词基础篇"
+  - slug: ai-listing-optimization
+    label: "AI 时代 Listing 写法"
+    context: "Listing 第 3 篇"
+  - slug: ai-prompt-bullet-points-writing
+    label: "五点描述 Prompt"
+    context: "提示词进阶篇"
 ---
 
 用 AI 写亚马逊 Listing，最怕的不是写不出来，而是写得太像"万能广告文案"。

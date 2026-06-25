@@ -9,21 +9,24 @@ draft: false
 topic: listing
 stage: 进阶
 intent: 工具
+relatedTopics:
+  - keyword
+  - review
+  - ai-search
+publicLessonUse: 适合作为 Listing 优化公开课的案例或方法模块，帮助卖家把关键词、卖点、图片和转化表达串起来。
 articleType: method
 featured: false
 resourceSlug: listing-checklist
 openClassSlug: listing-conversion-check
 leadMagnet: "可配合《Listing 自检清单》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: listing-price-coupon-conversion-check
 relatedArticleLinks:
-  - slug: listing-title-2026-structure
-    label: 标题结构
-    context: 与本文判断步骤配合使用
-  - slug: case-mobile-main-image-text-too-small
-    label: 移动端主图问题案例
-    context: 与本文判断步骤配合使用
+  - slug: listing-price-coupon-conversion-check
+    label: "价格与 Coupon 自检"
+    context: "Listing第 5 篇"
 ---
-# Listing 第 6 篇：移动端优先优化——手机屏幕上先赢前 3 秒
+
 
 亚马逊买家大量在手机端浏览，移动端看到的不是完整页面，而是缩略主图、标题前半段、价格、评分和配送信息。桌面端看起来很完整的 Listing，在手机端可能只剩下一张看不清的主图和一段被截断的标题。移动端优化不是额外工作，而是 Listing 优化的第一视角。
 

@@ -9,21 +9,28 @@ draft: false
 topic: listing
 stage: 实操
 intent: 工具
+relatedTopics:
+  - keyword
+  - review
+  - ai-search
+publicLessonUse: 适合作为 Listing 优化公开课的案例或方法模块，帮助卖家把关键词、卖点、图片和转化表达串起来。
 articleType: method
 featured: false
 resourceSlug: listing-checklist
 openClassSlug: listing-conversion-check
 leadMagnet: "可配合《Listing 自检清单》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
+prevArticle: listing-main-image-ctr-checklist
+nextArticle: listing-mobile-first-optimization
 relatedArticleLinks:
-  - slug: case-clicks-no-orders-image-price
-    label: 有点击没订单案例
-    context: 与本文判断步骤配合使用
   - slug: listing-main-image-ctr-checklist
-    label: 主图点击率诊断
-    context: 与本文判断步骤配合使用
+    label: "主图点击率诊断"
+    context: "Listing第 4 篇"
+  - slug: listing-mobile-first-optimization
+    label: "移动端优先优化"
+    context: "Listing第 6 篇"
 ---
-# Listing 第 5 篇：价格与 Coupon 自检——降价前先看这 6 个信号
+
 
 有点击没订单时，很多卖家第一反应是降价或开更大的 Coupon。但价格不是单独起作用的，它和主图、评分、配送时效、竞品价格带、产品规格、页面信任感一起决定转化。降价前先检查这些信号，可以避免把本来是图片和卖点的问题，错误地归因到价格。
 

@@ -3,488 +3,1693 @@
     "id": "ai-amazon-hero-01",
     "path": "/images/article-assets/ai-amazon/ai-amazon-hero-01.svg",
     "type": "hero",
-    "topics": ["ai-amazon", "ai-operations"],
-    "keywords": ["AI运营", "亚马逊", "效率", "SOP"],
+    "topics": [
+      "ai-amazon",
+      "ai-operations"
+    ],
+    "keywords": [
+      "AI运营",
+      "亚马逊",
+      "效率",
+      "SOP"
+    ],
     "alt": "亚马逊卖家使用 AI 提升运营效率的示意图"
   },
   {
     "id": "ai-workflow-01",
     "path": "/images/article-assets/ai-amazon/ai-workflow-01.svg",
     "type": "framework",
-    "topics": ["ai-amazon", "workflow"],
-    "keywords": ["选品", "Listing", "广告", "Review", "复盘"],
+    "topics": [
+      "ai-amazon",
+      "workflow"
+    ],
+    "keywords": [
+      "选品",
+      "Listing",
+      "广告",
+      "Review",
+      "复盘"
+    ],
     "alt": "AI 在亚马逊运营中的五个应用场景图"
   },
   {
     "id": "ai-sop-01",
     "path": "/images/article-assets/ai-amazon/ai-sop-01.svg",
     "type": "summary",
-    "topics": ["ai-amazon", "sop"],
-    "keywords": ["SOP", "执行建议", "每天", "每周", "每月"],
+    "topics": [
+      "ai-amazon",
+      "sop"
+    ],
+    "keywords": [
+      "SOP",
+      "执行建议",
+      "每天",
+      "每周",
+      "每月"
+    ],
     "alt": "亚马逊卖家 AI 运营落地 SOP 流程图"
   },
   {
     "id": "ppc-dashboard-01",
     "path": "/images/article-assets/ppc/ppc-dashboard-01.svg",
     "type": "section",
-    "topics": ["ppc", "advertising"],
-    "keywords": ["广告", "PPC", "ACOS", "TACOS", "报表"],
+    "topics": [
+      "ppc",
+      "advertising"
+    ],
+    "keywords": [
+      "广告",
+      "PPC",
+      "ACOS",
+      "TACOS",
+      "报表"
+    ],
     "alt": "亚马逊广告 PPC 数据复盘示意图"
   },
   {
     "id": "listing-structure-01",
     "path": "/images/article-assets/listing/listing-structure-01.svg",
     "type": "section",
-    "topics": ["listing"],
-    "keywords": ["Listing", "标题", "五点", "转化", "文案"],
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing",
+      "标题",
+      "五点",
+      "转化",
+      "文案"
+    ],
     "alt": "AI 时代亚马逊 Listing 优化结构图"
   },
   {
     "id": "review-analysis-01",
     "path": "/images/article-assets/review/review-analysis-01.svg",
     "type": "section",
-    "topics": ["review"],
-    "keywords": ["Review", "评论", "差评", "痛点", "用户语言"],
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review",
+      "评论",
+      "差评",
+      "痛点",
+      "用户语言"
+    ],
     "alt": "亚马逊 Review 分析用户痛点示意图"
   },
   {
     "id": "summary-01",
     "path": "/images/article-assets/common/summary-01.svg",
     "type": "summary",
-    "topics": ["common"],
-    "keywords": ["总结", "方法", "流程", "SOP"],
+    "topics": [
+      "common"
+    ],
+    "keywords": [
+      "总结",
+      "方法",
+      "流程",
+      "SOP"
+    ],
     "alt": "亚马逊 AI 运营核心总结图"
   },
   {
     "id": "keyword-table-overview-01",
     "path": "/images/articles/ai-keyword-table/keyword-table-overview.png",
     "type": "section",
-    "topics": ["keyword"],
-    "keywords": ["关键词", "关键词表", "拓展"],
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "关键词表",
+      "拓展"
+    ],
     "alt": "亚马逊关键词拓展表示意图"
   },
   {
     "id": "new-product-ppc-week-one-cover-01",
     "path": "/images/articles/new-product-ppc-week-one/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "new-product"],
-    "keywords": ["新品", "PPC", "广告", "上线"],
+    "topics": [
+      "ppc",
+      "new-product"
+    ],
+    "keywords": [
+      "新品",
+      "PPC",
+      "广告",
+      "上线"
+    ],
     "alt": "新品上线 PPC 第一周广告操作指南封面"
   },
   {
     "id": "new-product-ppc-week-one-guide-01",
     "path": "/images/articles/new-product-ppc-week-one/guide.svg",
     "type": "section",
-    "topics": ["ppc", "new-product"],
-    "keywords": ["新品", "PPC", "操作流程"],
+    "topics": [
+      "ppc",
+      "new-product"
+    ],
+    "keywords": [
+      "新品",
+      "PPC",
+      "操作流程"
+    ],
     "alt": "新品 PPC 第一周操作流程图"
   },
   {
     "id": "cover-ai-operations-01",
     "path": "/images/covers/cover-ai-operations.svg",
     "type": "cover",
-    "topics": ["ai-operations"],
-    "keywords": ["AI", "运营"],
+    "topics": [
+      "ai-operations"
+    ],
+    "keywords": [
+      "AI",
+      "运营"
+    ],
     "alt": "亚马逊 AI 运营专题封面图"
   },
   {
     "id": "cover-keyword-01",
     "path": "/images/covers/cover-keyword.svg",
     "type": "cover",
-    "topics": ["keyword"],
-    "keywords": ["关键词", "研究"],
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "研究"
+    ],
     "alt": "亚马逊关键词研究专题封面图"
   },
   {
     "id": "cover-listing-01",
     "path": "/images/covers/cover-listing.svg",
     "type": "cover",
-    "topics": ["listing"],
-    "keywords": ["Listing", "优化"],
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing",
+      "优化"
+    ],
     "alt": "亚马逊 Listing 优化专题封面图"
   },
   {
     "id": "ai-operations-framework-01",
     "path": "/images/generated-infographics/2026-amazon-ai-operations/framework.svg",
     "type": "framework",
-    "topics": ["ai-operations"],
-    "keywords": ["AI", "运营", "框架"],
+    "topics": [
+      "ai-operations"
+    ],
+    "keywords": [
+      "AI",
+      "运营",
+      "框架"
+    ],
     "alt": "AI 与卖家的分工示意图"
   },
   {
     "id": "ai-operations-hero-01",
     "path": "/images/generated-infographics/2026-amazon-ai-operations/hero.svg",
     "type": "hero",
-    "topics": ["ai-operations"],
-    "keywords": ["AI", "运营", "场景"],
+    "topics": [
+      "ai-operations"
+    ],
+    "keywords": [
+      "AI",
+      "运营",
+      "场景"
+    ],
     "alt": "亚马逊 AI 运营五大场景图"
   },
   {
     "id": "ai-operations-summary-01",
     "path": "/images/generated-infographics/2026-amazon-ai-operations/summary.svg",
     "type": "summary",
-    "topics": ["ai-operations"],
-    "keywords": ["AI", "运营", "SOP"],
+    "topics": [
+      "ai-operations"
+    ],
+    "keywords": [
+      "AI",
+      "运营",
+      "SOP"
+    ],
     "alt": "阿岩卖家 AI 落地 SOP 图"
   },
   {
     "id": "site-ayan-avatar-01",
     "path": "/images/ayan-avatar.png",
     "type": "site",
-    "topics": ["site"],
-    "keywords": ["头像", "阿岩"],
+    "topics": [
+      "site"
+    ],
+    "keywords": [
+      "头像",
+      "阿岩"
+    ],
     "alt": "阿岩头像"
   },
   {
     "id": "site-ayan-hero-01",
     "path": "/images/ayan-hero.png",
     "type": "site",
-    "topics": ["site"],
-    "keywords": ["hero", "背景"],
+    "topics": [
+      "site"
+    ],
+    "keywords": [
+      "hero",
+      "背景"
+    ],
     "alt": "阿岩 hero 背景图"
   },
   {
     "id": "site-hero-pattern-01",
     "path": "/images/hero-pattern.svg",
     "type": "site",
-    "topics": ["site"],
-    "keywords": ["装饰", "背景"],
+    "topics": [
+      "site"
+    ],
+    "keywords": [
+      "装饰",
+      "背景"
+    ],
     "alt": "站点背景装饰图案"
   },
   {
     "id": "site-og-default-01",
     "path": "/images/og-default.svg",
     "type": "site",
-    "topics": ["site"],
-    "keywords": ["OG", "默认"],
+    "topics": [
+      "site"
+    ],
+    "keywords": [
+      "OG",
+      "默认"
+    ],
     "alt": "站点默认社交分享图"
   },
   {
     "id": "article-keyword-learning-path-cover",
     "path": "/images/articles/keyword-learning-path/cover.svg",
     "type": "cover",
-    "topics": ["keyword"],
-    "keywords": ["关键词", "学习路径", "漏斗", "筛选"],
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "学习路径",
+      "漏斗",
+      "筛选"
+    ],
     "alt": "亚马逊关键词学习路径封面图"
   },
   {
     "id": "article-listing-learning-path-cover",
     "path": "/images/articles/listing-learning-path/cover.svg",
     "type": "cover",
-    "topics": ["listing"],
-    "keywords": ["Listing", "标题", "五点", "图片", "Review"],
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing",
+      "标题",
+      "五点",
+      "图片",
+      "Review"
+    ],
     "alt": "亚马逊 Listing 优化学习路径封面图"
   },
   {
     "id": "article-ppc-learning-path-cover",
     "path": "/images/articles/ppc-learning-path/cover.svg",
     "type": "cover",
-    "topics": ["ppc"],
-    "keywords": ["PPC", "广告", "自动广告", "精准广告", "ACOS"],
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "PPC",
+      "广告",
+      "自动广告",
+      "精准广告",
+      "ACOS"
+    ],
     "alt": "亚马逊 PPC 广告学习路径封面图"
   },
   {
     "id": "article-review-learning-path-cover",
     "path": "/images/articles/review-learning-path/cover.svg",
     "type": "cover",
-    "topics": ["review"],
-    "keywords": ["Review", "差评", "好评", "痛点", "优化"],
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review",
+      "差评",
+      "好评",
+      "痛点",
+      "优化"
+    ],
     "alt": "亚马逊 Review 分析学习路径封面图"
   },
   {
     "id": "article-ai-search-learning-path-cover",
     "path": "/images/articles/ai-search-learning-path/cover.svg",
     "type": "cover",
-    "topics": ["ai-search"],
-    "keywords": ["AI搜索", "RUFUS", "搜索可见性", "结构化"],
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI搜索",
+      "RUFUS",
+      "搜索可见性",
+      "结构化"
+    ],
     "alt": "亚马逊 AI 搜索学习路径封面图"
   },
   {
     "id": "article-tools-learning-path-cover",
     "path": "/images/articles/tools-learning-path/cover.svg",
     "type": "cover",
-    "topics": ["tools"],
-    "keywords": ["工具", "资料", "表格", "清单", "SOP"],
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "工具",
+      "资料",
+      "表格",
+      "清单",
+      "SOP"
+    ],
     "alt": "亚马逊工具资料学习路径封面图"
   },
   {
     "id": "resources-center-cover",
     "path": "/images/resources/resources-center/cover.svg",
     "type": "cover",
-    "topics": ["resources"],
-    "keywords": ["资源中心", "资料", "模板", "清单"],
+    "topics": [
+      "resources"
+    ],
+    "keywords": [
+      "资源中心",
+      "资料",
+      "模板",
+      "清单"
+    ],
     "alt": "亚马逊卖家资源中心封面图"
   },
   {
     "id": "open-class-center-cover",
     "path": "/images/open-class/open-class-center/cover.svg",
     "type": "cover",
-    "topics": ["open-class"],
-    "keywords": ["公开课", "课程", "系统学习"],
+    "topics": [
+      "open-class"
+    ],
+    "keywords": [
+      "公开课",
+      "课程",
+      "系统学习"
+    ],
     "alt": "亚马逊公开课中心封面图"
   },
   {
     "id": "resource-keyword-cleaning-sheet-cover",
     "path": "/images/resources/keyword-cleaning-sheet/cover.svg",
     "type": "cover",
-    "topics": ["keyword", "resources"],
-    "keywords": ["关键词", "清洗", "去重", "分组"],
+    "topics": [
+      "keyword",
+      "resources"
+    ],
+    "keywords": [
+      "关键词",
+      "清洗",
+      "去重",
+      "分组"
+    ],
     "alt": "关键词清洗表封面图"
   },
   {
     "id": "resource-ppc-weekly-review-cover",
     "path": "/images/resources/ppc-weekly-review/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "resources"],
-    "keywords": ["PPC", "周复盘", "广告", "ACOS"],
+    "topics": [
+      "ppc",
+      "resources"
+    ],
+    "keywords": [
+      "PPC",
+      "周复盘",
+      "广告",
+      "ACOS"
+    ],
     "alt": "PPC 周复盘表封面图"
   },
   {
     "id": "article-keyword-cleaning-method-cover",
     "path": "/images/articles/keyword-cleaning-method/cover.svg",
     "type": "cover",
-    "topics": ["keyword"],
-    "keywords": ["关键词", "清洗", "去重", "归一化", "聚类"],
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "清洗",
+      "去重",
+      "归一化",
+      "聚类"
+    ],
     "alt": "关键词清洗方法：从关键词池到可用词表封面图"
   },
   {
     "id": "article-keyword-source-4-types-cover",
     "path": "/images/articles/keyword-source-4-types/cover.svg",
     "type": "cover",
-    "topics": ["keyword"],
-    "keywords": ["关键词", "来源", "竞品", "广告", "评价"],
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "来源",
+      "竞品",
+      "广告",
+      "评价"
+    ],
     "alt": "关键词 4 类来源封面图"
   },
   {
     "id": "article-keyword-search-volume-trap-cover",
     "path": "/images/articles/keyword-search-volume-trap/cover.svg",
     "type": "cover",
-    "topics": ["keyword"],
-    "keywords": ["搜索量", "陷阱", "判断", "相关"],
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "搜索量",
+      "陷阱",
+      "判断",
+      "相关"
+    ],
     "alt": "搜索量陷阱：不能只看搜索量选词封面图"
   },
   {
     "id": "article-listing-five-bullets-cover",
     "path": "/images/articles/listing-five-bullets/cover.svg",
     "type": "cover",
-    "topics": ["listing"],
-    "keywords": ["五点", "功能点", "场景点", "信任点"],
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "五点",
+      "功能点",
+      "场景点",
+      "信任点"
+    ],
     "alt": "Listing 五点写法：功能点·场景点·信任点封面图"
   },
   {
     "id": "article-listing-checklist-cover",
     "path": "/images/articles/listing-checklist/cover.svg",
     "type": "cover",
-    "topics": ["listing"],
-    "keywords": ["Listing", "检查清单", "标题", "图片", "五点"],
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing",
+      "检查清单",
+      "标题",
+      "图片",
+      "五点"
+    ],
     "alt": "Listing 优化检查清单封面图"
   },
   {
     "id": "article-ai-listing-optimization-cover",
     "path": "/images/articles/ai-listing-optimization/cover.svg",
     "type": "cover",
-    "topics": ["listing", "ai"],
-    "keywords": ["AI", "Listing", "优化", "改写"],
+    "topics": [
+      "listing",
+      "ai"
+    ],
+    "keywords": [
+      "AI",
+      "Listing",
+      "优化",
+      "改写"
+    ],
     "alt": "AI & Listing 优化：AI 辅助改写+人工复核封面图"
   },
   {
     "id": "article-sp-ad-structure-cover",
     "path": "/images/articles/sp-ad-structure/cover.svg",
     "type": "cover",
-    "topics": ["ppc"],
-    "keywords": ["SP", "广告", "自动", "精准", "词组", "竞品"],
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "SP",
+      "广告",
+      "自动",
+      "精准",
+      "词组",
+      "竞品"
+    ],
     "alt": "SP 广告结构：自动·精准·词组·竞品封面图"
   },
   {
     "id": "article-ai-ppc-report-review-cover",
     "path": "/images/articles/ai-ppc-report-review/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "ai"],
-    "keywords": ["AI", "PPC", "广告", "报表", "复盘"],
+    "topics": [
+      "ppc",
+      "ai"
+    ],
+    "keywords": [
+      "AI",
+      "PPC",
+      "广告",
+      "报表",
+      "复盘"
+    ],
     "alt": "AI 广告报表复盘：搜索词·ACOS·CVR 三步初筛封面图"
   },
   {
     "id": "article-review-analysis-matrix-cover",
     "path": "/images/articles/review-analysis-matrix/cover.svg",
     "type": "cover",
-    "topics": ["review"],
-    "keywords": ["Review", "差评", "好评", "中评", "矩阵"],
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review",
+      "差评",
+      "好评",
+      "中评",
+      "矩阵"
+    ],
     "alt": "Review 分析矩阵：好评·差评·中评·Q&A 封面图"
   },
   {
     "id": "article-ai-competitor-matrix-cover",
     "path": "/images/articles/ai-competitor-matrix/cover.svg",
     "type": "cover",
-    "topics": ["ai", "competitor"],
-    "keywords": ["竞品", "矩阵", "价格", "卖点", "机会"],
+    "topics": [
+      "ai",
+      "competitor"
+    ],
+    "keywords": [
+      "竞品",
+      "矩阵",
+      "价格",
+      "卖点",
+      "机会"
+    ],
     "alt": "AI 竞品矩阵拆解：4 维度发现差异化空间封面图"
   },
   {
     "id": "article-amazon-ai-tools-review-cover",
     "path": "/images/articles/amazon-ai-tools-review/cover.svg",
     "type": "cover",
-    "topics": ["ai", "tools"],
-    "keywords": ["AI", "工具", "评测", "标准"],
+    "topics": [
+      "ai",
+      "tools"
+    ],
+    "keywords": [
+      "AI",
+      "工具",
+      "评测",
+      "标准"
+    ],
     "alt": "亚马逊 AI 工具评测封面图"
   },
   {
     "id": "article-negative-review-listing-fix-cover",
     "path": "/images/articles/negative-review-listing-fix/cover.svg",
     "type": "cover",
-    "topics": ["review"],
-    "keywords": ["差评", "归因", "修复", "Listing"],
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "差评",
+      "归因",
+      "修复",
+      "Listing"
+    ],
     "alt": "差评归因与修复：4 类差评对应动作封面图"
   },
   {
     "id": "article-ai-review-analysis-cover",
     "path": "/images/articles/ai-review-analysis/cover.svg",
     "type": "cover",
-    "topics": ["review", "ai"],
-    "keywords": ["AI", "Review", "卖点", "痛点", "场景词"],
+    "topics": [
+      "review",
+      "ai"
+    ],
+    "keywords": [
+      "AI",
+      "Review",
+      "卖点",
+      "痛点",
+      "场景词"
+    ],
     "alt": "AI 分析 Review 提炼卖点封面图"
   },
   {
     "id": "article-ai-market-size-estimate-cover",
     "path": "/images/articles/ai-market-size-estimate/cover.svg",
     "type": "cover",
-    "topics": ["selection"],
-    "keywords": ["市场", "容量", "搜索量", "销量", "价格带"],
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "市场",
+      "容量",
+      "搜索量",
+      "销量",
+      "价格带"
+    ],
     "alt": "AI 做亚马逊市场容量判断封面图"
   },
   {
     "id": "article-selection-pain-reverse-cover",
     "path": "/images/articles/selection-pain-reverse/cover.svg",
     "type": "cover",
-    "topics": ["selection"],
-    "keywords": ["痛点", "反推", "选品", "差评"],
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "痛点",
+      "反推",
+      "选品",
+      "差评"
+    ],
     "alt": "痛点反推选品：从差评和问答找机会封面图"
   },
   {
     "id": "article-consumer-ai-search-amazon-cover",
     "path": "/images/articles/consumer-ai-search-amazon/cover.svg",
     "type": "cover",
-    "topics": ["ai-search"],
-    "keywords": ["AI搜索", "消费者", "行为", "场景"],
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI搜索",
+      "消费者",
+      "行为",
+      "场景"
+    ],
     "alt": "消费者如何用 Amazon AI 搜索产品封面图"
   },
   {
     "id": "article-amazon-rufus-alexa-shopping-cover",
     "path": "/images/articles/amazon-rufus-alexa-shopping/cover.svg",
     "type": "cover",
-    "topics": ["ai-search"],
-    "keywords": ["Rufus", "Alexa", "AI搜索", "影响"],
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "Rufus",
+      "Alexa",
+      "AI搜索",
+      "影响"
+    ],
     "alt": "Amazon Rufus / Alexa for Shopping 对卖家影响封面图"
   },
   {
     "id": "article-2026-amazon-ai-operations-cover",
     "path": "/images/articles/2026-amazon-ai-operations/cover.svg",
     "type": "cover",
-    "topics": ["ai-search"],
-    "keywords": ["AI", "运营", "全景", "五大场景"],
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI",
+      "运营",
+      "全景",
+      "五大场景"
+    ],
     "alt": "2026 亚马逊 AI 运营全景图封面"
   },
   {
     "id": "article-amazon-platform-rules-beginner-cover",
     "path": "/images/articles/amazon-platform-rules-beginner/cover.svg",
     "type": "cover",
-    "topics": ["tools"],
-    "keywords": ["新手", "规则", "避坑", "合规"],
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "新手",
+      "规则",
+      "避坑",
+      "合规"
+    ],
     "alt": "亚马逊平台规则入门：新手避坑清单封面图"
   },
   {
     "id": "article-amazon-title-rule-75-characters-2026-cover",
     "path": "/images/articles/amazon-title-rule-75-characters-2026/cover.svg",
     "type": "cover",
-    "topics": ["listing", "tools"],
-    "keywords": ["标题规则", "75字符", "Listing", "Item Highlights"],
+    "topics": [
+      "listing",
+      "tools"
+    ],
+    "keywords": [
+      "标题规则",
+      "75字符",
+      "Listing",
+      "Item Highlights"
+    ],
     "alt": "亚马逊标题 75 字符规则重点简报封面图"
   },
   {
     "id": "article-ai-prompt-competitor-listing-analysis-cover",
     "path": "/images/articles/ai-prompt-competitor-listing-analysis/cover.svg",
     "type": "cover",
-    "topics": ["listing", "ai-prompt"],
-    "keywords": ["AI提示词", "竞品", "Listing拆解", "差异化"],
+    "topics": [
+      "listing",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "竞品",
+      "Listing拆解",
+      "差异化"
+    ],
     "alt": "AI 提示词拆竞品 Listing 封面图"
   },
   {
     "id": "article-ai-prompt-review-selling-points-cover",
     "path": "/images/articles/ai-prompt-review-selling-points/cover.svg",
     "type": "cover",
-    "topics": ["review", "ai-prompt"],
-    "keywords": ["AI提示词", "Review", "卖点提炼", "痛点"],
+    "topics": [
+      "review",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "Review",
+      "卖点提炼",
+      "痛点"
+    ],
     "alt": "AI 提示词从 Review 提炼卖点封面图"
   },
   {
     "id": "article-ai-prompt-search-term-report-cover",
     "path": "/images/articles/ai-prompt-search-term-report/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "ai-prompt"],
-    "keywords": ["AI提示词", "搜索词报告", "PPC", "广告分析"],
+    "topics": [
+      "ppc",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "搜索词报告",
+      "PPC",
+      "广告分析"
+    ],
     "alt": "AI 提示词分析搜索词报告封面图"
   },
   {
     "id": "article-ai-prompt-bullet-points-writing-cover",
     "path": "/images/articles/ai-prompt-bullet-points-writing/cover.svg",
     "type": "cover",
-    "topics": ["listing", "ai-prompt"],
-    "keywords": ["AI提示词", "五点描述", "Listing", "卖点"],
+    "topics": [
+      "listing",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "五点描述",
+      "Listing",
+      "卖点"
+    ],
     "alt": "AI 提示词生成五点描述封面图"
   },
   {
     "id": "article-ai-prompt-product-differentiation-cover",
     "path": "/images/articles/ai-prompt-product-differentiation/cover.svg",
     "type": "cover",
-    "topics": ["selection", "ai-prompt"],
-    "keywords": ["AI提示词", "差异化", "选品", "竞品分析"],
+    "topics": [
+      "selection",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "差异化",
+      "选品",
+      "竞品分析"
+    ],
     "alt": "AI 提示词判断产品差异化机会封面图"
   },
   {
     "id": "article-ai-prompt-negative-keyword-suggestions-cover",
     "path": "/images/articles/ai-prompt-negative-keyword-suggestions/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "ai-prompt"],
-    "keywords": ["AI提示词", "否定关键词", "PPC", "否词"],
+    "topics": [
+      "ppc",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "否定关键词",
+      "PPC",
+      "否词"
+    ],
     "alt": "AI 提示词生成广告否词建议封面图"
   },
   {
     "id": "article-ai-prompt-weekly-operation-review-cover",
     "path": "/images/articles/ai-prompt-weekly-operation-review/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "ai-prompt"],
-    "keywords": ["AI提示词", "运营复盘", "周报", "数据分析"],
+    "topics": [
+      "ppc",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "运营复盘",
+      "周报",
+      "数据分析"
+    ],
     "alt": "AI 提示词写每周运营复盘封面图"
   },
   {
     "id": "article-ai-prompt-listing-risk-check-cover",
     "path": "/images/articles/ai-prompt-listing-risk-check/cover.svg",
     "type": "cover",
-    "topics": ["listing", "ai-prompt"],
-    "keywords": ["AI提示词", "Listing", "风险检查", "合规"],
+    "topics": [
+      "listing",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "Listing",
+      "风险检查",
+      "合规"
+    ],
     "alt": "AI 提示词检查 Listing 风险封面图"
   },
   {
     "id": "article-ai-prompt-keyword-grouping-cover",
     "path": "/images/articles/ai-prompt-keyword-grouping/cover.svg",
     "type": "cover",
-    "topics": ["keyword", "ai-prompt"],
-    "keywords": ["AI提示词", "关键词", "分组", "整理"],
+    "topics": [
+      "keyword",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "关键词",
+      "分组",
+      "整理"
+    ],
     "alt": "AI 提示词整理关键词分组封面图"
   },
   {
     "id": "article-ai-prompt-new-product-launch-plan-cover",
     "path": "/images/articles/ai-prompt-new-product-launch-plan/cover.svg",
     "type": "cover",
-    "topics": ["ppc", "ai-prompt"],
-    "keywords": ["AI提示词", "新品", "冷启动", "计划"],
+    "topics": [
+      "ppc",
+      "ai-prompt"
+    ],
+    "keywords": [
+      "AI提示词",
+      "新品",
+      "冷启动",
+      "计划"
+    ],
     "alt": "AI 提示词做新品冷启动计划封面图"
   },
   {
     "id": "hero-bg-tech-globe",
     "path": "/images/home/ayan-home-hero-tech-bg.png",
     "type": "hero",
-    "topics": ["homepage"],
-    "keywords": ["科技", "地球", "背景"],
+    "topics": [
+      "homepage"
+    ],
+    "keywords": [
+      "科技",
+      "地球",
+      "背景"
+    ],
     "alt": "阿岩跨境笔记首页科技感世界地图背景图"
+  },
+  {
+    "id": "article-ai-amazon-operator-prompt-library-cover",
+    "path": "/images/articles/ai-amazon-operator-prompt-library/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI 运营亚马逊",
+      "ai-search",
+      "封面"
+    ],
+    "alt": "AI 工具第 3 篇：亚马逊运营提示词库——让 AI 先做粗筛，不做最终判断封面图"
+  },
+  {
+    "id": "article-ai-operations-resource-pack-cover",
+    "path": "/images/articles/ai-operations-resource-pack/cover.svg",
+    "type": "cover",
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "工具模板",
+      "tools",
+      "封面"
+    ],
+    "alt": "亚马逊 AI 运营资料包领取说明封面图"
+  },
+  {
+    "id": "article-ai-role-avoid-pitfalls-advisor-cover",
+    "path": "/images/articles/ai-role-avoid-pitfalls-advisor/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "AI 身份第 8 篇：避坑顾问 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-competitor-researcher-cover",
+    "path": "/images/articles/ai-role-competitor-researcher/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "AI 身份第 5 篇：竞品研究员 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-inventory-planner-cover",
+    "path": "/images/articles/ai-role-inventory-planner/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "运营",
+      "selection",
+      "封面"
+    ],
+    "alt": "AI 身份第 9 篇：库存规划师 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-listing-copywriter-cover",
+    "path": "/images/articles/ai-role-listing-copywriter/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing",
+      "listing",
+      "封面"
+    ],
+    "alt": "AI 身份第 2 篇：Listing 文案优化师 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-ppc-analyst-cover",
+    "path": "/images/articles/ai-role-ppc-analyst/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "AI 身份第 3 篇：PPC 广告分析师 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-replenishment-decision-maker-cover",
+    "path": "/images/articles/ai-role-replenishment-decision-maker/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "运营",
+      "selection",
+      "封面"
+    ],
+    "alt": "AI 身份第 10 篇：补货决策师 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-return-diagnostician-cover",
+    "path": "/images/articles/ai-role-return-diagnostician/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review",
+      "review",
+      "封面"
+    ],
+    "alt": "AI 身份第 6 篇：退货诊断师 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-review-analyst-cover",
+    "path": "/images/articles/ai-role-review-analyst/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review",
+      "review",
+      "封面"
+    ],
+    "alt": "AI 身份第 4 篇：Review 分析师 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-selection-consultant-cover",
+    "path": "/images/articles/ai-role-selection-consultant/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "AI 身份第 1 篇：亚马逊选品顾问 Prompt封面图"
+  },
+  {
+    "id": "article-ai-role-seo-consultant-cover",
+    "path": "/images/articles/ai-role-seo-consultant/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing",
+      "listing",
+      "封面"
+    ],
+    "alt": "AI 身份第 7 篇：Amazon SEO 顾问 Prompt封面图"
+  },
+  {
+    "id": "article-ai-rufus-listing-writing-2026-cover",
+    "path": "/images/articles/ai-rufus-listing-writing-2026/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI 运营亚马逊",
+      "ai-search",
+      "封面"
+    ],
+    "alt": "AI 搜索第 4 篇：Rufus 时代 Listing 怎么写（2026 实操版）封面图"
+  },
+  {
+    "id": "article-case-5000-sales-still-losing-money-cover",
+    "path": "/images/articles/case-5000-sales-still-losing-money/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "案例：月销 $5000 还在亏钱，利润到底算错在哪封面图"
+  },
+  {
+    "id": "article-case-ai-search-listing-old-method-losing-traffic-cover",
+    "path": "/images/articles/case-ai-search-listing-old-method-losing-traffic/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI 运营亚马逊",
+      "ai-search",
+      "封面"
+    ],
+    "alt": "案例：2026 亚马逊 AI 搜索下，Listing 还按老方法写会丢哪些流量封面图"
+  },
+  {
+    "id": "article-case-ai-tool-made-wrong-decision-cover",
+    "path": "/images/articles/case-ai-tool-made-wrong-decision/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ai-search"
+    ],
+    "keywords": [
+      "AI 运营亚马逊",
+      "ai-search",
+      "封面"
+    ],
+    "alt": "案例：AI 说这个产品可以做，为什么我建议先停下封面图"
+  },
+  {
+    "id": "article-case-auto-ads-300-search-terms-cover",
+    "path": "/images/articles/case-auto-ads-300-search-terms/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "自动广告跑出 300 词：不是词多就好封面图"
+  },
+  {
+    "id": "article-case-bad-reviews-selection-opportunity-cover",
+    "path": "/images/articles/case-bad-reviews-selection-opportunity/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review 分析",
+      "review",
+      "封面"
+    ],
+    "alt": "案例：差评里藏着的选品机会——3 个脱敏复盘封面图"
+  },
+  {
+    "id": "article-case-clicks-no-orders-image-price-cover",
+    "path": "/images/articles/case-clicks-no-orders-image-price/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing 优化",
+      "listing",
+      "封面"
+    ],
+    "alt": "有点击没订单：90% 是图和价格，不是关键词封面图"
+  },
+  {
+    "id": "article-case-coupon-cut-price-still-no-orders-cover",
+    "path": "/images/articles/case-coupon-cut-price-still-no-orders/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing 优化",
+      "listing",
+      "封面"
+    ],
+    "alt": "案例：Coupon 开到 20% 还是没订单，问题不一定是价格封面图"
+  },
+  {
+    "id": "article-case-exact-match-one-word-too-expensive-cover",
+    "path": "/images/articles/case-exact-match-one-word-too-expensive/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "案例：一个 Exact 词烧掉预算，新品广告为什么越跑越窄封面图"
+  },
+  {
+    "id": "article-case-fba-fee-eats-margin-cover",
+    "path": "/images/articles/case-fba-fee-eats-margin/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "案例：售价没变，FBA 费用却吃掉了利润封面图"
+  },
+  {
+    "id": "article-case-keyword-200-to-30-listing-cover",
+    "path": "/images/articles/case-keyword-200-to-30-listing/cover.svg",
+    "type": "cover",
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "keyword",
+      "封面"
+    ],
+    "alt": "200 个关键词进 Listing 反而没流量封面图"
+  },
+  {
+    "id": "article-case-listing-traffic-no-conversion-cover",
+    "path": "/images/articles/case-listing-traffic-no-conversion/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "案例拆解",
+      "listing",
+      "封面"
+    ],
+    "alt": "案例第 2 篇：一个 Listing 有流量没转化，问题出在哪里封面图"
+  },
+  {
+    "id": "article-case-mobile-main-image-text-too-small-cover",
+    "path": "/images/articles/case-mobile-main-image-text-too-small/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing 优化",
+      "listing",
+      "封面"
+    ],
+    "alt": "案例：电脑端主图很好看，手机端却看不清卖点封面图"
+  },
+  {
+    "id": "article-case-new-product-week-one-review-cover",
+    "path": "/images/articles/case-new-product-week-one-review/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "案例拆解",
+      "ppc",
+      "封面"
+    ],
+    "alt": "案例第 4 篇：新品上线第一周怎么复盘封面图"
+  },
+  {
+    "id": "article-case-platform-warning-email-checklist-cover",
+    "path": "/images/articles/case-platform-warning-email-checklist/cover.svg",
+    "type": "cover",
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "工具模板",
+      "tools",
+      "封面"
+    ],
+    "alt": "案例：平台警告邮件来了——新手先别慌，按这张清单查封面图"
+  },
+  {
+    "id": "article-case-ppc-high-acos-dont-panic-cover",
+    "path": "/images/articles/case-ppc-high-acos-dont-panic/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "广告 ACOS 80% 别急着关：先查这 3 项封面图"
+  },
+  {
+    "id": "article-case-ppc-week-one-add-or-negative-cover",
+    "path": "/images/articles/case-ppc-week-one-add-or-negative/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "案例：新品第一周广告复盘——该加词还是该否词封面图"
+  },
+  {
+    "id": "article-case-rating-42-qa-risk-cover",
+    "path": "/images/articles/case-rating-42-qa-risk/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review 分析",
+      "review",
+      "封面"
+    ],
+    "alt": "4.2 分还能卖？Rating 背后的 Q&A 风险封面图"
+  },
+  {
+    "id": "article-case-review-pain-reverse-improvement-cover",
+    "path": "/images/articles/case-review-pain-reverse-improvement/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "案例拆解",
+      "review",
+      "封面"
+    ],
+    "alt": "案例第 5 篇：从 50 条差评里反推出产品改进方向封面图"
+  },
+  {
+    "id": "article-case-review-size-chart-missing-cover",
+    "path": "/images/articles/case-review-size-chart-missing/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review 分析",
+      "review",
+      "封面"
+    ],
+    "alt": "案例：差评都在说尺寸，其实是尺码表缺了一句话封面图"
+  },
+  {
+    "id": "article-case-seasonal-product-missed-window-cover",
+    "path": "/images/articles/case-seasonal-product-missed-window/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "案例：季节品不是不能做，是错过窗口别硬上封面图"
+  },
+  {
+    "id": "article-case-selection-seems-ok-dont-do-cover",
+    "path": "/images/articles/case-selection-seems-ok-dont-do/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "搜索量 12 万但不该入场：品牌集中度陷阱封面图"
+  },
+  {
+    "id": "article-case-supplier-can-make-dont-order-cover",
+    "path": "/images/articles/case-supplier-can-make-dont-order/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "供应商说能做别急着下单：5 个必问问题封面图"
+  },
+  {
+    "id": "article-case-tacos-dropping-but-profit-not-growing-cover",
+    "path": "/images/articles/case-tacos-dropping-but-profit-not-growing/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "案例：TACOS 下降了，利润为什么没有增长封面图"
+  },
+  {
+    "id": "article-keyword-buyer-intent-layering-cover",
+    "path": "/images/articles/keyword-buyer-intent-layering/cover.svg",
+    "type": "cover",
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "keyword",
+      "封面"
+    ],
+    "alt": "关键词第 6 篇：买家意图分层——同一个词为什么转化完全不同封面图"
+  },
+  {
+    "id": "article-keyword-longtail-fifth-source-cover",
+    "path": "/images/articles/keyword-longtail-fifth-source/cover.svg",
+    "type": "cover",
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "keyword",
+      "封面"
+    ],
+    "alt": "关键词第 5 篇：长尾词挖掘——4 种来源之外的第 5 种封面图"
+  },
+  {
+    "id": "article-keyword-negative-word-library-cover",
+    "path": "/images/articles/keyword-negative-word-library/cover.svg",
+    "type": "cover",
+    "topics": [
+      "keyword"
+    ],
+    "keywords": [
+      "关键词",
+      "keyword",
+      "封面"
+    ],
+    "alt": "关键词第 7 篇：否词库怎么建立——让广告复盘越来越省力封面图"
+  },
+  {
+    "id": "article-listing-main-image-ctr-checklist-cover",
+    "path": "/images/articles/listing-main-image-ctr-checklist/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing 优化",
+      "listing",
+      "封面"
+    ],
+    "alt": "Listing 第 4 篇：主图点击率诊断——从 0.3% 到 0.8% 的检查 8 项封面图"
+  },
+  {
+    "id": "article-listing-mobile-first-optimization-cover",
+    "path": "/images/articles/listing-mobile-first-optimization/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing 优化",
+      "listing",
+      "封面"
+    ],
+    "alt": "Listing 第 6 篇：移动端优先优化——手机屏幕上先赢前 3 秒封面图"
+  },
+  {
+    "id": "article-listing-price-coupon-conversion-check-cover",
+    "path": "/images/articles/listing-price-coupon-conversion-check/cover.svg",
+    "type": "cover",
+    "topics": [
+      "listing"
+    ],
+    "keywords": [
+      "Listing 优化",
+      "listing",
+      "封面"
+    ],
+    "alt": "Listing 第 5 篇：价格与 Coupon 自检——降价前先看这 6 个信号封面图"
+  },
+  {
+    "id": "article-new-seller-90-day-operation-rhythm-cover",
+    "path": "/images/articles/new-seller-90-day-operation-rhythm/cover.svg",
+    "type": "cover",
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "运营",
+      "tools",
+      "封面"
+    ],
+    "alt": "运营总览：新卖家 90 天运营节奏表封面图"
+  },
+  {
+    "id": "article-ppc-negative-keyword-week-one-cover",
+    "path": "/images/articles/ppc-negative-keyword-week-one/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "PPC 第 4 篇：否词策略——新品第一周后怎么筛搜索词封面图"
+  },
+  {
+    "id": "article-ppc-search-term-to-campaign-sop-cover",
+    "path": "/images/articles/ppc-search-term-to-campaign-sop/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "PPC 第 5 篇：搜索词到广告组——怎么把出单词单独养起来封面图"
+  },
+  {
+    "id": "article-ppc-tacos-weekly-review-cover",
+    "path": "/images/articles/ppc-tacos-weekly-review/cover.svg",
+    "type": "cover",
+    "topics": [
+      "ppc"
+    ],
+    "keywords": [
+      "广告 PPC",
+      "ppc",
+      "封面"
+    ],
+    "alt": "PPC 第 6 篇：TACOS 周复盘——广告效率不能只看 ACOS封面图"
+  },
+  {
+    "id": "article-review-return-data-analysis-cover",
+    "path": "/images/articles/review-return-data-analysis/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review 分析",
+      "review",
+      "封面"
+    ],
+    "alt": "Review 第 4 篇：退货数据分析——比看 Review 更早发现问题封面图"
+  },
+  {
+    "id": "article-review-voice-of-customer-tagging-cover",
+    "path": "/images/articles/review-voice-of-customer-tagging/cover.svg",
+    "type": "cover",
+    "topics": [
+      "review"
+    ],
+    "keywords": [
+      "Review 分析",
+      "review",
+      "封面"
+    ],
+    "alt": "Review 第 5 篇：VOC 标签法——把差评变成产品改进清单封面图"
+  },
+  {
+    "id": "article-selection-fba-size-tier-cost-trap-cover",
+    "path": "/images/articles/selection-fba-size-tier-cost-trap/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "选品第 7 篇：FBA 尺寸分段陷阱——差 1 厘米可能亏掉利润封面图"
+  },
+  {
+    "id": "article-selection-first-order-sample-checklist-cover",
+    "path": "/images/articles/selection-first-order-sample-checklist/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "选品第 5 篇：首单样品检查清单——下单前先排 12 个雷封面图"
+  },
+  {
+    "id": "article-selection-profit-reverse-calculation-cover",
+    "path": "/images/articles/selection-profit-reverse-calculation/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "选品第 4 篇：利润倒推——从售价算成本能不能做封面图"
+  },
+  {
+    "id": "article-selection-seasonality-risk-check-cover",
+    "path": "/images/articles/selection-seasonality-risk-check/cover.svg",
+    "type": "cover",
+    "topics": [
+      "selection"
+    ],
+    "keywords": [
+      "选品",
+      "selection",
+      "封面"
+    ],
+    "alt": "选品第 6 篇：季节性风险判断——不要把旺季销量当常态封面图"
+  },
+  {
+    "id": "article-tools-account-health-self-check-cover",
+    "path": "/images/articles/tools-account-health-self-check/cover.svg",
+    "type": "cover",
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "工具模板",
+      "tools",
+      "封面"
+    ],
+    "alt": "工具第 2 篇：账号健康自查——ODR、迟发与政策警告怎么处理封面图"
+  },
+  {
+    "id": "article-tools-weekly-business-review-dashboard-cover",
+    "path": "/images/articles/tools-weekly-business-review-dashboard/cover.svg",
+    "type": "cover",
+    "topics": [
+      "tools"
+    ],
+    "keywords": [
+      "工具模板",
+      "tools",
+      "封面"
+    ],
+    "alt": "工具第 4 篇：亚马逊周经营看板——每周只看这 10 个数封面图"
   }
 ]

@@ -9,6 +9,10 @@ draft: false
 topic: ai-search
 stage: 实操
 intent: 决策
+relatedTopics:
+  - listing
+  - tools
+publicLessonUse: 适合作为 AI 运营公开课的趋势和实操模块，帮助卖家理解 AI 搜索、Rufus 和 AI 工具对运营动作的影响。
 articleType: case-study
 hookType: 避坑
 featured: true
@@ -19,13 +23,16 @@ leadMagnet: "可配合《AI 工具评测表》做复盘。"
 wechatHook: 资料领取方式以资料详情页说明为准。
 relatedArticleLinks:
   - slug: ai-amazon-operator-prompt-library
-    label: 亚马逊运营提示词库
-    context: 与本文判断步骤配合使用
-  - slug: ai-prompt-product-research-sop
-    label: 选品提示词 SOP
-    context: 与本文判断步骤配合使用
+    label: "亚马逊运营提示词库"
+    context: "AI 判断工具"
+  - slug: ai-market-size-estimate
+    label: "AI 估算市场容量"
+    context: "选品判断工具"
+  - slug: selection-profit-reverse-calculation
+    label: "利润倒推选品"
+    context: "选品校验方法"
 ---
-# 案例：AI 说这个产品可以做，为什么我建议先停下
+
 
 这个案例是脱敏复盘，类目、金额和部分细节做了比例调整，但问题逻辑是真实的。它适合新手对照自己当前的运营动作，尤其适合已经开始上架、开广告、看数据，但不知道下一步该不该加码的卖家。
 

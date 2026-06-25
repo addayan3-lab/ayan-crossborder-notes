@@ -22,6 +22,27 @@ leadMagnet: 2026 亚马逊 AI 运营全景图
 wechatHook: 资料领取方式以资料详情页说明为准。
 draft: false
 image: "/images/articles/2026-amazon-ai-operations/cover.svg"
+updateType: platform-update
+updateStatus: current
+lastReviewed: "2026-06-25"
+nextReviewDue: "2026-09-25"
+reviewCadenceDays: 90
+updateNote: "季度复核 AI 运营、Rufus、视觉搜索和广告/Review 相关建议是否仍适用。"
+sourceUrls:
+  - https://www.aboutamazon.com/news/retail/how-to-use-amazon-rufus
+  - https://www.aboutamazon.com/news/retail/search-image-amazon-lens-live-shopping-rufus
+prevArticle: amazon-rufus-alexa-shopping
+nextArticle: ai-rufus-listing-writing-2026
+relatedArticleLinks:
+  - slug: amazon-rufus-alexa-shopping
+    label: "Rufus 与 Alexa Shopping"
+    context: "AI 搜索第 2 篇"
+  - slug: ai-rufus-listing-writing-2026
+    label: "Rufus 时代 Listing 写法"
+    context: "AI 搜索第 4 篇"
+  - slug: amazon-title-rule-75-characters-2026
+    label: "2026 标题规则重点简报"
+    context: "规则变化简报"
 ---
 
 
